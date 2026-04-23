@@ -3,14 +3,14 @@
         "province": "ขอนแก่น",
         "province_en": "Khon Kaen",
         "property_type": "House",
-        "sample_count": 10,
-        "average_price": 3509000.0,
-        "median_price": 2650000.0,
+        "sample_count": 9,
+        "average_price": 3010000.0,
+        "median_price": 1900000.0,
         "average_sqm": 101.4,
-        "price_per_sqm": 34605.52,
+        "price_per_sqm": 29684.42,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:03"
+        "last_updated": "2026-04-23 15:26:15"
     },
     {
         "province": "ขอนแก่น",
@@ -23,20 +23,20 @@
         "price_per_sqm": 54832.52,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:03"
+        "last_updated": "2026-04-23 15:26:15"
     },
     {
         "province": "ขอนแก่น",
         "province_en": "Khon Kaen",
         "property_type": "Land",
-        "sample_count": 15,
-        "average_price": 1780260.0,
-        "median_price": 1590000.0,
-        "average_sqm": 3607.25,
-        "price_per_sqm": 493.52,
+        "sample_count": 16,
+        "average_price": 2262743.75,
+        "median_price": 1695000.0,
+        "average_sqm": 3881.8,
+        "price_per_sqm": 582.91,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:03"
+        "last_updated": "2026-04-23 15:26:15"
     },
     {
         "province": "ขอนแก่น",
@@ -49,7 +49,7 @@
         "price_per_sqm": 0,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:03"
+        "last_updated": "2026-04-23 15:26:15"
     },
     {
         "province": "อุบลราชธานี",
@@ -62,7 +62,7 @@
         "price_per_sqm": 17156.53,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:10"
+        "last_updated": "2026-04-23 15:26:22"
     },
     {
         "province": "อุบลราชธานี",
@@ -75,7 +75,7 @@
         "price_per_sqm": 44671.53,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:10"
+        "last_updated": "2026-04-23 15:26:22"
     },
     {
         "province": "อุบลราชธานี",
@@ -88,7 +88,7 @@
         "price_per_sqm": 1561.92,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:10"
+        "last_updated": "2026-04-23 15:26:22"
     },
     {
         "province": "ประจวบคีรีขันธ์",
@@ -101,7 +101,7 @@
         "price_per_sqm": 23505.33,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:13"
+        "last_updated": "2026-04-23 15:26:29"
     },
     {
         "province": "ประจวบคีรีขันธ์",
@@ -114,20 +114,20 @@
         "price_per_sqm": 72012.69,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:13"
+        "last_updated": "2026-04-23 15:26:29"
     },
     {
         "province": "ประจวบคีรีขันธ์",
         "province_en": "Prachuap Khiri Khan",
         "property_type": "Land",
-        "sample_count": 8,
-        "average_price": 14670800.75,
-        "median_price": 9619375.0,
-        "average_sqm": 13158.0,
-        "price_per_sqm": 1114.97,
+        "sample_count": 7,
+        "average_price": 12207250.0,
+        "median_price": 4850000.0,
+        "average_sqm": 10237.71,
+        "price_per_sqm": 1192.38,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:13"
+        "last_updated": "2026-04-23 15:26:29"
     },
     {
         "province": "ประจวบคีรีขันธ์",
@@ -140,20 +140,20 @@
         "price_per_sqm": 0,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:13"
+        "last_updated": "2026-04-23 15:26:29"
     },
     {
         "province": "อุดรธานี",
         "province_en": "Udon Thani",
         "property_type": "House",
         "sample_count": 12,
-        "average_price": 7924583.33,
+        "average_price": 7932916.67,
         "median_price": 5249500.0,
         "average_sqm": 224.3,
-        "price_per_sqm": 35330.29,
+        "price_per_sqm": 35367.44,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:19"
+        "last_updated": "2026-04-23 15:26:32"
     },
     {
         "province": "อุดรธานี",
@@ -166,7 +166,7 @@
         "price_per_sqm": 633.59,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:19"
+        "last_updated": "2026-04-23 15:26:32"
     },
     {
         "province": "อุดรธานี",
@@ -179,7 +179,7 @@
         "price_per_sqm": 68760.0,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:19"
+        "last_updated": "2026-04-23 15:26:32"
     },
     {
         "province": "ระยอง",
@@ -192,72 +192,85 @@
         "price_per_sqm": 18953.37,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:23"
+        "last_updated": "2026-04-23 15:26:36"
     },
     {
         "province": "ระยอง",
         "province_en": "Rayong",
         "property_type": "Condo",
         "sample_count": 8,
-        "average_price": 4698750.0,
-        "median_price": 4500000.0,
-        "average_sqm": 120.34,
-        "price_per_sqm": 39046.43,
+        "average_price": 3442500.0,
+        "median_price": 3150000.0,
+        "average_sqm": 84.96,
+        "price_per_sqm": 40517.88,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:23"
+        "last_updated": "2026-04-23 15:26:36"
     },
     {
         "province": "ระยอง",
         "province_en": "Rayong",
         "property_type": "Land",
-        "sample_count": 8,
-        "average_price": 18150093.75,
-        "median_price": 7407000.0,
-        "average_sqm": 20940.8,
-        "price_per_sqm": 866.73,
+        "sample_count": 7,
+        "average_price": 19028678.57,
+        "median_price": 6678000.0,
+        "average_sqm": 22790.06,
+        "price_per_sqm": 834.96,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:23"
+        "last_updated": "2026-04-23 15:26:36"
+    },
+    {
+        "province": "ระยอง",
+        "province_en": "Rayong",
+        "property_type": "Townhouse",
+        "sample_count": 1,
+        "average_price": 1490000.0,
+        "median_price": 1490000.0,
+        "average_sqm": 0,
+        "price_per_sqm": 0,
+        "currency": "THB",
+        "source": "DotProperty",
+        "last_updated": "2026-04-23 15:26:36"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "House",
-        "sample_count": 5,
-        "average_price": 14545000.0,
-        "median_price": 11000000.0,
-        "average_sqm": 1186.0,
-        "price_per_sqm": 12263.91,
+        "sample_count": 4,
+        "average_price": 18706250.0,
+        "median_price": 16437500.0,
+        "average_sqm": 1383.5,
+        "price_per_sqm": 13520.96,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:27"
+        "last_updated": "2026-04-23 15:26:44"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "Condo",
-        "sample_count": 14,
-        "average_price": 4328571.43,
-        "median_price": 3540000.0,
-        "average_sqm": 71.17,
-        "price_per_sqm": 60823.22,
+        "sample_count": 16,
+        "average_price": 4256250.0,
+        "median_price": 3465000.0,
+        "average_sqm": 68.16,
+        "price_per_sqm": 62446.7,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:27"
+        "last_updated": "2026-04-23 15:26:44"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "Land",
         "sample_count": 2,
-        "average_price": 16400000.0,
-        "median_price": 16400000.0,
+        "average_price": 16450000.0,
+        "median_price": 16450000.0,
         "average_sqm": 566.0,
-        "price_per_sqm": 28975.27,
+        "price_per_sqm": 29063.6,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:27"
+        "last_updated": "2026-04-23 15:26:44"
     },
     {
         "province": "ชลบุรี",
@@ -270,7 +283,7 @@
         "price_per_sqm": 12060.61,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:27"
+        "last_updated": "2026-04-23 15:26:44"
     },
     {
         "province": "สุรินทร์",
@@ -283,7 +296,7 @@
         "price_per_sqm": 6401.68,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:30"
+        "last_updated": "2026-04-23 15:26:51"
     },
     {
         "province": "สุรินทร์",
@@ -296,7 +309,7 @@
         "price_per_sqm": 1441.73,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:30"
+        "last_updated": "2026-04-23 15:26:51"
     },
     {
         "province": "สุรินทร์",
@@ -309,7 +322,7 @@
         "price_per_sqm": 8910.89,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:30"
+        "last_updated": "2026-04-23 15:26:51"
     },
     {
         "province": "บุรีรัมย์",
@@ -322,7 +335,7 @@
         "price_per_sqm": 16102.69,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:34"
+        "last_updated": "2026-04-23 15:26:58"
     },
     {
         "province": "บุรีรัมย์",
@@ -335,7 +348,7 @@
         "price_per_sqm": 496.92,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:34"
+        "last_updated": "2026-04-23 15:26:58"
     },
     {
         "province": "บุรีรัมย์",
@@ -348,7 +361,7 @@
         "price_per_sqm": 19389.07,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:34"
+        "last_updated": "2026-04-23 15:26:58"
     },
     {
         "province": "พิษณุโลก",
@@ -361,7 +374,7 @@
         "price_per_sqm": 31268.87,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:37"
+        "last_updated": "2026-04-23 15:27:06"
     },
     {
         "province": "พิษณุโลก",
@@ -374,7 +387,7 @@
         "price_per_sqm": 1270.81,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:37"
+        "last_updated": "2026-04-23 15:27:06"
     },
     {
         "province": "พิษณุโลก",
@@ -387,20 +400,20 @@
         "price_per_sqm": 0,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:37"
+        "last_updated": "2026-04-23 15:27:06"
     },
     {
         "province": "เชียงราย",
         "province_en": "Chiang Rai",
         "property_type": "House",
-        "sample_count": 11,
-        "average_price": 4734545.45,
-        "median_price": 5000000.0,
-        "average_sqm": 236.6,
-        "price_per_sqm": 20010.76,
+        "sample_count": 12,
+        "average_price": 5331666.67,
+        "median_price": 5450000.0,
+        "average_sqm": 246.06,
+        "price_per_sqm": 21667.84,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:41"
+        "last_updated": "2026-04-23 15:27:16"
     },
     {
         "province": "เชียงราย",
@@ -413,7 +426,7 @@
         "price_per_sqm": 2564.61,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:41"
+        "last_updated": "2026-04-23 15:27:16"
     },
     {
         "province": "เชียงราย",
@@ -426,6 +439,6 @@
         "price_per_sqm": 35333.33,
         "currency": "THB",
         "source": "DotProperty",
-        "last_updated": "2026-04-23 09:47:41"
+        "last_updated": "2026-04-23 15:27:16"
     }
 ]

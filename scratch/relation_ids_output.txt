@@ -1,0 +1,12 @@
+﻿Searching for Amphoe Mueang relation IDs via Nominatim...
+
+  ขอนแก่น: HTTP 403 - skipped
+  อุบลราชธานี: HTTP 403 - skipped
+  ประจวบคีรีขันธ์: HTTP 403 - skipped
+  อุดรธานี: HTTP 403 - skipped
+  ระยอง: HTTP 403 - skipped
+  ชลบุรี: HTTP 403 - skipped
+  สุรินทร์: HTTP 403 - skipped
+  บุรีรัมย์: HTTP 403 - skipped
+  พิษณุโลก: HTTP 403 - skipped
+  เชียงราย: HTTP 403 - skipped
