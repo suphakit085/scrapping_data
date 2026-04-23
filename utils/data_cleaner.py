@@ -62,10 +62,12 @@ def clean_property_trends(dotproperty_raw, livinginsider_raw, processed_file_pat
 def clean_landmarks(raw_file_path, processed_file_path):
     """
     Cleans and standardizes POI/Landmarks data.
-    - Removes duplicates (same name + same lat/lon)
+    - Smart Dedup: ชื่อคล้ายกัน + อยู่ใกล้กันไม่เกิน 300 เมตร = ซ้ำ
     - Standardizes province names
     - Sorts by province → layer → category
     """
+    import math
+
     if not os.path.exists(raw_file_path):
         print(f"Error: Raw file {raw_file_path} not found.")
         return
@@ -78,16 +80,100 @@ def clean_landmarks(raw_file_path, processed_file_path):
         return
 
     df = pd.DataFrame(data)
+    before_total = len(df)
     
-    # Remove exact duplicates (same name + coordinates)
-    before = len(df)
+    # ========== Phase 1: Exact Dedup (เร็ว) ==========
     df = df.drop_duplicates(subset=['name', 'lat', 'lon'], keep='first')
-    removed = before - len(df)
-    if removed:
-        print(f"  Removed {removed} duplicate POIs.")
+    exact_removed = before_total - len(df)
     
-    # Remove unnamed POIs (keep only those with names)
+    # ========== Phase 2: Smart Fuzzy Dedup (ชื่อคล้าย + ใกล้กัน) ==========
+    def _haversine_m(lat1, lon1, lat2, lon2):
+        R = 6371000  # เมตร
+        dlat = math.radians(lat2 - lat1)
+        dlon = math.radians(lon2 - lon1)
+        a = (math.sin(dlat/2)**2 +
+             math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
+             math.sin(dlon/2)**2)
+        return R * 2 * math.asin(math.sqrt(a))
+
+    def _normalize_name(name: str) -> str:
+        """ทำให้ชื่อเรียบง่ายเพื่อเปรียบเทียบ"""
+        if not name:
+            return ""
+        n = str(name).strip().lower()
+        # ลบคำที่ไม่สำคัญออก
+        for noise in ["สาขา", "branch", "(", ")", "-", "–", ".", ","]:
+            n = n.replace(noise, " ")
+        # ลบช่องว่างซ้ำ
+        n = " ".join(n.split())
+        return n
+
+    def _name_is_similar(name_a: str, name_b: str) -> bool:
+        """เช็คว่าชื่อสถานที่คล้ายกันหรือไม่"""
+        a = _normalize_name(name_a)
+        b = _normalize_name(name_b)
+        if not a or not b:
+            return False
+        # ชื่อเหมือนกันเป๊ะ
+        if a == b:
+            return True
+        # ชื่อหนึ่งเป็น substring ของอีกชื่อ
+        if a in b or b in a:
+            return True
+        # แยกเป็นคำแล้วดูว่ามีคำร่วมกันกี่คำ (Jaccard-like)
+        words_a = set(a.split())
+        words_b = set(b.split())
+        if not words_a or not words_b:
+            return False
+        common = words_a & words_b
+        union = words_a | words_b
+        similarity = len(common) / len(union)
+        return similarity >= 0.5  # ร่วมกัน >= 50% ของคำทั้งหมด
+
+    # แบ่งตามจังหวัด+หมวดหมู่ เพื่อลดเวลาเปรียบเทียบ (ไม่ต้องเทียบข้ามจังหวัด)
+    fuzzy_removed = 0
+    drop_indices = set()
+    
+    for (province, category), group in df.groupby(['province', 'category']):
+        indices = group.index.tolist()
+        for i in range(len(indices)):
+            if indices[i] in drop_indices:
+                continue
+            row_a = df.loc[indices[i]]
+            for j in range(i + 1, len(indices)):
+                if indices[j] in drop_indices:
+                    continue
+                row_b = df.loc[indices[j]]
+                
+                # เช็คระยะทาง (ถ้าไกลกว่า 300 เมตร ข้ามไป)
+                dist = _haversine_m(row_a['lat'], row_a['lon'],
+                                    row_b['lat'], row_b['lon'])
+                if dist > 300:
+                    continue
+                
+                # เช็คชื่อ
+                if _name_is_similar(row_a['name'], row_b['name']):
+                    # เก็บตัวที่มีข้อมูลเยอะกว่า (prefer OSM > Google Maps)
+                    if row_b.get('source', '') == 'Google Maps' and row_a.get('source', '') != 'Google Maps':
+                        drop_indices.add(indices[j])
+                    elif row_a.get('source', '') == 'Google Maps' and row_b.get('source', '') != 'Google Maps':
+                        drop_indices.add(indices[i])
+                        break
+                    else:
+                        drop_indices.add(indices[j])  # เก็บตัวแรก
+    
+    df = df.drop(index=drop_indices)
+    fuzzy_removed = len(drop_indices)
+    
+    # ========== Phase 3: Remove unnamed POIs ==========
     df = df[df['name'].astype(str).str.strip() != '']
+    
+    # ========== Summary ==========
+    total_removed = before_total - len(df)
+    print(f"  Dedup Summary:")
+    print(f"    Exact match removed:  {exact_removed}")
+    print(f"    Fuzzy match removed:  {fuzzy_removed}")
+    print(f"    Total removed:        {total_removed} (from {before_total} → {len(df)})")
     
     # Standardize province names (English)
     province_mapping = {
