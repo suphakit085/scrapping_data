@@ -1,0 +1,25 @@
+## 1. การเงินและดอกเบี้ย (Financial Data)
+- **ธนาคารแห่งประเทศไทย (BOT API):** https://apiportal.bot.or.th/
+  *(ใช้สำหรับดึงค่า MRR, MLR, MOR ของ 17 ธนาคาร)*
+
+## 2. เทรนด์และตลาดอสังหาริมทรัพย์ (Property Trends)
+- **DotProperty (Market Data):** https://www.dotproperty.co.th/en/properties-for-sale/
+  *(ใช้ขูดข้อมูลราคาตลาด, จำนวนประกาศ, และราคาต่อ ตร.ม. แบบ Real-time)*
+- **REIC (Official Index):** https://www.reic.or.th/Product/Chart/1/
+  *(ใช้ดูดัชนีราคาบ้านที่เป็นทางการจากรัฐบาล)*
+
+## 3. ข้อมูลประชากรและสถิติ (Population & Stats)
+- **กรมการปกครอง (DOPA):** https://stat.bora.dopa.go.th/stat/statnew/statMONTH/statmonth/
+  *(แม่นยำที่สุดสำหรับจำนวนประชากรรายเดือนแยกตามจังหวัด)*
+- **ระบบสถิติจังหวัด (NSO):** https://www.nso.go.th/
+  *(ใช้ดูสถิติครัวเรือนและรายได้)*
+- **Data.go.th:** https://data.go.th/
+  *(ศูนย์กลางข้อมูลเปิดภาครัฐสำหรับข้อมูลพื้นฐานอื่นๆ)*
+
+## 4. โครงสร้างพื้นฐานและสภาพแวดล้อม (Infrastructure & Environment)
+- **GISTDA (Disaster Data):** https://disaster.gistda.or.th/
+  *(ดูพื้นที่เสี่ยงภัยพิบัติ/น้ำท่วม เพื่อประเมินมูลค่าทำเล)*
+- **OpenStreetMap (Landmarks):** https://www.openstreetmap.org/
+  *(ข้อมูลตำแหน่งสถานที่สำคัญ โรงพยาบาล ห้างสรรพสินค้า)*
+- **กรมทางหลวง (Road Network):** https://bhs.doh.go.th/gis
+  *(ดูแนวโน้มการขยายตัวของถนนและเมือง)*

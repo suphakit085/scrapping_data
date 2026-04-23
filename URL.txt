@@ -1,0 +1,46 @@
+## PRIMARY - TREND อสังหาริมทรัพย์ bot-api
+https://www.reic.or.th/Product/Chart/1/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%AD%E0%B8%B2%E0%B8%A8%E0%B8%B1%E0%B8%A2
+
+## PRIMARY - LIFESTYLE (ประชากร/สถิติพื้นที่)
+https://www.nso.go.th/nsoweb/index#gsc.tab=0
+https://stat.bora.dopa.go.th/stat/statnew/statMONTH/statmonth/#/displayData
+https://data.go.th/th/dataset/statbyyear?is_fullscreen=1
+https://gdcatalog.go.th/dataset/
+https://data.go.th/th/dataset/gdpublish-communityeconomy
+
+## PRIMARY - LIFESTYLE (สภาพพื้นที่/อากาศ/น้ำท่วม)
+https://data.tmd.go.th/dataset/index.php
+https://www.tmd.go.th/weather/province/phitsanulok
+https://khonkaen.thaiwater.net/dashboard
+https://disaster.gistda.or.th/services/open-api
+https://www.rentconnected.com/blogs/main-career-from-each-province/
+
+## PRIMARY - LIFESTYLE (landmark)
+https://www.openstreetmap.org
+
+## BACKUP - LIFESTYLE (landmark)
+https://bhs.doh.go.th/gis
+https://gdcatalog.go.th/dataset/
+https://data.go.th/th/dataset/statbyyear?is_fullscreen=1
+
+## PRIMARY - LIFESTYLE (road)
+https://developers.google.com/maps/documentation/roads/overview?hl=th
+
+
+## BACKUP - LIFESTYLE (road)
+https://developers.google.com/maps/documentation/javascript/trafficlayer?hl=th
+https://www.openstreetmap.org
+
+## BACKUP - ตลาดอสังหา/ราคา (เสริม)
+https://www.livinginsider.com/
+https://www.livinginsider.com/price/1/10000000-20000000?type=1
+https://www.baania.com/
+https://www.ddproperty.com/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%82%E0%B8%B2%E0%B8%A2/%E0%B8%AD%E0%B8%B1%E0%B8%9B%E0%B9%80%E0%B8%94%E0%B8%95%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B8%81%E0%B8%B9%E0%B9%89%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-6214
+https://www.kasikornbank.com/th/personal/loan/homeloan/pages/home.aspx
+https://www.scb.co.th/th/personal-banking/loans/home-loans/scb-new-loan.html
+
+## OPTIONAL / TOOLING (ใช้เมื่อจำเป็น)
+https://apify.com/abotapi/ddproperty-scraper/api/python
+https://apify.com/hassy/thailand-statistics-analyzer/api?utm_source=chatgpt.com
+
+## DROP (นอกขอบเขตงานปัจจุบัน)
