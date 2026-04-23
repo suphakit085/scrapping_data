@@ -43,12 +43,11 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
 
     # แยก POI ตาม Layer
     layer1 = [p for p in all_pois if p.get("layer") == 1 and p.get("lat")]
-    layer2 = [p for p in all_pois if p.get("layer") == 2 and p.get("lat")]
-    layer3 = [p for p in all_pois if p.get("layer") == 3 and p.get("lat")]
+    # สร้าง pool สำหรับค้นหาสิ่งอำนวยความสะดวก (รวมทุกอย่างยกเว้นตัวมันเอง)
+    search_pool = [p for p in all_pois if p.get("lat")]
 
-    print(f"  Layer 1 (Zone Anchors): {len(layer1)}")
-    print(f"  Layer 2 (Iconic):       {len(layer2)}")
-    print(f"  Layer 3 (Daily life):   {len(layer3)}")
+    print(f"  Zone Anchors (Layer 1): {len(layer1)}")
+    print(f"  Total POIs for search: {len(search_pool)}")
 
     zone_profiles = []
 
@@ -56,29 +55,33 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
         a_lat = anchor["lat"]
         a_lon = anchor["lon"]
         a_province = anchor["province"]
+        a_id = anchor.get("osm_id")
 
-        # --- หา POI ใกล้เคียงจาก Layer 2 ---
+        # --- หา POI ใกล้เคียง ---
         nearby_iconic = []
-        for poi in layer2:
-            if poi["province"] != a_province:
-                continue
-            dist = haversine_km(a_lat, a_lon, poi["lat"], poi["lon"])
-            if dist <= radius_km:
-                nearby_iconic.append({
-                    "name": poi["name"],
-                    "category": poi["category"],
-                    "distance_km": round(dist, 2)
-                })
-
-        # --- หา POI ใกล้เคียงจาก Layer 3 (นับจำนวนตามประเภท) ---
         nearby_daily = {}
-        for poi in layer3:
+        
+        for poi in search_pool:
+            # ข้ามถ้าเป็นตัวมันเอง
+            if poi.get("osm_id") == a_id and poi["name"] == anchor["name"]:
+                continue
             if poi["province"] != a_province:
                 continue
+                
             dist = haversine_km(a_lat, a_lon, poi["lat"], poi["lon"])
             if dist <= radius_km:
-                cat = poi["category"]
-                nearby_daily[cat] = nearby_daily.get(cat, 0) + 1
+                layer = poi.get("layer")
+                cat = poi.get("category", "อื่นๆ")
+                
+                if layer == 2:
+                    nearby_iconic.append({
+                        "name": poi["name"],
+                        "category": cat,
+                        "distance_km": round(dist, 2)
+                    })
+                else:
+                    # รวม Layer 1 อื่นๆ (เช่น รพ. ใกล้ห้าง) และ Layer 3 เข้าด้วยกัน
+                    nearby_daily[cat] = nearby_daily.get(cat, 0) + 1
 
         # --- สร้าง Zone Profile ---
         # สรุป Layer 2 เป็นข้อความ

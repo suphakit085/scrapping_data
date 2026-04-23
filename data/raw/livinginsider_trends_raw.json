@@ -10,7 +10,7 @@
         "price_per_sqm": 26434.56,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:27:43"
+        "last_updated": "2026-04-23 15:50:27"
     },
     {
         "province": "ขอนแก่น",
@@ -23,20 +23,20 @@
         "price_per_sqm": 79192.73,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:27:43"
+        "last_updated": "2026-04-23 15:50:27"
     },
     {
         "province": "ขอนแก่น",
         "province_en": "Khon Kaen",
         "property_type": "Land",
-        "sample_count": 10,
-        "average_price": 7536630.0,
-        "median_price": 7500000.0,
-        "average_sqm": 116.0,
-        "price_per_sqm": 64970.95,
+        "sample_count": 8,
+        "average_price": 7882100.0,
+        "median_price": 8200000.0,
+        "average_sqm": 128.0,
+        "price_per_sqm": 61578.91,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:27:43"
+        "last_updated": "2026-04-23 15:50:27"
     },
     {
         "province": "ขอนแก่น",
@@ -49,7 +49,7 @@
         "price_per_sqm": 26269.56,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:27:43"
+        "last_updated": "2026-04-23 15:50:27"
     },
     {
         "province": "อุบลราชธานี",
@@ -62,7 +62,7 @@
         "price_per_sqm": 18947.38,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:01"
+        "last_updated": "2026-04-23 15:50:44"
     },
     {
         "province": "อุบลราชธานี",
@@ -75,7 +75,7 @@
         "price_per_sqm": 87200.25,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:01"
+        "last_updated": "2026-04-23 15:50:44"
     },
     {
         "province": "อุบลราชธานี",
@@ -88,7 +88,7 @@
         "price_per_sqm": 37318.71,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:01"
+        "last_updated": "2026-04-23 15:50:44"
     },
     {
         "province": "อุบลราชธานี",
@@ -101,46 +101,46 @@
         "price_per_sqm": 12171.2,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:01"
+        "last_updated": "2026-04-23 15:50:44"
     },
     {
         "province": "ประจวบคีรีขันธ์",
         "province_en": "Prachuap Khiri Khan",
         "property_type": "House",
-        "sample_count": 27,
-        "average_price": 9025379.78,
+        "sample_count": 29,
+        "average_price": 8782250.14,
         "median_price": 1750000.0,
-        "average_sqm": 161.65,
-        "price_per_sqm": 55834.33,
+        "average_sqm": 169.5,
+        "price_per_sqm": 51811.89,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:25"
+        "last_updated": "2026-04-23 15:51:05"
     },
     {
         "province": "ประจวบคีรีขันธ์",
         "province_en": "Prachuap Khiri Khan",
         "property_type": "Condo",
-        "sample_count": 18,
-        "average_price": 72714120.89,
-        "median_price": 2490000.0,
-        "average_sqm": 71.63,
-        "price_per_sqm": 1015119.27,
+        "sample_count": 20,
+        "average_price": 65737708.8,
+        "median_price": 2720000.0,
+        "average_sqm": 73.2,
+        "price_per_sqm": 898031.59,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:25"
+        "last_updated": "2026-04-23 15:51:05"
     },
     {
         "province": "ประจวบคีรีขันธ์",
         "province_en": "Prachuap Khiri Khan",
         "property_type": "Land",
-        "sample_count": 22,
-        "average_price": 58999000.0,
-        "median_price": 18950000.0,
-        "average_sqm": 163.11,
-        "price_per_sqm": 361710.49,
+        "sample_count": 18,
+        "average_price": 69004333.33,
+        "median_price": 21900000.0,
+        "average_sqm": 200.57,
+        "price_per_sqm": 344038.7,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:25"
+        "last_updated": "2026-04-23 15:51:05"
     },
     {
         "province": "อุดรธานี",
@@ -153,7 +153,7 @@
         "price_per_sqm": 16521.26,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:45"
+        "last_updated": "2026-04-23 15:51:28"
     },
     {
         "province": "อุดรธานี",
@@ -166,7 +166,7 @@
         "price_per_sqm": 64263.9,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:45"
+        "last_updated": "2026-04-23 15:51:28"
     },
     {
         "province": "อุดรธานี",
@@ -179,7 +179,7 @@
         "price_per_sqm": 215384.4,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:45"
+        "last_updated": "2026-04-23 15:51:28"
     },
     {
         "province": "อุดรธานี",
@@ -192,7 +192,7 @@
         "price_per_sqm": 77279.59,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:28:45"
+        "last_updated": "2026-04-23 15:51:28"
     },
     {
         "province": "ระยอง",
@@ -205,7 +205,7 @@
         "price_per_sqm": 190579.21,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:04"
+        "last_updated": "2026-04-23 15:51:49"
     },
     {
         "province": "ระยอง",
@@ -218,7 +218,7 @@
         "price_per_sqm": 56447.55,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:04"
+        "last_updated": "2026-04-23 15:51:49"
     },
     {
         "province": "ระยอง",
@@ -231,59 +231,59 @@
         "price_per_sqm": 108271.11,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:04"
+        "last_updated": "2026-04-23 15:51:49"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "House",
-        "sample_count": 35,
-        "average_price": 3512811.2,
-        "median_price": 1590000.0,
-        "average_sqm": 178.58,
-        "price_per_sqm": 19670.73,
+        "sample_count": 31,
+        "average_price": 4161241.35,
+        "median_price": 1990000.0,
+        "average_sqm": 193.28,
+        "price_per_sqm": 21529.6,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:24"
+        "last_updated": "2026-04-23 15:52:11"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "Condo",
-        "sample_count": 46,
-        "average_price": 1479437.96,
-        "median_price": 219543.0,
-        "average_sqm": 67.04,
-        "price_per_sqm": 22066.41,
+        "sample_count": 52,
+        "average_price": 1554214.62,
+        "median_price": 254043.0,
+        "average_sqm": 63.58,
+        "price_per_sqm": 24445.76,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:24"
+        "last_updated": "2026-04-23 15:52:11"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "Land",
         "sample_count": 14,
-        "average_price": 14058928.57,
+        "average_price": 37428571.43,
         "median_price": 8900000.0,
-        "average_sqm": 228.67,
-        "price_per_sqm": 61482.19,
+        "average_sqm": 242.67,
+        "price_per_sqm": 154238.62,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:24"
+        "last_updated": "2026-04-23 15:52:11"
     },
     {
         "province": "ชลบุรี",
         "province_en": "Chonburi",
         "property_type": "Townhouse",
         "sample_count": 4,
-        "average_price": 1490000.0,
-        "median_price": 1490000.0,
-        "average_sqm": 83.8,
-        "price_per_sqm": 17780.43,
+        "average_price": 1440000.0,
+        "median_price": 1440000.0,
+        "average_sqm": 72.8,
+        "price_per_sqm": 19780.22,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:24"
+        "last_updated": "2026-04-23 15:52:11"
     },
     {
         "province": "สุรินทร์",
@@ -296,7 +296,7 @@
         "price_per_sqm": 20489.94,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:34"
+        "last_updated": "2026-04-23 15:52:21"
     },
     {
         "province": "สุรินทร์",
@@ -309,7 +309,7 @@
         "price_per_sqm": 129897.67,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:34"
+        "last_updated": "2026-04-23 15:52:21"
     },
     {
         "province": "สุรินทร์",
@@ -322,7 +322,7 @@
         "price_per_sqm": 29442.32,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:34"
+        "last_updated": "2026-04-23 15:52:21"
     },
     {
         "province": "บุรีรัมย์",
@@ -335,7 +335,7 @@
         "price_per_sqm": 156462.4,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:58"
+        "last_updated": "2026-04-23 15:52:47"
     },
     {
         "province": "บุรีรัมย์",
@@ -348,7 +348,7 @@
         "price_per_sqm": 11133.95,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:58"
+        "last_updated": "2026-04-23 15:52:47"
     },
     {
         "province": "บุรีรัมย์",
@@ -361,7 +361,7 @@
         "price_per_sqm": 620089.01,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:29:58"
+        "last_updated": "2026-04-23 15:52:47"
     },
     {
         "province": "พิษณุโลก",
@@ -374,7 +374,7 @@
         "price_per_sqm": 31893.21,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:17"
+        "last_updated": "2026-04-23 15:53:12"
     },
     {
         "province": "พิษณุโลก",
@@ -387,7 +387,7 @@
         "price_per_sqm": 59173.23,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:17"
+        "last_updated": "2026-04-23 15:53:12"
     },
     {
         "province": "พิษณุโลก",
@@ -400,7 +400,7 @@
         "price_per_sqm": 245046.82,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:17"
+        "last_updated": "2026-04-23 15:53:12"
     },
     {
         "province": "พิษณุโลก",
@@ -413,7 +413,7 @@
         "price_per_sqm": 650.82,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:17"
+        "last_updated": "2026-04-23 15:53:12"
     },
     {
         "province": "เชียงราย",
@@ -426,7 +426,7 @@
         "price_per_sqm": 25739.82,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:32"
+        "last_updated": "2026-04-23 15:53:29"
     },
     {
         "province": "เชียงราย",
@@ -439,6 +439,6 @@
         "price_per_sqm": 12027.55,
         "currency": "THB",
         "source": "LivingInsider",
-        "last_updated": "2026-04-23 15:30:32"
+        "last_updated": "2026-04-23 15:53:29"
     }
 ]
