@@ -8,6 +8,7 @@ from scrapers.bank_loans import run_scraper as run_bank_scraper
 from scrapers.reic_trends import scrape_dotproperty_trends
 from scrapers.livinginsider_trends import scrape_livinginsider_trends
 from scrapers.landmarks import scrape_landmarks
+from scrapers.google_maps_sync import scrape_google_maps_sync
 from utils.data_cleaner import clean_bank_loans, clean_property_trends, clean_landmarks
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
@@ -32,6 +33,7 @@ def main():
     scrape_dotproperty_trends(raw_dotproperty_path)
     scrape_livinginsider_trends(raw_livinginsider_path)
     scrape_landmarks(raw_landmarks_path)
+    scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path)  # Enrich OSM with Google Maps
     
     # 2. Clean Data
     print("\n[Phase 2] Cleaning and Processing Data...")

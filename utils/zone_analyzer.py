@@ -93,6 +93,31 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
              sorted(nearby_daily.items(), key=lambda x: -x[1])]
         ) or "ไม่มี"
 
+        # --- คำนวณ Livability Score แบบ Weighted & Capped ---
+        # 1. Iconic Points (Layer 2): ให้ค่าความสำคัญสูง
+        score_iconic = len(nearby_iconic) * 5
+
+        # 2. Daily Life (Layer 3): ถ่วงน้ำหนักตามประเภทและจำกัดจำนวน (Capping)
+        # ความสะดวกสบาย: ร้านสะดวกซื้อ (max 5 แห่ง), ตลาด (max 2 แห่ง)
+        s_convenience = min(nearby_daily.get("ร้านสะดวกซื้อ", 0), 5) * 2
+        s_market = min(nearby_daily.get("ตลาด", 0), 2) * 5
+        
+        # สุขภาพและอาชีพ: คลินิก/โรงพยาบาล (max 3), ร้านขายยา (max 3), โรงเรียน (max 2)
+        s_health = min(nearby_daily.get("คลินิก", 0) + nearby_daily.get("โรงพยาบาล", 0), 3) * 5
+        s_pharmacy = min(nearby_daily.get("ร้านขายยา", 0), 3) * 2
+        s_education = min(nearby_daily.get("โรงเรียน", 0) + nearby_daily.get("โรงเรียนอนุบาล", 0), 2) * 5
+        
+        # บริการอื่นๆ: ธนาคาร/ATM (max 5), ปั๊มน้ำมัน (max 2)
+        s_finance = min(nearby_daily.get("ธนาคาร", 0) + nearby_daily.get("ตู้ATM", 0), 5) * 1
+        s_gas = min(nearby_daily.get("ปั๊มน้ำมัน", 0), 2) * 2
+        
+        # ไลฟ์สไตล์: สวนสาธารณะ, ห้างสรรพสินค้า/ซูเปอร์มาร์เก็ต (max 2)
+        s_lifestyle = (min(nearby_daily.get("สวนสาธารณะ", 0), 2) * 4 + 
+                       min(nearby_daily.get("ซูเปอร์มาร์เก็ต", 0) + nearby_daily.get("ห้างสรรพสินค้า", 0), 2) * 4)
+
+        livability_score = (score_iconic + s_convenience + s_market + s_health + 
+                           s_pharmacy + s_education + s_finance + s_gas + s_lifestyle)
+
         zone_profiles.append({
             "province":         a_province,
             "zone_anchor":      anchor["name"],
@@ -112,10 +137,10 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
             "banks":                nearby_daily.get("ธนาคาร", 0),
             "gas_stations":         nearby_daily.get("ปั๊มน้ำมัน", 0),
             "daily_life_summary":   daily_text,
-            # Total score (simple density metric)
+            # Total stats & final score
             "total_layer2_nearby":  len(nearby_iconic),
             "total_layer3_nearby":  sum(nearby_daily.values()),
-            "livability_score":     len(nearby_iconic) + sum(nearby_daily.values()),
+            "livability_score":     round(livability_score, 2),
         })
 
     # Save CSV

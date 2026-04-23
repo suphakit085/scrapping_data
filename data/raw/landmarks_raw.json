@@ -32958,20 +32958,6 @@
   {
     "province": "ชลบุรี",
     "province_en": "chonburi",
-    "name": "ป้าบุญคาเฟ่ 7 บางแสน",
-    "name_en": "",
-    "category": "สถานที่ท่องเที่ยว",
-    "layer": 2,
-    "layer_name": "Iconic",
-    "lat": 13.287649,
-    "lon": 100.9818978,
-    "osm_type": "way",
-    "osm_id": 1497830316,
-    "source": "OpenStreetMap / Overpass API"
-  },
-  {
-    "province": "ชลบุรี",
-    "province_en": "chonburi",
     "name": "สวนเฉลิมพระเกียรติราชินี 60 พรรษา",
     "name_en": "Chaloem Phra Kiat Rachini Park",
     "category": "สวนสาธารณะ",

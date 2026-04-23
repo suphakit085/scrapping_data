@@ -1,4 +1,4 @@
-province,province_en,name,name_en,category,layer,layer_name,lat,lon,source
+﻿province,province_en,name,name_en,category,layer,layer_name,lat,lon,source
 ขอนแก่น,Khon Kaen,KKU Learning Center,KKU Learning Center,มหาวิทยาลัย,1,Primary,16.476738,102.8236125,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Mekong Institute,Mekong Institute,มหาวิทยาลัย,1,Primary,16.4737243,102.8285149,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,National Biological Control Research Center,National Biological Control Research Center,มหาวิทยาลัย,1,Primary,16.4735088,102.811292,OpenStreetMap / Overpass API
@@ -835,7 +835,6 @@ province,province_en,name,name_en,category,layer,layer_name,lat,lon,source
 ชลบุรี,Chonburi,วัดโกมุทรัตนาราม,Wat Komut Ratthanaram,วัด/ศาสนสถาน,2,Iconic,13.3329558,100.9207377,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,วัดโพธิ์,,วัด/ศาสนสถาน,2,Iconic,13.3738511,100.9884172,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศาลเจ้าแม่สามมุก,San Cao Mae Sam Muk,วัด/ศาสนสถาน,2,Iconic,13.3165345,100.9036461,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,ป้าบุญคาเฟ่ 7 บางแสน,,สถานที่ท่องเที่ยว,2,Iconic,13.287649,100.9818978,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Guan Yin Rim Sea Lam Thaen,,สถานที่ระดับ 2,2,Iconic,13.3028255,100.8978874,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,San Chao Pun Thao Kong Ma Shrine,,สถานที่ระดับ 2,2,Iconic,13.3024878,100.8983625,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศาลเจ้าพ่อเสือ,Father Tiger Shrine,สถานที่ระดับ 2,2,Iconic,13.2977527,100.9122374,OpenStreetMap / Overpass API
