@@ -36,28 +36,48 @@ def get_coords(element: dict) -> tuple:
 # ============================================================
 # Layer Definitions (Overpass Tag Queries)
 # ============================================================
+# Layer 1: สถานที่สำคัญหลัก — มีผลต่อเศรษฐกิจ สุขภาพ ขนส่ง และการศึกษาระดับสูง
+#           เหล่านี้คือ "Anchor" ที่ใช้สร้าง Zone Center
+# Layer 2: จุดสังเกต / อัตลักษณ์พื้นที่ — เป็นเอกลักษณ์ มีชื่อเสียง รู้จักในท้องถิ่น
+# Layer 3: สถานที่สำคัญระดับรอง — ปัจจัย 4 รายวัน (ใช้คำนวณ Livability Score)
+# ============================================================
 
 def build_layer1_query(area_id: int) -> str:
-    """Layer 1: Primary landmarks (economic, health, transport, large education)"""
+    """
+    Layer 1: สถานที่สำคัญหลัก
+    - เศรษฐกิจ: ห้างสรรพสินค้า, ตลาดกลางขนาดใหญ่, นิคมอุตสาหกรรม
+    - สุขภาพ: โรงพยาบาลขนาดใหญ่ (รัฐ/เอกชน ระดับศูนย์)
+    - ขนส่ง: สนามบิน, สถานีรถไฟ, สถานีขนส่งผู้โดยสาร
+    - การศึกษา: มหาวิทยาลัย, วิทยาลัยเทคนิค
+    - ราชการ: ศาลากลาง, ที่ว่าการอำเภอ
+    """
     return f"""
     [out:json][timeout:60];
     area({area_id})->.searchArea;
     (
-      // Major Shopping Malls & Department Stores
+      // Economic: Shopping Malls & Department Stores
       nwr["shop"="mall"](area.searchArea);
       nwr["shop"="department_store"](area.searchArea);
-      // Major Hospitals
+      // Economic: Large Hypermarkets (Lotus, BigC, Makro, HomePro)
+      nwr["shop"="supermarket"]["brand"~"Lotus|Big C|Makro|HomePro|Tesco",i](area.searchArea);
+      nwr["shop"="wholesale"](area.searchArea);
+      nwr["shop"="doityourself"](area.searchArea);
+      // Economic: Large Markets / OTOP
+      nwr["amenity"="marketplace"]["market_type"="large"](area.searchArea);
+      // Economic: Industrial Estate / SEZ
+      nwr["landuse"="industrial"]["industrial"="port"](area.searchArea);
+      // Health: Hospitals
       nwr["amenity"="hospital"](area.searchArea);
-      // Airports
+      // Transport: Airports, Train, Bus Terminals
       nwr["aeroway"="aerodrome"](area.searchArea);
       nwr["aeroway"="terminal"](area.searchArea);
-      // Train / Bus Stations
       nwr["railway"="station"](area.searchArea);
       nwr["amenity"="bus_station"](area.searchArea);
-      // Universities & Large Colleges
+      // Education: Universities & Technical Colleges
       nwr["amenity"="university"](area.searchArea);
       nwr["amenity"="college"](area.searchArea);
-      // Government Buildings
+      // Government: Provincial Hall, District Office
+      nwr["amenity"="townhall"](area.searchArea);
       nwr["building"="government"](area.searchArea);
       nwr["office"="government"](area.searchArea);
     );
@@ -65,52 +85,74 @@ def build_layer1_query(area_id: int) -> str:
     """
 
 def build_layer2_query(area_id: int) -> str:
-    """Layer 2: Iconic local landmarks (unique to each area)"""
+    """
+    Layer 2: จุดสังเกต / อัตลักษณ์พื้นที่
+    - เอกลักษณ์ไทย: ประตูเมือง, ศาลหลักเมือง, อนุสาวรีย์ดัง, วัดสำคัญ
+    - สันทนาการ: บึงขนาดใหญ่, สวนสาธารณะหลักของเมือง, สนามกีฬา
+    - ท่องเที่ยว: สถานที่ท่องเที่ยวที่รู้จักระดับจังหวัด
+    """
     return f"""
     [out:json][timeout:60];
     area({area_id})->.searchArea;
     (
-      // Tourist Attractions & Monuments
-      nwr["tourism"="attraction"](area.searchArea);
+      // Identity: City Gates, City Pillars, Shrines
+      nwr["historic"="city_gate"](area.searchArea);
+      nwr["historic"="wayside_shrine"](area.searchArea);
+      nwr["amenity"="place_of_worship"]["religion"="buddhist"]["wikipedia"](area.searchArea);
+      // Identity: Monuments & Memorials
       nwr["historic"="monument"](area.searchArea);
       nwr["historic"="memorial"](area.searchArea);
       nwr["historic"="castle"](area.searchArea);
       nwr["historic"="ruins"](area.searchArea);
-      // City Gates, Pillars (Thai city icons)
-      nwr["historic"="city_gate"](area.searchArea);
-      nwr["historic"="wayside_shrine"](area.searchArea);
-      // Parks & Large Public Spaces
+      // Recreation: Major parks, lakes, stadiums
       nwr["leisure"="park"](area.searchArea);
+      nwr["natural"="water"]["water"="lake"](area.searchArea);
       nwr["leisure"="stadium"](area.searchArea);
-      // Temples (important cultural landmarks)
-      nwr["amenity"="place_of_worship"]["religion"="buddhist"](area.searchArea);
+      nwr["leisure"="sports_centre"](area.searchArea);
+      // Tourism: Known attractions
+      nwr["tourism"="attraction"](area.searchArea);
+      nwr["tourism"="museum"](area.searchArea);
+      nwr["tourism"="zoo"](area.searchArea);
+      nwr["tourism"="theme_park"](area.searchArea);
     );
     out center tags;
     """
 
 def build_layer3_query(area_id: int) -> str:
-    """Layer 3: Secondary / daily life landmarks"""
+    """
+    Layer 3: สถานที่สำคัญระดับรอง (ปัจจัย 4 รายวัน)
+    - ร้านสะดวกซื้อ: 7-11, CJ, FamilyMart
+    - ซูเปอร์มาร์เก็ตทั่วไป (ขนาดเล็ก)
+    - ร้านขายยา, คลินิก, ศูนย์แพทย์
+    - ตลาดสด, ตลาดนัด
+    - โรงเรียนระดับประถม/มัธยม, อนุบาล
+    - ธนาคาร, ตู้ ATM
+    - ปั๊มน้ำมัน
+    """
     return f"""
     [out:json][timeout:60];
     area({area_id})->.searchArea;
     (
-      // Convenience Stores
+      // Convenience Stores (7-11, CJ, FamilyMart)
       nwr["shop"="convenience"](area.searchArea);
+      // Supermarkets (general, smaller scale)
       nwr["shop"="supermarket"](area.searchArea);
-      // Pharmacies & Clinics
+      // Health: Pharmacies, Clinics, Medical Centers
       nwr["amenity"="pharmacy"](area.searchArea);
       nwr["amenity"="clinic"](area.searchArea);
       nwr["amenity"="doctors"](area.searchArea);
-      // Markets
+      nwr["healthcare"="centre"](area.searchArea);
+      // Markets: Fresh markets, night markets
       nwr["amenity"="marketplace"](area.searchArea);
       nwr["shop"="market"](area.searchArea);
-      // Schools (secondary level)
+      // Schools: Primary, Secondary, Kindergarten
       nwr["amenity"="school"](area.searchArea);
       nwr["amenity"="kindergarten"](area.searchArea);
-      // Gas Stations & Banks (daily utilities)
-      nwr["amenity"="fuel"](area.searchArea);
+      // Finance: Banks, ATMs
       nwr["amenity"="bank"](area.searchArea);
       nwr["amenity"="atm"](area.searchArea);
+      // Transport: Gas stations
+      nwr["amenity"="fuel"](area.searchArea);
     );
     out center tags;
     """
@@ -120,50 +162,117 @@ def build_layer3_query(area_id: int) -> str:
 # Category Classifier
 # ============================================================
 
-def classify_poi(tags: dict, layer: int) -> str:
-    """Map OSM tags to human-readable category."""
-    tag_to_category = {
-        # Layer 1
-        "shop:mall": "ห้างสรรพสินค้า",
-        "shop:department_store": "ห้างสรรพสินค้า",
-        "amenity:hospital": "โรงพยาบาล",
-        "aeroway:aerodrome": "สนามบิน",
-        "aeroway:terminal": "สนามบิน",
-        "railway:station": "สถานีรถไฟ",
-        "amenity:bus_station": "สถานีขนส่ง",
-        "amenity:university": "มหาวิทยาลัย",
-        "amenity:college": "วิทยาลัย",
-        "building:government": "หน่วยงานรัฐ",
-        "office:government": "หน่วยงานรัฐ",
-        # Layer 2
-        "tourism:attraction": "สถานที่ท่องเที่ยว",
-        "historic:monument": "อนุสาวรีย์/อนุสรณ์",
-        "historic:memorial": "อนุสาวรีย์/อนุสรณ์",
-        "historic:city_gate": "ประตูเมือง",
-        "historic:castle": "โบราณสถาน",
-        "historic:ruins": "โบราณสถาน",
-        "leisure:park": "สวนสาธารณะ",
-        "leisure:stadium": "สนามกีฬา",
-        "amenity:place_of_worship": "วัด/ศาสนสถาน",
-        # Layer 3
-        "shop:convenience": "ร้านสะดวกซื้อ",
-        "shop:supermarket": "ซูเปอร์มาร์เก็ต",
-        "amenity:pharmacy": "ร้านขายยา",
-        "amenity:clinic": "คลินิก",
-        "amenity:doctors": "คลินิก",
-        "amenity:marketplace": "ตลาด",
-        "shop:market": "ตลาด",
-        "amenity:school": "โรงเรียน",
-        "amenity:kindergarten": "โรงเรียนอนุบาล",
-        "amenity:fuel": "ปั๊มน้ำมัน",
-        "amenity:bank": "ธนาคาร",
-        "amenity:atm": "ตู้ATM",
-    }
+# Sub-classifier ช่วยแยกประเภทที่ละเอียดขึ้น เช่น แยก Lotus/BigC ออกจาก supermarket ทั่วไป
+LARGE_HYPERMARKET_BRANDS = {
+    "lotus", "lotus's", "big c", "bigc", "makro", "homepro",
+    "tesco", "tesco lotus", "global house", "thai watsadu"
+}
 
-    for tag_key, category in tag_to_category.items():
-        k, v = tag_key.split(":", 1)
-        if tags.get(k) == v:
-            return category
+ICONIC_TEMPLE_NAMES = {
+    "พระธาตุ", "หลวงพ่อ", "วัดหลวง", "วัดพระ", "พระวิหาร"
+}
+
+def classify_poi(tags: dict, layer: int) -> str:
+    """Map OSM tags to human-readable Thai category."""
+
+    name = (tags.get("name", "") or "").lower()
+    brand = (tags.get("brand", "") or "").lower()
+    check_brand = name or brand
+
+    # --- Layer 1 ---
+    if layer == 1:
+        shop = tags.get("shop", "")
+        if shop in ("mall", "department_store"):
+            return "ห้างสรรพสินค้า"
+        if shop == "supermarket":
+            # ถ้าเป็น brand ใหญ่จัดเป็น Hypermarket
+            if any(b in check_brand for b in LARGE_HYPERMARKET_BRANDS):
+                return "ไฮเปอร์มาร์เก็ต"
+            return "ซูเปอร์มาร์เก็ต"
+        if shop in ("wholesale", "doityourself"):
+            return "ไฮเปอร์มาร์เก็ต"
+        if tags.get("amenity") == "hospital":
+            return "โรงพยาบาล"
+        if tags.get("aeroway") in ("aerodrome", "terminal"):
+            return "สนามบิน"
+        if tags.get("railway") == "station":
+            return "สถานีรถไฟ"
+        if tags.get("amenity") == "bus_station":
+            return "สถานีขนส่ง"
+        if tags.get("amenity") == "university":
+            return "มหาวิทยาลัย"
+        if tags.get("amenity") == "college":
+            return "วิทยาลัย"
+        if tags.get("amenity") == "townhall":
+            return "ศาลากลาง/ที่ว่าการ"
+        if tags.get("building") == "government" or tags.get("office") == "government":
+            return "หน่วยงานรัฐ"
+        if tags.get("landuse") == "industrial":
+            return "นิคมอุตสาหกรรม"
+
+    # --- Layer 2 ---
+    if layer == 2:
+        historic = tags.get("historic", "")
+        if historic == "city_gate":
+            return "ประตูเมือง"
+        if historic in ("monument", "memorial"):
+            return "อนุสาวรีย์/อนุสรณ์"
+        if historic in ("castle", "ruins"):
+            return "โบราณสถาน"
+        if historic == "wayside_shrine":
+            return "ศาลเจ้า/ศาลหลักเมือง"
+        if tags.get("amenity") == "place_of_worship":
+            # วัดที่มี Wikipedia = วัดสำคัญ
+            if tags.get("wikipedia") or any(k in name for k in ["พระธาตุ", "หลวงพ่อ", "วัดหลวง", "วัดพระ"]):
+                return "วัดสำคัญ"
+            return "วัด/ศาสนสถาน"
+        leisure = tags.get("leisure", "")
+        if leisure == "park":
+            return "สวนสาธารณะ"
+        if leisure == "stadium":
+            return "สนามกีฬา"
+        if leisure == "sports_centre":
+            return "ศูนย์กีฬา"
+        if tags.get("natural") == "water":
+            return "บึง/ทะเลสาบ"
+        tourism = tags.get("tourism", "")
+        if tourism == "attraction":
+            return "สถานที่ท่องเที่ยว"
+        if tourism == "museum":
+            return "พิพิธภัณฑ์"
+        if tourism == "zoo":
+            return "สวนสัตว์"
+        if tourism == "theme_park":
+            return "สวนสนุก"
+
+    # --- Layer 3 ---
+    if layer == 3:
+        shop = tags.get("shop", "")
+        if shop == "convenience":
+            return "ร้านสะดวกซื้อ"
+        if shop == "supermarket":
+            if any(b in check_brand for b in LARGE_HYPERMARKET_BRANDS):
+                return "ไฮเปอร์มาร์เก็ต"
+            return "ซูเปอร์มาร์เก็ต"
+        amenity = tags.get("amenity", "")
+        if amenity == "pharmacy":
+            return "ร้านขายยา"
+        if amenity in ("clinic", "doctors"):
+            return "คลินิก"
+        if tags.get("healthcare") == "centre":
+            return "ศูนย์การแพทย์"
+        if amenity == "marketplace" or shop == "market":
+            return "ตลาด"
+        if amenity == "school":
+            return "โรงเรียน"
+        if amenity == "kindergarten":
+            return "โรงเรียนอนุบาล"
+        if amenity == "bank":
+            return "ธนาคาร"
+        if amenity == "atm":
+            return "ตู้ATM"
+        if amenity == "fuel":
+            return "ปั๊มน้ำมัน"
 
     return f"สถานที่ระดับ {layer}"
 
@@ -187,9 +296,9 @@ PROVINCE_DATA = [
 ]
 
 LAYER_BUILDERS = [
-    (1, "Primary",   build_layer1_query),
-    (2, "Iconic",    build_layer2_query),
-    (3, "Secondary", build_layer3_query),
+    (1, "สถานที่สำคัญหลัก",    build_layer1_query),
+    (2, "จุดอัตลักษณ์พื้นที่",  build_layer2_query),
+    (3, "สิ่งอำนวยความสะดวก",  build_layer3_query),
 ]
 
 def scrape_landmarks(output_path: str):
@@ -210,9 +319,9 @@ def scrape_landmarks(output_path: str):
         for layer_num, layer_name, query_builder in LAYER_BUILDERS:
             print(f"  Layer {layer_num} ({layer_name})...", end=" ")
 
-            query   = query_builder(area_id)
+            query    = query_builder(area_id)
             elements = run_overpass_query(query)
-            count   = 0
+            count    = 0
 
             for el in elements:
                 tags = el.get("tags", {})
@@ -223,7 +332,7 @@ def scrape_landmarks(output_path: str):
                 name    = tags.get("name", tags.get("name:th", tags.get("name:en", "")))
                 name_en = tags.get("name:en", "")
 
-                # Skip unnamed POIs only for Layer 3
+                # Skip unnamed POIs for Layer 1 & 2 (ต้องมีชื่อ)
                 if not name and layer_num < 3:
                     continue
 
@@ -246,7 +355,7 @@ def scrape_landmarks(output_path: str):
                 count += 1
 
             print(f"{count} POIs found.")
-            time.sleep(1.5)  # Polite delay between Overpass requests
+            time.sleep(1.5)  # Polite delay
 
     # Save output
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

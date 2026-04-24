@@ -1,10 +1,13 @@
 """
-Google Maps Sync Scraper
-เสริมข้อมูล OSM ด้วย POI ล่าสุดจาก Google Maps
-โฟกัสเฉพาะหมวดที่ OSM มักตามไม่ทัน:
-  - ห้างสรรพสินค้า/Community Mall เปิดใหม่
-  - 7-Eleven / ร้านสะดวกซื้อ
-  - โรงพยาบาล/คลินิกเอกชน
+Google Maps Discovery + Sync Scraper
+หน้าที่ 2 อย่าง:
+  1. SYNC  — เสริมข้อมูล OSM ที่มีอยู่ด้วยพิกัดจาก Google Maps (ข้อมูลอัปเดตกว่า)
+  2. DISCOVERY — ค้นหา POI ใหม่ที่ OSM ยังไม่มี เช่น ห้างเปิดใหม่, โครงการก่อสร้าง
+
+ครอบคลุมทั้ง 3 Layer:
+  Layer 1: สถานที่สำคัญหลัก (ห้าง, รพ., มหาวิทยาลัย, ขนส่ง, ราชการ)
+  Layer 2: จุดอัตลักษณ์พื้นที่ (ประตูเมือง, บึง, วัดดัง, สนามกีฬา)
+  Layer 3: สิ่งอำนวยความสะดวก (7-11, ตลาด, คลินิก, ร้านยา)
 """
 
 from playwright.sync_api import sync_playwright
@@ -14,14 +17,43 @@ import re
 import time
 
 
-# --- POI ที่ต้องการค้นหาจาก Google Maps (ภาษาไทยเพื่อผลลัพธ์แม่นยำ) ---
+# =============================================================
+# SEARCH_TARGETS — POI ที่จะให้บอทค้นหาจาก Google Maps
+# แบ่งตาม Layer เพื่อให้ครอบคลุม 3 ระดับตามที่หัวหน้ากำหนด
+# =============================================================
 SEARCH_TARGETS = [
-    {"query": "ห้างสรรพสินค้า",     "category": "ห้างสรรพสินค้า",   "layer": 1},
-    {"query": "Community Mall",       "category": "ห้างสรรพสินค้า",   "layer": 1},
-    {"query": "โรงพยาบาลเอกชน",      "category": "โรงพยาบาล",        "layer": 1},
-    {"query": "7-Eleven",            "category": "ร้านสะดวกซื้อ",    "layer": 3},
-    {"query": "ตลาดสด",             "category": "ตลาด",             "layer": 3},
-    {"query": "คลินิก",             "category": "คลินิก",           "layer": 3},
+    # ---- Layer 1: สถานที่สำคัญหลัก (Anchor) ----
+    # Discovery: ห้างใหม่ที่ OSM อาจยังไม่มี
+    {"query": "เซ็นทรัล",            "category": "ห้างสรรพสินค้า",     "layer": 1},
+    {"query": "Central",             "category": "ห้างสรรพสินค้า",     "layer": 1},
+    {"query": "ห้างสรรพสินค้า",     "category": "ห้างสรรพสินค้า",     "layer": 1},
+    {"query": "Community Mall",      "category": "ห้างสรรพสินค้า",     "layer": 1},
+    {"query": "โลตัส",               "category": "ไฮเปอร์มาร์เก็ต",   "layer": 1},
+    {"query": "Big C",               "category": "ไฮเปอร์มาร์เก็ต",   "layer": 1},
+    {"query": "Makro",               "category": "ไฮเปอร์มาร์เก็ต",   "layer": 1},
+    {"query": "HomePro",             "category": "ไฮเปอร์มาร์เก็ต",   "layer": 1},
+    {"query": "โรงพยาบาล",           "category": "โรงพยาบาล",          "layer": 1},
+    {"query": "มหาวิทยาลัย",         "category": "มหาวิทยาลัย",        "layer": 1},
+    {"query": "สถานีขนส่ง",          "category": "สถานีขนส่ง",         "layer": 1},
+    {"query": "สนามบิน",             "category": "สนามบิน",            "layer": 1},
+
+    # ---- Layer 2: จุดอัตลักษณ์พื้นที่ ----
+    {"query": "ประตูเมือง",          "category": "ประตูเมือง",          "layer": 2},
+    {"query": "ศาลหลักเมือง",        "category": "ศาลเจ้า/ศาลหลักเมือง", "layer": 2},
+    {"query": "บึง",                 "category": "บึง/ทะเลสาบ",        "layer": 2},
+    {"query": "อนุสาวรีย์",          "category": "อนุสาวรีย์/อนุสรณ์",  "layer": 2},
+    {"query": "สนามกีฬา",           "category": "สนามกีฬา",           "layer": 2},
+    {"query": "สวนสาธารณะ",         "category": "สวนสาธารณะ",         "layer": 2},
+    {"query": "พิพิธภัณฑ์",          "category": "พิพิธภัณฑ์",          "layer": 2},
+
+    # ---- Layer 3: สิ่งอำนวยความสะดวก ----
+    {"query": "7-Eleven",            "category": "ร้านสะดวกซื้อ",      "layer": 3},
+    {"query": "CJ More",             "category": "ร้านสะดวกซื้อ",      "layer": 3},
+    {"query": "ตลาดสด",             "category": "ตลาด",               "layer": 3},
+    {"query": "ตลาดนัด",            "category": "ตลาด",               "layer": 3},
+    {"query": "คลินิก",             "category": "คลินิก",             "layer": 3},
+    {"query": "ร้านขายยา",          "category": "ร้านขายยา",          "layer": 3},
+    {"query": "โรงเรียน",            "category": "โรงเรียน",           "layer": 3},
 ]
 
 PROVINCES = [
@@ -165,7 +197,9 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                 print(f"  Searching '{query}'...", end=" ", flush=True)
                 pois = scrape_google_maps_pois(thai_name, query, page)
 
-                # Dedup: ถ้ามีอยู่ใน OSM แล้ว (ในรัศมี 100 เมตร) ให้ข้ามไป
+                # Dedup: Layer 1 ใช้ radius 300m (anchor ใหญ่ อาจมีพิกัดต่างกันนิดหน่อย)
+                #        Layer 2/3 ใช้ radius 100m
+                dedup_radius_km = 0.3 if layer == 1 else 0.1
                 added = 0
                 for poi in pois:
                     is_duplicate = False
@@ -183,11 +217,17 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                                  math.cos(math.radians(poi["lat"])) *
                                  math.sin(dlon/2)**2)
                             dist_km = 6371 * 2 * math.asin(math.sqrt(a))
-                            if dist_km < 0.1:  # 100 เมตร
+                            if dist_km < dedup_radius_km:
                                 is_duplicate = True
                                 break
 
                     if not is_duplicate:
+                        # Map layer number to Thai name (consistent with landmarks.py)
+                        layer_name_map = {
+                            1: "สถานที่สำคัญหลัก",
+                            2: "จุดอัตลักษณ์พื้นที่",
+                            3: "สิ่งอำนวยความสะดวก",
+                        }
                         new_pois.append({
                             "province":    thai_name,
                             "province_en": slug,
@@ -195,7 +235,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                             "name_en":     "",
                             "category":    category,
                             "layer":       layer,
-                            "layer_name":  "Primary" if layer == 1 else "Secondary",
+                            "layer_name":  layer_name_map.get(layer, f"Layer {layer}"),
                             "lat":         poi["lat"],
                             "lon":         poi["lon"],
                             "osm_type":    "google_maps",

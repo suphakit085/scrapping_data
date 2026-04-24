@@ -21,18 +21,39 @@ def haversine_km(lat1, lon1, lat2, lon2):
     return R * 2 * math.asin(math.sqrt(a))
 
 
-def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clean_path=None):
+def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0,
+                  landmarks_clean_path=None, property_trends_path=None):
     """
     สร้าง Zone Profile โดยใช้ Layer 1 POIs เป็นจุดศูนย์กลาง
     และวิเคราะห์ POI รอบๆ ในรัศมีที่กำหนด
 
-    landmarks_raw_path   — ไฟล์ดิบสำหรับ Search Pool (POI รอบๆ)
-    landmarks_clean_path — ไฟล์ที่ผ่านการ Dedup แล้ว สำหรับ Layer 1 Anchors
-                           ถ้าไม่ระบุจะใช้ไฟล์ดิบแทน (เหมือนเดิม)
+    landmarks_raw_path    — ไฟล์ดิบสำหรับ Search Pool (POI รอบๆ)
+    landmarks_clean_path  — ไฟล์ที่ผ่านการ Dedup แล้ว สำหรับ Layer 1 Anchors
+    property_trends_path  — CSV ราคาอสังหาฯ (Baania + LivingInsider merged)
     """
     print(f"\n{'='*55}")
     print(f"Zone Analyzer — Radius: {radius_km} km")
     print(f"{'='*55}")
+
+    # --- โหลด Property Trends (ราคาอสังหาฯ) ---
+    # trends_index[(province_en, property_type)] = median_price
+    trends_index = {}
+    if property_trends_path and os.path.exists(property_trends_path):
+        trends_df = pd.read_csv(property_trends_path, encoding="utf-8-sig")
+        for _, r in trends_df.iterrows():
+            key = (str(r["province"]).strip(), str(r["property_type"]).strip())
+            trends_index[key] = float(r["median_price"])
+        print(f"  [OK] Property Trends loaded: {len(trends_index)} records")
+    else:
+        print(f"  [WARN] No property trends file -- price fields will be empty")
+
+    # Province Thai → English mapping (for trends lookup)
+    PROVINCE_EN = {
+        "ขอนแก่น": "Khon Kaen", "อุบลราชธานี": "Ubon Ratchathani",
+        "ประจวบคีรีขันธ์": "Prachuap Khiri Khan", "อุดรธานี": "Udon Thani",
+        "ระยอง": "Rayong", "ชลบุรี": "Chonburi", "สุรินทร์": "Surin",
+        "บุรีรัมย์": "Buriram", "พิษณุโลก": "Phitsanulok", "เชียงราย": "Chiang Rai",
+    }
 
     if not os.path.exists(landmarks_raw_path):
         print(f"Error: {landmarks_raw_path} not found.")
@@ -47,7 +68,6 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clea
 
     # --- โหลด Anchors จากไฟล์ Clean (ถ้ามี) เพื่อป้องกัน Anchor ซ้ำ ---
     if landmarks_clean_path and os.path.exists(landmarks_clean_path):
-        import pandas as pd
         clean_df = pd.read_csv(landmarks_clean_path, encoding='utf-8-sig')
         layer1 = clean_df[clean_df['layer'] == 1].to_dict('records')
         print(f"  [OK] Using deduplicated anchors from: {landmarks_clean_path}")
@@ -108,30 +128,62 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clea
              sorted(nearby_daily.items(), key=lambda x: -x[1])]
         ) or "ไม่มี"
 
-        # --- คำนวณ Livability Score แบบ Weighted & Capped ---
-        # 1. Iconic Points (Layer 2): ให้ค่าความสำคัญสูง
+        # =========================================================
+        # Livability Score — Weighted & Capped
+        # =========================================================
+        # Layer 2 (จุดอัตลักษณ์): ให้คะแนนสูง เพราะสะท้อน "ชื่อเสียง" ของย่าน
         score_iconic = len(nearby_iconic) * 5
 
-        # 2. Daily Life (Layer 3): ถ่วงน้ำหนักตามประเภทและจำกัดจำนวน (Capping)
-        # ความสะดวกสบาย: ร้านสะดวกซื้อ (max 5 แห่ง), ตลาด (max 2 แห่ง)
-        s_convenience = min(nearby_daily.get("ร้านสะดวกซื้อ", 0), 5) * 2
-        s_market = min(nearby_daily.get("ตลาด", 0), 2) * 5
-        
-        # สุขภาพและอาชีพ: คลินิก/โรงพยาบาล (max 3), ร้านขายยา (max 3), โรงเรียน (max 2)
-        s_health = min(nearby_daily.get("คลินิก", 0) + nearby_daily.get("โรงพยาบาล", 0), 3) * 5
-        s_pharmacy = min(nearby_daily.get("ร้านขายยา", 0), 3) * 2
-        s_education = min(nearby_daily.get("โรงเรียน", 0) + nearby_daily.get("โรงเรียนอนุบาล", 0), 2) * 5
-        
-        # บริการอื่นๆ: ธนาคาร/ATM (max 5), ปั๊มน้ำมัน (max 2)
-        s_finance = min(nearby_daily.get("ธนาคาร", 0) + nearby_daily.get("ตู้ATM", 0), 5) * 1
-        s_gas = min(nearby_daily.get("ปั๊มน้ำมัน", 0), 2) * 2
-        
-        # ไลฟ์สไตล์: สวนสาธารณะ, ห้างสรรพสินค้า/ซูเปอร์มาร์เก็ต (max 2)
-        s_lifestyle = (min(nearby_daily.get("สวนสาธารณะ", 0), 2) * 4 + 
-                       min(nearby_daily.get("ซูเปอร์มาร์เก็ต", 0) + nearby_daily.get("ห้างสรรพสินค้า", 0), 2) * 4)
+        # --- Layer 3 (สิ่งอำนวยความสะดวก) แยกตามหมวดหมู่ใหม่ ---
 
-        livability_score = (score_iconic + s_convenience + s_market + s_health + 
-                           s_pharmacy + s_education + s_finance + s_gas + s_lifestyle)
+        # 1. ซื้อของ / ตลาด
+        s_convenience = min(nearby_daily.get("ร้านสะดวกซื้อ", 0), 5) * 2          # 7-11, CJ max 5 แห่ง
+        s_hypermarket = min(nearby_daily.get("ไฮเปอร์มาร์เก็ต", 0), 2) * 8       # Lotus/BigC — bonus สูง
+        s_supermarket = min(nearby_daily.get("ซูเปอร์มาร์เก็ต", 0), 3) * 3       # ร้านทั่วไป
+        s_market      = min(nearby_daily.get("ตลาด", 0), 3) * 4                   # ตลาดสด
+
+        # 2. สุขภาพ
+        s_hospital    = min(nearby_daily.get("โรงพยาบาล", 0), 2) * 8             # รพ. ใกล้ = คะแนนสูงมาก
+        s_clinic      = min(nearby_daily.get("คลินิก", 0) +
+                           nearby_daily.get("ศูนย์การแพทย์", 0), 4) * 3
+        s_pharmacy    = min(nearby_daily.get("ร้านขายยา", 0), 4) * 2
+
+        # 3. การศึกษา
+        s_education   = min(nearby_daily.get("โรงเรียน", 0) +
+                           nearby_daily.get("โรงเรียนอนุบาล", 0), 3) * 4
+
+        # 4. บริการทางการเงิน + พลังงาน
+        s_finance     = min(nearby_daily.get("ธนาคาร", 0) +
+                           nearby_daily.get("ตู้ATM", 0), 6) * 1
+        s_gas         = min(nearby_daily.get("ปั๊มน้ำมัน", 0), 3) * 2
+
+        # 5. สันทนาการ (Layer 3 ที่หลุดมาจาก Layer 2)
+        s_lifestyle   = (min(nearby_daily.get("สวนสาธารณะ", 0), 2) * 4 +
+                        min(nearby_daily.get("บึง/ทะเลสาบ", 0), 1) * 5)
+
+        livability_score = (
+            score_iconic +
+            s_convenience + s_hypermarket + s_supermarket + s_market +
+            s_hospital + s_clinic + s_pharmacy +
+            s_education + s_finance + s_gas + s_lifestyle
+        )
+
+        # --- ราคาอสังหาฯ จาก Trends ---
+        prov_en = PROVINCE_EN.get(a_province, a_province)
+        median_house   = trends_index.get((prov_en, "House"), 0)
+        median_condo   = trends_index.get((prov_en, "Condo"), 0)
+        median_townhse = trends_index.get((prov_en, "Townhouse"), 0)
+
+        # Price Tier: ใช้ House เป็น baseline (ถ้าไม่มีให้ใช้ Condo)
+        ref_price = median_house or median_condo or 0
+        if ref_price >= 5_000_000:
+            price_tier = "Premium"
+        elif ref_price >= 2_500_000:
+            price_tier = "Mid-Range"
+        elif ref_price > 0:
+            price_tier = "Budget"
+        else:
+            price_tier = "N/A"
 
         zone_profiles.append({
             "province":         a_province,
@@ -143,11 +195,13 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clea
             # Layer 2 Summary
             "nearby_iconic_count":  len(nearby_iconic),
             "nearby_iconic_list":   iconic_text,
-            # Layer 3 Summary
+            # Layer 3 Summary (รายหมวดหมู่)
+            "hypermarkets":         nearby_daily.get("ไฮเปอร์มาร์เก็ต", 0),
             "convenience_stores":   nearby_daily.get("ร้านสะดวกซื้อ", 0),
             "markets":              nearby_daily.get("ตลาด", 0),
-            "pharmacies":           nearby_daily.get("ร้านขายยา", 0),
+            "hospitals":            nearby_daily.get("โรงพยาบาล", 0),
             "clinics":              nearby_daily.get("คลินิก", 0),
+            "pharmacies":           nearby_daily.get("ร้านขายยา", 0),
             "schools":              nearby_daily.get("โรงเรียน", 0),
             "banks":                nearby_daily.get("ธนาคาร", 0),
             "gas_stations":         nearby_daily.get("ปั๊มน้ำมัน", 0),
@@ -156,6 +210,11 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clea
             "total_layer2_nearby":  len(nearby_iconic),
             "total_layer3_nearby":  sum(nearby_daily.values()),
             "livability_score":     round(livability_score, 2),
+            # Property Trends (Baania + LivingInsider merged)
+            "median_house_price":   int(median_house)   if median_house   else "",
+            "median_condo_price":   int(median_condo)   if median_condo   else "",
+            "median_townhse_price": int(median_townhse) if median_townhse else "",
+            "price_tier":           price_tier,
         })
 
     # Save CSV
