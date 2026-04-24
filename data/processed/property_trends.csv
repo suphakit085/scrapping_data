@@ -1,0 +1,41 @@
+﻿province,property_type,median_price,total_samples,source_count,sources
+Buriram,Condo,3637169.0,124,2,"LivingInsider, Baania"
+Buriram,House,3616317.0,210,2,"LivingInsider, Baania"
+Buriram,Land,10519200.0,42,1,LivingInsider
+Buriram,Townhouse,3730744.0,119,1,Baania
+Chiang Rai,Condo,1978026.0,169,1,Baania
+Chiang Rai,House,3523884.0,241,2,"LivingInsider, Baania"
+Chiang Rai,Land,1974000.0,26,1,LivingInsider
+Chiang Rai,Townhouse,3297742.0,136,1,Baania
+Chonburi,Condo,2226051.0,250,2,"LivingInsider, Baania"
+Chonburi,House,2704377.0,249,2,"LivingInsider, Baania"
+Chonburi,Land,8900000.0,14,1,LivingInsider
+Chonburi,Townhouse,2457155.0,232,2,"LivingInsider, Baania"
+Khon Kaen,Condo,2259134.0,230,2,"LivingInsider, Baania"
+Khon Kaen,House,3800149.0,265,2,"LivingInsider, Baania"
+Khon Kaen,Land,8200000.0,8,1,LivingInsider
+Khon Kaen,Townhouse,1037831.0,241,2,"LivingInsider, Baania"
+Phitsanulok,Condo,3686862.0,145,2,"LivingInsider, Baania"
+Phitsanulok,House,3738565.0,223,2,"LivingInsider, Baania"
+Phitsanulok,Land,12500000.0,30,1,LivingInsider
+Phitsanulok,Townhouse,3876683.0,134,2,"LivingInsider, Baania"
+Prachuap Khiri Khan,Condo,3358330.0,215,2,"LivingInsider, Baania"
+Prachuap Khiri Khan,House,3354625.0,261,2,"LivingInsider, Baania"
+Prachuap Khiri Khan,Land,21900000.0,18,1,LivingInsider
+Prachuap Khiri Khan,Townhouse,3555815.0,265,1,Baania
+Rayong,Condo,2492602.0,246,2,"LivingInsider, Baania"
+Rayong,House,2887591.0,263,2,"LivingInsider, Baania"
+Rayong,Land,50000000.0,23,1,LivingInsider
+Rayong,Townhouse,2629524.0,226,1,Baania
+Surin,Condo,3675483.0,128,1,Baania
+Surin,House,3704947.0,161,2,"LivingInsider, Baania"
+Surin,Land,14748750.0,20,1,LivingInsider
+Surin,Townhouse,4073130.0,132,2,"LivingInsider, Baania"
+Ubon Ratchathani,Condo,3378188.0,152,2,"LivingInsider, Baania"
+Ubon Ratchathani,House,3777545.0,269,2,"LivingInsider, Baania"
+Ubon Ratchathani,Land,6350000.0,36,1,LivingInsider
+Ubon Ratchathani,Townhouse,3853480.0,130,2,"LivingInsider, Baania"
+Udon Thani,Condo,3382508.0,208,2,"LivingInsider, Baania"
+Udon Thani,House,3494137.0,285,2,"LivingInsider, Baania"
+Udon Thani,Land,30000000.0,18,1,LivingInsider
+Udon Thani,Townhouse,3499917.0,135,2,"LivingInsider, Baania"

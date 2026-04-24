@@ -7,9 +7,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scrapers.bank_loans import run_scraper as run_bank_scraper
 from scrapers.reic_trends import scrape_dotproperty_trends
 from scrapers.livinginsider_trends import scrape_livinginsider_trends
+from scrapers.baania_trends import scrape_baania_trends
 from scrapers.landmarks import scrape_landmarks
 from scrapers.google_maps_sync import scrape_google_maps_sync
-from utils.data_cleaner import clean_bank_loans, clean_property_trends, clean_landmarks
+from utils.data_cleaner import clean_bank_loans, clean_landmarks
+from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
 
@@ -20,10 +22,11 @@ def main():
     
     raw_bank_path = "data/raw/bank_loans_raw.json"
     raw_dotproperty_path = "data/raw/reic_trends_raw.json"
+    raw_baania_path = "data/raw/baania_trends_raw.json"
     raw_livinginsider_path = "data/raw/livinginsider_trends_raw.json"
     raw_landmarks_path = "data/raw/landmarks_raw.json"
     processed_bank_path = "data/processed/bank_loans_clean.csv"
-    processed_property_path = "data/processed/property_trends_clean.csv"
+    processed_property_path = "data/processed/property_trends.csv"
     processed_landmarks_path = "data/processed/landmarks_clean.csv"
     processed_zones_path = "data/processed/zone_profiles.csv"
     
@@ -31,6 +34,7 @@ def main():
     print("\n[Phase 1] Scraping Data...")
     run_bank_scraper(raw_bank_path)
     scrape_dotproperty_trends(raw_dotproperty_path)
+    scrape_baania_trends(raw_baania_path)
     scrape_livinginsider_trends(raw_livinginsider_path)
     scrape_landmarks(raw_landmarks_path)
     scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path)  # Enrich OSM with Google Maps
@@ -38,7 +42,12 @@ def main():
     # 2. Clean Data
     print("\n[Phase 2] Cleaning and Processing Data...")
     clean_bank_loans(raw_bank_path, processed_bank_path)
-    clean_property_trends(raw_dotproperty_path, raw_livinginsider_path, processed_property_path)
+    merge_property_trends(
+        baania_path=raw_baania_path,
+        livinginsider_path=raw_livinginsider_path,
+        output_path=processed_property_path,
+        dotproperty_path=raw_dotproperty_path
+    )
     clean_landmarks(raw_landmarks_path, processed_landmarks_path)
     
     # 2b. Zone Analysis (Landmark proximity profiles)

@@ -291,7 +291,7 @@ PROVINCE_DATA = [
     {"name": "ชลบุรี",          "slug": "chonburi",            "relation_id": 18997107},
     {"name": "สุรินทร์",        "slug": "surin",               "relation_id": 18975352},
     {"name": "บุรีรัมย์",       "slug": "buriram",             "relation_id": 17817575},
-    {"name": "พิษณุโลก",        "slug": "phitsanulok",         "relation_id": 18928096},
+    {"name": "พิษณุโลก",        "slug": "phitsanulok",         "relation_id": 18994043},
     {"name": "เชียงราย",        "slug": "chiang-rai",          "relation_id": 19051912},
 ]
 
