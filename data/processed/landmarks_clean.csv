@@ -16,7 +16,6 @@
 ขอนแก่น,Khon Kaen,คณะเทคนิคการแพทย์,Faculty of Associated Medical Sciences,มหาวิทยาลัย,1,Primary,16.4686958,102.8275336,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คณะเทคโนโลยี,Faculty of Technology,มหาวิทยาลัย,1,Primary,16.4739852,102.8214414,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คณะเภสัขศาสตร์,Faculty of Pharmaceutical Sciences,มหาวิทยาลัย,1,Primary,16.4705936,102.8277097,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ตึกอำนวยการ (อาคาร 1) โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายมัธยมศึกษา (ศึกษาศาสตร์),"Building 1 - Khon Kaen University Demonstration School, Secondary (Suksasart)",มหาวิทยาลัย,1,Primary,16.4519434,102.8187423,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,พืซสวน,Horticulture,มหาวิทยาลัย,1,Primary,16.4737088,102.813113,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,มหาวิทยาลัยขอนแก่น,Khon Kaen University,มหาวิทยาลัย,1,Primary,16.461702,102.8173367,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,มหาวิทยาลัยภาคตะวันออกเฉียงเหนี่อ,North-Eastern University,มหาวิทยาลัย,1,Primary,16.4239795,102.8155886,OpenStreetMap / Overpass API
@@ -33,7 +32,6 @@
 ขอนแก่น,Khon Kaen,สโมสรบุคลากรมหาวิทยาลัยขอนแก่น,KKU Staff Club,มหาวิทยาลัย,1,Primary,16.4741708,102.8278706,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,หมวดพืชไร่,Muat Phuet Rai,มหาวิทยาลัย,1,Primary,16.4704132,102.811156,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,องค์การนักศึกษา มหาวิทยาลัยขอนแก่น,Khon Kaen University Student Union,มหาวิทยาลัย,1,Primary,16.477584,102.8217352,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,อาคารพิทยอนันต์ (อาคาร 6) โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายมัธยมศึกษา (ศึกษาศาสตร์),"Building 6 - Khon Kaen University Demonstration School, Secondary (Suksasart)",มหาวิทยาลัย,1,Primary,16.4527644,102.8185616,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อาคารพิมล กลกิจ,Bimala Kalakicha Building,มหาวิทยาลัย,1,Primary,16.4741758,102.8270533,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อาคารเรียนรวมและห้องปฏิบัติการวิจัยคณะแพทยศาสตร์,Faculty of Medicine,มหาวิทยาลัย,1,Primary,16.4702272,102.828428,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายนานาชาติ,Demonstration School Khon Kaen University International Division,มหาวิทยาลัย,1,Primary,16.4501564,102.816116,OpenStreetMap / Overpass API
@@ -57,8 +55,6 @@
 ขอนแก่น,Khon Kaen,ท่าพระ,Tha Phra,สถานีรถไฟ,1,Primary,16.3385983,102.8046708,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,สำราญ,Samran,สถานีรถไฟ,1,Primary,16.517094,102.8430467,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ท่าอากาศยานขอนแก่น,Khon Kaen Airport (KKC),สนามบิน,1,Primary,16.4646585,102.7866638,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ท่าอากาศยานขอนแก่น,Khon Kaen Airport,สนามบิน,1,Primary,16.4647189,102.7867889,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ท่าอากาศยานขอนแก่น,Khon Kaen Airport,สนามบิน,1,Primary,16.4662184,102.7834203,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Khon Kaen Immigration Office,,หน่วยงานรัฐ,1,Primary,16.5887944,102.8191012,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Tourism Authority of Thailand,Tourism Authority of Thailand,หน่วยงานรัฐ,1,Primary,16.4158729,102.8347878,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,กองฝึกอบรมภูมิภาค2 การประปาส่วนภูมิภาค,Provincial Waterworks Authority Nai Mueang,หน่วยงานรัฐ,1,Primary,16.4074555,102.8326914,OpenStreetMap / Overpass API
@@ -82,21 +78,27 @@
 ขอนแก่น,Khon Kaen,หมวดทางหลวง ศิลา,Sila Highway Depot,หน่วยงานรัฐ,1,Primary,16.5002348,102.8321649,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เทศบาลตำบล บึงเนียม,Bungniam Municipality,หน่วยงานรัฐ,1,Primary,16.4382384,102.9316673,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โครงการชลประทาน ขอนแก่น,Khon Kaen Irrigation Department,หน่วยงานรัฐ,1,Primary,16.4444948,102.8294107,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,Central Khonkaen Campus,,ห้างสรรพสินค้า,1,Primary,16.4372396,102.7764209,Google Maps
+ขอนแก่น,Khon Kaen,Ozone Village Khon Kaen,,ห้างสรรพสินค้า,1,Primary,16.4570466,102.781286,Google Maps
+ขอนแก่น,Khon Kaen,Ozone Village Khon Kaen,,ห้างสรรพสินค้า,1,Primary,16.4363751,102.7581342,Google Maps
 ขอนแก่น,Khon Kaen,Ozone village,Ozone village,ห้างสรรพสินค้า,1,Primary,16.4364624,102.8304053,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,สหสินเทรดดิ้ง หจก.,Sahasin trading,ห้างสรรพสินค้า,1,Primary,16.4355806,102.8150303,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,ห้างสรรพสินค้าเซ็นทรัล ขอนแก่น,,ห้างสรรพสินค้า,1,Primary,16.446387,102.8262336,Google Maps
 ขอนแก่น,Khon Kaen,เซนทรัล,,ห้างสรรพสินค้า,1,Primary,16.433502,102.826228,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,เซนทรัล,,ห้างสรรพสินค้า,1,Primary,16.4335691,102.826228,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เซนโทซ่า,Sentosa,ห้างสรรพสินค้า,1,Primary,16.4398857,102.8249813,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เซนโทซ่า,Sentosa,ห้างสรรพสินค้า,1,Primary,16.4287781,102.8351928,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,เซ็นทรัล ขอนแก่น,,ห้างสรรพสินค้า,1,Primary,16.4331744,102.7540768,Google Maps
 ขอนแก่น,Khon Kaen,เซ็นทรัลพลาซา,Centralplaza Khon Kaen,ห้างสรรพสินค้า,1,Primary,16.433781,102.8255475,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,แฟรี่พลาซ่า,Fairy Plaza,ห้างสรรพสินค้า,1,Primary,16.4232383,102.8339035,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรบินสัน,Robinson,ห้างสรรพสินค้า,1,Primary,16.4337702,102.826228,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,โรบินสัน,Robinson,ห้างสรรพสินค้า,1,Primary,16.4337032,102.826228,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ศูนย์รังสีรักษาและเคมีบำบัด โรงพยาบาลขอนแก่น,,โรงพยาบาล,1,Primary,16.4286173,102.8448803,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ศูนย์อนามัยที่ 6,Regional Health Promotion Center 6,โรงพยาบาล,1,Primary,16.429482,102.8510992,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ศูนย์แพทย์ชาตะผดุง,Chata Phadung Health Center,โรงพยาบาล,1,Primary,16.420118,102.8495161,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาล วัดหนองแวง,Wat Nong Waeng Hospital,โรงพยาบาล,1,Primary,16.4088975,102.835041,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลกรุงเทพ,Bangkok Hospital,โรงพยาบาล,1,Primary,16.4420747,102.8200449,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,โรงพยาบาลกรุงเทพขอนแก่น,,โรงพยาบาล,1,Primary,16.4325392,102.6780065,Google Maps
+ขอนแก่น,Khon Kaen,โรงพยาบาลกรุงเทพขอนแก่น,,โรงพยาบาล,1,Primary,16.4422085,102.6761332,Google Maps
+ขอนแก่น,Khon Kaen,โรงพยาบาลขอนแก่น ราม,,โรงพยาบาล,1,Primary,16.3600059,102.8184763,Google Maps
 ขอนแก่น,Khon Kaen,โรงพยาบาลขอนแก่นราม,Khon Kaen Ram Hospital,โรงพยาบาล,1,Primary,16.433636,102.8210662,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลจิตเวชขอนแก่นราชนครินทร์,Khon Kaen Rajanagarindra Psychiatric Hospital,โรงพยาบาล,1,Primary,16.424786,102.849015,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลราชพฤกษ์,Ratchapreuk Hospital,โรงพยาบาล,1,Primary,16.4353594,102.824182,OpenStreetMap / Overpass API
@@ -105,8 +107,6 @@
 ขอนแก่น,Khon Kaen,โรงพยาบาลศูนย์ขอนแก่น,Khon Kaen Provincial Hospital,โรงพยาบาล,1,Primary,16.4305641,102.8488059,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลสัตว์ขวัญคำ ขอนแก่น,,โรงพยาบาล,1,Primary,16.500134,102.842573,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ประตูเมือง ขอนแก่น,Khon Kaen City Gate,ประตูเมือง,2,Iconic,16.4319073,102.8251312,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ประตูเมือง ขอนแก่น,Khon Kaen City Gate,ประตูเมือง,2,Iconic,16.4320119,102.8251508,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ประตูเมือง ขอนแก่น,Khon Kaen City Gate,ประตูเมือง,2,Iconic,16.4318456,102.8251272,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Nonsila Temple,Wat Non Sila,วัด/ศาสนสถาน,2,Iconic,16.5365274,102.8284317,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Samran Shrine,,วัด/ศาสนสถาน,2,Iconic,16.5359182,102.8276312,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Wat Tha Prathai,,วัด/ศาสนสถาน,2,Iconic,16.4144175,102.914198,OpenStreetMap / Overpass API
@@ -200,7 +200,6 @@
 ขอนแก่น,Khon Kaen,Khon Kaen Sports School Stadium,,สนามกีฬา,2,Iconic,16.4558066,102.9469621,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,สนามกีฬากลาง มหาวิทยาลัยขอนแก่น,,สนามกีฬา,2,Iconic,16.476636,102.8176862,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อาคารปิงปอง,Table Tennis,สนามกีฬา,2,Iconic,16.4162066,102.8254352,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,SNB English Park,,สวนสาธารณะ,2,Iconic,16.4399453,102.8378324,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,SNB Tree Park,,สวนสาธารณะ,2,Iconic,16.4387697,102.8377551,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,TKK,,สวนสาธารณะ,2,Iconic,16.3489202,102.802056,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Tambun,,สวนสาธารณะ,2,Iconic,16.4392595,102.8374457,OpenStreetMap / Overpass API
@@ -230,6 +229,7 @@
 ขอนแก่น,Khon Kaen,อนุสาวรีย์ จอมพลสฤษดิ์ ธนรัชต์,Marshal Sarit Thanarat Monument,อนุสาวรีย์/อนุสรณ์,2,Iconic,16.4390506,102.8355201,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อนุสาวรีย์ พระนครศรีบริรักษ์,Phra Nakhon Si Borirak Memorial,อนุสาวรีย์/อนุสรณ์,2,Iconic,16.4199806,102.8373432,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อนุสาวรีย์ประชาธิปไตย,Democracy Monument,อนุสาวรีย์/อนุสรณ์,2,Iconic,16.4311323,102.829227,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,Class Clinic - คลาสคลินิก สาขากังสดาล,,คลินิก,3,Secondary,16.4619944,102.7669273,Google Maps
 ขอนแก่น,Khon Kaen,Sera Clinic ขอนแก่น,,คลินิก,3,Secondary,16.4451142,102.8299326,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Sosoul Clinic,,คลินิก,3,Secondary,16.4591707,102.8242142,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ขอนแก่นจักษุคลินิก,Khon Kaen Eye Clinic,คลินิก,3,Secondary,16.4304807,102.835789,OpenStreetMap / Overpass API
@@ -237,6 +237,7 @@
 ขอนแก่น,Khon Kaen,ขอนแก่นแล็บ,Khon Kaen Lab,คลินิก,3,Secondary,16.4369383,102.8364549,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คลินิกตา หมอวีระศักดิ์,Doctor Veerasak Eye Clinic,คลินิก,3,Secondary,16.4330083,102.837802,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คลินิกตาหมอธรรศ,Thuss Eye Doctor,คลินิก,3,Secondary,16.4237234,102.8370295,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,คลินิกทันตกรรมอินเฮ้าส์ Inhouse Dental Clinic ทำฟัน จัดฟัน รากเทียม ขอนแก่น,,คลินิก,3,Secondary,16.4557713,102.8338573,Google Maps
 ขอนแก่น,Khon Kaen,คลินิกนายแพทย์ชินวัฒน์,Shinnawat Clinic,คลินิก,3,Secondary,16.429862,102.8389379,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คลินิกนายแพทย์เสริมศักดิ์,Doctor Sermsak,คลินิก,3,Secondary,16.420587,102.8375672,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,คลินิกฟอกไต ประชาสโมสร,Pracha Samoson Clinic,คลินิก,3,Secondary,16.4360029,102.8496748,OpenStreetMap / Overpass API
@@ -260,12 +261,15 @@
 ขอนแก่น,Khon Kaen,นายแพทย์ กนก,Doctor Kanok,คลินิก,3,Secondary,16.4384812,102.8355194,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,บิ๊กสไมล,,คลินิก,3,Secondary,16.4387957,102.8299084,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ภาคบริการโลหิตแห่งชาติที่ 6 จังหวัดขอนแก่น,Regional Blood Centre VI Khonkaen,คลินิก,3,Secondary,16.5493418,102.8271309,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,ภูวรินทร์คลินิกเวชกรรม (คลินิกรักษาสิว รักษาฝ้า),,คลินิก,3,Secondary,16.4372776,102.752879,Google Maps
 ขอนแก่น,Khon Kaen,รอบเมืองรวมแพทย์,Robmuang Ruam Phaet,คลินิก,3,Secondary,16.4252774,102.8395253,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ศูนย์เจตบุตร,Getabutra Art Center,คลินิก,3,Secondary,16.4361222,102.8388666,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,สุชาติการแพทย์,Suchart Clinic,คลินิก,3,Secondary,16.4292728,102.8425321,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,หมอรัตนาและหมอพัชรี,Doctor Rattana & Doctor Phatchari,คลินิก,3,Secondary,16.4233438,102.8330211,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,หมอวิฑูรย์,Dr. Withun,คลินิก,3,Secondary,16.4370722,102.8301962,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,อมรคลินิกเวชกรรม,Amon Medical Clinic,คลินิก,3,Secondary,16.4385429,102.8352163,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,เดอะเบน คลินิก ขอนแก่น,,คลินิก,3,Secondary,16.4576467,102.7753482,Google Maps
+ขอนแก่น,Khon Kaen,เดอะเบน คลินิก ขอนแก่น,,คลินิก,3,Secondary,16.483665,102.7461576,Google Maps
 ขอนแก่น,Khon Kaen,เอสเค คลินิกเวชกรรม,SK Clinic,คลินิก,3,Secondary,16.4363141,102.830501,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลส่งเสริมสุขภาพตำบล,Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,16.373818,102.7498536,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงพยาบาลส่งเสริมสุขภาพตำบล บ้านซำจาน,Ban Sam Chan Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,16.6044584,102.7949883,OpenStreetMap / Overpass API
@@ -280,7 +284,6 @@
 ขอนแก่น,Khon Kaen,Big C,Big C,ซูเปอร์มาร์เก็ต,3,Secondary,16.4248983,102.819077,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Big C,,ซูเปอร์มาร์เก็ต,3,Secondary,16.3905416,102.8387186,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Central Plaza Khon Kaen,Central Plaza Khon Kaen,ซูเปอร์มาร์เก็ต,3,Secondary,16.4328217,102.8254107,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,Central Plaza Khon Kaen,Central Plaza Khon Kaen,ซูเปอร์มาร์เก็ต,3,Secondary,16.433005,102.825596,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Lotus's,Lotus's,ซูเปอร์มาร์เก็ต,3,Secondary,16.4232718,102.833852,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Lotus's,,ซูเปอร์มาร์เก็ต,3,Secondary,16.401113,102.8167246,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Makro,,ซูเปอร์มาร์เก็ต,3,Secondary,16.405191,102.8142984,OpenStreetMap / Overpass API
@@ -296,10 +299,11 @@
 ขอนแก่น,Khon Kaen,แตงโมมาร์ท,,ซูเปอร์มาร์เก็ต,3,Secondary,16.3814408,102.8451465,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Market,Market,ตลาด,3,Secondary,16.4290546,102.8344624,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Night market,,ตลาด,3,Secondary,16.418646,102.8366984,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,Samran Market 1,,ตลาด,3,Secondary,16.5361766,102.8298296,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Samran Market 2,,ตลาด,3,Secondary,16.5352917,102.8296098,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาด อ. จิระ,O Chira Market,ตลาด,3,Secondary,16.4379976,102.8319876,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดจอมพล,Chom Phon Market,ตลาด,3,Secondary,16.4488848,102.842864,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,ตลาดจอมพลขอนแก่น,,ตลาด,3,Secondary,16.4319781,102.7734932,Google Maps
+ขอนแก่น,Khon Kaen,ตลาดจอมพลขอนแก่น,,ตลาด,3,Secondary,16.4503247,102.7699321,Google Maps
 ขอนแก่น,Khon Kaen,ตลาดตองแปด,Tong Pad Market,ตลาด,3,Secondary,16.4264654,102.8300583,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดต้นไม้,Talat Tonmai,ตลาด,3,Secondary,16.4555611,102.8322575,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดนัดต้นตาล Plaza,Ton Tann Market,ตลาด,3,Secondary,16.4176544,102.8182724,OpenStreetMap / Overpass API
@@ -309,6 +313,8 @@
 ขอนแก่น,Khon Kaen,ตลาดมอดินแดง,Modindaeng Market,ตลาด,3,Secondary,16.4795042,102.8229724,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดรถไฟ,Talat Rotfai,ตลาด,3,Secondary,16.4275457,102.8270122,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดศรีเมืองทอง,Talat Simueang Thong,ตลาด,3,Secondary,16.414774,102.8201998,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,ตลาดสดเทศบาล1,,ตลาด,3,Secondary,16.4563343,102.8276667,Google Maps
+ขอนแก่น,Khon Kaen,ตลาดสดเทศบาล3 (โบ๊เบ๊),,ตลาด,3,Secondary,16.4280765,102.7668943,Google Maps
 ขอนแก่น,Khon Kaen,ตลาดสามแยกโนนทัน,Samyak Non Than Market,ตลาด,3,Secondary,16.4166212,102.8494616,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดหนองไผ่ล้อม,Nong Phai Lom Market,ตลาด,3,Secondary,16.4267389,102.831706,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ตลาดเย็นหนองใหญ่,,ตลาด,3,Secondary,16.4275806,102.8685557,OpenStreetMap / Overpass API
@@ -320,7 +326,6 @@
 ขอนแก่น,Khon Kaen,ธนาคารออมสิน,Government Savings Bank,ตู้ATM,3,Secondary,16.486565,102.8159916,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ตู้ATM,3,Secondary,16.4465722,102.8152343,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ตู้ATM,3,Secondary,16.4860546,102.8162863,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ตู้ATM,3,Secondary,16.4865574,102.8159968,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ตู้ATM,3,Secondary,16.446402,102.8458321,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,BOC,,ธนาคาร,3,Secondary,16.4492218,102.8419001,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Citibank,Citi,ธนาคาร,3,Secondary,16.4309432,102.8324239,OpenStreetMap / Overpass API
@@ -334,7 +339,6 @@
 ขอนแก่น,Khon Kaen,กรุงศรี,Bank of Ayudhya,ธนาคาร,3,Secondary,16.4211924,102.8190491,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,กรุงศรี,Bank of Ayudhya,ธนาคาร,3,Secondary,16.4773976,102.8230278,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,กรุงศรี,Bank of Ayudhya,ธนาคาร,3,Secondary,16.4405409,102.8283486,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,กรุงศรี,Bank of Ayudhya,ธนาคาร,3,Secondary,16.4323111,102.8250531,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ซีไอเอ็มบี ไทย,CIMB Thai,ธนาคาร,3,Secondary,16.4307883,102.8316084,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกรุงเทพ,Bangkok Bank,ธนาคาร,3,Secondary,16.4197423,102.8326214,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกรุงเทพ,Bangkok Bank,ธนาคาร,3,Secondary,16.4306146,102.8323755,OpenStreetMap / Overpass API
@@ -352,7 +356,6 @@
 ขอนแก่น,Khon Kaen,ธนาคารกรุงไทย,Krung Thai Bank,ธนาคาร,3,Secondary,16.4214558,102.8154953,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกรุงไทย,Krung Thai Bank,ธนาคาร,3,Secondary,16.4652824,102.8324411,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกรุงไทย,Krung Thai Bank,ธนาคาร,3,Secondary,16.4224981,102.8349694,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ธนาคารกรุงไทย​โลตัส,,ธนาคาร,3,Secondary,16.4005997,102.8150595,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกสิกรไทย,Kasikornbank,ธนาคาร,3,Secondary,16.4285504,102.8335989,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกสิกรไทย,Kasikornbank,ธนาคาร,3,Secondary,16.4008686,102.815838,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารกสิกรไทย,Kasikornbank,ธนาคาร,3,Secondary,16.4252257,102.8195783,OpenStreetMap / Overpass API
@@ -364,7 +367,6 @@
 ขอนแก่น,Khon Kaen,ธนาคารทหารไทย,TMBThanachart Bank,ธนาคาร,3,Secondary,16.4202425,102.8198375,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารทหารไทย,TMBThanachart Bank,ธนาคาร,3,Secondary,16.4388159,102.831626,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารทหารไทย,TMBThanachart Bank,ธนาคาร,3,Secondary,16.4324377,102.824952,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ธนาคารทหารไทย,TMBThanachart Bank,ธนาคาร,3,Secondary,16.4322683,102.8253615,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารทิสโก้้,TISCO Bank,ธนาคาร,3,Secondary,16.3999943,102.8158548,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารธนชาต,Thanachart Bank,ธนาคาร,3,Secondary,16.4289477,102.8338301,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารธนชาต,Thanachart Bank,ธนาคาร,3,Secondary,16.423022,102.8350056,OpenStreetMap / Overpass API
@@ -382,7 +384,6 @@
 ขอนแก่น,Khon Kaen,ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร,Bank for Agriculture and Agricultural Co-operatives,ธนาคาร,3,Secondary,16.4257702,102.8313156,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร ธ.ก.ส.,Bank for Agriculture and Agricultural Cooperatives (BAAC),ธนาคาร,3,Secondary,16.4265342,102.8750727,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารแห่งประเทศไทย,Bank of Thailand,ธนาคาร,3,Secondary,16.4229693,102.8388471,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ธนาคารแห่งประเทศไทย,Bank of Thailand,ธนาคาร,3,Secondary,16.4215765,102.8386562,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ธนาคาร,3,Secondary,16.4242197,102.8333046,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ธนาคาร,3,Secondary,16.4248667,102.8194461,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ธนาคาร,3,Secondary,16.4302644,102.8373702,OpenStreetMap / Overpass API
@@ -398,13 +399,10 @@
 ขอนแก่น,Khon Kaen,Caltex,Caltex,ปั๊มน้ำมัน,3,Secondary,16.4504449,102.7596967,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Caltex,Caltex,ปั๊มน้ำมัน,3,Secondary,16.4219123,102.8343672,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Caltex,Caltex,ปั๊มน้ำมัน,3,Secondary,16.4630766,102.8325579,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,Caltex,,ปั๊มน้ำมัน,3,Secondary,16.4503886,102.7597024,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,Caltex,,ปั๊มน้ำมัน,3,Secondary,16.4505515,102.7596768,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Caltex Station,Caltex Station,ปั๊มน้ำมัน,3,Secondary,16.3460195,102.8034692,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Jaidee Green,,ปั๊มน้ำมัน,3,Secondary,16.4380037,102.9285847,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,LPG Station,,ปั๊มน้ำมัน,3,Secondary,16.4489082,102.6965972,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PT,PT,ปั๊มน้ำมัน,3,Secondary,16.4290554,102.852644,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,PT,,ปั๊มน้ำมัน,3,Secondary,16.4492775,102.7587401,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PT LPG Station,PT LPG Station,ปั๊มน้ำมัน,3,Secondary,16.3009098,102.788601,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4485453,102.8410336,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4905527,102.8320679,OpenStreetMap / Overpass API
@@ -413,11 +411,9 @@
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4283186,102.8860639,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4515047,102.8309007,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.5296437,102.8299183,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4529619,102.8319231,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT Station,ปั๊มน้ำมัน,3,Secondary,16.3094157,102.7915446,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4382092,102.9357385,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4360824,102.7590353,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,16.4906499,102.8319126,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT LPG Station,PTT,ปั๊มน้ำมัน,3,Secondary,16.4494732,102.7580872,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,PTT Station,PTT Station,ปั๊มน้ำมัน,3,Secondary,16.3416473,102.8017246,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Ptt,,ปั๊มน้ำมัน,3,Secondary,16.4380256,102.787206,OpenStreetMap / Overpass API
@@ -469,7 +465,6 @@
 ขอนแก่น,Khon Kaen,เชลล์,Shell,ปั๊มน้ำมัน,3,Secondary,16.5202575,102.8315975,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เวิร์ลด์แก๊ส,World Gas,ปั๊มน้ำมัน,3,Secondary,16.5438958,102.8282906,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เอสโซ่,Esso,ปั๊มน้ำมัน,3,Secondary,16.4497908,102.7562212,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,เอสโซ่,Esso,ปั๊มน้ำมัน,3,Secondary,16.4499066,102.7561961,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,3 เภสัชกร,3 Pharmacists,ร้านขายยา,3,Secondary,16.4366566,102.8381959,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Boots,,ร้านขายยา,3,Secondary,16.4324477,102.825757,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Boots,,ร้านขายยา,3,Secondary,16.4917535,102.8312963,OpenStreetMap / Overpass API
@@ -524,10 +519,8 @@
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4486711,102.841085,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4278915,102.8335257,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4166465,102.8343316,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4255507,102.8334525,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4225091,102.8345917,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.413344,102.8324689,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4293237,102.835358,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4191014,102.8327357,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.430678,102.8325512,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4349047,102.8359163,OpenStreetMap / Overpass API
@@ -540,7 +533,6 @@
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4342662,102.8610972,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4289163,102.8543097,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4276723,102.863312,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4285706,102.849863,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4391769,102.832892,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.450469,102.795519,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4403897,102.824973,OpenStreetMap / Overpass API
@@ -557,7 +549,6 @@
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4794381,102.8071113,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4114815,102.8112278,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4252408,102.8510344,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4289893,102.8477035,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4500163,102.7381395,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.5299762,102.8298572,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4236447,102.84354,OpenStreetMap / Overpass API
@@ -569,18 +560,15 @@
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4656594,102.8248548,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4261446,102.8274555,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.3899054,102.8053044,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4179455,102.8323982,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.525728,102.8319193,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.308879,102.791252,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4363362,102.8493141,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4282169,102.8857736,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4321465,102.8410327,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4267824,102.8371449,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4365148,102.8493422,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4518906,102.8309745,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4908495,102.8321439,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.5354445,102.8297433,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4533853,102.845246,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4115228,102.9000536,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4360503,102.7592644,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4608977,102.8569188,OpenStreetMap / Overpass API
@@ -588,16 +576,14 @@
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4682213,102.8326377,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4600882,102.8247051,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4379431,102.8277839,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.452619,102.8319375,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4296287,102.8310893,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,16.4381914,102.9360968,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4865497,102.8156779,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4801286,102.8158498,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4803158,102.8118595,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4820984,102.8194262,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4883568,102.8247937,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4053292,102.7823582,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4054205,102.7746527,OpenStreetMap / Overpass API
+ขอนแก่น,Khon Kaen,7-Eleven สาขา ศูนย์อาหาร 2 มข. (14894),,ร้านสะดวกซื้อ,3,Secondary,16.4781939,102.7839242,Google Maps
 ขอนแก่น,Khon Kaen,ABC มินิมาร์ท,ABC Minimart,ร้านสะดวกซื้อ,3,Secondary,16.4365166,102.8470041,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,16.4183283,102.8495568,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,16.4226879,102.836945,OpenStreetMap / Overpass API
@@ -605,7 +591,6 @@
 ขอนแก่น,Khon Kaen,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,16.4356375,102.8382835,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,16.4903065,102.816513,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,FamilyMart,,ร้านสะดวกซื้อ,3,Secondary,16.4275967,102.8686392,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,FamilyMart,,ร้านสะดวกซื้อ,3,Secondary,16.4271611,102.869418,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,FamilyMart,,ร้านสะดวกซื้อ,3,Secondary,16.4214535,102.8063669,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,FamilyMart,,ร้านสะดวกซื้อ,3,Secondary,16.4223083,102.7995616,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,FamilyMart,,ร้านสะดวกซื้อ,3,Secondary,16.4575342,102.8280601,OpenStreetMap / Overpass API
@@ -650,7 +635,6 @@
 ขอนแก่น,Khon Kaen,มาร์ท,Mart,ร้านสะดวกซื้อ,3,Secondary,16.4502558,102.7598844,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ร้านค้าสวัสดิการ,,ร้านสะดวกซื้อ,3,Secondary,16.4671205,102.8297339,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,ร้านค้าสวัสดิการ,Welfare store,ร้านสะดวกซื้อ,3,Secondary,16.4296322,102.8490654,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,ร้านค้าสวัสดิการ,Welfare store,ร้านสะดวกซื้อ,3,Secondary,16.430675,102.8489064,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เคี้ยงซูเปอร์มาร์เก็ต,Khiang Supermarket,ร้านสะดวกซื้อ,3,Secondary,16.4303059,102.8371401,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เคี้ยงมินิมาร์ท,Khiang Minimart,ร้านสะดวกซื้อ,3,Secondary,16.4304847,102.8335431,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,เทคแคร์มินิมาร์ท,Take Care Minimart,ร้านสะดวกซื้อ,3,Secondary,16.4335606,102.8399221,OpenStreetMap / Overpass API
@@ -737,10 +721,8 @@
 ขอนแก่น,Khon Kaen,โรงเรียนศรีสังวาลย์ ขอนแก่น,Si Sang Wan School Khon Kaen,โรงเรียน,3,Secondary,16.4737405,102.840767,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสนามบิน,Sanambin School,โรงเรียน,3,Secondary,16.4391735,102.8379111,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสองภาษาภาคตะวันออกเฉียงเทนือ,Northeastern Bilingual School,โรงเรียน,3,Secondary,16.4216146,102.807643,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น (มอดินแดง),Demonstration School of Khon Kaen University (Modindaeng),โรงเรียน,3,Secondary,16.4801571,102.8304658,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายการศึกษาพิเศษ (ศูนย์วิจัยออทิสติก),Research and Development Center of Autistic inclusive Education (RDCAI),โรงเรียน,3,Secondary,16.4818176,102.8317134,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายประถมศึกษา (มอดินแดง),,โรงเรียน,3,Secondary,16.4814106,102.8309112,OpenStreetMap / Overpass API
-ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายมัธยมศึกษา (มอดินแดง),,โรงเรียน,3,Secondary,16.4807634,102.8310228,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนสาวะถีพิทยาสรรพ์,Sa Wa Thi Phitthaya San School,โรงเรียน,3,Secondary,16.5124103,102.6803056,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนหนองไผ่มอดินแดง,Nongpie School,โรงเรียน,3,Secondary,16.4775513,102.848082,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนอนุบาลขอนแก่น,Anuban Khon Kaen School,โรงเรียน,3,Secondary,16.4393076,102.8370194,OpenStreetMap / Overpass API
@@ -765,7 +747,6 @@
 ขอนแก่น,Khon Kaen,โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายอนุบาลศึกษา,Khon Kaen University Demonstration School Kindergarten Division,โรงเรียนอนุบาล,3,Secondary,16.452312,102.8164695,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนอนุบาลบุญพร้อง,Boon Phrong Kindergarten,โรงเรียนอนุบาล,3,Secondary,16.4705019,102.8548586,OpenStreetMap / Overpass API
 ขอนแก่น,Khon Kaen,โรงเรียนเมทนีตล,Mataneedol School,โรงเรียนอนุบาล,3,Secondary,16.3874144,102.8302977,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Faculty Of Engineering,Faculty Of Engineering,มหาวิทยาลัย,1,Primary,13.2747806,100.9252428,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Faculty of Geoinformatics,Faculty of Geoinformatics,มหาวิทยาลัย,1,Primary,13.2784361,100.9255319,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,มหาวิทยาลัยบูรพา,Burapha University,มหาวิทยาลัย,1,Primary,13.2765776,100.9253886,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Bangsaen Technical College,,วิทยาลัย,1,Primary,13.2974876,100.9550388,OpenStreetMap / Overpass API
@@ -802,20 +783,30 @@
 ชลบุรี,Chonburi,Robinsons ชล,,ห้างสรรพสินค้า,1,Primary,13.3360447,100.970262,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,The Station,,ห้างสรรพสินค้า,1,Primary,13.3695334,100.9918054,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Tukcom,,ห้างสรรพสินค้า,1,Primary,13.3410882,100.9732828,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,เซ็นทรัล ชลบุรี,,ห้างสรรพสินค้า,1,Primary,13.171508,100.9839821,Google Maps
+ชลบุรี,Chonburi,เซ็นทรัล ชลบุรี,,ห้างสรรพสินค้า,1,Primary,13.3372489,100.6811382,Google Maps
+ชลบุรี,Chonburi,เซ็นทรัล พัทยา,,ห้างสรรพสินค้า,1,Primary,13.1523221,100.9833246,Google Maps
+ชลบุรี,Chonburi,เซ็นทรัล มารีนา เอาท์เล็ท,,ห้างสรรพสินค้า,1,Primary,12.9543355,100.6139829,Google Maps
+ชลบุรี,Chonburi,เซ็นทรัล มารีนา เอาท์เล็ท,,ห้างสรรพสินค้า,1,Primary,12.9490286,100.3524654,Google Maps
+ชลบุรี,Chonburi,เซ็นทรัล มารีนา เอาท์เล็ท,,ห้างสรรพสินค้า,1,Primary,12.9457316,100.3128516,Google Maps
 ชลบุรี,Chonburi,เซ็นทรัลชลบุรี,Central Chonburi,ห้างสรรพสินค้า,1,Primary,13.3370635,100.9698702,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,โรบินสัน ชลบุรี,,ห้างสรรพสินค้า,1,Primary,12.9458784,100.6014601,Google Maps
 ชลบุรี,Chonburi,Samitivej Chonburi,,โรงพยาบาล,1,Primary,13.34505,100.9762278,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,คลินิกสูตินรีเวชหมอพรทิพย์,Dr.Pornthip,โรงพยาบาล,1,Primary,13.3450348,100.9675076,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ณัฐณิชา คลินิกฝังเข็ม,,โรงพยาบาล,1,Primary,13.3389207,100.9510312,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศูนย์มะเร็งชลบุรี,Chonburi Cancer Center,โรงพยาบาล,1,Primary,13.3442803,100.9529983,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาล วิภาราม อมตะนคร,,โรงพยาบาล,1,Primary,13.4210941,101.0030811,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,โรงพยาบาล วิภาราม อมตะนคร,,โรงพยาบาล,1,Primary,13.4210492,101.003082,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลค่ายนวมินทราชินี,Khai Nawamintharachini Hospital,โรงพยาบาล,1,Primary,13.3869216,100.9909254,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลชลบุรี,Chonburi Hospital,โรงพยาบาล,1,Primary,13.3514795,100.9819202,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลชลเวช,Chonlawet Hospital,โรงพยาบาล,1,Primary,13.3628467,100.9860921,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลมหาวิทยาลัยบูรพา,Burapha University Hospital,โรงพยาบาล,1,Primary,13.2847626,100.9227714,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,โรงพยาบาลสมิติเวชชลบุรี,,โรงพยาบาล,1,Primary,13.3549669,100.399191,Google Maps
 ชลบุรี,Chonburi,โรงพยาบาลเอกชล,Aikchol Hospital,โรงพยาบาล,1,Primary,13.3548195,100.976112,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลเอกชล 2,Aikchol 2 Hospital,โรงพยาบาล,1,Primary,13.3177278,100.9483113,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,โรงพยาบาลเอกชล อ่างศิลา,,โรงพยาบาล,1,Primary,13.2466239,100.6454298,Google Maps
+ชลบุรี,Chonburi,โรงพยาบาลเอกชล อ่างศิลา,,โรงพยาบาล,1,Primary,13.3179021,100.371992,Google Maps
 ชลบุรี,Chonburi,โรงพยาบาลแม่และเด็ก,Mother And Child Hospital,โรงพยาบาล,1,Primary,13.3687339,101.0258639,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,โรงพยาบาล​เอกชล,,โรงพยาบาล,1,Primary,13.0609718,101.111299,Google Maps
 ชลบุรี,Chonburi,Wat Khao Wang Ta Ko,,วัด/ศาสนสถาน,2,Iconic,13.2902959,100.9970559,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Wat Tham Nimit,,วัด/ศาสนสถาน,2,Iconic,13.3767607,101.0009969,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Wat Theputharam,Wat Theputharam,วัด/ศาสนสถาน,2,Iconic,13.3694163,100.9934999,OpenStreetMap / Overpass API
@@ -835,13 +826,11 @@
 ชลบุรี,Chonburi,วัดโกมุทรัตนาราม,Wat Komut Ratthanaram,วัด/ศาสนสถาน,2,Iconic,13.3329558,100.9207377,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,วัดโพธิ์,,วัด/ศาสนสถาน,2,Iconic,13.3738511,100.9884172,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศาลเจ้าแม่สามมุก,San Cao Mae Sam Muk,วัด/ศาสนสถาน,2,Iconic,13.3165345,100.9036461,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,ป้าบุญคาเฟ่ 7 บางแสน,,สถานที่ท่องเที่ยว,2,Iconic,13.287649,100.9818978,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Guan Yin Rim Sea Lam Thaen,,สถานที่ระดับ 2,2,Iconic,13.3028255,100.8978874,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,San Chao Pun Thao Kong Ma Shrine,,สถานที่ระดับ 2,2,Iconic,13.3024878,100.8983625,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศาลเจ้าพ่อเสือ,Father Tiger Shrine,สถานที่ระดับ 2,2,Iconic,13.2977527,100.9122374,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Amatio stadium,,สนามกีฬา,2,Iconic,13.4188662,100.9995489,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Amatio stadium,,สนามกีฬา,2,Iconic,13.4187028,100.9993617,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Amatio stadium (1),,สนามกีฬา,2,Iconic,13.4185528,100.999565,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Amatio stadium (2),,สนามกีฬา,2,Iconic,13.4190341,100.9992741,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,สนามกีฬาองค์การบริการส่วนจังหวัดชลบุรี,,สนามกีฬา,2,Iconic,13.3362709,100.9563798,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Casalunar Paradiso Park,,สวนสาธารณะ,2,Iconic,13.2506034,100.9302947,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,"Lam Thaen Park, ASEAN","Lam Thaen Park, ASEAN",สวนสาธารณะ,2,Iconic,13.3022141,100.8977004,OpenStreetMap / Overpass API
@@ -865,10 +854,13 @@
 ชลบุรี,Chonburi,Covid 19 Clinic Service,,คลินิก,3,Secondary,13.282871,100.9366727,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Suporn Clinic,,คลินิก,3,Secondary,13.3652263,100.9909293,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,V-Plast Clinic,,คลินิก,3,Secondary,13.2855143,100.920523,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,คลินิกการแพทย์อินเตอร์เมดเวชกรรม สาขาชลบุรี,,คลินิก,3,Secondary,13.1677204,100.9594544,Google Maps
 ชลบุรี,Chonburi,ดีมอร์ คลินิก,,คลินิก,3,Secondary,13.3400039,100.9666488,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,มนตรา คลินิก,,คลินิก,3,Secondary,13.3397637,100.9673113,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,แพทย์พรพจน์-อาทิวรรณ,,คลินิก,3,Secondary,13.337668,100.9684485,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โรงพยาบาลส่งเสริมสุขภาพตำบล,Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,13.2828932,100.9367915,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,ใกล้หมอใกล้ใจคลินิกเวชกรรม สาขาชลบุรี,,คลินิก,3,Secondary,13.3962846,100.5249169,Google Maps
+ชลบุรี,Chonburi,ใกล้หมอใกล้ใจคลินิกเวชกรรม สาขาชลบุรี,,คลินิก,3,Secondary,13.3567295,100.4092281,Google Maps
 ชลบุรี,Chonburi,Big C,Big C,ซูเปอร์มาร์เก็ต,3,Secondary,13.3384054,100.9701446,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Big C,,ซูเปอร์มาร์เก็ต,3,Secondary,13.3159717,100.960307,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Big C Extra,,ซูเปอร์มาร์เก็ต,3,Secondary,13.3232394,100.9645565,OpenStreetMap / Overpass API
@@ -890,8 +882,11 @@
 ชลบุรี,Chonburi,Wang Muk Market,,ตลาด,3,Secondary,13.2871089,100.9299437,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ตลาดธนา,Thana Market Center,ตลาด,3,Secondary,13.3491856,100.9703509,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ตลาดนัด,,ตลาด,3,Secondary,13.2988209,100.9345079,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,ตลาดประมงพื้นบ้าน อ่างศิลา,,ตลาด,3,Secondary,13.0367168,101.0514265,Google Maps
 ชลบุรี,Chonburi,ตลาดสดยิ่งรวย,,ตลาด,3,Secondary,13.4266492,101.0397494,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ตลาดสดสิรัชชา,,ตลาด,3,Secondary,13.4257183,101.0409381,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,ตลาดสดเทศบาลเมือง ศรีราชา,,ตลาด,3,Secondary,13.3255826,100.3711654,Google Maps
+ชลบุรี,Chonburi,ตลาดสดเทศบาลเมือง ศรีราชา,,ตลาด,3,Secondary,13.1646039,100.3460746,Google Maps
 ชลบุรี,Chonburi,ตลาดอาหารทะเลอ่างศิลา,Angsila Seafood Market,ตลาด,3,Secondary,13.3382879,100.9242632,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ตลาดใหม่ชลบุรี,,ตลาด,3,Secondary,13.3743049,100.9913456,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ตลาดใหม่พงษ์ศักดิ์ (โต้รุ่ง),,ตลาด,3,Secondary,13.3746008,100.9892488,OpenStreetMap / Overpass API
@@ -944,14 +939,11 @@
 ชลบุรี,Chonburi,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,13.395855,101.0242786,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,13.3949534,101.0087706,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,PTT,,ปั๊มน้ำมัน,3,Secondary,13.4032822,101.0026836,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,PTT,,ปั๊มน้ำมัน,3,Secondary,13.2844972,100.9193638,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,PTT,,ปั๊มน้ำมัน,3,Secondary,13.2870363,100.9887645,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,PTT LPG Auto Station Nong Ri,,ปั๊มน้ำมัน,3,Secondary,13.3402362,101.0519248,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Pap,Pap,ปั๊มน้ำมัน,3,Secondary,13.3604732,101.0135525,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Papgas LPG Station,,ปั๊มน้ำมัน,3,Secondary,13.4058876,101.0449012,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Shell,Shell,ปั๊มน้ำมัน,3,Secondary,13.3429682,101.0429639,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Shell,Shell,ปั๊มน้ำมัน,3,Secondary,13.4121986,101.0002958,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Shell,,ปั๊มน้ำมัน,3,Secondary,13.4127808,100.9989992,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Shell,,ปั๊มน้ำมัน,3,Secondary,13.2869565,100.9850818,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Susco,,ปั๊มน้ำมัน,3,Secondary,13.3911253,101.0195543,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,บางจาก,Bangchak,ปั๊มน้ำมัน,3,Secondary,13.4136252,100.9996778,OpenStreetMap / Overpass API
@@ -962,7 +954,6 @@
 ชลบุรี,Chonburi,บางจาก,Bangchak,ปั๊มน้ำมัน,3,Secondary,13.2720194,100.9354348,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,บางจาก,Bangchak,ปั๊มน้ำมัน,3,Secondary,13.3082982,100.9528276,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,13.3424669,100.9943196,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,13.3413739,100.9946777,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,13.4027057,101.0042799,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,13.3480117,101.021155,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,13.2757886,100.9355763,OpenStreetMap / Overpass API
@@ -984,6 +975,7 @@
 ชลบุรี,Chonburi,ร้านยาดีฟาร์มาซี สาขา บ้านสวนซอย 9,,ร้านขายยา,3,Secondary,13.3491446,100.9967023,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,ศุลักษณ์เภสัช,,ร้านขายยา,3,Secondary,13.3505591,100.974631,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,โอสถสยาม,,ร้านขายยา,3,Secondary,13.2962528,100.9198734,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,7-11 Seven Eleven,,ร้านสะดวกซื้อ,3,Secondary,16.4650078,102.7510027,Google Maps
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3550275,101.0010231,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2835334,100.9157025,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2731586,100.9353957,OpenStreetMap / Overpass API
@@ -992,10 +984,8 @@
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2867362,100.9134972,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3031234,100.9010226,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2859505,100.9231029,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2864593,100.9257191,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2871924,100.9300272,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2806829,100.9367686,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.2810185,100.9360002,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3378455,100.9502742,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3310703,100.9516814,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3428281,100.9635226,OpenStreetMap / Overpass API
@@ -1010,7 +1000,6 @@
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3541309,100.9863481,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3715987,101.0195884,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3637155,100.9902493,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3653419,100.9895889,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3693924,100.9918256,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3465623,100.9694946,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3392509,100.9677887,OpenStreetMap / Overpass API
@@ -1026,7 +1015,6 @@
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.4320649,101.0359361,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.284707,100.9191281,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3401515,101.0354699,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3413742,101.0498806,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3444723,100.9761041,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.4473766,100.9996603,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3951706,101.0085006,OpenStreetMap / Overpass API
@@ -1036,15 +1024,16 @@
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3360595,100.9683594,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.2859873,100.9821742,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.2868358,100.9401243,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3463056,100.9780002,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3279493,100.9398081,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3277632,100.939147,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3108097,100.9135303,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.287958,100.9157276,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,13.3162574,100.9303519,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3293019,100.9224701,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,13.3354071,100.9713882,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,7-Eleven สาขาสิมิลันแมนชัน,,ร้านสะดวกซื้อ,3,Secondary,13.2851184,100.9206356,OpenStreetMap / Overpass API
+ชลบุรี,Chonburi,7-Eleven สาขา ตลาดสามเหลี่ยม (04607),,ร้านสะดวกซื้อ,3,Secondary,16.4781939,102.7839242,Google Maps
+ชลบุรี,Chonburi,7-Eleven สาขา มอดินแดง (07499),,ร้านสะดวกซื้อ,3,Secondary,16.4737942,102.7729393,Google Maps
+ชลบุรี,Chonburi,7-Eleven สาขา ยูเซ็นเตอร์ (ขอนแก่น) (03261),,ร้านสะดวกซื้อ,3,Secondary,16.4799229,102.782004,Google Maps
+ชลบุรี,Chonburi,7-Eleven สาขา ศูนย์อาหาร 2 มข. (14894),,ร้านสะดวกซื้อ,3,Secondary,16.4683245,102.8150696,Google Maps
+ชลบุรี,Chonburi,7-Eleven สาขา อดุลยาราม (04673),,ร้านสะดวกซื้อ,3,Secondary,16.4800624,102.7797962,Google Maps
 ชลบุรี,Chonburi,7Elever,,ร้านสะดวกซื้อ,3,Secondary,13.2996728,100.9007691,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Big C mini,,ร้านสะดวกซื้อ,3,Secondary,13.3084325,100.9525429,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,By Pass,,ร้านสะดวกซื้อ,3,Secondary,13.3664496,101.0177714,OpenStreetMap / Overpass API
@@ -1053,7 +1042,6 @@
 ชลบุรี,Chonburi,J-Mart,,ร้านสะดวกซื้อ,3,Secondary,13.3876718,101.0168388,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Jiffy,,ร้านสะดวกซื้อ,3,Secondary,13.3411252,100.9945695,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Jiffy,,ร้านสะดวกซื้อ,3,Secondary,13.4025473,101.0044547,OpenStreetMap / Overpass API
-ชลบุรี,Chonburi,Jiffy,,ร้านสะดวกซื้อ,3,Secondary,13.3427091,100.9944425,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Jiffy,Jiffy,ร้านสะดวกซื้อ,3,Secondary,13.309557,100.9548206,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Jiffy,Jiffy,ร้านสะดวกซื้อ,3,Secondary,13.3398632,101.0538448,OpenStreetMap / Overpass API
 ชลบุรี,Chonburi,Jiffy,Jiffy,ร้านสะดวกซื้อ,3,Secondary,13.3956222,101.0240897,OpenStreetMap / Overpass API
@@ -1081,7 +1069,6 @@
 บุรีรัมย์,Buriram,มหาวิทยาลัยราชภัฏบุรีรัมย์,Buriram Rajabhat University,มหาวิทยาลัย,1,Primary,14.9887761,103.0998895,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,วิทยาลัยเกษตรและเทคโนโลยีบุรีรัมย์,Buriram College of Agriculture & Technology,วิทยาลัย,1,Primary,14.9840396,103.1031701,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Buriram Bus Terminal,,สถานีขนส่ง,1,Primary,14.9955431,103.0962376,OpenStreetMap / Overpass API
-บุรีรัมย์,Buriram,Nakhon Chai Air Bus Terminal Buriram,,สถานีขนส่ง,1,Primary,14.9944565,103.0962531,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,บุรีรัมย์,Buri Ram,สถานีรถไฟ,1,Primary,15.0033141,103.1079377,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,บ้านหนองตาด,Ban Nong Tat,สถานีรถไฟ,1,Primary,15.0208755,103.0211625,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Buriram Highway District Offices,Buriram Highway District Offices,หน่วยงานรัฐ,1,Primary,14.9480541,103.0940776,OpenStreetMap / Overpass API
@@ -1090,6 +1077,13 @@
 บุรีรัมย์,Buriram,Thawikit supercenter,,ห้างสรรพสินค้า,1,Primary,14.9897114,103.086516,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,shoppingcenter,,ห้างสรรพสินค้า,1,Primary,14.987125,103.0873435,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,ทวีกิจ พลาซ่า,Thaweekit Plaza,ห้างสรรพสินค้า,1,Primary,14.9926874,103.1046237,OpenStreetMap / Overpass API
+บุรีรัมย์,Buriram,ทวีกิจซูเปอร์เซ็นเตอร์ บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.9748754,103.0116068,Google Maps
+บุรีรัมย์,Buriram,ทวีกิจซูเปอร์เซ็นเตอร์ บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.9896115,103.0147376,Google Maps
+บุรีรัมย์,Buriram,บิ๊กซี ซูเปอร์เซ็นเตอร์ บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.9717092,102.9995501,Google Maps
+บุรีรัมย์,Buriram,บิ๊กซี ซูเปอร์เซ็นเตอร์ บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.977277,102.7855432,Google Maps
+บุรีรัมย์,Buriram,โรบินสัน บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.952157,103.1040537,Google Maps
+บุรีรัมย์,Buriram,โรบินสัน บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,14.9731158,102.7757412,Google Maps
+บุรีรัมย์,Buriram,โรบินสัน บุรีรัมย์,,ห้างสรรพสินค้า,1,Primary,15.1039396,103.0624716,Google Maps
 บุรีรัมย์,Buriram,ไลฟ์ลี่ มาร์เก็ต,Lively market,ห้างสรรพสินค้า,1,Primary,14.987362,103.0865023,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,โรงพยาบาลบุรีรัมย์,Buriram Hospital,โรงพยาบาล,1,Primary,15.0055458,103.1023405,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,โรงพยาบาลเอกชนบุรีรัมย์,Ekkachon Buri Ram Hospital,โรงพยาบาล,1,Primary,15.004588,103.1121933,OpenStreetMap / Overpass API
@@ -1097,7 +1091,6 @@
 บุรีรัมย์,Buriram,Wat Pa Burirat Pattanaram,,วัด/ศาสนสถาน,2,Iconic,14.9964342,103.084432,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Wat Savang Arom,,วัด/ศาสนสถาน,2,Iconic,14.9852459,103.0811286,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Wat Tham Theeraram,Wat Tham Theeraram,วัด/ศาสนสถาน,2,Iconic,15.0066411,103.1058016,OpenStreetMap / Overpass API
-บุรีรัมย์,Buriram,Wat Tham Theeraram,,วัด/ศาสนสถาน,2,Iconic,15.0069571,103.1062581,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,วัดกลางพระอารามหลวง,Wat Klang Phra Aram Luang,วัด/ศาสนสถาน,2,Iconic,14.9961842,103.1127039,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,วัดป่าเขาน้อย,Wat Pa Khao Noi,วัด/ศาสนสถาน,2,Iconic,14.9291058,103.094623,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Buddha Footprint imitation,Buddha Footprint imitation,สถานที่ท่องเที่ยว,2,Iconic,14.9405115,103.0931369,OpenStreetMap / Overpass API
@@ -1115,6 +1108,11 @@
 บุรีรัมย์,Buriram,พระบรมราชานุสาวรีย์พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช,Rama 1 Monument,อนุสาวรีย์/อนุสรณ์,2,Iconic,14.9866994,103.1046357,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,อนุสาวรีย์รัฐธรรมนูญจังหวัดบุรีรัมย์,,อนุสาวรีย์/อนุสรณ์,2,Iconic,14.9984384,103.1174794,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Dr. Manote Pediatrics Clinic,,คลินิก,3,Secondary,14.9970886,103.1109877,OpenStreetMap / Overpass API
+บุรีรัมย์,Buriram,MYRA clinic ไมร่าคลินิก,,คลินิก,3,Secondary,14.9796639,103.0882457,Google Maps
+บุรีรัมย์,Buriram,UD Clinic สาขา บุรีรัมย์,,คลินิก,3,Secondary,14.9871563,103.0637913,Google Maps
+บุรีรัมย์,Buriram,ก้าวใส คลินิก สาขาบุรีรัมย์- Kaosai Clinic Buriram,,คลินิก,3,Secondary,14.9860915,103.0735333,Google Maps
+บุรีรัมย์,Buriram,ซากุระคลินิก บุรีรัมย์,,คลินิก,3,Secondary,14.9904672,103.1005975,Google Maps
+บุรีรัมย์,Buriram,วันวาน คลินิก สาขาบุรีรัมย์ Onewan clinic by Dr.Fronk คลินิกความงาม อันดับ1 ฟิลเลอร์ และการยกกระชับ,,คลินิก,3,Secondary,14.9907171,103.0760353,Google Maps
 บุรีรัมย์,Buriram,โรงพยาบาลส่งเสริมสุขภาพตำบล บ้านสวายสอ,Ban Sawaiso Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,15.0608008,103.1584214,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,โรงพยาบาลส่งเสริมสุขภาพตำบล บ้านโคกตาล,Ban Khok Tan Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,14.8912998,103.0664522,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,7-Eleven,7-Eleven,ซูเปอร์มาร์เก็ต,3,Secondary,14.9971456,103.0974773,OpenStreetMap / Overpass API
@@ -1124,6 +1122,9 @@
 บุรีรัมย์,Buriram,Evening Market,,ตลาด,3,Secondary,14.9983815,103.0897056,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,local morning market,,ตลาด,3,Secondary,15.0033626,103.1049751,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,weekly temporary market,,ตลาด,3,Secondary,14.9893018,103.1098872,OpenStreetMap / Overpass API
+บุรีรัมย์,Buriram,ตลาดสดเทศบาลลำปลายมาศ,,ตลาด,3,Secondary,15.0242227,101.6831988,Google Maps
+บุรีรัมย์,Buriram,ตลาดสดเทศบาลเมืองบุรีรัมย์,,ตลาด,3,Secondary,14.9983215,101.9573007,Google Maps
+บุรีรัมย์,Buriram,ตลาดสดเทศบาลเมืองบุรีรัมย์,,ตลาด,3,Secondary,15.0133052,102.2579129,Google Maps
 บุรีรัมย์,Buriram,GH Bank,GH Bank,ธนาคาร,3,Secondary,14.9996763,103.1078402,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,GSB,GSB,ธนาคาร,3,Secondary,14.9996239,103.108794,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Islamic Bank of Thailand,Islamic Bank of Thailand,ธนาคาร,3,Secondary,14.9972233,103.0989993,OpenStreetMap / Overpass API
@@ -1154,7 +1155,6 @@
 บุรีรัมย์,Buriram,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,14.9681092,103.0594327,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,14.9251555,103.1424892,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,15.0227955,103.1432065,OpenStreetMap / Overpass API
-บุรีรัมย์,Buriram,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,15.0229531,103.1427195,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,Drugstore,Drugstore,ร้านขายยา,3,Secondary,14.9960101,103.0936925,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,14.9901556,103.0936966,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,14.9959901,103.0935267,OpenStreetMap / Overpass API
@@ -1169,6 +1169,7 @@
 บุรีรัมย์,Buriram,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,14.9744057,103.0684924,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,14.9256298,103.1423836,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.0229949,103.1434332,OpenStreetMap / Overpass API
+บุรีรัมย์,Buriram,7-Eleven สาขา ศูนย์อาหาร 2 มข. (14894),,ร้านสะดวกซื้อ,3,Secondary,16.4717729,102.827461,Google Maps
 บุรีรัมย์,Buriram,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,14.999873,103.1073042,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,ร้าน โฮมตังค์,,ร้านสะดวกซื้อ,3,Secondary,14.9240921,102.9575505,OpenStreetMap / Overpass API
 บุรีรัมย์,Buriram,ร้านค้า สหกรณ์,,ร้านสะดวกซื้อ,3,Secondary,14.9126449,103.04966,OpenStreetMap / Overpass API
@@ -1196,11 +1197,23 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Prachuapkhirikan Provincial Health Office,,หน่วยงานรัฐ,1,Primary,11.8082823,99.7974914,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,rubber authority of Thailand,,หน่วยงานรัฐ,1,Primary,11.7932669,99.7751522,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,สำนักงานหอทะเบียนที่ดิน,,หน่วยงานรัฐ,1,Primary,11.8173082,99.7839381,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,HuaHin Japan Mall ศูนย์รวมสินค้านำเข้าจากญี่ปุ่น,,ห้างสรรพสินค้า,1,Primary,12.4851107,99.4651921,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Makro,Makro,ห้างสรรพสินค้า,1,Primary,11.8192241,99.7824083,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,Seenspace Huahin,,ห้างสรรพสินค้า,1,Primary,12.5518437,99.2965269,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,Seenspace Huahin,,ห้างสรรพสินค้า,1,Primary,12.5971577,99.3777153,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,บลูพอร์ต หัวหิน,,ห้างสรรพสินค้า,1,Primary,12.5409749,99.4045242,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,มาร์เก็ตวิลเลจ หัวหิน,,ห้างสรรพสินค้า,1,Primary,12.1696856,99.867633,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,สาครมินิมาร์ท,Sakhon Mini Mall,ห้างสรรพสินค้า,1,Primary,11.7396938,99.7819123,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โลตัส ประจวบคีรีขันธ์,,ห้างสรรพสินค้า,1,Primary,11.8556994,99.7074757,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โลตัส ประจวบคีรีขันธ์,,ห้างสรรพสินค้า,1,Primary,11.8847778,99.0694412,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โลตัส ปราณบุรี,,ห้างสรรพสินค้า,1,Primary,11.7975593,98.6232916,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Dansingkhon Primary Health Care Unit,,โรงพยาบาล,1,Primary,11.77861,99.6800285,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลธนบุรี-คีรีขันธ์,Thon Buri-Khiri Khan Hospital,โรงพยาบาล,1,Primary,11.7946321,99.7742808,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลบางสะพาน,,โรงพยาบาล,1,Primary,11.223786,98.3431623,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลประจวบคีรีขันธ์,Prachup Khirikhan Hospital,โรงพยาบาล,1,Primary,11.8008842,99.7962421,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลประจวบคีรีขันธ์,,โรงพยาบาล,1,Primary,11.8009757,98.642186,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลประจวบคีรีขันธ์,,โรงพยาบาล,1,Primary,11.8418499,99.689792,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลปราณบุรี,,โรงพยาบาล,1,Primary,12.2096886,98.7049866,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Wat Khlong Wan (Phra Aram Luang),,วัด/ศาสนสถาน,2,Iconic,11.7502931,99.7887986,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Wat Phong Noi,,วัด/ศาสนสถาน,2,Iconic,11.8403929,99.828518,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Wat Thammikaram 2,,วัด/ศาสนสถาน,2,Iconic,11.8213351,99.8000554,OpenStreetMap / Overpass API
@@ -1229,6 +1242,8 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,วัดปากคลองเกลียว,Wat Pak Khlong Kliao,อนุสาวรีย์/อนุสรณ์,2,Iconic,12.0416365,99.9063151,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,ศาลหลักเมืองประจวบคีรีขันธ์,Prachuapkhirikan City Pillar Shrine,อนุสาวรีย์/อนุสรณ์,2,Iconic,11.8111717,99.7967124,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,อุทยานวิทยาศาสตร์พระจอมเกล้า ณ หว้ากอ,,อนุสาวรีย์/อนุสรณ์,2,Iconic,11.7213942,99.7588001,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,คลินิกแพทย์สุพรรณี,,คลินิก,3,Secondary,12.0913976,99.8478052,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,คลินิกแพทย์สุพรรณี,,คลินิก,3,Secondary,11.807159,99.2175646,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงพยาบาลส่งเสริมสุขภาพตำบล คลองวาฬ,Khlong Wan Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,11.7360212,99.7777989,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,CJ Supermarket,Cj Supermarket,ซูเปอร์มาร์เก็ต,3,Secondary,11.7970427,99.7920829,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Lotus's,Lotus's,ซูเปอร์มาร์เก็ต,3,Secondary,11.7974094,99.7772319,OpenStreetMap / Overpass API
@@ -1236,6 +1251,7 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Afternoon Market,Afternoon Market,ตลาด,3,Secondary,11.8040311,99.7949142,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Morning Market,Morning Market,ตลาด,3,Secondary,11.803938,99.7984716,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,ตลาดชายแดนด่านสิงขร,Singkhon Pass Border Market,ตลาด,3,Secondary,11.785399,99.6486994,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,ตลาดสดเทศบาล 1,,ตลาด,3,Secondary,11.8039875,99.2216034,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,ตลาดไทยสิงขร,Thai Singkhon Market,ตลาด,3,Secondary,11.7846167,99.6546649,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,TMB,TMBThanachart Bank,ตู้ATM,3,Secondary,11.8124725,99.7969661,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,ธนาคารกรุงเทพ,Bangkok Bank,ธนาคาร,3,Secondary,11.7974359,99.7768973,OpenStreetMap / Overpass API
@@ -1247,7 +1263,6 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,ธนาคารไทยพาณิชย์,Siam Commercial Bank,ธนาคาร,3,Secondary,11.8052736,99.7976523,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,LPG,,ปั๊มน้ำมัน,3,Secondary,11.8003124,99.7766131,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,PT,,ปั๊มน้ำมัน,3,Secondary,11.741433,99.7487165,OpenStreetMap / Overpass API
-ประจวบคีรีขันธ์,Prachuap Khiri Khan,PT,,ปั๊มน้ำมัน,3,Secondary,11.8236931,99.7806947,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,PT,,ปั๊มน้ำมัน,3,Secondary,11.8662035,99.7861712,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,PT,,ปั๊มน้ำมัน,3,Secondary,11.895483,99.7933837,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,PT,,ปั๊มน้ำมัน,3,Secondary,11.9571851,99.8296753,OpenStreetMap / Overpass API
@@ -1275,11 +1290,11 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,7eleven,ร้านสะดวกซื้อ,3,Secondary,11.7999851,99.7922062,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,11.7101182,99.7168107,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,11.8623455,99.7844008,OpenStreetMap / Overpass API
-ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,11.7953685,99.794303,OpenStreetMap / Overpass API
-ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,11.802685,99.7958965,OpenStreetMap / Overpass API
-ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,11.8074335,99.7961359,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven สาขา ถนนสุขใจ ซอย 14 (16837),,ร้านสะดวกซื้อ,3,Secondary,11.7999,99.5038354,Google Maps
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,7-Eleven สาขา สี่แยก อ.เมืองประจวบ (02354),,ร้านสะดวกซื้อ,3,Secondary,11.6041582,99.692862,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Mini Big C,,ร้านสะดวกซื้อ,3,Secondary,11.7443004,99.78829,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,Q Mart,,ร้านสะดวกซื้อ,3,Secondary,11.8022491,99.7957127,OpenStreetMap / Overpass API
+ประจวบคีรีขันธ์,Prachuap Khiri Khan,เซเว่น-อีเลฟเว่น ประจวบศิริ,,ร้านสะดวกซื้อ,3,Secondary,11.8118744,99.495056,Google Maps
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนบ้านคลองชายธง,,โรงเรียน,3,Secondary,11.9785047,99.8310978,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนบ้านคลองวาฬ,Ban Khlong Wan School,โรงเรียน,3,Secondary,11.7481807,99.789302,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนบ้านคอกช้าง,,โรงเรียน,3,Secondary,12.0188477,99.8398719,OpenStreetMap / Overpass API
@@ -1300,6 +1315,23 @@
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนบ้านอ่าวน้อย,,โรงเรียน,3,Secondary,11.8477265,99.82369,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนพัฒนาประชานุเคราะห์,,โรงเรียน,3,Secondary,11.6995929,99.6640619,OpenStreetMap / Overpass API
 ประจวบคีรีขันธ์,Prachuap Khiri Khan,โรงเรียนเทศบาลวัดธรรมิการาม(ปิยแหวนรังสรรค์),Wat Thanmikaram Municipal School (Piyawaen Rangsan),โรงเรียน,3,Secondary,11.8092238,99.7888978,OpenStreetMap / Overpass API
+พิษณุโลก,Phitsanulok,บิ๊กซี ซูเปอร์เซ็นเตอร์ พิษณุโลก,,ห้างสรรพสินค้า,1,Primary,16.815859,100.2536076,Google Maps
+พิษณุโลก,Phitsanulok,ห้างสรรพสินค้าท็อปแลนด์พลาซ่า,,ห้างสรรพสินค้า,1,Primary,16.8216272,100.2286262,Google Maps
+พิษณุโลก,Phitsanulok,เซ็นทรัล พิษณุโลก,,ห้างสรรพสินค้า,1,Primary,16.8178373,100.2587735,Google Maps
+พิษณุโลก,Phitsanulok,เซ็นทรัล พิษณุโลก,,ห้างสรรพสินค้า,1,Primary,16.8403047,100.1974415,Google Maps
+พิษณุโลก,Phitsanulok,แม็คโคร พิษณุโลก,,ห้างสรรพสินค้า,1,Primary,16.7944329,100.196152,Google Maps
+พิษณุโลก,Phitsanulok,โรงพยาบาลกรุงเทพพิษณุโลก,,โรงพยาบาล,1,Primary,16.9187657,100.0710326,Google Maps
+พิษณุโลก,Phitsanulok,โรงพยาบาลพิษณุเวช,,โรงพยาบาล,1,Primary,16.9202705,100.3177937,Google Maps
+พิษณุโลก,Phitsanulok,โรงพยาบาลพิษณุเวช,,โรงพยาบาล,1,Primary,16.808354,100.115618,Google Maps
+พิษณุโลก,Phitsanulok,โรงพยาบาลพิษณุเวช,,โรงพยาบาล,1,Primary,16.8164336,100.1283834,Google Maps
+พิษณุโลก,Phitsanulok,Vierra Clinic Phitsanulok เวียร์ร่าคลินิก พิษณุโลก,,คลินิก,3,Secondary,16.8092463,100.2215784,Google Maps
+พิษณุโลก,Phitsanulok,คลินิกสมอง หมอเจริญรัตน์ (พิษณุโลก),,คลินิก,3,Secondary,16.8199507,100.2586274,Google Maps
+พิษณุโลก,Phitsanulok,พารากอน คลินิก พิษณุโลก Paragon Clinic Phitsanulok คลินิกเสริมความงามปรับรูปหน้า ฟิลเลอร์ อัลเทอร่า โบทอก ฝ้า สิว หลุมสิว,,คลินิก,3,Secondary,16.808603,100.2263631,Google Maps
+พิษณุโลก,Phitsanulok,พารากอน คลินิก พิษณุโลก Paragon Clinic Phitsanulok คลินิกเสริมความงามปรับรูปหน้า ฟิลเลอร์ อัลเทอร่า โบทอก ฝ้า สิว หลุมสิว,,คลินิก,3,Secondary,16.838097,100.2015929,Google Maps
+พิษณุโลก,Phitsanulok,ตลาดพิษณุโลกร่วมใจ (ตลาดเทศบาล 6),,ตลาด,3,Secondary,16.7372153,100.4406637,Google Maps
+พิษณุโลก,Phitsanulok,ตลาดพิษณุโลกร่วมใจ (ตลาดเทศบาล 6),,ตลาด,3,Secondary,16.8121492,99.9769083,Google Maps
+พิษณุโลก,Phitsanulok,เซเว่น อีเลฟเว่น สาขา พิษณุโลกพลาซ่า (09864),,ร้านสะดวกซื้อ,3,Secondary,16.8246174,100.2673928,Google Maps
+พิษณุโลก,Phitsanulok,เซเว่น อีเลฟเว่น สาขา พิษณุโลกพลาซ่า (09864),,ร้านสะดวกซื้อ,3,Secondary,16.8153611,100.2223331,Google Maps
 ระยอง,Rayong,วิทยาลัยอาชีวศึกษา โปลีเทคนิคระยอง,Polytechnic Vocational College,วิทยาลัย,1,Primary,12.6628151,101.3134647,OpenStreetMap / Overpass API
 ระยอง,Rayong,วิทยาลัยเทคนิคระยอง,Rayong Technical College,วิทยาลัย,1,Primary,12.6677469,101.2715653,OpenStreetMap / Overpass API
 ระยอง,Rayong,Cherdchai Tour,Cherdchai Tour,สถานีขนส่ง,1,Primary,12.628735,101.4418242,OpenStreetMap / Overpass API
@@ -1317,19 +1349,27 @@
 ระยอง,Rayong,Central Rayong,,ห้างสรรพสินค้า,1,Primary,12.6960182,101.2683791,OpenStreetMap / Overpass API
 ระยอง,Rayong,Makro food service,,ห้างสรรพสินค้า,1,Primary,12.6296994,101.4436548,OpenStreetMap / Overpass API
 ระยอง,Rayong,Robinson,,ห้างสรรพสินค้า,1,Primary,12.6965758,101.2684029,OpenStreetMap / Overpass API
+ระยอง,Rayong,Robinson Department Store Rayong,,ห้างสรรพสินค้า,1,Primary,12.7084505,101.1836072,Google Maps
+ระยอง,Rayong,The Ozone Lifestyle Mall,,ห้างสรรพสินค้า,1,Primary,12.6952233,101.2350297,Google Maps
+ระยอง,Rayong,The Ozone Lifestyle Mall,,ห้างสรรพสินค้า,1,Primary,12.6981372,101.1787427,Google Maps
+ระยอง,Rayong,ศูนย์การค้าแพชชั่น ช้อปปิ้งเดสติเนชั่น,,ห้างสรรพสินค้า,1,Primary,12.6838462,101.2128082,Google Maps
+ระยอง,Rayong,สตาร์ไอที เซ็นเตอร์,,ห้างสรรพสินค้า,1,Primary,12.6860818,101.2340354,Google Maps
+ระยอง,Rayong,เซ็นทรัล ระยอง,,ห้างสรรพสินค้า,1,Primary,12.6937008,101.2505523,Google Maps
+ระยอง,Rayong,โลตัส ระยอง,,ห้างสรรพสินค้า,1,Primary,12.6838462,101.1046615,Google Maps
 ระยอง,Rayong,Bangkok Rayong Cancer Hospital,,โรงพยาบาล,1,Primary,12.6767798,101.2334407,OpenStreetMap / Overpass API
 ระยอง,Rayong,Bangkok Rayong Clinic,,โรงพยาบาล,1,Primary,12.5717777,101.46433,OpenStreetMap / Overpass API
 ระยอง,Rayong,Bangkok Rayong Hospital,Bangkok Rayong Hospital,โรงพยาบาล,1,Primary,12.6747231,101.2213708,OpenStreetMap / Overpass API
 ระยอง,Rayong,คลินิกชุมชนอบอุ่น,Chumchon Op-Un Clinic,โรงพยาบาล,1,Primary,12.6742578,101.2787691,OpenStreetMap / Overpass API
 ระยอง,Rayong,ศูนย์บริการสาธารณสุข ปากน้ำ,Paknam Health Service Center,โรงพยาบาล,1,Primary,12.6610428,101.2606406,OpenStreetMap / Overpass API
 ระยอง,Rayong,สถานีอนามัยเกาะเสม็ด,Ko Samet Health Centre,โรงพยาบาล,1,Primary,12.5703545,101.4644665,OpenStreetMap / Overpass API
+ระยอง,Rayong,โรงพยาบาลกรุงเทพระยอง,,โรงพยาบาล,1,Primary,12.6746347,100.9330742,Google Maps
+ระยอง,Rayong,โรงพยาบาลจุฬารัตน์ระยอง,,โรงพยาบาล,1,Primary,12.8181856,101.4047475,Google Maps
 ระยอง,Rayong,โรงพยาบาลบำรุงราษฎร์ระยอง,Bamrungrad Rayong Hospital,โรงพยาบาล,1,Primary,12.6927319,101.204963,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงพยาบาลมงกุฏระยอง,Mongkut Rayong Hospital,โรงพยาบาล,1,Primary,12.7332477,101.1577052,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงพยาบาลมาบตาพุด,Map Ta Phut Hospital,โรงพยาบาล,1,Primary,12.7183739,101.1264977,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงพยาบาลระยอง,Rayong Hospital,โรงพยาบาล,1,Primary,12.6827662,101.2764916,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงพยาบาลศรีระยอง,Ekkachon Rayong Hospital,โรงพยาบาล,1,Primary,12.6954638,101.2925317,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงพยาบาลเฉลิมพระเกียรติ สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี,Princess Sirindhorn Hospital,โรงพยาบาล,1,Primary,12.7301456,101.1362951,OpenStreetMap / Overpass API
-ระยอง,Rayong,โรงพยาบาลเฉลิมพระเกียรติ สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี,Princess Sirindhorn Hospital,โรงพยาบาล,1,Primary,12.7308176,101.1369101,OpenStreetMap / Overpass API
 ระยอง,Rayong,Bureau of Monks,,วัด/ศาสนสถาน,2,Iconic,12.7820987,101.4165917,OpenStreetMap / Overpass API
 ระยอง,Rayong,Chao Pho to Kong Shrine,Chao Pho to Kong Shrine,วัด/ศาสนสถาน,2,Iconic,12.6291414,101.4976332,OpenStreetMap / Overpass API
 ระยอง,Rayong,Thapma Temple,,วัด/ศาสนสถาน,2,Iconic,12.7043924,101.2435903,OpenStreetMap / Overpass API
@@ -1375,6 +1415,8 @@
 ระยอง,Rayong,สวนสาธารณะแหลมเจริญ,Laem Charoen Park,สวนสาธารณะ,2,Iconic,12.6569639,101.2755653,OpenStreetMap / Overpass API
 ระยอง,Rayong,สวนสาธารณะโขดปอ ชุมชนเนินพระ,,สวนสาธารณะ,2,Iconic,12.6734731,101.2452315,OpenStreetMap / Overpass API
 ระยอง,Rayong,หอพักถนอมรัตน์,,อนุสาวรีย์/อนุสรณ์,2,Iconic,12.6779697,101.281449,OpenStreetMap / Overpass API
+ระยอง,Rayong,Gangnam Clinic Central Rayong (กังนัมคลินิก สาขาเซ็นทรัลระยอง),,คลินิก,3,Secondary,12.6961147,100.9799366,Google Maps
+ระยอง,Rayong,Gangnam Clinic Central Rayong (กังนัมคลินิก สาขาเซ็นทรัลระยอง),,คลินิก,3,Secondary,12.6851682,100.9833231,Google Maps
 ระยอง,Rayong,Rasita Clinic,,คลินิก,3,Secondary,12.7017923,101.286597,OpenStreetMap / Overpass API
 ระยอง,Rayong,Supparat Clinic,,คลินิก,3,Secondary,12.68566,101.2391687,OpenStreetMap / Overpass API
 ระยอง,Rayong,คลินิกแพทย์ชาญยุทธ,,คลินิก,3,Secondary,12.6825215,101.2757385,OpenStreetMap / Overpass API
@@ -1386,9 +1428,12 @@
 ระยอง,Rayong,คลีนิคหมอลินดา,,คลินิก,3,Secondary,12.6865526,101.2654522,OpenStreetMap / Overpass API
 ระยอง,Rayong,คลีนิคหมออภิรัตน์,,คลินิก,3,Secondary,12.6865892,101.2656037,OpenStreetMap / Overpass API
 ระยอง,Rayong,ชาติชัย คลินิค,,คลินิก,3,Secondary,12.6787651,101.2857713,OpenStreetMap / Overpass API
+ระยอง,Rayong,บีอาร์เอ็กซ์จี โพลีคลินิก/สหคลินิกบูรพารักษ์สาขาระยอง,,คลินิก,3,Secondary,12.6997735,100.9287451,Google Maps
 ระยอง,Rayong,พงศ์ศักดิ์คลินิก,,คลินิก,3,Secondary,12.6814649,101.2781102,OpenStreetMap / Overpass API
 ระยอง,Rayong,พี่ภภ,,คลินิก,3,Secondary,12.7734029,101.1391282,OpenStreetMap / Overpass API
 ระยอง,Rayong,ระยองโพลีคลินิก,Rayong Polyclinic,คลินิก,3,Secondary,12.6838057,101.271461,OpenStreetMap / Overpass API
+ระยอง,Rayong,รักษ์ระยองสหคลินิก สาขาบ้านเพ,,คลินิก,3,Secondary,12.6783496,101.236846,Google Maps
+ระยอง,Rayong,รักษ์ระยองสหคลินิก สาขาบ้านเพ,,คลินิก,3,Secondary,12.6335626,101.1342359,Google Maps
 ระยอง,Rayong,ราชวิถี สลิมแคร์,,คลินิก,3,Secondary,12.6865277,101.2653463,OpenStreetMap / Overpass API
 ระยอง,Rayong,อินเตอร์เนชั่นแนล คลินิก,International Clinic,คลินิก,3,Secondary,12.5737556,101.46347,OpenStreetMap / Overpass API
 ระยอง,Rayong,แพทย์สุพจน์,,คลินิก,3,Secondary,12.6836192,101.2758189,OpenStreetMap / Overpass API
@@ -1418,8 +1463,13 @@
 ระยอง,Rayong,Olida Market,,ตลาด,3,Secondary,12.6853264,101.2860006,OpenStreetMap / Overpass API
 ระยอง,Rayong,market,Fruit market,ตลาด,3,Secondary,12.6298188,101.4366135,OpenStreetMap / Overpass API
 ระยอง,Rayong,ตลาดชัยพร,Chaiphon Market,ตลาด,3,Secondary,12.6823538,101.2752659,OpenStreetMap / Overpass API
+ระยอง,Rayong,ตลาดนพเก้าต.มะขามคู่ อ.นิคมพัฒนา จ.ระยอง,,ตลาด,3,Secondary,12.8562274,100.9474984,Google Maps
 ระยอง,Rayong,ตลาดสดสตาร์,Star Freshmarket,ตลาด,3,Secondary,12.6862271,101.2721738,OpenStreetMap / Overpass API
+ระยอง,Rayong,ตลาดสดสตาร์ ระยอง,,ตลาด,3,Secondary,12.6732445,101.3232709,Google Maps
+ระยอง,Rayong,ตลาดสดสตาร์ ระยอง,,ตลาด,3,Secondary,12.6868519,101.1277774,Google Maps
+ระยอง,Rayong,ตลาดสดเทศบาลนครมาบตาพุด,,ตลาด,3,Secondary,12.7203113,101.0244252,Google Maps
 ระยอง,Rayong,ตลาดสุรชัย,Sura Chai Market,ตลาด,3,Secondary,12.6412581,101.4009022,OpenStreetMap / Overpass API
+ระยอง,Rayong,ตลาดเทพจินดา,,ตลาด,3,Secondary,12.7252691,100.9098117,Google Maps
 ระยอง,Rayong,ตลาดเปี่ยมทรัพย์,,ตลาด,3,Secondary,12.6632739,101.2718324,OpenStreetMap / Overpass API
 ระยอง,Rayong,ตลาดโต้รุ่ง เทศบ้นเทิง,,ตลาด,3,Secondary,12.6823246,101.2806758,OpenStreetMap / Overpass API
 ระยอง,Rayong,ธนาคารกรุงเทพ,Bangkok Bank,ตู้ATM,3,Secondary,12.658389,101.3277061,OpenStreetMap / Overpass API
@@ -1435,7 +1485,6 @@
 ระยอง,Rayong,กรุงศรี,Krungsri,ธนาคาร,3,Secondary,12.7135928,101.1674809,OpenStreetMap / Overpass API
 ระยอง,Rayong,กรุงศรี,Krungsri,ธนาคาร,3,Secondary,12.6816662,101.2731743,OpenStreetMap / Overpass API
 ระยอง,Rayong,ธกส,,ธนาคาร,3,Secondary,12.6800303,101.2855771,OpenStreetMap / Overpass API
-ระยอง,Rayong,ธนาคารกรุงศรี,Krungsri Bank,ธนาคาร,3,Secondary,12.7138386,101.1669816,OpenStreetMap / Overpass API
 ระยอง,Rayong,ธนาคารกรุงเทพ,,ธนาคาร,3,Secondary,12.6817028,101.2812336,OpenStreetMap / Overpass API
 ระยอง,Rayong,ธนาคารกรุงเทพ,,ธนาคาร,3,Secondary,12.7142872,101.1660404,OpenStreetMap / Overpass API
 ระยอง,Rayong,ธนาคารกรุงไทย,Krung Thai Bank,ธนาคาร,3,Secondary,12.6823043,101.2646998,OpenStreetMap / Overpass API
@@ -1506,7 +1555,6 @@
 ระยอง,Rayong,ผึ้งพาฟาร์มา,,ร้านขายยา,3,Secondary,12.6912024,101.2687393,OpenStreetMap / Overpass API
 ระยอง,Rayong,ร้านขายยา สี่ใบเถาว์,,ร้านขายยา,3,Secondary,12.6689087,101.2993594,OpenStreetMap / Overpass API
 ระยอง,Rayong,ร้านพัฒนพงษ์เภสัข,,ร้านขายยา,3,Secondary,12.6694831,101.2994438,OpenStreetMap / Overpass API
-ระยอง,Rayong,ร้านเภสัชกรชลิต,Chalit Pharmacy,ร้านขายยา,3,Secondary,12.6821944,101.2758417,OpenStreetMap / Overpass API
 ระยอง,Rayong,ศิริภา,,ร้านขายยา,3,Secondary,12.6861548,101.2651343,OpenStreetMap / Overpass API
 ระยอง,Rayong,เกิ้ล ฟาร์มาซี,Gle Pharmacy,ร้านขายยา,3,Secondary,12.6837252,101.271459,OpenStreetMap / Overpass API
 ระยอง,Rayong,เภสัชกรชลิต,,ร้านขายยา,3,Secondary,12.6814898,101.277785,OpenStreetMap / Overpass API
@@ -1523,8 +1571,6 @@
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6972843,101.2665054,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6442125,101.3524566,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6793948,101.2813114,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6787484,101.2815689,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6783219,101.2813275,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6834015,101.2736799,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.568695,101.464589,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6641892,101.3010225,OpenStreetMap / Overpass API
@@ -1537,19 +1583,14 @@
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.7031387,101.2734991,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6417825,101.5050196,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.5740162,101.4634207,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6282995,101.4416995,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.5686725,101.4644578,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.7156162,101.2291848,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.7129252,101.2408237,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6760085,101.2379472,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.7133324,101.167887,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6152478,101.3784627,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6691272,101.2991609,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6909159,101.2688854,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.7166235,101.1618787,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6852442,101.2715515,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6853214,101.2706423,OpenStreetMap / Overpass API
-ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6826759,101.2756956,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,12.6424282,101.4175164,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6336167,101.4780983,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.7016766,101.1888207,OpenStreetMap / Overpass API
@@ -1570,6 +1611,14 @@
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6798084,101.1991799,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6978703,101.2178364,OpenStreetMap / Overpass API
 ระยอง,Rayong,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,12.6889621,101.2035706,OpenStreetMap / Overpass API
+ระยอง,Rayong,7-Eleven สาขา ตลอดริมคลอง 62 กรอกยายชา (ระยอง) (19079),,ร้านสะดวกซื้อ,3,Secondary,12.688972,101.1673849,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ตลาดหนองโพรง (ระยอง) (16382),,ร้านสะดวกซื้อ,3,Secondary,12.6762185,101.1859631,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ตลาดหนองโพรง (ระยอง) (16382),,ร้านสะดวกซื้อ,3,Secondary,12.704955,101.1899476,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ตลาดหมอสาโรจน์ (01428),,ร้านสะดวกซื้อ,3,Secondary,12.6909996,101.2016832,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ถนนแสงจันทร์เนรมิต (ระยอง) (18087),,ร้านสะดวกซื้อ,3,Secondary,12.665731,101.2027465,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ถนนแสงจันทร์เนรมิต (ระยอง) (18087),,ร้านสะดวกซื้อ,3,Secondary,12.6751653,101.1841119,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ริมหาดแสงจันทร์ (ระยอง) (14096),,ร้านสะดวกซื้อ,3,Secondary,12.6842302,101.258497,Google Maps
+ระยอง,Rayong,7-Eleven สาขา ริมหาดแสงจันทร์ (ระยอง) (14096),,ร้านสะดวกซื้อ,3,Secondary,12.665266,101.2013451,Google Maps
 ระยอง,Rayong,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,12.66835,101.298869,OpenStreetMap / Overpass API
 ระยอง,Rayong,CJ Express,,ร้านสะดวกซื้อ,3,Secondary,12.6634498,101.271579,OpenStreetMap / Overpass API
 ระยอง,Rayong,CJ More,,ร้านสะดวกซื้อ,3,Secondary,12.7160859,101.3355158,OpenStreetMap / Overpass API
@@ -1625,7 +1674,6 @@
 ระยอง,Rayong,โรงเรียนวัดในไร่,Wat Nai Rai School,โรงเรียน,3,Secondary,12.6188842,101.4026553,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงเรียนสาธิตเทศบาลนครระยอง (วัดศรีรัตนาราม),,โรงเรียน,3,Secondary,12.6626135,101.2773947,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงเรียนอนุบาลระยอง,Anuban Rayong School,โรงเรียน,3,Secondary,12.6747864,101.279386,OpenStreetMap / Overpass API
-ระยอง,Rayong,โรงเรียนอนุบาลระยอง,,โรงเรียน,3,Secondary,12.6770341,101.2781246,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงเรียนอัสสัมชัญระยอง,,โรงเรียน,3,Secondary,12.6815797,101.2314707,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงเรียนอารีย์วัฒนา,Areewattana School,โรงเรียน,3,Secondary,12.6699096,101.2713115,OpenStreetMap / Overpass API
 ระยอง,Rayong,โรงเรียนเกาะแก้วพิศดาร,Ko Kaeo Phitsadan School,โรงเรียน,3,Secondary,12.5721767,101.4647995,OpenStreetMap / Overpass API
@@ -1649,9 +1697,16 @@
 สุรินทร์,Surin,Tourism Authority of Thailand,Tourism Authority of Thailand,หน่วยงานรัฐ,1,Primary,14.884219,103.4986675,OpenStreetMap / Overpass API
 สุรินทร์,Surin,ที่ว่าการอำเภอเมือง จ.สุรินทร์,Mueang Cho Surin District Office,หน่วยงานรัฐ,1,Primary,14.8820394,103.4932273,OpenStreetMap / Overpass API
 สุรินทร์,Surin,Robinson,,ห้างสรรพสินค้า,1,Primary,14.877616,103.5318377,OpenStreetMap / Overpass API
+สุรินทร์,Surin,ร้านสินค้าญี่ปุ่น คุมะ,,ห้างสรรพสินค้า,1,Primary,14.87738,103.2279649,Google Maps
+สุรินทร์,Surin,สุรินทร์ พลาซ่า,,ห้างสรรพสินค้า,1,Primary,14.8900814,103.2023828,Google Maps
 สุรินทร์,Surin,เพชรเกษมพลาช่า,,ห้างสรรพสินค้า,1,Primary,14.8887118,103.49439,OpenStreetMap / Overpass API
+สุรินทร์,Surin,โรบินสันไลฟ์สไตล์ สุรินทร์,,ห้างสรรพสินค้า,1,Primary,15.09684,103.6765398,Google Maps
+สุรินทร์,Surin,โรบินสันไลฟ์สไตล์ สุรินทร์,,ห้างสรรพสินค้า,1,Primary,14.8760076,103.2443679,Google Maps
+สุรินทร์,Surin,โรบินสันไลฟ์สไตล์ สุรินทร์,,ห้างสรรพสินค้า,1,Primary,15.034747,103.5940481,Google Maps
 สุรินทร์,Surin,โรงพยาบาลค่ายวีรวัฒน์โยธิน,Khai Wirawat Yothin Hospital,โรงพยาบาล,1,Primary,14.8705053,103.4854174,OpenStreetMap / Overpass API
+สุรินทร์,Surin,โรงพยาบาลรวมแพทย์ (หมออนันต์),,โรงพยาบาล,1,Primary,14.8986706,103.5746985,Google Maps
 สุรินทร์,Surin,โรงพยาบาลสุรินทร์,Surin Hospital,โรงพยาบาล,1,Primary,14.8765262,103.503433,OpenStreetMap / Overpass API
+สุรินทร์,Surin,โรงพยาบาลสุรินทร์รวมแพทย์,,โรงพยาบาล,1,Primary,14.8897407,102.9146023,Google Maps
 สุรินทร์,Surin,วัดกลาง สุรินทร์,Wat Klang Surin,วัด/ศาสนสถาน,2,Iconic,14.8845424,103.4911972,OpenStreetMap / Overpass API
 สุรินทร์,Surin,วัดจำปา,Wat Champa,วัด/ศาสนสถาน,2,Iconic,14.8809226,103.4953512,OpenStreetMap / Overpass API
 สุรินทร์,Surin,วัดจุมพลสุทธาวาส,Wat Jumphon Sutthawas,วัด/ศาสนสถาน,2,Iconic,14.8772859,103.4895856,OpenStreetMap / Overpass API
@@ -1678,6 +1733,10 @@
 สุรินทร์,Surin,elephant,,อนุสาวรีย์/อนุสรณ์,2,Iconic,14.8910064,103.4938878,OpenStreetMap / Overpass API
 สุรินทร์,Surin,อนุสาวรีย์พระยาสุรินทรภักดีศรีณรงค์จางวาง (ปุม),Phraya Surin Phakdi Si Narong Changwang (Pum) Monument,อนุสาวรีย์/อนุสรณ์,2,Iconic,14.87837,103.4896051,OpenStreetMap / Overpass API
 สุรินทร์,Surin,Prasat Muang Thi,,โบราณสถาน,2,Iconic,14.8883025,103.6516095,OpenStreetMap / Overpass API
+สุรินทร์,Surin,มนต์ชัยคลินิก l สาขาใจกลางเมืองสุรินทร์,,คลินิก,3,Secondary,14.8882058,103.4771629,Google Maps
+สุรินทร์,Surin,วันวานคลินิก สาขาสุรินทร์ Onewan clinic surin by Dr.Fronk,,คลินิก,3,Secondary,14.8810452,103.4997913,Google Maps
+สุรินทร์,Surin,วันวานคลินิก สาขาสุรินทร์ Onewan clinic surin by Dr.Fronk,,คลินิก,3,Secondary,14.8881603,103.4753506,Google Maps
+สุรินทร์,Surin,สิริวรัญญา สหคลินิก (คลินิกการพยาบาลและการแพทย์แผนไทยสุรินทร์),,คลินิก,3,Secondary,14.8779716,103.4869352,Google Maps
 สุรินทร์,Surin,Makro,,ซูเปอร์มาร์เก็ต,3,Secondary,14.8713012,103.510851,OpenStreetMap / Overpass API
 สุรินทร์,Surin,Marketplace,Marketplace,ซูเปอร์มาร์เก็ต,3,Secondary,14.8881889,103.4887078,OpenStreetMap / Overpass API
 สุรินทร์,Surin,Tesco Lotus,,ซูเปอร์มาร์เก็ต,3,Secondary,14.8901386,103.4900976,OpenStreetMap / Overpass API
@@ -1687,6 +1746,7 @@
 สุรินทร์,Surin,Surin Night Market,,ตลาด,3,Secondary,14.8863254,103.4923929,OpenStreetMap / Overpass API
 สุรินทร์,Surin,ตลาดน้ำราชมงคลสุรินทร์,Rajamangala Surin Floating Market,ตลาด,3,Secondary,14.8568409,103.4774762,OpenStreetMap / Overpass API
 สุรินทร์,Surin,ตลาดสดสุรินทร์,,ตลาด,3,Secondary,14.8880414,103.4892472,OpenStreetMap / Overpass API
+สุรินทร์,Surin,ตลาดสดเมืองสุรินทร์,,ตลาด,3,Secondary,14.88803,103.2005005,Google Maps
 สุรินทร์,Surin,Ruampeat Hospital,Ruampeat Hospital,ตู้ATM,3,Secondary,14.8849392,103.497474,OpenStreetMap / Overpass API
 สุรินทร์,Surin,กรุงศรี,Bank of Ayudhya,ธนาคาร,3,Secondary,14.8906921,103.4934972,OpenStreetMap / Overpass API
 สุรินทร์,Surin,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,14.8410788,103.4710309,OpenStreetMap / Overpass API
@@ -1714,9 +1774,13 @@
 สุรินทร์,Surin,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,14.8885102,103.419833,OpenStreetMap / Overpass API
 สุรินทร์,Surin,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,14.8589597,103.4786873,OpenStreetMap / Overpass API
 สุรินทร์,Surin,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,14.8944275,103.4867885,OpenStreetMap / Overpass API
+สุรินทร์,Surin,7-Eleven สาขา ศิริรัฐ (04400),,ร้านสะดวกซื้อ,3,Secondary,14.9186111,103.5835091,Google Maps
+สุรินทร์,Surin,7-Eleven สาขา ศิริรัฐ (04400),,ร้านสะดวกซื้อ,3,Secondary,14.8872578,102.9220356,Google Maps
+สุรินทร์,Surin,7-Eleven สาขา ศิริรัฐ (04400),,ร้านสะดวกซื้อ,3,Secondary,14.8912531,102.9167462,Google Maps
 สุรินทร์,Surin,Big C,,ร้านสะดวกซื้อ,3,Secondary,14.8941563,103.4980216,OpenStreetMap / Overpass API
 สุรินทร์,Surin,CJ More,,ร้านสะดวกซื้อ,3,Secondary,14.8935265,103.4976356,OpenStreetMap / Overpass API
 สุรินทร์,Surin,PP มินิมาร์ท,,ร้านสะดวกซื้อ,3,Secondary,14.7365699,103.5549245,OpenStreetMap / Overpass API
+สุรินทร์,Surin,เซเว่น อีเลฟเว่น สาขา หน้ารถไฟสุรินทร์ (09997),,ร้านสะดวกซื้อ,3,Secondary,14.9136137,103.4865637,Google Maps
 สุรินทร์,Surin,Rajamangala University,Rajamangala University,โรงเรียน,3,Secondary,14.854157,103.4836114,OpenStreetMap / Overpass API
 สุรินทร์,Surin,โรงเรียนบ้านตะบัล,,โรงเรียน,3,Secondary,14.8771818,103.5435523,OpenStreetMap / Overpass API
 สุรินทร์,Surin,โรงเรียนบ้านตาเปาว์,,โรงเรียน,3,Secondary,14.897851,103.6737445,OpenStreetMap / Overpass API
@@ -1783,12 +1847,17 @@
 อุดรธานี,Udon Thani,แขวงการทางอุดรธานี,Highway District Udon Thani,หน่วยงานรัฐ,1,Primary,17.3866434,102.763338,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Central Udon,,ห้างสรรพสินค้า,1,Primary,17.4059649,102.8003233,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Night Market,,ห้างสรรพสินค้า,1,Primary,17.4054636,102.8047308,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,Night Market,,ห้างสรรพสินค้า,1,Primary,17.4058589,102.8045349,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Posri Village,Posri Village,ห้างสรรพสินค้า,1,Primary,17.4147077,102.7758026,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Robinson's Department Store Udon Thani,,ห้างสรรพสินค้า,1,Primary,17.4053067,102.7996559,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,ตึกคอม แลนด์มาร์ค อุดรธานี,,ห้างสรรพสินค้า,1,Primary,17.4017698,102.6693836,Google Maps
+อุดรธานี,Udon Thani,ตึกคอม แลนด์มาร์ค อุดรธานี,,ห้างสรรพสินค้า,1,Primary,17.4087094,102.647985,Google Maps
 อุดรธานี,Udon Thani,ยูดี ทาวน์,UD Town,ห้างสรรพสินค้า,1,Primary,17.4021028,102.804568,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,ยูดี ทาวน์ อุดรธานี,,ห้างสรรพสินค้า,1,Primary,17.407804,102.6634208,Google Maps
 อุดรธานี,Udon Thani,ยูดีทาวน์,UD Town,ห้างสรรพสินค้า,1,Primary,17.4034393,102.8046992,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,วีที แหนมเนือง,VT,ห้างสรรพสินค้า,1,Primary,17.3543646,102.8240021,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,เซ็นทรัล อุดร,,ห้างสรรพสินค้า,1,Primary,17.4213226,102.7866636,Google Maps
+อุดรธานี,Udon Thani,เซ็นทรัล อุดร,,ห้างสรรพสินค้า,1,Primary,17.405906,102.6558892,Google Maps
+อุดรธานี,Udon Thani,เซ็นทรัล อุดร,,ห้างสรรพสินค้า,1,Primary,17.4407518,102.7940441,Google Maps
 อุดรธานี,Udon Thani,แลนด์มาร์ก (ตึกคอม),Landmark Plaza,ห้างสรรพสินค้า,1,Primary,17.4087885,102.7922617,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangkok Hospital,Bangkok Hospital,โรงพยาบาล,1,Primary,17.4066764,102.8035264,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,รพ.หมอไพโรจน์​,,โรงพยาบาล,1,Primary,17.4348063,102.7922787,OpenStreetMap / Overpass API
@@ -1799,10 +1868,12 @@
 อุดรธานี,Udon Thani,โรงพยาบาลค่ายประจักษ์ศิลปาคม,Prachak Sinlapakhom Army Hospital,โรงพยาบาล,1,Primary,17.3699739,102.8118659,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลชัยเกษมการแพทย์,Chai Kasem Kan Phaet Hospital,โรงพยาบาล,1,Primary,17.3947754,102.8096294,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลธัญญารักษ์ อุดรธานี,Thanyarak Udonthani Hospital,โรงพยาบาล,1,Primary,17.2643663,102.8815502,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,โรงพยาบาลนอร์ทอีสเทอร์นวัฒนา,,โรงพยาบาล,1,Primary,17.4214573,102.7657918,Google Maps
 อุดรธานี,Udon Thani,โรงพยาบาลรัตนแพทย์,Rattanaphaet Hospital,โรงพยาบาล,1,Primary,17.4074345,102.7686775,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลหมอสุขุม,Mo Sukhum Hospital,โรงพยาบาล,1,Primary,17.4116778,102.78763,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลหมอไพโรจน์,Mo Phairot Hospital,โรงพยาบาล,1,Primary,17.4158776,102.7915755,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลอุดรธานี,Udon Thani Hospital,โรงพยาบาล,1,Primary,17.4149312,102.7803421,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,โรงพยาบาลเอกอุดร,,โรงพยาบาล,1,Primary,17.4096142,102.7937283,Google Maps
 อุดรธานี,Udon Thani,"โรงพยาบาลเอกอุดร, AEK",AEK Udon Hospital,โรงพยาบาล,1,Primary,17.3976651,102.8029955,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Dhamma chedi luangta,,วัด/ศาสนสถาน,2,Iconic,17.2973858,102.7815931,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Wat Pā Bān Tāt,Bān Tāt Forest Monastery,วัด/ศาสนสถาน,2,Iconic,17.2963501,102.7766812,OpenStreetMap / Overpass API
@@ -1853,6 +1924,7 @@
 อุดรธานี,Udon Thani,รพ.เทศบาลนครอุดรธานี,Public Health Centre,คลินิก,3,Secondary,17.4199152,102.791618,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,หมอศุภโชค,,คลินิก,3,Secondary,17.4034555,102.7893708,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,หมอไพโรจน์,Mo Phairot,คลินิก,3,Secondary,17.4348298,102.7923586,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,เมืองอุดรคลินิก (MueangUdon Clinic),,คลินิก,3,Secondary,17.4349164,102.7874967,Google Maps
 อุดรธานี,Udon Thani,โรงพยาบาลส่งเสริมสุขภาพตำบล บ้านจั่น,Ban Chan Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,17.3559046,102.7867234,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลส่งเสริมสุขภาพตำบล บ้านตาด,Ban Tat Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,17.3091167,102.786566,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,โรงพยาบาลส่งเสริมสุขภาพตำบล แม่นนท์,Mae Non Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,17.2430829,102.8977633,OpenStreetMap / Overpass API
@@ -1879,7 +1951,6 @@
 อุดรธานี,Udon Thani,ตลาดเมืองทองเจริญศรี,Udon Muang Thong Market Center,ตลาด,3,Secondary,17.3881017,102.8184351,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,ตลาดไทยอิสาณ,Thai - Issan Market,ตลาด,3,Secondary,17.4031146,102.7970763,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,เซ็นเตอร์พ้อยท์2003,Center Point 2003,ตลาด,3,Secondary,17.4044008,102.8048885,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,เซ็นเตอร์พ้อยท์2003,Center Point 2003,ตลาด,3,Secondary,17.4045968,102.8046112,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangkok Bank ATM,Bangkok Bank,ตู้ATM,3,Secondary,17.4128114,102.8000296,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Kasikornbank,Kasikornbank,ตู้ATM,3,Secondary,17.4043735,102.8040501,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Krungsri,Bank of Ayudhya,ตู้ATM,3,Secondary,17.4062152,102.7955663,OpenStreetMap / Overpass API
@@ -1923,7 +1994,6 @@
 อุดรธานี,Udon Thani,Bangchak,,ปั๊มน้ำมัน,3,Secondary,17.4899322,102.7966574,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,17.380125,102.7464202,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,17.4215139,102.7906918,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,17.4195366,102.790768,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,17.3844269,102.7548346,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangchak,Bangchak,ปั๊มน้ำมัน,3,Secondary,17.4022189,102.7925577,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Bangchak,,ปั๊มน้ำมัน,3,Secondary,17.5179478,102.7996744,OpenStreetMap / Overpass API
@@ -1938,9 +2008,7 @@
 อุดรธานี,Udon Thani,Cosmo,Cosmo,ปั๊มน้ำมัน,3,Secondary,17.3811126,102.8364624,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Fuel Station,,ปั๊มน้ำมัน,3,Secondary,17.537052,102.7550222,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Fuel Station,,ปั๊มน้ำมัน,3,Secondary,17.3720414,102.725903,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,Fuel Station,,ปั๊มน้ำมัน,3,Secondary,17.5369245,102.7549793,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Gasoline Station,,ปั๊มน้ำมัน,3,Secondary,17.309389,102.7910359,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,Gasoline Station,,ปั๊มน้ำมัน,3,Secondary,17.3116073,102.7916879,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,LPG Station,,ปั๊มน้ำมัน,3,Secondary,17.3776726,102.740179,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,PT,,ปั๊มน้ำมัน,3,Secondary,17.3830052,102.754192,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,PT,,ปั๊มน้ำมัน,3,Secondary,17.3739066,102.8496736,OpenStreetMap / Overpass API
@@ -1977,7 +2045,6 @@
 อุดรธานี,Udon Thani,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.4023661,102.820765,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.3366133,102.834346,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.4456007,102.7924237,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.3362574,102.8332539,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,ป.ต.ท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.3721475,102.7231677,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,ปตท.,PTT,ปั๊มน้ำมัน,3,Secondary,17.428816,102.7915464,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,พีที,PT,ปั๊มน้ำมัน,3,Secondary,17.3104698,102.8516563,OpenStreetMap / Overpass API
@@ -1997,7 +2064,6 @@
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4142209,102.7761421,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.419419,102.7864813,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.404368,102.8040034,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4082776,102.7839338,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4266342,102.8097431,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.404931,102.7812621,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3889413,102.7686224,OpenStreetMap / Overpass API
@@ -2010,7 +2076,6 @@
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3296603,102.8402671,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3772203,102.8451475,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3990028,102.8118694,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3767032,102.8459549,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3985272,102.7955588,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3728217,102.7274937,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3981327,102.8045638,OpenStreetMap / Overpass API
@@ -2018,20 +2083,17 @@
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.384165,102.8321874,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3964597,102.8243802,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3482751,102.8260718,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3937324,102.7984795,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3735133,102.810705,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-eleven,ร้านสะดวกซื้อ,3,Secondary,17.4056624,102.8246143,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4120459,102.7453449,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3636922,102.816968,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3859217,102.7611405,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4070243,102.8027518,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4150685,102.7769779,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.412826,102.8000146,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.5513974,102.8240531,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3722667,102.7236393,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.40273,102.7663188,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3991529,102.7654285,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4076009,102.8024607,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.3575487,102.8818364,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3996159,102.7717266,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3913816,102.7711733,OpenStreetMap / Overpass API
@@ -2042,18 +2104,17 @@
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.5482968,102.8010125,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4570735,102.7934408,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3855532,102.803612,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4045446,102.8021914,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4052143,102.7978556,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.397051,102.7869672,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3952246,102.7906242,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4028815,102.7849153,OpenStreetMap / Overpass API
-อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.404523,102.7818866,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,17.4115812,102.7947484,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3371525,102.8340054,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4343525,102.7999693,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3098813,102.7915974,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.3615705,102.8119932,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,17.4085374,102.7531102,OpenStreetMap / Overpass API
+อุดรธานี,Udon Thani,7-Eleven สาขา บ.ข.ส.อุดรธานี (01152),,ร้านสะดวกซื้อ,3,Secondary,17.3970222,102.6428287,Google Maps
+อุดรธานี,Udon Thani,7-Eleven สาขา บ.ข.ส.อุดรธานี (01152),,ร้านสะดวกซื้อ,3,Secondary,17.4036353,102.6555573,Google Maps
 อุดรธานี,Udon Thani,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,17.3560402,102.8220937,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,17.3078191,102.8545314,OpenStreetMap / Overpass API
 อุดรธานี,Udon Thani,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,17.4083848,102.7532801,OpenStreetMap / Overpass API
@@ -2142,11 +2203,20 @@
 อุบลราชธานี,Ubon Ratchathani,เทศบาล เมืองแจระแม,Chae Ra Mae Townhall,หน่วยงานรัฐ,1,Primary,15.2759907,104.8001694,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Central Ubon,,ห้างสรรพสินค้า,1,Primary,15.2399884,104.8232834,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,City Plaza Mail,,ห้างสรรพสินค้า,1,Primary,15.2562984,104.8479893,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,Funplanet Central Ubonratchathani,,ห้างสรรพสินค้า,1,Primary,15.2398519,104.7871028,Google Maps
+อุบลราชธานี,Ubon Ratchathani,OTOP Center Ubon ศูนย์แสดงสินค้า OTOP อุบลราชธานี,,ห้างสรรพสินค้า,1,Primary,15.2448691,104.8101638,Google Maps
+อุบลราชธานี,Ubon Ratchathani,Robinson Ubon Ratchathani,,ห้างสรรพสินค้า,1,Primary,15.2409943,104.7872292,Google Maps
 อุบลราชธานี,Ubon Ratchathani,SK Park,,ห้างสรรพสินค้า,1,Primary,15.2443831,104.8479439,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,Y Square Food Mall,,ห้างสรรพสินค้า,1,Primary,15.2476222,104.8074234,Google Maps
+อุบลราชธานี,Ubon Ratchathani,บิ๊กซี ซูเปอร์เซ็นเตอร์ อุบลราชธานี,,ห้างสรรพสินค้า,1,Primary,15.2708175,104.8038227,Google Maps
+อุบลราชธานี,Ubon Ratchathani,อุบล พลาซ่า,,ห้างสรรพสินค้า,1,Primary,15.2309961,104.8195571,Google Maps
+อุบลราชธานี,Ubon Ratchathani,เซ็นทรัล อุบล,,ห้างสรรพสินค้า,1,Primary,15.2478884,104.8420405,Google Maps
 อุบลราชธานี,Ubon Ratchathani,Phra Si Maha Phot Psychiatric Hospital,,โรงพยาบาล,1,Primary,15.2508312,104.8412386,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Sunpasitinter Hospital,Sunpasitinter Hospital,โรงพยาบาล,1,Primary,15.234387,104.8660807,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Wing 21 Hospital,,โรงพยาบาล,1,Primary,15.260649,104.8701431,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลกองบิน 21,Kong Bin 21 Hospital,โรงพยาบาล,1,Primary,15.2566437,104.8649633,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลพริ้นซ์ อุบลราชธานี,,โรงพยาบาล,1,Primary,15.3063407,105.0487702,Google Maps
+อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลพริ้นซ์ อุบลราชธานี,,โรงพยาบาล,1,Primary,15.2344486,104.5777115,Google Maps
 อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลราชเวชอุบล,,โรงพยาบาล,1,Primary,15.2673357,104.8431275,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลสรรพสิทธิประสงค์,Sunpasitthiprasong Hospital,โรงพยาบาล,1,Primary,15.2365981,104.8655675,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลอุบลรักษ์ ธนบุรี,Ubonrak Thonburi Hospital,โรงพยาบาล,1,Primary,15.2311379,104.8713712,OpenStreetMap / Overpass API
@@ -2194,12 +2264,16 @@
 อุบลราชธานี,Ubon Ratchathani,ทุ่งศรีเมือง,Thung Si Muang,อนุสาวรีย์/อนุสรณ์,2,Iconic,15.2301893,104.8572995,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,พระอนุสาวรีย์ พลตรีพระเจ้าบรมวงศ์เธอ กรมหลวงสรรพสิทธิประสงค์,,อนุสาวรีย์/อนุสรณ์,2,Iconic,15.2284258,104.8570876,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,อนุสาวรีย์พระปทุมวรราชสุริยวงศ์ (เจ้าคำผง),Phra Pathum Worarat Suriyawong,อนุสาวรีย์/อนุสรณ์,2,Iconic,15.2302796,104.8578951,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,ALYN CLINIC อลินสหคลินิก สาขาอุบลราชธานี,,คลินิก,3,Secondary,15.2355876,104.8176641,Google Maps
 อุบลราชธานี,Ubon Ratchathani,Alinna Clinic,,คลินิก,3,Secondary,15.2320099,104.8558353,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,DERRA Clinic,,คลินิก,3,Secondary,15.2719185,104.8420607,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Dental Art Clinic,Dental Art Clinic,คลินิก,3,Secondary,15.2336944,104.8518464,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,GM Clinic Ubonratchathani จีเอ็มคลินิกเวชกรรม อุบลราชธานี,,คลินิก,3,Secondary,15.2338175,104.8312575,Google Maps
+อุบลราชธานี,Ubon Ratchathani,GM Clinic Ubonratchathani จีเอ็มคลินิกเวชกรรม อุบลราชธานี,,คลินิก,3,Secondary,15.2280785,104.8242052,Google Maps
 อุบลราชธานี,Ubon Ratchathani,Praput Medical Clinik,,คลินิก,3,Secondary,15.2352555,104.8644622,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,The Clinic Ubon,The Clinic Ubon,คลินิก,3,Secondary,15.239828,104.8505125,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,The SK Clinic,,คลินิก,3,Secondary,15.2332248,104.8668003,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,UVC by DR.Mynt BE ELEGANT,,คลินิก,3,Secondary,15.2507154,104.8464924,Google Maps
 อุบลราชธานี,Ubon Ratchathani,คลีนิค หมอชารียา,Dr. Chari Ya,คลินิก,3,Secondary,15.2599015,104.8462012,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,คลีนิค หมอรุ่งเรือง,Dr. Rungrueang,คลินิก,3,Secondary,15.2353421,104.8545174,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงพยาบาลส่งเสริมสุขภาพตำบล หนองขอน,Nong Khon Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,15.3239879,104.7261613,OpenStreetMap / Overpass API
@@ -2220,6 +2294,10 @@
 อุบลราชธานี,Ubon Ratchathani,Rachabut day Market,,ตลาด,3,Secondary,15.2240733,104.8585028,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,ตลาด ประชารัฐเพื่อชุมชน,Pracha Rat Phuea Chumchon Market,ตลาด,3,Secondary,15.3231442,104.7269851,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,ตลาด หนองบัว,Nong Bua Market,ตลาด,3,Secondary,15.2628819,104.8442577,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,ตลาดสดเทศบาล 2 (ตลาดน้อย),,ตลาด,3,Secondary,15.2340797,104.5670877,Google Maps
+อุบลราชธานี,Ubon Ratchathani,ตลาดสดเทศบาล 3 (ตลาดใหญ่) อุบลราชธานี,,ตลาด,3,Secondary,15.1742478,105.0565251,Google Maps
+อุบลราชธานี,Ubon Ratchathani,ตลาดสดเทศบาล 3 (ตลาดใหญ่) อุบลราชธานี,,ตลาด,3,Secondary,15.224166,104.5700346,Google Maps
+อุบลราชธานี,Ubon Ratchathani,ตลาดสดเทศบาลตำบลเขื่องใน,,ตลาด,3,Secondary,15.3920151,104.2645991,Google Maps
 อุบลราชธานี,Ubon Ratchathani,ตลาดโต้รุ่ง ทุ่งศรีเมือง,Thung Sri Muang Night Market,ตลาด,3,Secondary,15.2277038,104.8585533,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Bangkok Bank,,ธนาคาร,3,Secondary,15.2374302,104.8548082,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Kasikornbank,,ธนาคาร,3,Secondary,15.2248349,104.857977,OpenStreetMap / Overpass API
@@ -2265,7 +2343,6 @@
 อุบลราชธานี,Ubon Ratchathani,เพื่อนยา,Phuean Ya,ร้านขายยา,3,Secondary,15.2626975,104.8421082,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.276599,104.8459956,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.2701145,104.8408558,OpenStreetMap / Overpass API
-อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.269146,104.839007,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.2279025,104.8590343,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,15.2319938,104.8518243,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7 Eleven,ร้านสะดวกซื้อ,3,Secondary,15.2311522,104.8591977,OpenStreetMap / Overpass API
@@ -2273,7 +2350,6 @@
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2796271,104.8324359,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2077444,104.8134172,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2355463,104.8650628,OpenStreetMap / Overpass API
-อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2355316,104.8659139,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2375004,104.8390906,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2358856,104.8570349,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,7-eleven,ร้านสะดวกซื้อ,3,Secondary,15.235845,104.8470125,OpenStreetMap / Overpass API
@@ -2281,7 +2357,6 @@
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2628462,104.8413867,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2321408,104.8706887,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.222511,104.8191837,OpenStreetMap / Overpass API
-อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2766463,104.8461551,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2612714,104.8461993,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2653775,104.8447088,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2724931,104.8773529,OpenStreetMap / Overpass API
@@ -2290,6 +2365,12 @@
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2935328,104.8890031,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.3061238,104.8973797,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,15.2742614,104.8045311,OpenStreetMap / Overpass API
+อุบลราชธานี,Ubon Ratchathani,7-Eleven 07538 - ตรงข้ามโรงเรียนอัสสัมชัญ อุบลราชธานี,,ร้านสะดวกซื้อ,3,Secondary,15.2511428,104.8478678,Google Maps
+อุบลราชธานี,Ubon Ratchathani,7-Eleven สาขา PTTOR บายพาสวาริน (14991),,ร้านสะดวกซื้อ,3,Secondary,15.2256501,104.7838741,Google Maps
+อุบลราชธานี,Ubon Ratchathani,7-Eleven สาขา ท่าบ่อ เลี่ยงเมืองอุบลฯ (14413),,ร้านสะดวกซื้อ,3,Secondary,15.2797603,104.7963887,Google Maps
+อุบลราชธานี,Ubon Ratchathani,7-Eleven สาขา บุ่งหวาย (09207),,ร้านสะดวกซื้อ,3,Secondary,15.1592333,104.7401201,Google Maps
+อุบลราชธานี,Ubon Ratchathani,7-Eleven สาขา หน้าอำเภอ 2 (อุบล) (14875),,ร้านสะดวกซื้อ,3,Secondary,15.253569,104.816695,Google Maps
+อุบลราชธานี,Ubon Ratchathani,7-Eleven สาขา ไปรษณีย์อุบล (14185),,ร้านสะดวกซื้อ,3,Secondary,15.2284847,104.8170866,Google Maps
 อุบลราชธานี,Ubon Ratchathani,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,15.2955397,104.8903415,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Big C Mini,Big C Mini,ร้านสะดวกซื้อ,3,Secondary,15.2999737,104.8374556,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Co-op Shop,,ร้านสะดวกซื้อ,3,Secondary,15.2747187,104.8787279,OpenStreetMap / Overpass API
@@ -2307,12 +2388,10 @@
 อุบลราชธานี,Ubon Ratchathani,Queenship of Mary Ubonratchathani School,,โรงเรียน,3,Secondary,15.3924098,104.809319,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Samakkeevittayakan School,Samakkeevittayakan School,โรงเรียน,3,Secondary,15.2354964,104.8458109,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,St Emilie School,St Emilie School,โรงเรียน,3,Secondary,15.232283,104.847192,OpenStreetMap / Overpass API
-อุบลราชธานี,Ubon Ratchathani,St. Emilie School,,โรงเรียน,3,Secondary,15.2315959,104.8486899,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Ubon Adventist International School,,โรงเรียน,3,Secondary,15.2308331,104.8641026,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,Ubon Witthayakhom School,Ubon Witthayakhom School,โรงเรียน,3,Secondary,15.2345785,104.8562752,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,รร. ฮั้วเฉียวอุบลราชธานี 2,,โรงเรียน,3,Secondary,15.2753388,104.849594,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,ศูนย์วิทยาศาตร์เพื่อการศึกษา อุบลราชธานี,Ubonratchathani Science centre for Education,โรงเรียน,3,Secondary,15.2493391,104.8492745,OpenStreetMap / Overpass API
-อุบลราชธานี,Ubon Ratchathani,อนุบาลอุบลราชธานี,Anuban Ubon Ratchathani School,โรงเรียน,3,Secondary,15.2298557,104.8593094,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงเรียน บ้านทุ่งขุนใหญ่,Ban Thung Khun Yai School,โรงเรียน,3,Secondary,15.2984357,104.7715688,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงเรียน บ้านปะอาว,Ban Pa Ao School,โรงเรียน,3,Secondary,15.3535066,104.7234982,OpenStreetMap / Overpass API
 อุบลราชธานี,Ubon Ratchathani,โรงเรียน บ้านหนองช้าง,Nongchang Primary School,โรงเรียน,3,Secondary,15.3223892,104.7257161,OpenStreetMap / Overpass API
@@ -2340,7 +2419,6 @@
 เชียงราย,Chiang Rai,Songtaew Station,Songtaew Station,สถานีขนส่ง,1,Primary,19.9100832,99.8299072,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สถานีขนส่งผู้โดยสารจังหวัดเชียงราย 1,Chiang Rai Bus Terminal 1,สถานีขนส่ง,1,Primary,19.9046593,99.834473,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 2,Bus station Terminal 2,สถานีขนส่ง,1,Primary,19.8581553,99.821032,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 2,Chiang Rai Bus Terminal 2 (Green Bus Stop),สถานีขนส่ง,1,Primary,19.8581307,99.8210589,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ท่าอากาศยานเชียงราย,Chiangrai International Airport,สนามบิน,1,Primary,19.9506465,99.8817597,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สนามบินเก่าเชียงราย,Old Chiang Rai Airport,สนามบิน,1,Primary,19.8896906,99.8276212,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,อาคารผู้โดยสาร,Mae Fah Luang-Chiang Rai International Airport Terminal,สนามบิน,1,Primary,19.9542993,99.8791788,OpenStreetMap / Overpass API
@@ -2355,7 +2433,6 @@
 เชียงราย,Chiang Rai,ศูนย์บริหารการทะเบียนภาค สาขาเชียงราย,Bureau Of Registration Administration ChiangRai Branch Office,หน่วยงานรัฐ,1,Primary,19.9283591,99.866177,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์ป้องกันและบรรเทาสาธารณภัยเขต 15 เชียงราย (ปภ.),Chiang Rai Disaster Prevention and Mitigation Center Area 15 (DPMCR15),หน่วยงานรัฐ,1,Primary,19.9091783,99.8224488,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์ราชการกระทรวงการคลัง,Ministry of Finance Chiangrai Province,หน่วยงานรัฐ,1,Primary,19.912839,99.8412509,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,ศูนย์ราชการกระทรวงแรงงาน,Ministry of Labor Government Center,หน่วยงานรัฐ,1,Primary,19.9302943,99.8660705,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์ราชการกระทรวงแรงงาน จังหวัดเชียงราย,Ministry of Labor Government Center Chiang Rai,หน่วยงานรัฐ,1,Primary,19.9300013,99.8663424,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์วิจัยพืชสวนเชียงราย,Chiang Rai Agricultural Research Center,หน่วยงานรัฐ,1,Primary,19.8734326,99.7795163,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์อาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร) เขต 15,Local Environment Volunteer Network Center Area 15,หน่วยงานรัฐ,1,Primary,19.9096877,99.8223874,OpenStreetMap / Overpass API
@@ -2363,7 +2440,6 @@
 เชียงราย,Chiang Rai,สำนักงานขนส่ง จังหวัดเชียงราย,Chiang Rai Provincial Land Transport Office,หน่วยงานรัฐ,1,Primary,19.9287528,99.8734332,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักงานขนส่งจังหวัดเชียงราย,Chiang Rai Provincial Land Transport Office,หน่วยงานรัฐ,1,Primary,19.9283116,99.8735516,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักงานคณะกรรมการการเลือกตั้งประจำจังหวัดเชียงราย,Office of the Provincial Election Commission of Chiangrai,หน่วยงานรัฐ,1,Primary,19.9254438,99.8692871,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,สำนักงานคณะกรรมการการเลือกตั้งประจำจังหวัดเชียงราย,Election Commission of ChiangRai Province,หน่วยงานรัฐ,1,Primary,19.9253976,99.869248,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักงานคุมประพฤติจังหวัดเชียงราย,ChiangRai Probation Office,หน่วยงานรัฐ,1,Primary,19.9301166,99.8673786,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักงานทรัพยากรธรรมชาติและสิ่งแวดล้อมจังหวัดเชียงราย,Provincial Office of Natural Resource and Environment Chiang Rai,หน่วยงานรัฐ,1,Primary,19.9096683,99.8233013,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักงานทางหลวงชนบทที่ 17 (เชียงราย),Bureau of Rural Roads 17 Office (ChiangRai),หน่วยงานรัฐ,1,Primary,19.9290431,99.8709939,OpenStreetMap / Overpass API
@@ -2383,23 +2459,34 @@
 เชียงราย,Chiang Rai,สำนักงานโยธาธิการและผังเมืองจังหวัดเชียงราย,ChiangRai Office of Public Works and Town & Country Planning,หน่วยงานรัฐ,1,Primary,19.9290947,99.8702038,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,องค์การบริหารส่วนจังหวัดเชียงราย,Chiang Rai Provincial Administrative Organization,หน่วยงานรัฐ,1,Primary,19.9298929,99.8652721,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,แขวงทางหลวงเชียงรายที่ 1,1st Chang Rai Highway District Office,หน่วยงานรัฐ,1,Primary,19.9179191,99.8456609,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,Greenpark Community Mall Chiangrai - กรีนพาร์ค คอมมูนิตี้มอลล์ เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.9189108,99.8201753,Google Maps
+เชียงราย,Chiang Rai,Greenpark Community Mall Chiangrai - กรีนพาร์ค คอมมูนิตี้มอลล์ เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.918906,99.7789755,Google Maps
 เชียงราย,Chiang Rai,SCG Home Solution,,ห้างสรรพสินค้า,1,Primary,19.8849286,99.8361189,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,ทีเจ มอลล์ บายพาสวงแหวนตะวันออกเชียงราย,,ห้างสรรพสินค้า,1,Primary,19.8884329,99.7657084,Google Maps
 เชียงราย,Chiang Rai,สากลนคร,Sakolnakorn,ห้างสรรพสินค้า,1,Primary,19.9077897,99.8312289,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ห้างสรรพสินค้าเอดิสัน,Edison Department Store,ห้างสรรพสินค้า,1,Primary,19.9057265,99.8326939,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,เซ็นทรัล เชียงราย,Central Chiang Rai,ห้างสรรพสินค้า,1,Primary,19.886284,99.8330265,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,เซ็นทรัล เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.3828642,99.4367145,Google Maps
+เชียงราย,Chiang Rai,เซ็นทรัล เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.9222341,99.8015572,Google Maps
+เชียงราย,Chiang Rai,เซ็นทรัล เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.903186,99.7679826,Google Maps
 เชียงราย,Chiang Rai,โรบินสัน,Robinson,ห้างสรรพสินค้า,1,Primary,19.885928,99.832687,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,โรบินสัน เชียงราย,,ห้างสรรพสินค้า,1,Primary,19.8864083,98.6811395,Google Maps
 เชียงราย,Chiang Rai,Bangkok Hospital,,โรงพยาบาล,1,Primary,19.99276,99.8634925,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Mae Fah Luang University Hospital,,โรงพยาบาล,1,Primary,20.0409151,99.8943982,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สำนักวิชาทันตแพทย์ศาสตร์,,โรงพยาบาล,1,Primary,20.0313472,99.8780749,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงบาลค่ายเม็งรายมหาราช,Fort Mengraimaharaj Hospital,โรงพยาบาล,1,Primary,19.9045666,99.8136009,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงพยาบาล เชียงรายประชานุเคราะห์,Chiangrai Prachanukroh Hospital,โรงพยาบาล,1,Primary,19.900775,99.8302868,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,โรงพยาบาลกรุงเทพ เชียงราย,,โรงพยาบาล,1,Primary,19.8937508,99.960095,Google Maps
 เชียงราย,Chiang Rai,โรงพยาบาลวัดห้วยปลากั้งเพื่อสังคม,Wat Huay Pla Kang Hospital,โรงพยาบาล,1,Primary,19.9490313,99.8079668,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,"โรงพยาบาลศูนย์การแพทย์
 มหาวิทยาลัยแม่ฟ้าหลวง",,โรงพยาบาล,1,Primary,20.0308661,99.8801527,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงพยาบาลส่งเสริมสุขภาพตำบล,District Health Center,โรงพยาบาล,1,Primary,19.8766339,99.7866967,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงพยาบาลเกษมราษฎร์ ศรีบุรินทร์,Kasenrad Sriburin Hospital,โรงพยาบาล,1,Primary,19.8779262,99.835561,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงพยาบาลเชียง รายอินเดอร์,Chianglai Inter Hospital,โรงพยาบาล,1,Primary,19.8950679,99.8311234,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,โรงพยาบาลเชียงราย ราม,,โรงพยาบาล,1,Primary,19.9095594,98.8185961,Google Maps
+เชียงราย,Chiang Rai,โรงพยาบาลเชียงราย ราม,,โรงพยาบาล,1,Primary,19.8949972,98.6776099,Google Maps
 เชียงราย,Chiang Rai,โรงพยาบาลโอเวอร์บรุ๊ค,Overbrook Hospital,โรงพยาบาล,1,Primary,19.9119224,99.8290823,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,โรงพยาบาลโอเวอร์บรุ๊ค,,โรงพยาบาล,1,Primary,19.9777607,98.893455,Google Maps
 เชียงราย,Chiang Rai,Ganesha Exhibition Hall,,วัด/ศาสนสถาน,2,Iconic,19.8228417,99.7627389,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Lan Tong,Lan Tong,วัด/ศาสนสถาน,2,Iconic,20.0414768,99.8965781,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Wat Huay Pla Kang (Goddess of Mercy Temple),"Wat Huai Pla Kang, Big Buddha",วัด/ศาสนสถาน,2,Iconic,19.9488746,99.8063103,OpenStreetMap / Overpass API
@@ -2481,7 +2568,6 @@
 เชียงราย,Chiang Rai,Nakornchiangrai Shooting Range,Nakornchiangrai Shooting Range,สถานที่ท่องเที่ยว,2,Iconic,19.8923122,99.8105939,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Petting zoo,Petting zoo,สถานที่ท่องเที่ยว,2,Iconic,19.8604377,99.7259609,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Pha Koen Hot Spring,Pha Koen Hot Spring,สถานที่ท่องเที่ยว,2,Iconic,19.9574523,99.6927698,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,Pha Soet Hot Spring,Pha Soet Hot Spring,สถานที่ท่องเที่ยว,2,Iconic,19.9575869,99.6908807,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Photo spot,Photo spot,สถานที่ท่องเที่ยว,2,Iconic,19.8239626,99.762227,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Roof Structure Of Ubosot,Roof Structure Of Ubosot,สถานที่ท่องเที่ยว,2,Iconic,19.9036101,99.7944625,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Ruammit Elephant Camp,,สถานที่ท่องเที่ยว,2,Iconic,19.9615202,99.7049209,OpenStreetMap / Overpass API
@@ -2520,7 +2606,6 @@
 เชียงราย,Chiang Rai,สวนสาธารณะเฉลิมพระเกียรติ,Chaloem Phrakiat Park,สวนสาธารณะ,2,Iconic,19.9211444,99.8160204,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สวนหนองปึ๋ง,Nong Bueng Park,สวนสาธารณะ,2,Iconic,19.8860994,99.8027005,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สวนเทิดพระเกียรติ 90 ปีสมเด็จพระศรีนครินทร์,Princess Mother 90th Anniversary Park,สวนสาธารณะ,2,Iconic,19.9153545,99.8316618,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,หนองปึ๋ง,Nong Bueng,สวนสาธารณะ,2,Iconic,19.8847189,99.8047037,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,หนองปึ๋ง,Nong Bueng,สวนสาธารณะ,2,Iconic,19.8850632,99.8061959,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,อุทยานศิลปะวัฒนธรรมแม่ฟ้าหลวง,Mae Fah Luang Art and Culture Park,สวนสาธารณะ,2,Iconic,19.9044709,99.7951264,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,The Princess Mothers Statue,The Princess Mothers Statue,อนุสาวรีย์/อนุสรณ์,2,Iconic,20.044971,99.8929149,OpenStreetMap / Overpass API
@@ -2533,7 +2618,7 @@
 เชียงราย,Chiang Rai,เสาสะดือเมืองเชียงราย,The Navel City Pillar of Chiang Rai,อนุสาวรีย์/อนุสรณ์,2,Iconic,19.9150356,99.8227206,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ไร่เชิญตะวัน,,อนุสาวรีย์/อนุสรณ์,2,Iconic,19.7633124,99.8761709,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Attitude Clinic,Attitude Clinic,คลินิก,3,Secondary,19.89777,99.8319568,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,Dr.Kultalee Clinic,,คลินิก,3,Secondary,19.9066776,99.8293019,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,Attitude Clinic เชียงราย,,คลินิก,3,Secondary,19.897819,99.7599129,Google Maps
 เชียงราย,Chiang Rai,Dr.Nubdow Clinic,,คลินิก,3,Secondary,19.908043,99.8284239,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Exclusive Medical Clinic & Spa,Exclusive Medical Clinic & Spa,คลินิก,3,Secondary,19.9034715,99.8327791,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,คลินิก หมอสุริยา-อาทิตยา,Doctor Suriya-Athitaya Clinic,คลินิก,3,Secondary,19.9018412,99.832569,OpenStreetMap / Overpass API
@@ -2557,6 +2642,8 @@
 เชียงราย,Chiang Rai,วัฒน์การแพทย์,,คลินิก,3,Secondary,19.970261,99.8568735,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ศูนย์การได้ยิน และเครื่องช่วยฟัง เชียงราย,,คลินิก,3,Secondary,19.9075912,99.8234282,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,สามแพทย์คลินิก,,คลินิก,3,Secondary,19.901509,99.8195265,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,หมอปังคลินิกและการดูแลแผล คลินิกเวชกรรมแพทย์ภัทรพงศ์ (Dr. Pung Clinic and Wound Care Station),,คลินิก,3,Secondary,19.9087862,99.7542147,Google Maps
+เชียงราย,Chiang Rai,หมอปังคลินิกและการดูแลแผล คลินิกเวชกรรมแพทย์ภัทรพงศ์ (Dr. Pung Clinic and Wound Care Station),,คลินิก,3,Secondary,19.9187436,99.8398062,Google Maps
 เชียงราย,Chiang Rai,เวชบัณฑิต,Vetcha Banti Clinic,คลินิก,3,Secondary,19.9082014,99.8262104,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,เอ็นเค คลินิก,NK Clinic,คลินิก,3,Secondary,19.9132987,99.8421939,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงพยาบาลส่งเสริมสุขภาพตำบล,Subdistrict Health Promoting Hospital,คลินิก,3,Secondary,19.8452673,99.6678034,OpenStreetMap / Overpass API
@@ -2583,23 +2670,24 @@
 เชียงราย,Chiang Rai,Market,,ตลาด,3,Secondary,19.8223649,99.7649029,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,"Market (fruit, vegetables, meat, etc)",,ตลาด,3,Secondary,19.9141634,99.8451628,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Sunday Walking Street,,ตลาด,3,Secondary,19.901111,99.81945,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,Sunday Walking Street,,ตลาด,3,Secondary,19.9010689,99.8215672,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,municipal market,,ตลาด,3,Secondary,19.9097113,99.8298595,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,กาดหลวง เชียงราย,,ตลาด,3,Secondary,19.9085439,99.6851576,Google Maps
 เชียงราย,Chiang Rai,ตลาดชุมชนริมน้ำกก,Rim Nam Kok Community Market,ตลาด,3,Secondary,19.9217985,99.850431,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดประตูล้อ,Pratu Lo Market,ตลาด,3,Secondary,19.8532551,99.7472296,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดศิริเนตร,,ตลาด,3,Secondary,19.9009012,99.8328275,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดสด,fresh-food Sector,ตลาด,3,Secondary,19.8664841,99.8317283,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดสดนางแล,Nang Lae Fresh Market,ตลาด,3,Secondary,19.9952762,99.8646976,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดสดบ้านใหม่,,ตลาด,3,Secondary,19.9260659,99.8359067,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,ตลาดสดประตูล้อ,,ตลาด,3,Secondary,19.8534573,99.6028859,Google Maps
 เชียงราย,Chiang Rai,ตลาดสดเทศบาล 2,Municipal Fresh Market 2,ตลาด,3,Secondary,19.9055566,99.8360465,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดสดเทศบาล ๑,Municipal Market 1,ตลาด,3,Secondary,19.9094565,99.829871,OpenStreetMap / Overpass API
+เชียงราย,Chiang Rai,ตลาดสดเทศบาลนครเชียงราย 1,,ตลาด,3,Secondary,19.9243394,99.8162366,Google Maps
 เชียงราย,Chiang Rai,ตลาดเด่นห้า,Den Ha Marketplace,ตลาด,3,Secondary,19.9033163,99.8151822,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดเทศบาลตำบลบ้านดู่,Bandu Municipality Market,ตลาด,3,Secondary,19.9670481,99.8558455,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดใหม่แม่กร,Mai Mae Korn Market,ตลาด,3,Secondary,19.8806635,99.8291955,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ตลาดไฟไหม้,Fai Mai Market,ตลาด,3,Secondary,19.9103106,99.8288164,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,อาคารผลไม้,Fruit Sector,ตลาด,3,Secondary,19.8661828,99.8292175,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,อาคารผัก,Vegetable Sector,ตลาด,3,Secondary,19.8653734,99.8305023,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,ATM K-Bank,,ตู้ATM,3,Secondary,19.9547705,99.8792064,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Bangkok Bank,,ตู้ATM,3,Secondary,19.9061025,99.8312026,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Kasikorn ATM Bank,,ตู้ATM,3,Secondary,19.9542457,99.8791286,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,Krungthai ATM,,ตู้ATM,3,Secondary,19.9542482,99.8788306,OpenStreetMap / Overpass API
@@ -2607,7 +2695,6 @@
 เชียงราย,Chiang Rai,UOB,,ตู้ATM,3,Secondary,19.9105693,99.8393766,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ธนาคารกรุงเทพ,Bangkok Bank,ตู้ATM,3,Secondary,19.9092207,99.8283772,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ธนาคารกรุงเทพ,Bangkok Bank,ตู้ATM,3,Secondary,19.9044362,99.8354477,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,ธนาคารกรุงเทพ,Bangkok Bank,ตู้ATM,3,Secondary,19.9055433,99.8328426,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,ATM,,ธนาคาร,3,Secondary,19.9041962,99.8165967,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,CIMB Thai Bank,,ธนาคาร,3,Secondary,19.904196,99.8328495,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,SME,SME,ธนาคาร,3,Secondary,19.8814931,99.8334912,OpenStreetMap / Overpass API
@@ -2676,7 +2763,6 @@
 เชียงราย,Chiang Rai,PT,PT,ปั๊มน้ำมัน,3,Secondary,19.9335786,99.8452068,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,PT,,ปั๊มน้ำมัน,3,Secondary,19.9071396,99.8233168,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,PT,,ปั๊มน้ำมัน,3,Secondary,19.8744543,99.8473076,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,PT,,ปั๊มน้ำมัน,3,Secondary,19.8905969,99.7823793,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,PTT,,ปั๊มน้ำมัน,3,Secondary,19.9558327,99.841098,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,19.9101618,99.8384471,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,PTT,PTT,ปั๊มน้ำมัน,3,Secondary,19.8870357,99.8307839,OpenStreetMap / Overpass API
@@ -2715,7 +2801,6 @@
 เชียงราย,Chiang Rai,7 eleven,7 eleven,ร้านสะดวกซื้อ,3,Secondary,19.9539216,99.8508288,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.8756215,99.8293901,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9665007,99.8557488,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9682289,99.8569475,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.8352083,99.8798953,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9109206,99.8394438,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,20.0489565,99.8763073,OpenStreetMap / Overpass API
@@ -2725,8 +2810,6 @@
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9255725,99.8360057,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9282015,99.8157609,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9776611,99.8559995,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9780941,99.853559,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9784296,99.8546552,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8802249,99.7947763,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9014493,99.8301703,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7 eleven,ร้านสะดวกซื้อ,3,Secondary,19.8960326,99.8379642,OpenStreetMap / Overpass API
@@ -2743,21 +2826,16 @@
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9385114,99.9096956,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8867885,99.8308296,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9029573,99.8409791,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.8960113,99.8388477,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.904018,99.8167857,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8532467,99.7469486,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9543534,99.7843203,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9317414,99.8442322,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8980255,99.8412622,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.9142822,99.8448976,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9101595,99.83816,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8960376,99.8379609,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9090764,99.8354719,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9102335,99.8295378,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9070629,99.8291691,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8938324,99.8650569,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9067786,99.8318749,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.904186,99.8342661,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,7-Eleven,ร้านสะดวกซื้อ,3,Secondary,19.8475075,99.7329443,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8793587,99.8503404,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9082016,99.8547818,OpenStreetMap / Overpass API
@@ -2765,10 +2843,8 @@
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8943799,99.8271292,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8582841,99.7622902,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9420573,99.8106195,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.8468931,99.8057047,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.7784012,99.9105922,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,19.9335152,99.8130547,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,20.0484733,99.8757503,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,7-Eleven,,ร้านสะดวกซื้อ,3,Secondary,20.0337447,99.8749786,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,71 Minimart,,ร้านสะดวกซื้อ,3,Secondary,19.8242372,99.7648933,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,CP Fresh Mart,,ร้านสะดวกซื้อ,3,Secondary,19.9034927,99.8159409,OpenStreetMap / Overpass API
@@ -2817,7 +2893,6 @@
 เชียงราย,Chiang Rai,โรงเรียนบ้านน้ำลัด,Ban Nam Lad School,โรงเรียน,3,Secondary,19.9279304,99.8172495,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงเรียนบ้านบ่อทอง,Ban Bo Thong School,โรงเรียน,3,Secondary,20.1006618,99.874974,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงเรียนบ้านปางคึก,Ban Pang Khuek School,โรงเรียน,3,Secondary,19.8352415,99.7068657,OpenStreetMap / Overpass API
-เชียงราย,Chiang Rai,โรงเรียนบ้านปางคึก,Ban Pangkhuk School,โรงเรียน,3,Secondary,19.8350973,99.7071067,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงเรียนบ้านปางริมกรณ์,Ban Pang Rim Kon School,โรงเรียน,3,Secondary,19.8475638,99.6677893,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงเรียนบ้านป่ารวก,Ban Pa Ruak School,โรงเรียน,3,Secondary,20.0330625,99.8735592,OpenStreetMap / Overpass API
 เชียงราย,Chiang Rai,โรงเรียนบ้านรวมมิตร,Ban Ruammit school,โรงเรียน,3,Secondary,19.9597967,99.7122289,OpenStreetMap / Overpass API

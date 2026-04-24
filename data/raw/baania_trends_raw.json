@@ -1,0 +1,272 @@
+[
+    {
+        "province": "ขอนแก่น",
+        "property_type": "House",
+        "sample_count": 223,
+        "average_price": 36003157.58,
+        "median_price": 3400000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:04:38"
+    },
+    {
+        "province": "ขอนแก่น",
+        "property_type": "Townhome",
+        "sample_count": 239,
+        "average_price": 22786584.67,
+        "median_price": 1000000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:04:50"
+    },
+    {
+        "province": "ขอนแก่น",
+        "property_type": "Condo",
+        "sample_count": 212,
+        "average_price": 33261064.94,
+        "median_price": 2245000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:01"
+    },
+    {
+        "province": "อุบลราชธานี",
+        "property_type": "House",
+        "sample_count": 233,
+        "average_price": 31658962.69,
+        "median_price": 3945578.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:13"
+    },
+    {
+        "province": "อุบลราชธานี",
+        "property_type": "Townhome",
+        "sample_count": 126,
+        "average_price": 35381049.06,
+        "median_price": 3948464.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:23"
+    },
+    {
+        "province": "อุบลราชธานี",
+        "property_type": "Condo",
+        "sample_count": 150,
+        "average_price": 32055722.22,
+        "median_price": 3367230.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:33"
+    },
+    {
+        "province": "ประจวบคีรีขันธ์",
+        "property_type": "House",
+        "sample_count": 232,
+        "average_price": 22844660.93,
+        "median_price": 3555203.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:43"
+    },
+    {
+        "province": "ประจวบคีรีขันธ์",
+        "property_type": "Townhome",
+        "sample_count": 265,
+        "average_price": 23532587.44,
+        "median_price": 3555815.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:05:56"
+    },
+    {
+        "province": "ประจวบคีรีขันธ์",
+        "property_type": "Condo",
+        "sample_count": 195,
+        "average_price": 24458958.84,
+        "median_price": 3423800.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:06:09"
+    },
+    {
+        "province": "อุดรธานี",
+        "property_type": "House",
+        "sample_count": 241,
+        "average_price": 31729004.96,
+        "median_price": 3483938.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:06:21"
+    },
+    {
+        "province": "อุดรธานี",
+        "property_type": "Townhome",
+        "sample_count": 133,
+        "average_price": 33297102.62,
+        "median_price": 3459115.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:06:31"
+    },
+    {
+        "province": "อุดรธานี",
+        "property_type": "Condo",
+        "sample_count": 198,
+        "average_price": 33358041.58,
+        "median_price": 3457382.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:06:42"
+    },
+    {
+        "province": "ระยอง",
+        "property_type": "House",
+        "sample_count": 231,
+        "average_price": 31473819.91,
+        "median_price": 2740417.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:06:55"
+    },
+    {
+        "province": "ระยอง",
+        "property_type": "Townhome",
+        "sample_count": 226,
+        "average_price": 23176267.02,
+        "median_price": 2629523.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:07:06"
+    },
+    {
+        "province": "ระยอง",
+        "property_type": "Condo",
+        "sample_count": 232,
+        "average_price": 31264444.91,
+        "median_price": 2535000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:07:17"
+    },
+    {
+        "province": "ชลบุรี",
+        "property_type": "House",
+        "sample_count": 218,
+        "average_price": 24459966.42,
+        "median_price": 2805962.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:07:31"
+    },
+    {
+        "province": "ชลบุรี",
+        "property_type": "Townhome",
+        "sample_count": 228,
+        "average_price": 21748036.16,
+        "median_price": 2475000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:07:42"
+    },
+    {
+        "province": "ชลบุรี",
+        "property_type": "Condo",
+        "sample_count": 198,
+        "average_price": 26440373.96,
+        "median_price": 2743952.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:07:53"
+    },
+    {
+        "province": "สุรินทร์",
+        "property_type": "House",
+        "sample_count": 143,
+        "average_price": 40351776.18,
+        "median_price": 3730744.3,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:03"
+    },
+    {
+        "province": "สุรินทร์",
+        "property_type": "Townhome",
+        "sample_count": 130,
+        "average_price": 39015143.94,
+        "median_price": 4047014.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:14"
+    },
+    {
+        "province": "สุรินทร์",
+        "property_type": "Condo",
+        "sample_count": 128,
+        "average_price": 38663561.44,
+        "median_price": 3675483.15,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:25"
+    },
+    {
+        "province": "บุรีรัมย์",
+        "property_type": "House",
+        "sample_count": 174,
+        "average_price": 40669993.86,
+        "median_price": 3790372.15,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:35"
+    },
+    {
+        "province": "บุรีรัมย์",
+        "property_type": "Townhome",
+        "sample_count": 119,
+        "average_price": 38147109.76,
+        "median_price": 3730744.3,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:45"
+    },
+    {
+        "province": "บุรีรัมย์",
+        "property_type": "Condo",
+        "sample_count": 122,
+        "average_price": 37133514.79,
+        "median_price": 3675483.15,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:08:55"
+    },
+    {
+        "province": "พิษณุโลก",
+        "property_type": "House",
+        "sample_count": 183,
+        "average_price": 36329263.77,
+        "median_price": 3900000.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:06"
+    },
+    {
+        "province": "พิษณุโลก",
+        "property_type": "Townhome",
+        "sample_count": 132,
+        "average_price": 34144700.26,
+        "median_price": 3933685.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:17"
+    },
+    {
+        "province": "พิษณุโลก",
+        "property_type": "Condo",
+        "sample_count": 141,
+        "average_price": 32015012.84,
+        "median_price": 3730744.3,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:26"
+    },
+    {
+        "province": "เชียงราย",
+        "property_type": "House",
+        "sample_count": 207,
+        "average_price": 37980488.43,
+        "median_price": 3412831.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:37"
+    },
+    {
+        "province": "เชียงราย",
+        "property_type": "Townhome",
+        "sample_count": 136,
+        "average_price": 34265638.26,
+        "median_price": 3297742.5,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:46"
+    },
+    {
+        "province": "เชียงราย",
+        "property_type": "Condo",
+        "sample_count": 169,
+        "average_price": 29949783.94,
+        "median_price": 1978026.0,
+        "source": "Baania",
+        "last_updated": "2026-04-24 13:09:57"
+    }
+]

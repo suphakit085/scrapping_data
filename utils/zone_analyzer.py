@@ -21,10 +21,14 @@ def haversine_km(lat1, lon1, lat2, lon2):
     return R * 2 * math.asin(math.sqrt(a))
 
 
-def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
+def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0, landmarks_clean_path=None):
     """
     สร้าง Zone Profile โดยใช้ Layer 1 POIs เป็นจุดศูนย์กลาง
     และวิเคราะห์ POI รอบๆ ในรัศมีที่กำหนด
+
+    landmarks_raw_path   — ไฟล์ดิบสำหรับ Search Pool (POI รอบๆ)
+    landmarks_clean_path — ไฟล์ที่ผ่านการ Dedup แล้ว สำหรับ Layer 1 Anchors
+                           ถ้าไม่ระบุจะใช้ไฟล์ดิบแทน (เหมือนเดิม)
     """
     print(f"\n{'='*55}")
     print(f"Zone Analyzer — Radius: {radius_km} km")
@@ -41,13 +45,21 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
         print("No landmarks data to analyze.")
         return
 
-    # แยก POI ตาม Layer
-    layer1 = [p for p in all_pois if p.get("layer") == 1 and p.get("lat")]
-    # สร้าง pool สำหรับค้นหาสิ่งอำนวยความสะดวก (รวมทุกอย่างยกเว้นตัวมันเอง)
+    # --- โหลด Anchors จากไฟล์ Clean (ถ้ามี) เพื่อป้องกัน Anchor ซ้ำ ---
+    if landmarks_clean_path and os.path.exists(landmarks_clean_path):
+        import pandas as pd
+        clean_df = pd.read_csv(landmarks_clean_path, encoding='utf-8-sig')
+        layer1 = clean_df[clean_df['layer'] == 1].to_dict('records')
+        print(f"  [OK] Using deduplicated anchors from: {landmarks_clean_path}")
+    else:
+        layer1 = [p for p in all_pois if p.get("layer") == 1 and p.get("lat")]
+        print(f"  [WARN] No clean file -- using raw Layer 1 (may have duplicates)")
+
+    # Search pool ยังคงใช้ไฟล์ดิบเพื่อให้ได้ POI รอบๆ ครบที่สุด
     search_pool = [p for p in all_pois if p.get("lat")]
 
     print(f"  Zone Anchors (Layer 1): {len(layer1)}")
-    print(f"  Total POIs for search: {len(search_pool)}")
+    print(f"  Total POIs for search:  {len(search_pool)}")
 
     zone_profiles = []
 
@@ -159,7 +171,7 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0):
         subset = df[df["province"] == province]
         print(f"\n  [{province}]")
         for _, row in subset.head(5).iterrows():
-            print(f"    📍 {row['zone_anchor']} ({row['anchor_category']})")
+            print(f"    >> {row['zone_anchor']} ({row['anchor_category']})")
             print(f"       Iconic nearby: {row['nearby_iconic_count']} | "
                   f"Daily-life: {row['total_layer3_nearby']} | "
                   f"Score: {row['livability_score']}")

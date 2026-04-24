@@ -34,7 +34,9 @@ def run_landmarks_pipeline():
     clean_landmarks(raw_landmarks_path, processed_landmarks_path)
     
     print("\n[Step 4] Generating Zone Profiles (Livability Score)...")
-    analyze_zones(raw_landmarks_path, processed_zones_path, radius_km=2.0)
+    analyze_zones(raw_landmarks_path, processed_zones_path,
+                  radius_km=2.0,
+                  landmarks_clean_path=processed_landmarks_path)
     
     print("\n========================================")
     print("✅ Landmarks & Zone Pipeline Completed!")
