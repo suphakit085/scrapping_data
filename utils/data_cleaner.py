@@ -15,40 +15,6 @@ def clean_bank_loans(raw_file_path, processed_file_path):
     df.to_csv(processed_file_path, index=False, encoding='utf-8-sig')
     print(f"Cleaned bank data saved to {processed_file_path}")
 
-def clean_property_trends(dotproperty_raw, livinginsider_raw, processed_file_path):
-    """Merges and cleans property trend data from multiple sources."""
-    all_dfs = []
-    
-    if os.path.exists(dotproperty_raw):
-        with open(dotproperty_raw, 'r', encoding='utf-8') as f:
-            all_dfs.append(pd.DataFrame(json.load(f)))
-            
-    if os.path.exists(livinginsider_raw):
-        with open(livinginsider_raw, 'r', encoding='utf-8') as f:
-            all_dfs.append(pd.DataFrame(json.load(f)))
-            
-    if not all_dfs:
-        print("Error: No raw property data found to clean.")
-        return
-
-    df = pd.concat(all_dfs, ignore_index=True)
-    
-    province_mapping = {
-        "ขอนแก่น": "Khon Kaen", "อุบลราชธานี": "Ubon Ratchathani",
-        "ประจวบคีรีขันธ์": "Prachuap Khiri Khan", "อุดรธานี": "Udon Thani",
-        "ระยอง": "Rayong", "ชลบุรี": "Chonburi", "สุรินทร์": "Surin",
-        "บุรีรัมย์": "Buriram", "พิษณุโลก": "Phitsanulok", "เชียงราย": "Chiang Rai"
-    }
-    
-    if 'province' in df.columns:
-        df['province_en'] = df['province'].map(province_mapping).fillna(
-            df['province_en'] if 'province_en' in df.columns else df['province'])
-    
-    os.makedirs(os.path.dirname(processed_file_path), exist_ok=True)
-    df.to_csv(processed_file_path, index=False, encoding='utf-8-sig')
-    print(f"Merged and cleaned property data saved to {processed_file_path}")
-
-
 def clean_landmarks(raw_file_path, processed_file_path):
     """
     Cleans and standardizes POI/Landmarks data.
@@ -136,38 +102,42 @@ def clean_landmarks(raw_file_path, processed_file_path):
                             drop.add(indices[i]); break
         return drop
 
+    def _dedup_by_layer(df_to_clean):
+        """แยก Dedup ตาม Layer เพราะความหนาแน่นต่างกัน"""
+        to_drop = set()
+        
+        # แบ่งกลุ่มตาม Layer
+        for layer_val in [1, 2, 3]:
+            layer_df = df_to_clean[df_to_clean['layer'] == layer_val]
+            if layer_df.empty: continue
+            
+            # กำหนดรัศมี: Layer 1 (ห้าง/รพ.) = 300m, Layer 2/3 (ร้านค้า/วัด) = 100m
+            radius = 300 if layer_val == 1 else 100
+            
+            for _, group in layer_df.groupby(['province', 'category']):
+                to_drop |= _dedup_group(group, radius_m=radius, prefer_osm=(layer_val != 1))
+        
+        return to_drop
+
     # ========== Phase 1: Exact Dedup ==========
     df = df.drop_duplicates(subset=['name', 'lat', 'lon'], keep='first')
     exact_removed = before_total - len(df)
 
-    # ========== Phase 1.5: Anchor Dedup (Layer 1, รัศมี 500m) ==========
-    # ห้างสรรพสินค้า/โรงพยาบาลขนาดใหญ่มักถูกบันทึกใน OSM เป็น node+way+relation
-    # ใช้รัศมี 500m เพราะพิกัดอาจต่างกันถึง 200-400m ในสถานที่ขนาดใหญ่
-    anchor_drop = set()
-    layer1_df = df[df['layer'] == 1].copy()
-    for _, group in layer1_df.groupby(['province', 'category']):
-        anchor_drop |= _dedup_group(group, radius_m=500, prefer_osm=False)
-    df = df.drop(index=anchor_drop)
-    anchor_removed = len(anchor_drop)
-
-    # ========== Phase 2: Fuzzy Dedup (All Layers, รัศมี 300m) ==========
-    # ป้องกัน OSM กับ Google Maps บันทึกสถานที่เดียวกันซ้ำ
-    fuzzy_drop = set()
-    for _, group in df.groupby(['province', 'category']):
-        fuzzy_drop |= _dedup_group(group, radius_m=300, prefer_osm=True)
-    df = df.drop(index=fuzzy_drop)
-    fuzzy_removed = len(fuzzy_drop)
+    # ========== Phase 2: Layer-Aware Dedup ==========
+    # แทนที่ Phase 1.5 และ 2 เดิมด้วยระบบใหม่ที่แยกความละเอียดตาม Layer
+    removed_indices = _dedup_by_layer(df)
+    df = df.drop(index=removed_indices)
+    fuzzy_removed = len(removed_indices)
 
     # ========== Phase 3: Remove unnamed ==========
     df = df[df['name'].astype(str).str.strip() != '']
 
     # ========== Summary ==========
     total_removed = before_total - len(df)
-    print(f"  Dedup Summary:")
-    print(f"    Exact match removed:        {exact_removed}")
-    print(f"    Anchor (Layer1) removed:    {anchor_removed}")
-    print(f"    Fuzzy match removed:        {fuzzy_removed}")
-    print(f"    Total removed:              {total_removed} ({before_total} -> {len(df)})")
+    print(f"  Dedup Summary (Layer-Aware):")
+    print(f"    Exact match removed: {exact_removed}")
+    print(f"    Fuzzy/Proximity removed: {fuzzy_removed}")
+    print(f"    Total removed: {total_removed} ({before_total} -> {len(df)})")
 
     # Standardize province names
     province_mapping = {

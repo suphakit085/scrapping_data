@@ -70,6 +70,61 @@ PROVINCES = [
 ]
 
 
+def _load_local_iconic_targets(config_path="data/raw/local_iconic_targets.json"):
+    """
+    Load province-specific Layer 2 search targets.
+
+    Expected JSON shape:
+    {
+      "ขอนแก่น": [
+        {"query": "ประตูเมืองขอนแก่น", "category": "ประตูเมือง", "layer": 2}
+      ]
+    }
+    """
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    abs_path = os.path.join(repo_root, config_path)
+
+    if not os.path.exists(abs_path):
+        print(f"  [INFO] Local iconic config not found: {abs_path}")
+        return {}
+
+    try:
+        with open(abs_path, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except Exception as e:
+        print(f"  [WARN] Failed to load local iconic config: {e}")
+        return {}
+
+    normalized = {}
+    for province_name, targets in raw.items():
+        if not isinstance(targets, list):
+            continue
+
+        safe_targets = []
+        for t in targets:
+            if not isinstance(t, dict):
+                continue
+            query = str(t.get("query", "")).strip()
+            category = str(t.get("category", "จุดอัตลักษณ์พื้นที่")).strip()
+            layer = int(t.get("layer", 2))
+
+            if not query:
+                continue
+
+            safe_targets.append({
+                "query": query,
+                "category": category,
+                "layer": layer,
+            })
+
+        if safe_targets:
+            normalized[province_name] = safe_targets
+
+    print(f"  [OK] Loaded local iconic targets for {len(normalized)} provinces")
+    return normalized
+
+
 def extract_lat_lon_from_url(url: str):
     """ดึง lat/lon จาก URL ของ Google Maps"""
     # Pattern: @16.4322,102.8236,
@@ -88,22 +143,38 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
     results = []
 
     try:
-        full_query = f"{search_query} {province_name}"
+        # ป้องกันคำซ้ำ เช่น "ศาลหลักเมืองขอนแก่น ขอนแก่น"
+        if province_name in search_query:
+            full_query = search_query
+        else:
+            full_query = f"{search_query} {province_name}"
+            
         search_url = f"https://www.google.com/maps/search/{full_query.replace(' ', '+')}"
 
         page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
         page.wait_for_timeout(3000)
 
-        # รอให้ผลการค้นหาโหลด
+        # 1. ตรวจสอบก่อนว่ามัน Redirect ไปหน้าสถานที่เดียว (Place Page) เลยหรือเปล่า
+        current_url = page.url
+        if "/maps/place/" in current_url:
+            lat, lon = extract_lat_lon_from_url(current_url)
+            # ดึงชื่อจากหัวข้อหน้าเว็บ
+            name_el = page.query_selector('h1.duvuxb') # Class ปกติของชื่อสถานที่ในหน้า Place
+            name = name_el.inner_text().strip() if name_el else search_query
+            if lat and lon:
+                print(f"(Direct Match: {name})", end=" ")
+                return [{"name": name, "lat": lat, "lon": lon}]
+
+        # 2. ถ้าไม่ Redirect ให้รอหน้ารายการ (Feed) ตามปกติ
         try:
-            page.wait_for_selector('div[role="feed"], div.Nv2PK', timeout=10000)
+            page.wait_for_selector('div[role="feed"], div.Nv2PK', timeout=8000)
         except:
             return results
 
         # เลื่อนหน้าเพื่อโหลดผลลัพธ์เพิ่ม
         feed = page.query_selector('div[role="feed"]')
         if feed:
-            for _ in range(3):
+            for _ in range(2):
                 feed.evaluate("el => el.scrollTop += 500")
                 page.wait_for_timeout(800)
 
@@ -167,6 +238,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
         print(f"  Loaded {len(osm_pois)} existing OSM POIs")
 
     new_pois = []
+    local_iconic_by_province = _load_local_iconic_targets()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -189,7 +261,23 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
             slug = province["slug"]
             print(f"\n[{thai_name}]")
 
-            for target in SEARCH_TARGETS:
+            targets = list(SEARCH_TARGETS)
+            targets.extend(local_iconic_by_province.get(thai_name, []))
+
+            seen_queries = set()
+            province_targets = []
+            for target in targets:
+                key = (
+                    target.get("query", "").strip().lower(),
+                    target.get("category", "").strip().lower(),
+                    int(target.get("layer", 2)),
+                )
+                if not key[0] or key in seen_queries:
+                    continue
+                seen_queries.add(key)
+                province_targets.append(target)
+
+            for target in province_targets:
                 query = target["query"]
                 category = target["category"]
                 layer = target["layer"]

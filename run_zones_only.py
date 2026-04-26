@@ -14,6 +14,7 @@ from scrapers.google_maps_sync import scrape_google_maps_sync
 from utils.data_cleaner import clean_landmarks
 from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
+from utils.pipeline_quality import validate_pipeline_outputs
 
 def run_landmarks_pipeline():
     print("========================================")
@@ -58,7 +59,20 @@ def run_landmarks_pipeline():
         landmarks_clean_path=processed_landmarks_path,
         property_trends_path=property_trends_path
     )
-    
+
+    # Step 6: Data Quality Gate
+    print("\n[Step 6] Validating Processed Outputs...")
+    is_valid, quality_messages = validate_pipeline_outputs(
+        landmarks_path=processed_landmarks_path,
+        property_trends_path=property_trends_path,
+        zones_path=processed_zones_path,
+        expected_province_count=10,
+    )
+    for msg in quality_messages:
+        print(msg)
+    if not is_valid:
+        raise RuntimeError("Data quality gate failed.")
+
     print("\n========================================")
     print("Landmarks & Zone Pipeline Completed!")
     print(f"Result 1: {processed_landmarks_path}")

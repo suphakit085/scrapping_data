@@ -14,6 +14,7 @@ from utils.data_cleaner import clean_bank_loans, clean_landmarks
 from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
+from utils.pipeline_quality import validate_pipeline_outputs
 
 def main():
     print("========================================")
@@ -52,7 +53,26 @@ def main():
     
     # 2b. Zone Analysis (Landmark proximity profiles)
     print("\n[Phase 2b] Analyzing Zone Profiles...")
-    analyze_zones(raw_landmarks_path, processed_zones_path, radius_km=2.0)
+    analyze_zones(
+        raw_landmarks_path,
+        processed_zones_path,
+        radius_km=2.0,
+        landmarks_clean_path=processed_landmarks_path,
+        property_trends_path=processed_property_path
+    )
+
+    # 2c. Data Quality Gate
+    print("\n[Phase 2c] Validating Processed Outputs...")
+    is_valid, quality_messages = validate_pipeline_outputs(
+        landmarks_path=processed_landmarks_path,
+        property_trends_path=processed_property_path,
+        zones_path=processed_zones_path,
+        expected_province_count=10,
+    )
+    for msg in quality_messages:
+        print(msg)
+    if not is_valid:
+        raise RuntimeError("Data quality gate failed. Skip S3 upload.")
     
     # 3. Upload to AWS S3 (AWS Glue ETL entry point)
     print("\n[Phase 3] Uploading to AWS S3...")

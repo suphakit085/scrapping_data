@@ -174,16 +174,8 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0,
         median_condo   = trends_index.get((prov_en, "Condo"), 0)
         median_townhse = trends_index.get((prov_en, "Townhouse"), 0)
 
-        # Price Tier: ใช้ House เป็น baseline (ถ้าไม่มีให้ใช้ Condo)
+        # Base price per province (used for zone-level adjustment later)
         ref_price = median_house or median_condo or 0
-        if ref_price >= 5_000_000:
-            price_tier = "Premium"
-        elif ref_price >= 2_500_000:
-            price_tier = "Mid-Range"
-        elif ref_price > 0:
-            price_tier = "Budget"
-        else:
-            price_tier = "N/A"
 
         zone_profiles.append({
             "province":         a_province,
@@ -214,12 +206,71 @@ def analyze_zones(landmarks_raw_path, output_path, radius_km=2.0,
             "median_house_price":   int(median_house)   if median_house   else "",
             "median_condo_price":   int(median_condo)   if median_condo   else "",
             "median_townhse_price": int(median_townhse) if median_townhse else "",
-            "price_tier":           price_tier,
+            "base_ref_price":       float(ref_price),
         })
 
     # Save CSV
     df = pd.DataFrame(zone_profiles)
-    df = df.sort_values(["province", "livability_score"], ascending=[True, False])
+
+    if not df.empty:
+        # =========================================================
+        # 5. Normalize Scores (Local & Global)
+        # =========================================================
+        if not df.empty:
+            # --- Global Normalization (เทียบทั้ง 10 จังหวัด) ---
+            g_min = df["livability_score"].min()
+            g_max = df["livability_score"].max()
+            if g_max > g_min:
+                df["livability_score_global"] = (((df["livability_score"] - g_min) / (g_max - g_min)) * 100).round(2)
+            else:
+                df["livability_score_global"] = 50.0
+
+            # --- Local Normalization (เทียบภายในจังหวัดเดียวกัน) ---
+            def _normalize_local(series):
+                if series.max() == series.min():
+                    return pd.Series([50.0] * len(series), index=series.index)
+                return ((series - series.min()) / (series.max() - series.min())) * 100
+
+            df["livability_score_local"] = (
+                df.groupby("province")["livability_score"].transform(_normalize_local).round(2)
+            )
+
+            # =========================================================
+            # 6. Advanced Price Tiering (Percentile-based)
+            # =========================================================
+            # ปรับช่วงราคาให้กว้างขึ้น (0.6x - 2.5x) เพื่อให้เห็นความต่างของโซน Luxury vs Budget
+            # โซนที่คะแนนสูงมาก (เทียบในจังหวัด) จะถูกดันราคาให้เป็น Premium
+            norm_ratio = (df["livability_score_local"] / 100.0).fillna(0.5)
+            price_multiplier = 0.60 + (norm_ratio * 1.90)  # Range 0.60 to 2.50
+            df["estimated_zone_price"] = (df["base_ref_price"] * price_multiplier).round(0)
+
+            def _assign_tier_percentile(group):
+                prices = group[group["estimated_zone_price"] > 0]["estimated_zone_price"]
+                if prices.empty:
+                    group["price_tier"] = "N/A"
+                    return group
+
+                # ใช้ P25 และ P75 ตามแผนเพื่อให้ Mid-Range ไม่กินพื้นที่ทั้งหมด
+                p25 = prices.quantile(0.25)
+                p75 = prices.quantile(0.75)
+
+                def to_tier(p):
+                    if p <= 0: return "N/A"
+                    if p <= p25: return "Budget"
+                    if p >= p75: return "Premium"
+                    return "Mid-Range"
+
+                group["price_tier"] = group["estimated_zone_price"].apply(to_tier)
+                return group
+
+            df = df.groupby("province", group_keys=False).apply(_assign_tier_percentile)
+
+        # Cleanup & Final Sort
+        df = df.sort_values(["province", "livability_score_local"], ascending=[True, False])
+        df["estimated_zone_price"] = df["estimated_zone_price"].apply(
+            lambda x: int(x) if pd.notna(x) and x > 0 else ""
+        )
+        df = df.drop(columns=["base_ref_price"], errors="ignore")
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False, encoding="utf-8-sig")
