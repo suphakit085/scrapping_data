@@ -13,6 +13,12 @@ import os
 import pandas as pd
 
 
+MOCK_REIC_SOURCES = {
+    "REIC (Real Estate Information Center)",
+    "REIC",
+}
+
+
 # Province name normalization (Thai → English)
 PROVINCE_MAP = {
     "ขอนแก่น":        "Khon Kaen",
@@ -37,7 +43,7 @@ PTYPE_MAP = {
 }
 
 
-def _load_source(path, default_source_name):
+def _load_source(path, default_source_name, blocked_sources=None):
     """โหลดไฟล์ JSON trend และปรับ Province/Type ให้ Standard"""
     if not path or not os.path.exists(path):
         print(f"  [SKIP] {default_source_name}: file not found at {path}")
@@ -47,7 +53,13 @@ def _load_source(path, default_source_name):
         records = json.load(f)
 
     normalized = []
+    blocked_count = 0
     for r in records:
+        source_name = (r.get("source") or default_source_name).strip()
+        if blocked_sources and source_name in blocked_sources:
+            blocked_count += 1
+            continue
+
         prov_th = r.get("province", "")
         prov_en = r.get("province_en") or PROVINCE_MAP.get(prov_th, prov_th)
         ptype   = PTYPE_MAP.get(r.get("property_type", ""), r.get("property_type", ""))
@@ -62,14 +74,22 @@ def _load_source(path, default_source_name):
             "property_type": ptype,
             "median_price":  float(median),
             "sample_count":  int(count),
-            "source":        r.get("source") or default_source_name,
+            "source":        source_name,
         })
 
     print(f"  [OK] {default_source_name}: {len(normalized)} valid records loaded")
+    if blocked_count:
+        print(f"  [SKIP] {default_source_name}: {blocked_count} blocked mock row(s)")
     return normalized
 
 
-def merge_property_trends(baania_path, livinginsider_path, output_path, dotproperty_path=None):
+def merge_property_trends(
+    baania_path,
+    livinginsider_path,
+    output_path,
+    dotproperty_path=None,
+    include_dotproperty=True,
+):
     """
     รวมข้อมูลจากทั้งสองแหล่ง โดยใช้ Weighted Median ตาม Sample Count
     จังหวัด + ประเภทอสังหาฯ เดียวกัน → รวมเป็น 1 แถว
@@ -79,7 +99,16 @@ def merge_property_trends(baania_path, livinginsider_path, output_path, dotprope
     all_records = []
     all_records.extend(_load_source(livinginsider_path, "LivingInsider"))
     all_records.extend(_load_source(baania_path,        "Baania"))
-    all_records.extend(_load_source(dotproperty_path,   "DotProperty"))
+    if include_dotproperty:
+        all_records.extend(
+            _load_source(
+                dotproperty_path,
+                "DotProperty",
+                blocked_sources=MOCK_REIC_SOURCES,
+            )
+        )
+    else:
+        print("  [SKIP] DotProperty: disabled (set include_dotproperty=True to enable)")
 
     if not all_records:
         print("  [ERROR] No data to merge.")
@@ -127,5 +156,6 @@ if __name__ == "__main__":
         baania_path="data/raw/baania_trends_raw.json",
         livinginsider_path="data/raw/livinginsider_trends_raw.json",
         output_path="data/processed/property_trends.csv",
-        dotproperty_path="data/raw/reic_trends_raw.json"
+        dotproperty_path="data/raw/dotproperty_trends_raw.json",
+        include_dotproperty=True,
     )

@@ -1,0 +1,6176 @@
+[
+  {
+    "zone_anchor": "แฟรี่พลาซ่า",
+    "lat": 16.4232383,
+    "lon": 102.8339035,
+    "total_road_segments": 1793,
+    "primary_road_count": 112,
+    "road_node_density": 6960,
+    "road_complexity_score": 4146
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 16.4232718,
+    "lon": 102.833852,
+    "total_road_segments": 1795,
+    "primary_road_count": 113,
+    "road_node_density": 6985,
+    "road_complexity_score": 4155
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลนครขอนแก่น",
+    "lat": 16.4297599,
+    "lon": 102.8296588,
+    "total_road_segments": 1821,
+    "primary_road_count": 140,
+    "road_node_density": 6960,
+    "road_complexity_score": 4342
+  },
+  {
+    "zone_anchor": "ขอนแก่น",
+    "lat": 16.4268083,
+    "lon": 102.8256655,
+    "total_road_segments": 1824,
+    "primary_road_count": 142,
+    "road_node_density": 6963,
+    "road_complexity_score": 4358
+  },
+  {
+    "zone_anchor": "เซนโทซ่า",
+    "lat": 16.4287781,
+    "lon": 102.8351928,
+    "total_road_segments": 1757,
+    "primary_road_count": 118,
+    "road_node_density": 6674,
+    "road_complexity_score": 4104
+  },
+  {
+    "zone_anchor": "เซนทรัล",
+    "lat": 16.433502,
+    "lon": 102.826228,
+    "total_road_segments": 1826,
+    "primary_road_count": 135,
+    "road_node_density": 6967,
+    "road_complexity_score": 4327
+  },
+  {
+    "zone_anchor": "เซ็นทรัลพลาซา",
+    "lat": 16.433781,
+    "lon": 102.8255475,
+    "total_road_segments": 1816,
+    "primary_road_count": 135,
+    "road_node_density": 6854,
+    "road_complexity_score": 4307
+  },
+  {
+    "zone_anchor": "โรบินสัน",
+    "lat": 16.4337702,
+    "lon": 102.826228,
+    "total_road_segments": 1823,
+    "primary_road_count": 135,
+    "road_node_density": 6801,
+    "road_complexity_score": 4321
+  },
+  {
+    "zone_anchor": "โรงพยาบาลขอนแก่นราม",
+    "lat": 16.433636,
+    "lon": 102.8210662,
+    "total_road_segments": 1757,
+    "primary_road_count": 132,
+    "road_node_density": 6526,
+    "road_complexity_score": 4174
+  },
+  {
+    "zone_anchor": "โรงพยาบาลราชพฤกษ์",
+    "lat": 16.4353594,
+    "lon": 102.824182,
+    "total_road_segments": 1800,
+    "primary_road_count": 136,
+    "road_node_density": 6684,
+    "road_complexity_score": 4280
+  },
+  {
+    "zone_anchor": "เซนโทซ่า",
+    "lat": 16.4398857,
+    "lon": 102.8249813,
+    "total_road_segments": 1706,
+    "primary_road_count": 129,
+    "road_node_density": 6417,
+    "road_complexity_score": 4057
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย",
+    "lat": 16.4187025,
+    "lon": 102.8354935,
+    "total_road_segments": 1710,
+    "primary_road_count": 70,
+    "road_node_density": 6531,
+    "road_complexity_score": 3770
+  },
+  {
+    "zone_anchor": "วิทยาลัยอาชีวศึกษาขอนแก่น",
+    "lat": 16.4371147,
+    "lon": 102.8390346,
+    "total_road_segments": 1695,
+    "primary_road_count": 104,
+    "road_node_density": 6610,
+    "road_complexity_score": 3910
+  },
+  {
+    "zone_anchor": "Tourism Authority of Thailand",
+    "lat": 16.4158729,
+    "lon": 102.8347878,
+    "total_road_segments": 1691,
+    "primary_road_count": 64,
+    "road_node_density": 6569,
+    "road_complexity_score": 3702
+  },
+  {
+    "zone_anchor": "Ozone village",
+    "lat": 16.4364624,
+    "lon": 102.8304053,
+    "total_road_segments": 1779,
+    "primary_road_count": 137,
+    "road_node_density": 6666,
+    "road_complexity_score": 4243
+  },
+  {
+    "zone_anchor": "โรงพยาบาลกรุงเทพ",
+    "lat": 16.4420747,
+    "lon": 102.8200449,
+    "total_road_segments": 1597,
+    "primary_road_count": 116,
+    "road_node_density": 6131,
+    "road_complexity_score": 3774
+  },
+  {
+    "zone_anchor": "โครงการชลประทาน ขอนแก่น",
+    "lat": 16.4444948,
+    "lon": 102.8294107,
+    "total_road_segments": 1706,
+    "primary_road_count": 123,
+    "road_node_density": 6390,
+    "road_complexity_score": 4027
+  },
+  {
+    "zone_anchor": "ห้างสรรพสินค้าเซ็นทรัล ขอนแก่น",
+    "lat": 16.446387,
+    "lon": 102.8262336,
+    "total_road_segments": 1635,
+    "primary_road_count": 121,
+    "road_node_density": 6186,
+    "road_complexity_score": 3875
+  },
+  {
+    "zone_anchor": "Khon kaen bus terminal2",
+    "lat": 16.4340846,
+    "lon": 102.8368984,
+    "total_road_segments": 1762,
+    "primary_road_count": 114,
+    "road_node_density": 6957,
+    "road_complexity_score": 4094
+  },
+  {
+    "zone_anchor": "สถานีขนส่งจังหวัดขอนแก่นแห่งที่ 2",
+    "lat": 16.4333558,
+    "lon": 102.836545,
+    "total_road_segments": 1772,
+    "primary_road_count": 115,
+    "road_node_density": 7014,
+    "road_complexity_score": 4119
+  },
+  {
+    "zone_anchor": "สถานีรถขนส่งผู้โดยสาร",
+    "lat": 16.4396683,
+    "lon": 102.8328613,
+    "total_road_segments": 1759,
+    "primary_road_count": 129,
+    "road_node_density": 6724,
+    "road_complexity_score": 4163
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมืองขอนแก่น",
+    "lat": 16.4384792,
+    "lon": 102.8390675,
+    "total_road_segments": 1675,
+    "primary_road_count": 103,
+    "road_node_density": 6385,
+    "road_complexity_score": 3865
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 16.4248983,
+    "lon": 102.819077,
+    "total_road_segments": 1761,
+    "primary_road_count": 131,
+    "road_node_density": 6767,
+    "road_complexity_score": 4177
+  },
+  {
+    "zone_anchor": "วิทยาลัยการสาธารณสุขสิรินธร",
+    "lat": 16.424917,
+    "lon": 102.8440162,
+    "total_road_segments": 1739,
+    "primary_road_count": 52,
+    "road_node_density": 6454,
+    "road_complexity_score": 3738
+  },
+  {
+    "zone_anchor": "โรงเรียนเทคโนโลยีภาคตะวันออกเฉียงเหนี่อ",
+    "lat": 16.4218456,
+    "lon": 102.8182756,
+    "total_road_segments": 1652,
+    "primary_road_count": 94,
+    "road_node_density": 6229,
+    "road_complexity_score": 3774
+  },
+  {
+    "zone_anchor": "สหสินเทรดดิ้ง หจก.",
+    "lat": 16.4355806,
+    "lon": 102.8150303,
+    "total_road_segments": 1536,
+    "primary_road_count": 110,
+    "road_node_density": 5751,
+    "road_complexity_score": 3622
+  },
+  {
+    "zone_anchor": "ศูนย์รังสีรักษาและเคมีบำบัด โรงพยาบาลขอนแก่น",
+    "lat": 16.4286173,
+    "lon": 102.8448803,
+    "total_road_segments": 1700,
+    "primary_road_count": 53,
+    "road_node_density": 6749,
+    "road_complexity_score": 3665
+  },
+  {
+    "zone_anchor": "โรงพยาบาลราชพฤกษ์",
+    "lat": 16.4489347,
+    "lon": 102.8303815,
+    "total_road_segments": 1589,
+    "primary_road_count": 115,
+    "road_node_density": 6385,
+    "road_complexity_score": 3753
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิค ขอนแก่น",
+    "lat": 16.4282225,
+    "lon": 102.846827,
+    "total_road_segments": 1668,
+    "primary_road_count": 50,
+    "road_node_density": 6599,
+    "road_complexity_score": 3586
+  },
+  {
+    "zone_anchor": "โรงพยาบาลขอนแก่น",
+    "lat": 16.4304112,
+    "lon": 102.812151,
+    "total_road_segments": 1507,
+    "primary_road_count": 110,
+    "road_node_density": 5810,
+    "road_complexity_score": 3564
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัดขอนแก่น",
+    "lat": 16.4425515,
+    "lon": 102.8360372,
+    "total_road_segments": 1727,
+    "primary_road_count": 122,
+    "road_node_density": 6532,
+    "road_complexity_score": 4064
+  },
+  {
+    "zone_anchor": "องค์การบริหารส่วนจังหวัดขอนแก่น",
+    "lat": 16.4445077,
+    "lon": 102.8356248,
+    "total_road_segments": 1688,
+    "primary_road_count": 118,
+    "road_node_density": 6484,
+    "road_complexity_score": 3966
+  },
+  {
+    "zone_anchor": "ศาลาประชาคมจังหวัดขอนแก่น",
+    "lat": 16.4421141,
+    "lon": 102.837162,
+    "total_road_segments": 1715,
+    "primary_road_count": 118,
+    "road_node_density": 6492,
+    "road_complexity_score": 4020
+  },
+  {
+    "zone_anchor": "สำนักงานการค้าภายในจังหวัดขอนแก่น",
+    "lat": 16.4133537,
+    "lon": 102.8319303,
+    "total_road_segments": 1611,
+    "primary_road_count": 57,
+    "road_node_density": 6262,
+    "road_complexity_score": 3507
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยภาคตะวันออกเฉียงเหนี่อ",
+    "lat": 16.4239795,
+    "lon": 102.8155886,
+    "total_road_segments": 1594,
+    "primary_road_count": 113,
+    "road_node_density": 6097,
+    "road_complexity_score": 3753
+  },
+  {
+    "zone_anchor": "โรงพยาบาลศูนย์ขอนแก่น",
+    "lat": 16.4305641,
+    "lon": 102.8488059,
+    "total_road_segments": 1564,
+    "primary_road_count": 44,
+    "road_node_density": 6267,
+    "road_complexity_score": 3348
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดขอนแกน แห่งที่ 1",
+    "lat": 16.4422332,
+    "lon": 102.8395524,
+    "total_road_segments": 1588,
+    "primary_road_count": 90,
+    "road_node_density": 5950,
+    "road_complexity_score": 3626
+  },
+  {
+    "zone_anchor": "กองฝึกอบรมภูมิภาค2 การประปาส่วนภูมิภาค",
+    "lat": 16.4074555,
+    "lon": 102.8326914,
+    "total_road_segments": 1448,
+    "primary_road_count": 38,
+    "road_node_density": 5626,
+    "road_complexity_score": 3086
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยขอนแก่น",
+    "lat": 16.461702,
+    "lon": 102.8173367,
+    "total_road_segments": 1374,
+    "primary_road_count": 32,
+    "road_node_density": 6180,
+    "road_complexity_score": 2908
+  },
+  {
+    "zone_anchor": "ศูนย์อนามัยที่ 6",
+    "lat": 16.429482,
+    "lon": 102.8510992,
+    "total_road_segments": 1500,
+    "primary_road_count": 39,
+    "road_node_density": 6037,
+    "road_complexity_score": 3195
+  },
+  {
+    "zone_anchor": "โรงพยาบาลจิตเวชขอนแก่นราชนครินทร์",
+    "lat": 16.424786,
+    "lon": 102.849015,
+    "total_road_segments": 1589,
+    "primary_road_count": 39,
+    "road_node_density": 6043,
+    "road_complexity_score": 3373
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคโนโลยีขอนแก่น",
+    "lat": 16.455413,
+    "lon": 102.8295209,
+    "total_road_segments": 1557,
+    "primary_road_count": 80,
+    "road_node_density": 6233,
+    "road_complexity_score": 3514
+  },
+  {
+    "zone_anchor": "โรงเรียนขอนแก่นบริหารธุรกิจ",
+    "lat": 16.4545827,
+    "lon": 102.8422247,
+    "total_road_segments": 1253,
+    "primary_road_count": 44,
+    "road_node_density": 5322,
+    "road_complexity_score": 2726
+  },
+  {
+    "zone_anchor": "Home Pro",
+    "lat": 16.4087593,
+    "lon": 102.8180027,
+    "total_road_segments": 1257,
+    "primary_road_count": 46,
+    "road_node_density": 4687,
+    "road_complexity_score": 2744
+  },
+  {
+    "zone_anchor": "ศูนย์แพทย์ชาตะผดุง",
+    "lat": 16.420118,
+    "lon": 102.8495161,
+    "total_road_segments": 1593,
+    "primary_road_count": 32,
+    "road_node_density": 6178,
+    "road_complexity_score": 3346
+  },
+  {
+    "zone_anchor": "สำนักงานอำนวยการ (ศึกษาศาสตร์)",
+    "lat": 16.4503396,
+    "lon": 102.8168404,
+    "total_road_segments": 1340,
+    "primary_road_count": 95,
+    "road_node_density": 5284,
+    "road_complexity_score": 3155
+  },
+  {
+    "zone_anchor": "โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายนานาชาติ",
+    "lat": 16.4501564,
+    "lon": 102.816116,
+    "total_road_segments": 1332,
+    "primary_road_count": 92,
+    "road_node_density": 5345,
+    "road_complexity_score": 3124
+  },
+  {
+    "zone_anchor": "โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายประถมศึกษา",
+    "lat": 16.4501333,
+    "lon": 102.818308,
+    "total_road_segments": 1373,
+    "primary_road_count": 95,
+    "road_node_density": 5336,
+    "road_complexity_score": 3221
+  },
+  {
+    "zone_anchor": "โรงเรียนสาธิตมหาวิทยาลัยขอนแก่น ฝ่ายมัธยมศึกษา (ศึกษาศาสตร์)",
+    "lat": 16.4516554,
+    "lon": 102.818404,
+    "total_road_segments": 1325,
+    "primary_road_count": 91,
+    "road_node_density": 5235,
+    "road_complexity_score": 3105
+  },
+  {
+    "zone_anchor": "คณะนิติศาสตร์",
+    "lat": 16.4501974,
+    "lon": 102.8152704,
+    "total_road_segments": 1312,
+    "primary_road_count": 85,
+    "road_node_density": 5318,
+    "road_complexity_score": 3049
+  },
+  {
+    "zone_anchor": "ขอนแก่นเทคโนโลขีพณิชยการ",
+    "lat": 16.4529979,
+    "lon": 102.84525,
+    "total_road_segments": 1085,
+    "primary_road_count": 44,
+    "road_node_density": 4702,
+    "road_complexity_score": 2390
+  },
+  {
+    "zone_anchor": "คณะศิลปกรรมศาสตร์",
+    "lat": 16.4693332,
+    "lon": 102.8176599,
+    "total_road_segments": 1375,
+    "primary_road_count": 33,
+    "road_node_density": 6534,
+    "road_complexity_score": 2915
+  },
+  {
+    "zone_anchor": "คณะพยาบาลศาสตร์",
+    "lat": 16.4695524,
+    "lon": 102.825094,
+    "total_road_segments": 1416,
+    "primary_road_count": 37,
+    "road_node_density": 6365,
+    "road_complexity_score": 3017
+  },
+  {
+    "zone_anchor": "คณะเทคนิคการแพทย์",
+    "lat": 16.4686958,
+    "lon": 102.8275336,
+    "total_road_segments": 1425,
+    "primary_road_count": 37,
+    "road_node_density": 6413,
+    "road_complexity_score": 3035
+  },
+  {
+    "zone_anchor": "คณะสาธารณสุขศาสตร์",
+    "lat": 16.4704803,
+    "lon": 102.8251806,
+    "total_road_segments": 1417,
+    "primary_road_count": 39,
+    "road_node_density": 6434,
+    "road_complexity_score": 3029
+  },
+  {
+    "zone_anchor": "โรงพยาบาลศรีนครินทร์",
+    "lat": 16.4682595,
+    "lon": 102.8302327,
+    "total_road_segments": 1416,
+    "primary_road_count": 38,
+    "road_node_density": 6346,
+    "road_complexity_score": 3022
+  },
+  {
+    "zone_anchor": "ไพรัช โฮมเดคคอร์",
+    "lat": 16.4453071,
+    "lon": 102.7853888,
+    "total_road_segments": 1038,
+    "primary_road_count": 24,
+    "road_node_density": 4434,
+    "road_complexity_score": 2196
+  },
+  {
+    "zone_anchor": "คณะวิศวกรรมศาสตร์",
+    "lat": 16.4725469,
+    "lon": 102.822909,
+    "total_road_segments": 1428,
+    "primary_road_count": 40,
+    "road_node_density": 6618,
+    "road_complexity_score": 3056
+  },
+  {
+    "zone_anchor": "คณะสถาปัตยกรรมศาสตร์",
+    "lat": 16.4717839,
+    "lon": 102.82764,
+    "total_road_segments": 1445,
+    "primary_road_count": 45,
+    "road_node_density": 6598,
+    "road_complexity_score": 3115
+  },
+  {
+    "zone_anchor": "คณะเภสัขศาสตร์",
+    "lat": 16.4705936,
+    "lon": 102.8277097,
+    "total_road_segments": 1418,
+    "primary_road_count": 40,
+    "road_node_density": 6474,
+    "road_complexity_score": 3036
+  },
+  {
+    "zone_anchor": "อาคารเรียนรวมและห้องปฏิบัติการวิจัยคณะแพทยศาสตร์",
+    "lat": 16.4702272,
+    "lon": 102.828428,
+    "total_road_segments": 1417,
+    "primary_road_count": 39,
+    "road_node_density": 6373,
+    "road_complexity_score": 3029
+  },
+  {
+    "zone_anchor": "สำนักงานอธิการบดี",
+    "lat": 16.4712297,
+    "lon": 102.8162225,
+    "total_road_segments": 1351,
+    "primary_road_count": 32,
+    "road_node_density": 6427,
+    "road_complexity_score": 2862
+  },
+  {
+    "zone_anchor": "Mekong Institute",
+    "lat": 16.4737243,
+    "lon": 102.8285149,
+    "total_road_segments": 1455,
+    "primary_road_count": 45,
+    "road_node_density": 6643,
+    "road_complexity_score": 3135
+  },
+  {
+    "zone_anchor": "คณะบริหารธุรกิจและการบัญชี",
+    "lat": 16.4739384,
+    "lon": 102.8256076,
+    "total_road_segments": 1457,
+    "primary_road_count": 45,
+    "road_node_density": 6638,
+    "road_complexity_score": 3139
+  },
+  {
+    "zone_anchor": "คณะวิทยาศาสตร์ ตึก SC06",
+    "lat": 16.4740908,
+    "lon": 102.8234441,
+    "total_road_segments": 1460,
+    "primary_road_count": 45,
+    "road_node_density": 6859,
+    "road_complexity_score": 3145
+  },
+  {
+    "zone_anchor": "Makro",
+    "lat": 16.4050457,
+    "lon": 102.8136406,
+    "total_road_segments": 1172,
+    "primary_road_count": 55,
+    "road_node_density": 4435,
+    "road_complexity_score": 2619
+  },
+  {
+    "zone_anchor": "สำนักวิจัยและพัฒนาการเกษตรเขตที่ 3",
+    "lat": 16.47141,
+    "lon": 102.833344,
+    "total_road_segments": 1425,
+    "primary_road_count": 50,
+    "road_node_density": 6444,
+    "road_complexity_score": 3100
+  },
+  {
+    "zone_anchor": "คณะเทคโนโลยี",
+    "lat": 16.4739852,
+    "lon": 102.8214414,
+    "total_road_segments": 1423,
+    "primary_road_count": 41,
+    "road_node_density": 6620,
+    "road_complexity_score": 3051
+  },
+  {
+    "zone_anchor": "โกลอบอลเฮ้าส์",
+    "lat": 16.4448385,
+    "lon": 102.7813359,
+    "total_road_segments": 1068,
+    "primary_road_count": 27,
+    "road_node_density": 4617,
+    "road_complexity_score": 2271
+  },
+  {
+    "zone_anchor": "วิทยาลัยการปกครองท้องถิ่น",
+    "lat": 16.4735867,
+    "lon": 102.8312805,
+    "total_road_segments": 1425,
+    "primary_road_count": 47,
+    "road_node_density": 6395,
+    "road_complexity_score": 3085
+  },
+  {
+    "zone_anchor": "สำนักเทคโนโลยีดิจิทัล มข.",
+    "lat": 16.4740063,
+    "lon": 102.824791,
+    "total_road_segments": 1461,
+    "primary_road_count": 45,
+    "road_node_density": 6691,
+    "road_complexity_score": 3147
+  },
+  {
+    "zone_anchor": "สโมสรบุคลากรมหาวิทยาลัยขอนแก่น",
+    "lat": 16.4741708,
+    "lon": 102.8278706,
+    "total_road_segments": 1481,
+    "primary_road_count": 45,
+    "road_node_density": 6674,
+    "road_complexity_score": 3187
+  },
+  {
+    "zone_anchor": "อาคารพิมล กลกิจ",
+    "lat": 16.4741758,
+    "lon": 102.8270533,
+    "total_road_segments": 1481,
+    "primary_road_count": 45,
+    "road_node_density": 6677,
+    "road_complexity_score": 3187
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 16.401113,
+    "lon": 102.8167246,
+    "total_road_segments": 1106,
+    "primary_road_count": 59,
+    "road_node_density": 4312,
+    "road_complexity_score": 2507
+  },
+  {
+    "zone_anchor": "โรงพยาบาลกรุงเทพขอนแก่น",
+    "lat": 16.4409719,
+    "lon": 102.7872655,
+    "total_road_segments": 1057,
+    "primary_road_count": 13,
+    "road_node_density": 3986,
+    "road_complexity_score": 2179
+  },
+  {
+    "zone_anchor": "คณะวิทยาศาสตร์",
+    "lat": 16.475628,
+    "lon": 102.8235807,
+    "total_road_segments": 1467,
+    "primary_road_count": 44,
+    "road_node_density": 6803,
+    "road_complexity_score": 3154
+  },
+  {
+    "zone_anchor": "คณะมนุษยศาสตร์และสังคมศาสตร์",
+    "lat": 16.4755065,
+    "lon": 102.8262861,
+    "total_road_segments": 1480,
+    "primary_road_count": 45,
+    "road_node_density": 6699,
+    "road_complexity_score": 3185
+  },
+  {
+    "zone_anchor": "KKU Learning Center",
+    "lat": 16.476738,
+    "lon": 102.8236125,
+    "total_road_segments": 1471,
+    "primary_road_count": 44,
+    "road_node_density": 6709,
+    "road_complexity_score": 3162
+  },
+  {
+    "zone_anchor": "คณะเกษตรศาสตร์",
+    "lat": 16.4764079,
+    "lon": 102.8218693,
+    "total_road_segments": 1442,
+    "primary_road_count": 44,
+    "road_node_density": 6671,
+    "road_complexity_score": 3104
+  },
+  {
+    "zone_anchor": "ศูนย์บริหารศัตรูพืช จังหวัดขอนแก่น",
+    "lat": 16.4826176,
+    "lon": 102.8320444,
+    "total_road_segments": 1441,
+    "primary_road_count": 40,
+    "road_node_density": 6650,
+    "road_complexity_score": 3082
+  },
+  {
+    "zone_anchor": "ศูนย์ส่งเสริมเทคโนโลยีการเกษตร ด้านการอารักขาพืช จังหวัดขอนแก่น",
+    "lat": 16.4823839,
+    "lon": 102.8321385,
+    "total_road_segments": 1437,
+    "primary_road_count": 41,
+    "road_node_density": 6573,
+    "road_complexity_score": 3079
+  },
+  {
+    "zone_anchor": "โรงพยาบาลขอนแก่น ราม",
+    "lat": 16.4329904,
+    "lon": 102.7852796,
+    "total_road_segments": 971,
+    "primary_road_count": 12,
+    "road_node_density": 4072,
+    "road_complexity_score": 2002
+  },
+  {
+    "zone_anchor": "กองกิจการนักศึกษา",
+    "lat": 16.4778973,
+    "lon": 102.8202568,
+    "total_road_segments": 1428,
+    "primary_road_count": 42,
+    "road_node_density": 6491,
+    "road_complexity_score": 3066
+  },
+  {
+    "zone_anchor": "พืซสวน",
+    "lat": 16.4737088,
+    "lon": 102.813113,
+    "total_road_segments": 1203,
+    "primary_road_count": 13,
+    "road_node_density": 5825,
+    "road_complexity_score": 2471
+  },
+  {
+    "zone_anchor": "องค์การนักศึกษา มหาวิทยาลัยขอนแก่น",
+    "lat": 16.477584,
+    "lon": 102.8217352,
+    "total_road_segments": 1435,
+    "primary_road_count": 43,
+    "road_node_density": 6605,
+    "road_complexity_score": 3085
+  },
+  {
+    "zone_anchor": "คณะสัตวแพทยศาสตร์",
+    "lat": 16.4783999,
+    "lon": 102.8312002,
+    "total_road_segments": 1463,
+    "primary_road_count": 55,
+    "road_node_density": 6571,
+    "road_complexity_score": 3201
+  },
+  {
+    "zone_anchor": "หมวดพืชไร่",
+    "lat": 16.4704132,
+    "lon": 102.811156,
+    "total_road_segments": 1137,
+    "primary_road_count": 13,
+    "road_node_density": 5392,
+    "road_complexity_score": 2339
+  },
+  {
+    "zone_anchor": "วิทยาลัยบัณฑิตเอเชีย",
+    "lat": 16.4349317,
+    "lon": 102.8606352,
+    "total_road_segments": 1029,
+    "primary_road_count": 26,
+    "road_node_density": 4344,
+    "road_complexity_score": 2188
+  },
+  {
+    "zone_anchor": "National Biological Control Research Center",
+    "lat": 16.4735088,
+    "lon": 102.811292,
+    "total_road_segments": 1102,
+    "primary_road_count": 10,
+    "road_node_density": 5358,
+    "road_complexity_score": 2254
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสสาน",
+    "lat": 16.4306365,
+    "lon": 102.8635031,
+    "total_road_segments": 1067,
+    "primary_road_count": 23,
+    "road_node_density": 4233,
+    "road_complexity_score": 2249
+  },
+  {
+    "zone_anchor": "แม็คโคร",
+    "lat": 16.493835,
+    "lon": 102.8310187,
+    "total_road_segments": 1173,
+    "primary_road_count": 42,
+    "road_node_density": 5119,
+    "road_complexity_score": 2556
+  },
+  {
+    "zone_anchor": "เทศบาลตำบลบ้านเป็ด",
+    "lat": 16.4377215,
+    "lon": 102.7649069,
+    "total_road_segments": 728,
+    "primary_road_count": 19,
+    "road_node_density": 3892,
+    "road_complexity_score": 1551
+  },
+  {
+    "zone_anchor": "สำนักงานจัดรูปที่ดิน จังหวัดขอนแก่น",
+    "lat": 16.4324501,
+    "lon": 102.8671119,
+    "total_road_segments": 938,
+    "primary_road_count": 23,
+    "road_node_density": 3813,
+    "road_complexity_score": 1991
+  },
+  {
+    "zone_anchor": "ไทวัสดุ",
+    "lat": 16.5241159,
+    "lon": 102.8299575,
+    "total_road_segments": 424,
+    "primary_road_count": 36,
+    "road_node_density": 2589,
+    "road_complexity_score": 1028
+  },
+  {
+    "zone_anchor": "Samran public hall",
+    "lat": 16.5360585,
+    "lon": 102.8278725,
+    "total_road_segments": 305,
+    "primary_road_count": 17,
+    "road_node_density": 2280,
+    "road_complexity_score": 695
+  },
+  {
+    "zone_anchor": "ที่ทำการกำนันตำบลศิลา",
+    "lat": 16.497838,
+    "lon": 102.8363719,
+    "total_road_segments": 1047,
+    "primary_road_count": 52,
+    "road_node_density": 4633,
+    "road_complexity_score": 2354
+  },
+  {
+    "zone_anchor": "สำนักงานการปฎิรูปที่ดินจังหวัดขอนแก่น",
+    "lat": 16.4304672,
+    "lon": 102.866173,
+    "total_road_segments": 1018,
+    "primary_road_count": 23,
+    "road_node_density": 4027,
+    "road_complexity_score": 2151
+  },
+  {
+    "zone_anchor": "หมวดทางหลวง ศิลา",
+    "lat": 16.5002348,
+    "lon": 102.8321649,
+    "total_road_segments": 954,
+    "primary_road_count": 48,
+    "road_node_density": 4398,
+    "road_complexity_score": 2148
+  },
+  {
+    "zone_anchor": "โรงพยาบาลสัตว์ขวัญคำ ขอนแก่น",
+    "lat": 16.500134,
+    "lon": 102.842573,
+    "total_road_segments": 929,
+    "primary_road_count": 48,
+    "road_node_density": 4211,
+    "road_complexity_score": 2098
+  },
+  {
+    "zone_anchor": "โฮมมาร์ท",
+    "lat": 16.3884421,
+    "lon": 102.82452,
+    "total_road_segments": 890,
+    "primary_road_count": 46,
+    "road_node_density": 3748,
+    "road_complexity_score": 2010
+  },
+  {
+    "zone_anchor": "โฮมฮับ",
+    "lat": 16.3917706,
+    "lon": 102.813642,
+    "total_road_segments": 889,
+    "primary_road_count": 43,
+    "road_node_density": 3625,
+    "road_complexity_score": 1993
+  },
+  {
+    "zone_anchor": "ขอนเเก่นขนส่ง",
+    "lat": 16.3860833,
+    "lon": 102.8261023,
+    "total_road_segments": 854,
+    "primary_road_count": 46,
+    "road_node_density": 3767,
+    "road_complexity_score": 1938
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยมหามกุฏราชวิทยาลัย",
+    "lat": 16.4615097,
+    "lon": 102.854545,
+    "total_road_segments": 726,
+    "primary_road_count": 4,
+    "road_node_density": 3609,
+    "road_complexity_score": 1472
+  },
+  {
+    "zone_anchor": "สถานีขนส่งจังหวัดขอนแก่นแห่งที่ 3",
+    "lat": 16.3902727,
+    "lon": 102.8047367,
+    "total_road_segments": 753,
+    "primary_road_count": 42,
+    "road_node_density": 3350,
+    "road_complexity_score": 1716
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 16.3905416,
+    "lon": 102.8387186,
+    "total_road_segments": 889,
+    "primary_road_count": 24,
+    "road_node_density": 4208,
+    "road_complexity_score": 1898
+  },
+  {
+    "zone_anchor": "Big C Mini ศรีมารัตน์ 26 ขอนแก่น",
+    "lat": 16.4528861,
+    "lon": 102.751946,
+    "total_road_segments": 451,
+    "primary_road_count": 18,
+    "road_node_density": 2960,
+    "road_complexity_score": 992
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานขอนแก่น",
+    "lat": 16.4646585,
+    "lon": 102.7866638,
+    "total_road_segments": 716,
+    "primary_road_count": 5,
+    "road_node_density": 3204,
+    "road_complexity_score": 1457
+  },
+  {
+    "zone_anchor": "โรงพยาบาลศรีนครินทร์",
+    "lat": 16.4680574,
+    "lon": 102.7940052,
+    "total_road_segments": 623,
+    "primary_road_count": 3,
+    "road_node_density": 2744,
+    "road_complexity_score": 1261
+  },
+  {
+    "zone_anchor": "บิ๊กซี ซูเปอร์เซ็นเตอร์ ขอนแก่น 1",
+    "lat": 16.4247943,
+    "lon": 102.7473624,
+    "total_road_segments": 226,
+    "primary_road_count": 16,
+    "road_node_density": 2250,
+    "road_complexity_score": 532
+  },
+  {
+    "zone_anchor": "สำราญ",
+    "lat": 16.517094,
+    "lon": 102.8430467,
+    "total_road_segments": 430,
+    "primary_road_count": 38,
+    "road_node_density": 2760,
+    "road_complexity_score": 1050
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานขอนแก่น",
+    "lat": 16.4662184,
+    "lon": 102.7834203,
+    "total_road_segments": 629,
+    "primary_road_count": 5,
+    "road_node_density": 3008,
+    "road_complexity_score": 1283
+  },
+  {
+    "zone_anchor": "สำนักงานสาธารณสุข อำเภอเมือง",
+    "lat": 16.4308653,
+    "lon": 102.8890389,
+    "total_road_segments": 515,
+    "primary_road_count": 23,
+    "road_node_density": 2311,
+    "road_complexity_score": 1145
+  },
+  {
+    "zone_anchor": "หมวดทางหลวง พระลับ",
+    "lat": 16.4331344,
+    "lon": 102.8930274,
+    "total_road_segments": 442,
+    "primary_road_count": 20,
+    "road_node_density": 2050,
+    "road_complexity_score": 984
+  },
+  {
+    "zone_anchor": "ดูโฮม",
+    "lat": 16.5170133,
+    "lon": 102.8347407,
+    "total_road_segments": 505,
+    "primary_road_count": 36,
+    "road_node_density": 3013,
+    "road_complexity_score": 1190
+  },
+  {
+    "zone_anchor": "สำนักงานสรรพากรพื้นที่ขอนแก่น",
+    "lat": 16.4071809,
+    "lon": 102.7628654,
+    "total_road_segments": 326,
+    "primary_road_count": 20,
+    "road_node_density": 2280,
+    "road_complexity_score": 752
+  },
+  {
+    "zone_anchor": "สำนักงานสรรพสามิตพื้นที่ขอนแก่น",
+    "lat": 16.4069442,
+    "lon": 102.7638202,
+    "total_road_segments": 339,
+    "primary_road_count": 22,
+    "road_node_density": 2329,
+    "road_complexity_score": 788
+  },
+  {
+    "zone_anchor": "โลตัส โก เฟรช มินิ ซูเปอร์มาร์เก็ต มหาวิทยาลัยขอนแก่น",
+    "lat": 16.4643405,
+    "lon": 102.7559991,
+    "total_road_segments": 423,
+    "primary_road_count": 5,
+    "road_node_density": 2643,
+    "road_complexity_score": 871
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลตำบลพระลับ",
+    "lat": 16.4152124,
+    "lon": 102.900224,
+    "total_road_segments": 382,
+    "primary_road_count": 12,
+    "road_node_density": 2443,
+    "road_complexity_score": 824
+  },
+  {
+    "zone_anchor": "ท่าพระ",
+    "lat": 16.3385983,
+    "lon": 102.8046708,
+    "total_road_segments": 334,
+    "primary_road_count": 18,
+    "road_node_density": 1805,
+    "road_complexity_score": 758
+  },
+  {
+    "zone_anchor": "เทศบาลตำบล บึงเนียม",
+    "lat": 16.4382384,
+    "lon": 102.9316673,
+    "total_road_segments": 219,
+    "primary_road_count": 23,
+    "road_node_density": 2187,
+    "road_complexity_score": 553
+  },
+  {
+    "zone_anchor": "ศูนย์หม่อนไหมเฉลิมพระเกียรติฯ ขอนแก่น",
+    "lat": 16.4567529,
+    "lon": 102.721526,
+    "total_road_segments": 242,
+    "primary_road_count": 20,
+    "road_node_density": 1896,
+    "road_complexity_score": 584
+  },
+  {
+    "zone_anchor": "วิทยาลัยสารพัดช่างขอนแก่น",
+    "lat": 16.3310098,
+    "lon": 102.7990405,
+    "total_road_segments": 308,
+    "primary_road_count": 14,
+    "road_node_density": 2199,
+    "road_complexity_score": 686
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดขอนแก่นแห่งที่ 3",
+    "lat": 16.4395103,
+    "lon": 102.6891851,
+    "total_road_segments": 112,
+    "primary_road_count": 10,
+    "road_node_density": 1136,
+    "road_complexity_score": 274
+  },
+  {
+    "zone_anchor": "โลตัส ขอนแก่น",
+    "lat": 16.4007698,
+    "lon": 102.7445532,
+    "total_road_segments": 131,
+    "primary_road_count": 16,
+    "road_node_density": 2276,
+    "road_complexity_score": 342
+  },
+  {
+    "zone_anchor": "ศูนย์ส่งเสริมอุตสาหกรรมภาคที่๕",
+    "lat": 16.562903,
+    "lon": 102.823399,
+    "total_road_segments": 134,
+    "primary_road_count": 6,
+    "road_node_density": 1284,
+    "road_complexity_score": 298
+  },
+  {
+    "zone_anchor": "สำนักงานทางหลวงชนบทที่ 6 ขอนแก่น",
+    "lat": 16.5647112,
+    "lon": 102.823239,
+    "total_road_segments": 132,
+    "primary_road_count": 6,
+    "road_node_density": 1262,
+    "road_complexity_score": 294
+  },
+  {
+    "zone_anchor": "ศูนย์เมล็ดพันธุ์ข้าว",
+    "lat": 16.5648696,
+    "lon": 102.816005,
+    "total_road_segments": 130,
+    "primary_road_count": 6,
+    "road_node_density": 1244,
+    "road_complexity_score": 290
+  },
+  {
+    "zone_anchor": "บิ๊กซี ขอนแก่น 2",
+    "lat": 16.391172,
+    "lon": 102.7672321,
+    "total_road_segments": 138,
+    "primary_road_count": 8,
+    "road_node_density": 1045,
+    "road_complexity_score": 316
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดขอนแก่นแห่งที่ 3",
+    "lat": 16.3901874,
+    "lon": 102.660508,
+    "total_road_segments": 106,
+    "primary_road_count": 0,
+    "road_node_density": 1398,
+    "road_complexity_score": 212
+  },
+  {
+    "zone_anchor": "Khon Kaen Immigration Office",
+    "lat": 16.5887944,
+    "lon": 102.8191012,
+    "total_road_segments": 107,
+    "primary_road_count": 10,
+    "road_node_density": 1115,
+    "road_complexity_score": 264
+  },
+  {
+    "zone_anchor": "การประปาส่วนภูมิภาค",
+    "lat": 13.3326466,
+    "lon": 100.9575614,
+    "total_road_segments": 1857,
+    "primary_road_count": 146,
+    "road_node_density": 6575,
+    "road_complexity_score": 4444
+  },
+  {
+    "zone_anchor": "ศูนย์มะเร็งชลบุรี",
+    "lat": 13.3442803,
+    "lon": 100.9529983,
+    "total_road_segments": 1039,
+    "primary_road_count": 68,
+    "road_node_density": 3547,
+    "road_complexity_score": 2418
+  },
+  {
+    "zone_anchor": "ฝ่ายการสื่อสาร 3",
+    "lat": 13.3305143,
+    "lon": 100.9523928,
+    "total_road_segments": 1883,
+    "primary_road_count": 137,
+    "road_node_density": 6796,
+    "road_complexity_score": 4451
+  },
+  {
+    "zone_anchor": "ณัฐณิชา คลินิกฝังเข็ม",
+    "lat": 13.3389207,
+    "lon": 100.9510312,
+    "total_road_segments": 1335,
+    "primary_road_count": 77,
+    "road_node_density": 4732,
+    "road_complexity_score": 3055
+  },
+  {
+    "zone_anchor": "สถานีตำรวจภูธรเสม็ด",
+    "lat": 13.3292981,
+    "lon": 100.9531331,
+    "total_road_segments": 1959,
+    "primary_road_count": 137,
+    "road_node_density": 7047,
+    "road_complexity_score": 4603
+  },
+  {
+    "zone_anchor": "BigC ชลบุรีแยกคีรี",
+    "lat": 13.3265265,
+    "lon": 100.9545745,
+    "total_road_segments": 2016,
+    "primary_road_count": 124,
+    "road_node_density": 7401,
+    "road_complexity_score": 4652
+  },
+  {
+    "zone_anchor": "Robinsons ชล",
+    "lat": 13.3360447,
+    "lon": 100.970262,
+    "total_road_segments": 1815,
+    "primary_road_count": 141,
+    "road_node_density": 6556,
+    "road_complexity_score": 4335
+  },
+  {
+    "zone_anchor": "เซ็นทรัลชลบุรี",
+    "lat": 13.3370635,
+    "lon": 100.9698702,
+    "total_road_segments": 1803,
+    "primary_road_count": 136,
+    "road_node_density": 6431,
+    "road_complexity_score": 4286
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 13.3384054,
+    "lon": 100.9701446,
+    "total_road_segments": 1786,
+    "primary_road_count": 134,
+    "road_node_density": 6348,
+    "road_complexity_score": 4242
+  },
+  {
+    "zone_anchor": "สำนักงาน ปปส. ภาค 2",
+    "lat": 13.3395179,
+    "lon": 100.9448539,
+    "total_road_segments": 1155,
+    "primary_road_count": 66,
+    "road_node_density": 4247,
+    "road_complexity_score": 2640
+  },
+  {
+    "zone_anchor": "Tukcom",
+    "lat": 13.3410882,
+    "lon": 100.9732828,
+    "total_road_segments": 1812,
+    "primary_road_count": 135,
+    "road_node_density": 6613,
+    "road_complexity_score": 4299
+  },
+  {
+    "zone_anchor": "คลินิกสูตินรีเวชหมอพรทิพย์",
+    "lat": 13.3450348,
+    "lon": 100.9675076,
+    "total_road_segments": 1601,
+    "primary_road_count": 149,
+    "road_node_density": 5493,
+    "road_complexity_score": 3947
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 13.3401828,
+    "lon": 100.9718521,
+    "total_road_segments": 1784,
+    "primary_road_count": 134,
+    "road_node_density": 6424,
+    "road_complexity_score": 4238
+  },
+  {
+    "zone_anchor": "อีสเทิร์น",
+    "lat": 13.3663263,
+    "lon": 100.9902056,
+    "total_road_segments": 1702,
+    "primary_road_count": 100,
+    "road_node_density": 7028,
+    "road_complexity_score": 3904
+  },
+  {
+    "zone_anchor": "Laemtong Bangsaen",
+    "lat": 13.2870728,
+    "lon": 100.926592,
+    "total_road_segments": 1747,
+    "primary_road_count": 128,
+    "road_node_density": 6949,
+    "road_complexity_score": 4134
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเอกชล",
+    "lat": 13.3548195,
+    "lon": 100.976112,
+    "total_road_segments": 1559,
+    "primary_road_count": 116,
+    "road_node_density": 5936,
+    "road_complexity_score": 3698
+  },
+  {
+    "zone_anchor": "Bus/Minivan Station",
+    "lat": 13.341224,
+    "lon": 100.9742218,
+    "total_road_segments": 1813,
+    "primary_road_count": 139,
+    "road_node_density": 6673,
+    "road_complexity_score": 4321
+  },
+  {
+    "zone_anchor": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดชลบุรี",
+    "lat": 13.3553314,
+    "lon": 100.9801038,
+    "total_road_segments": 1680,
+    "primary_road_count": 114,
+    "road_node_density": 6415,
+    "road_complexity_score": 3930
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัดชลบุรี",
+    "lat": 13.3619192,
+    "lon": 100.9832919,
+    "total_road_segments": 1587,
+    "primary_road_count": 124,
+    "road_node_density": 6322,
+    "road_complexity_score": 3794
+  },
+  {
+    "zone_anchor": "ศาลาเทศบาลเมืองชลบุรี",
+    "lat": 13.3582449,
+    "lon": 100.9838512,
+    "total_road_segments": 1757,
+    "primary_road_count": 130,
+    "road_node_density": 6873,
+    "road_complexity_score": 4164
+  },
+  {
+    "zone_anchor": "Power Buy",
+    "lat": 13.345461,
+    "lon": 100.976885,
+    "total_road_segments": 1856,
+    "primary_road_count": 136,
+    "road_node_density": 6846,
+    "road_complexity_score": 4392
+  },
+  {
+    "zone_anchor": "Samitivej Chonburi",
+    "lat": 13.34505,
+    "lon": 100.9762278,
+    "total_road_segments": 1842,
+    "primary_road_count": 135,
+    "road_node_density": 6739,
+    "road_complexity_score": 4359
+  },
+  {
+    "zone_anchor": "โรงพยาบาลชลบุรี",
+    "lat": 13.3514795,
+    "lon": 100.9819202,
+    "total_road_segments": 1818,
+    "primary_road_count": 136,
+    "road_node_density": 6857,
+    "road_complexity_score": 4316
+  },
+  {
+    "zone_anchor": "โรงพยาบาลมหาวิทยาลัยบูรพา",
+    "lat": 13.2847626,
+    "lon": 100.9227714,
+    "total_road_segments": 1509,
+    "primary_road_count": 103,
+    "road_node_density": 6024,
+    "road_complexity_score": 3533
+  },
+  {
+    "zone_anchor": "โรงพยาบาลชลเวช",
+    "lat": 13.3628467,
+    "lon": 100.9860921,
+    "total_road_segments": 1703,
+    "primary_road_count": 121,
+    "road_node_density": 6860,
+    "road_complexity_score": 4011
+  },
+  {
+    "zone_anchor": "Chalermthai Shopping Mall",
+    "lat": 13.3709114,
+    "lon": 100.9919558,
+    "total_road_segments": 1555,
+    "primary_road_count": 85,
+    "road_node_density": 6589,
+    "road_complexity_score": 3535
+  },
+  {
+    "zone_anchor": "The Station",
+    "lat": 13.3695334,
+    "lon": 100.9918054,
+    "total_road_segments": 1601,
+    "primary_road_count": 88,
+    "road_node_density": 6694,
+    "road_complexity_score": 3642
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมืองชลบุรี",
+    "lat": 13.3617507,
+    "lon": 100.9797903,
+    "total_road_segments": 1443,
+    "primary_road_count": 119,
+    "road_node_density": 5834,
+    "road_complexity_score": 3481
+  },
+  {
+    "zone_anchor": "สำนักงานการตรวจเงินแผ่นดินภูมิภาคที่ 2",
+    "lat": 13.3629826,
+    "lon": 100.9774325,
+    "total_road_segments": 1227,
+    "primary_road_count": 108,
+    "road_node_density": 5132,
+    "road_complexity_score": 2994
+  },
+  {
+    "zone_anchor": "สำนักงานสรรพากร",
+    "lat": 13.3626689,
+    "lon": 100.9786079,
+    "total_road_segments": 1313,
+    "primary_road_count": 115,
+    "road_node_density": 5549,
+    "road_complexity_score": 3201
+  },
+  {
+    "zone_anchor": "Amatio Chill Park",
+    "lat": 13.4182784,
+    "lon": 100.9992267,
+    "total_road_segments": 819,
+    "primary_road_count": 40,
+    "road_node_density": 4544,
+    "road_complexity_score": 1838
+  },
+  {
+    "zone_anchor": "Plus Mall",
+    "lat": 13.4256077,
+    "lon": 101.0045109,
+    "total_road_segments": 752,
+    "primary_road_count": 40,
+    "road_node_density": 4199,
+    "road_complexity_score": 1704
+  },
+  {
+    "zone_anchor": "โรงพยาบาล วิภาราม อมตะนคร",
+    "lat": 13.4210941,
+    "lon": 101.0030811,
+    "total_road_segments": 822,
+    "primary_road_count": 40,
+    "road_node_density": 4621,
+    "road_complexity_score": 1844
+  },
+  {
+    "zone_anchor": "TESCO Lotus",
+    "lat": 13.4260924,
+    "lon": 101.0044209,
+    "total_road_segments": 750,
+    "primary_road_count": 41,
+    "road_node_density": 4176,
+    "road_complexity_score": 1705
+  },
+  {
+    "zone_anchor": "Faculty Of Engineering",
+    "lat": 13.2747806,
+    "lon": 100.9252428,
+    "total_road_segments": 1301,
+    "primary_road_count": 73,
+    "road_node_density": 5098,
+    "road_complexity_score": 2967
+  },
+  {
+    "zone_anchor": "Faculty of Geoinformatics",
+    "lat": 13.2784361,
+    "lon": 100.9255319,
+    "total_road_segments": 1489,
+    "primary_road_count": 82,
+    "road_node_density": 5862,
+    "road_complexity_score": 3388
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยบูรพา",
+    "lat": 13.2765776,
+    "lon": 100.9253886,
+    "total_road_segments": 1407,
+    "primary_road_count": 77,
+    "road_node_density": 5426,
+    "road_complexity_score": 3199
+  },
+  {
+    "zone_anchor": "กองร้อยบังคับและบริการ",
+    "lat": 13.3612365,
+    "lon": 100.9785978,
+    "total_road_segments": 1383,
+    "primary_road_count": 110,
+    "road_node_density": 5571,
+    "road_complexity_score": 3316
+  },
+  {
+    "zone_anchor": "ศูนย์บริหารการทะเบียนภาค 2",
+    "lat": 13.361455,
+    "lon": 100.9775888,
+    "total_road_segments": 1322,
+    "primary_road_count": 108,
+    "road_node_density": 5368,
+    "road_complexity_score": 3184
+  },
+  {
+    "zone_anchor": "สำนักงานพาณิชย์จังหวัดชลบุรี",
+    "lat": 13.3619021,
+    "lon": 100.9768862,
+    "total_road_segments": 1253,
+    "primary_road_count": 108,
+    "road_node_density": 5219,
+    "road_complexity_score": 3046
+  },
+  {
+    "zone_anchor": "บริษัท วราภรณ์ เทรดดิ้ง 2527 จำกัด",
+    "lat": 13.3500934,
+    "lon": 100.9967833,
+    "total_road_segments": 1739,
+    "primary_road_count": 104,
+    "road_node_density": 7297,
+    "road_complexity_score": 3998
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเอกชล 2",
+    "lat": 13.3177278,
+    "lon": 100.9483113,
+    "total_road_segments": 1843,
+    "primary_road_count": 61,
+    "road_node_density": 7086,
+    "road_complexity_score": 3991
+  },
+  {
+    "zone_anchor": "ศูนย์ศึกษาวิทยาศาสตร์กองทัพไทย",
+    "lat": 13.3078339,
+    "lon": 100.904543,
+    "total_road_segments": 556,
+    "primary_road_count": 14,
+    "road_node_density": 2522,
+    "road_complexity_score": 1182
+  },
+  {
+    "zone_anchor": "Ang Sila Marine Fisheries Suppression and Protection Unit",
+    "lat": 13.333011,
+    "lon": 100.9248688,
+    "total_road_segments": 642,
+    "primary_road_count": 15,
+    "road_node_density": 2836,
+    "road_complexity_score": 1359
+  },
+  {
+    "zone_anchor": "เทศบาลเมืองบางแสน",
+    "lat": 13.2882148,
+    "lon": 100.9142968,
+    "total_road_segments": 1033,
+    "primary_road_count": 38,
+    "road_node_density": 4121,
+    "road_complexity_score": 2256
+  },
+  {
+    "zone_anchor": "Index Living Mall",
+    "lat": 13.313155,
+    "lon": 100.9555511,
+    "total_road_segments": 1716,
+    "primary_road_count": 61,
+    "road_node_density": 6702,
+    "road_complexity_score": 3737
+  },
+  {
+    "zone_anchor": "Chon Buri Fisheries Radio Station",
+    "lat": 13.3327396,
+    "lon": 100.9249506,
+    "total_road_segments": 656,
+    "primary_road_count": 15,
+    "road_node_density": 2876,
+    "road_complexity_score": 1387
+  },
+  {
+    "zone_anchor": "อสม.ซอยตี๋การยาง",
+    "lat": 13.2962492,
+    "lon": 100.9423665,
+    "total_road_segments": 1883,
+    "primary_road_count": 134,
+    "road_node_density": 7703,
+    "road_complexity_score": 4436
+  },
+  {
+    "zone_anchor": "Tesco",
+    "lat": 13.3528558,
+    "lon": 101.0021302,
+    "total_road_segments": 1519,
+    "primary_road_count": 91,
+    "road_node_density": 6711,
+    "road_complexity_score": 3493
+  },
+  {
+    "zone_anchor": "ที่ทำการเทศบาลตำบลบางทราย",
+    "lat": 13.3848227,
+    "lon": 100.9856269,
+    "total_road_segments": 718,
+    "primary_road_count": 55,
+    "road_node_density": 3361,
+    "road_complexity_score": 1711
+  },
+  {
+    "zone_anchor": "โรงพยาบาลค่ายนวมินทราชินี",
+    "lat": 13.3869216,
+    "lon": 100.9909254,
+    "total_road_segments": 761,
+    "primary_road_count": 49,
+    "road_node_density": 3643,
+    "road_complexity_score": 1767
+  },
+  {
+    "zone_anchor": "ชลบุรี",
+    "lat": 13.3421976,
+    "lon": 100.9982915,
+    "total_road_segments": 1351,
+    "primary_road_count": 80,
+    "road_node_density": 6446,
+    "road_complexity_score": 3102
+  },
+  {
+    "zone_anchor": "Chonburi Bus Terminal",
+    "lat": 13.40045,
+    "lon": 100.9968376,
+    "total_road_segments": 859,
+    "primary_road_count": 40,
+    "road_node_density": 4562,
+    "road_complexity_score": 1918
+  },
+  {
+    "zone_anchor": "โรงพยาบาลแม่และเด็ก",
+    "lat": 13.3687339,
+    "lon": 101.0258639,
+    "total_road_segments": 911,
+    "primary_road_count": 16,
+    "road_node_density": 5319,
+    "road_complexity_score": 1902
+  },
+  {
+    "zone_anchor": "เมืองน้ำ ฮาร์ดแวร์",
+    "lat": 13.3065564,
+    "lon": 100.9941875,
+    "total_road_segments": 385,
+    "primary_road_count": 26,
+    "road_node_density": 2784,
+    "road_complexity_score": 900
+  },
+  {
+    "zone_anchor": "Bangsaen Technical College",
+    "lat": 13.2974876,
+    "lon": 100.9550388,
+    "total_road_segments": 1638,
+    "primary_road_count": 107,
+    "road_node_density": 6609,
+    "road_complexity_score": 3811
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานนานาชาติอู่ตะเภา",
+    "lat": 13.295499,
+    "lon": 100.9627039,
+    "total_road_segments": 1451,
+    "primary_road_count": 68,
+    "road_node_density": 5983,
+    "road_complexity_score": 3242
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยบูรพา",
+    "lat": 13.1680798,
+    "lon": 101.1952416,
+    "total_road_segments": 26,
+    "primary_road_count": 5,
+    "road_node_density": 465,
+    "road_complexity_score": 77
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยบูรพา",
+    "lat": 13.2859354,
+    "lon": 100.6371885,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดชลบุรี",
+    "lat": 13.039987,
+    "lon": 100.9509625,
+    "total_road_segments": 693,
+    "primary_road_count": 0,
+    "road_node_density": 3764,
+    "road_complexity_score": 1386
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดชลบุรี",
+    "lat": 13.0397785,
+    "lon": 100.7919302,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สถานีขนส่งพัทยา",
+    "lat": 12.9499523,
+    "lon": 100.3265369,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดชลบุรี",
+    "lat": 13.4004427,
+    "lon": 100.4200709,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานนานาชาติอู่ตะเภา",
+    "lat": 12.6759845,
+    "lon": 99.8445316,
+    "total_road_segments": 43,
+    "primary_road_count": 0,
+    "road_node_density": 694,
+    "road_complexity_score": 86
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานสุวรรณภูมิ",
+    "lat": 13.6818969,
+    "lon": 99.5933049,
+    "total_road_segments": 38,
+    "primary_road_count": 0,
+    "road_node_density": 590,
+    "road_complexity_score": 76
+  },
+  {
+    "zone_anchor": "สนามบินโรงเรียนตำรวจภูธร ภาค 2",
+    "lat": 13.6385219,
+    "lon": 99.6041594,
+    "total_road_segments": 131,
+    "primary_road_count": 11,
+    "road_node_density": 1320,
+    "road_complexity_score": 317
+  },
+  {
+    "zone_anchor": "พอร์โทเบลโล มอลล์ ศรีราชา",
+    "lat": 13.1236025,
+    "lon": 100.3401502,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "ลิตเติ้ลวอล์ค พัทยา",
+    "lat": 12.9364084,
+    "lon": 100.3255418,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "เซ็นทรัล ชลบุรี",
+    "lat": 13.33792,
+    "lon": 100.8145206,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "เซ็นทรัล พัทยา",
+    "lat": 13.1523221,
+    "lon": 100.9833246,
+    "total_road_segments": 1044,
+    "primary_road_count": 63,
+    "road_node_density": 4532,
+    "road_complexity_score": 2403
+  },
+  {
+    "zone_anchor": "เซ็นทรัล พัทยา",
+    "lat": 12.9344446,
+    "lon": 100.3071348,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "เซ็นทรัล มารีนา เอาท์เล็ท",
+    "lat": 12.9457316,
+    "lon": 100.3128516,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "โรบินสัน ชลบุรี",
+    "lat": 13.3372944,
+    "lon": 100.4709007,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "โรบินสัน ไลฟ์สไตล์ชลบุรี",
+    "lat": 13.4063444,
+    "lon": 100.4645499,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "BigC ชลบุรีแยกคีรี",
+    "lat": 14.7125255,
+    "lon": 101.8808904,
+    "total_road_segments": 25,
+    "primary_road_count": 0,
+    "road_node_density": 620,
+    "road_complexity_score": 50
+  },
+  {
+    "zone_anchor": "บิ๊กซี ชลบุรี 2",
+    "lat": 13.323574,
+    "lon": 98.6570774,
+    "total_road_segments": 5,
+    "primary_road_count": 0,
+    "road_node_density": 241,
+    "road_complexity_score": 10
+  },
+  {
+    "zone_anchor": "ทวีกิจ พลาซ่า",
+    "lat": 14.9926874,
+    "lon": 103.1046237,
+    "total_road_segments": 1373,
+    "primary_road_count": 63,
+    "road_node_density": 5795,
+    "road_complexity_score": 3061
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชภัฏบุรีรัมย์",
+    "lat": 14.9887761,
+    "lon": 103.0998895,
+    "total_road_segments": 1235,
+    "primary_road_count": 57,
+    "road_node_density": 5374,
+    "road_complexity_score": 2755
+  },
+  {
+    "zone_anchor": "โรงพยาบาลบุรีรัมย์",
+    "lat": 15.0055458,
+    "lon": 103.1023405,
+    "total_road_segments": 1234,
+    "primary_road_count": 33,
+    "road_node_density": 4960,
+    "road_complexity_score": 2633
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเอกชนบุรีรัมย์",
+    "lat": 15.004588,
+    "lon": 103.1121933,
+    "total_road_segments": 1113,
+    "primary_road_count": 56,
+    "road_node_density": 4940,
+    "road_complexity_score": 2506
+  },
+  {
+    "zone_anchor": "วิทยาลัยเกษตรและเทคโนโลยีบุรีรัมย์",
+    "lat": 14.9840396,
+    "lon": 103.1031701,
+    "total_road_segments": 1140,
+    "primary_road_count": 54,
+    "road_node_density": 5132,
+    "road_complexity_score": 2550
+  },
+  {
+    "zone_anchor": "Thawikit supercenter",
+    "lat": 14.9897114,
+    "lon": 103.086516,
+    "total_road_segments": 950,
+    "primary_road_count": 27,
+    "road_node_density": 4776,
+    "road_complexity_score": 2035
+  },
+  {
+    "zone_anchor": "shoppingcenter",
+    "lat": 14.987125,
+    "lon": 103.0873435,
+    "total_road_segments": 982,
+    "primary_road_count": 30,
+    "road_node_density": 5058,
+    "road_complexity_score": 2114
+  },
+  {
+    "zone_anchor": "ไลฟ์ลี่ มาร์เก็ต",
+    "lat": 14.987362,
+    "lon": 103.0865023,
+    "total_road_segments": 970,
+    "primary_road_count": 29,
+    "road_node_density": 4989,
+    "road_complexity_score": 2085
+  },
+  {
+    "zone_anchor": "โรบินสัน บุรีรัมย์",
+    "lat": 14.9539557,
+    "lon": 103.1000217,
+    "total_road_segments": 513,
+    "primary_road_count": 14,
+    "road_node_density": 3681,
+    "road_complexity_score": 1096
+  },
+  {
+    "zone_anchor": "Homepro",
+    "lat": 14.9827668,
+    "lon": 103.0809507,
+    "total_road_segments": 826,
+    "primary_road_count": 15,
+    "road_node_density": 5005,
+    "road_complexity_score": 1727
+  },
+  {
+    "zone_anchor": "Buriram Highway District Offices",
+    "lat": 14.9480541,
+    "lon": 103.0940776,
+    "total_road_segments": 499,
+    "primary_road_count": 14,
+    "road_node_density": 3583,
+    "road_complexity_score": 1068
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 14.9774817,
+    "lon": 103.0739697,
+    "total_road_segments": 746,
+    "primary_road_count": 13,
+    "road_node_density": 4847,
+    "road_complexity_score": 1557
+  },
+  {
+    "zone_anchor": "Provincial Hall",
+    "lat": 14.945174,
+    "lon": 103.1093127,
+    "total_road_segments": 240,
+    "primary_road_count": 8,
+    "road_node_density": 1895,
+    "road_complexity_score": 520
+  },
+  {
+    "zone_anchor": "Immigration",
+    "lat": 14.9661276,
+    "lon": 103.0918055,
+    "total_road_segments": 601,
+    "primary_road_count": 11,
+    "road_node_density": 3966,
+    "road_complexity_score": 1257
+  },
+  {
+    "zone_anchor": "Thai Watsadu",
+    "lat": 14.9559753,
+    "lon": 103.0544439,
+    "total_road_segments": 372,
+    "primary_road_count": 19,
+    "road_node_density": 2832,
+    "road_complexity_score": 839
+  },
+  {
+    "zone_anchor": "LOTUS'S Go Fresh",
+    "lat": 15.4832805,
+    "lon": 102.9894068,
+    "total_road_segments": 37,
+    "primary_road_count": 1,
+    "road_node_density": 757,
+    "road_complexity_score": 79
+  },
+  {
+    "zone_anchor": "โรบินสัน บุรีรัมย์",
+    "lat": 14.8369373,
+    "lon": 102.9627653,
+    "total_road_segments": 66,
+    "primary_road_count": 2,
+    "road_node_density": 1403,
+    "road_complexity_score": 142
+  },
+  {
+    "zone_anchor": "โลตัส นางรอง",
+    "lat": 15.0124379,
+    "lon": 101.9649097,
+    "total_road_segments": 108,
+    "primary_road_count": 4,
+    "road_node_density": 1367,
+    "road_complexity_score": 236
+  },
+  {
+    "zone_anchor": "Western University",
+    "lat": 15.0247763,
+    "lon": 103.1299199,
+    "total_road_segments": 252,
+    "primary_road_count": 20,
+    "road_node_density": 2486,
+    "road_complexity_score": 604
+  },
+  {
+    "zone_anchor": "บขส.นางรอง จ.บุรีรัมย์",
+    "lat": 14.632206,
+    "lon": 102.4922929,
+    "total_road_segments": 17,
+    "primary_road_count": 1,
+    "road_node_density": 522,
+    "road_complexity_score": 39
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดบุรีรัมย์",
+    "lat": 14.805025,
+    "lon": 102.9385446,
+    "total_road_segments": 94,
+    "primary_road_count": 2,
+    "road_node_density": 1428,
+    "road_complexity_score": 198
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดบุรีรัมย์",
+    "lat": 14.8049664,
+    "lon": 102.7736575,
+    "total_road_segments": 27,
+    "primary_road_count": 0,
+    "road_node_density": 469,
+    "road_complexity_score": 54
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดบุรีรัมย์",
+    "lat": 14.9955838,
+    "lon": 102.8078633,
+    "total_road_segments": 92,
+    "primary_road_count": 8,
+    "road_node_density": 804,
+    "road_complexity_score": 224
+  },
+  {
+    "zone_anchor": "บ้านหนองตาด",
+    "lat": 15.0208755,
+    "lon": 103.0211625,
+    "total_road_segments": 57,
+    "primary_road_count": 0,
+    "road_node_density": 665,
+    "road_complexity_score": 114
+  },
+  {
+    "zone_anchor": "ทวีกิจซูเปอร์เซ็นเตอร์ บุรีรัมย์",
+    "lat": 14.9731158,
+    "lon": 102.7757412,
+    "total_road_segments": 79,
+    "primary_road_count": 11,
+    "road_node_density": 920,
+    "road_complexity_score": 213
+  },
+  {
+    "zone_anchor": "ทวีกิจซูเปอร์เซ็นเตอร์ บุรีรัมย์",
+    "lat": 14.9896115,
+    "lon": 103.0147376,
+    "total_road_segments": 94,
+    "primary_road_count": 0,
+    "road_node_density": 1190,
+    "road_complexity_score": 188
+  },
+  {
+    "zone_anchor": "บิ๊กซี ซูเปอร์เซ็นเตอร์ บุรีรัมย์",
+    "lat": 14.8657263,
+    "lon": 102.9629788,
+    "total_road_segments": 96,
+    "primary_road_count": 0,
+    "road_node_density": 1191,
+    "road_complexity_score": 192
+  },
+  {
+    "zone_anchor": "บิ๊กซี ซูเปอร์เซ็นเตอร์ บุรีรัมย์",
+    "lat": 14.977277,
+    "lon": 103.0018365,
+    "total_road_segments": 112,
+    "primary_road_count": 2,
+    "road_node_density": 1234,
+    "road_complexity_score": 234
+  },
+  {
+    "zone_anchor": "บุรีรัมย์ คาสเซิล",
+    "lat": 14.9665364,
+    "lon": 102.8033303,
+    "total_road_segments": 105,
+    "primary_road_count": 12,
+    "road_node_density": 1011,
+    "road_complexity_score": 270
+  },
+  {
+    "zone_anchor": "โรบินสัน บุรีรัมย์",
+    "lat": 14.9290055,
+    "lon": 103.0624724,
+    "total_road_segments": 164,
+    "primary_road_count": 0,
+    "road_node_density": 1323,
+    "road_complexity_score": 328
+  },
+  {
+    "zone_anchor": "โรบินสัน บุรีรัมย์",
+    "lat": 14.9731158,
+    "lon": 102.9199367,
+    "total_road_segments": 44,
+    "primary_road_count": 0,
+    "road_node_density": 750,
+    "road_complexity_score": 88
+  },
+  {
+    "zone_anchor": "โลตัส สตึก",
+    "lat": 14.6371314,
+    "lon": 101.622877,
+    "total_road_segments": 78,
+    "primary_road_count": 1,
+    "road_node_density": 1450,
+    "road_complexity_score": 161
+  },
+  {
+    "zone_anchor": "โลตัส สตึก",
+    "lat": 15.2911631,
+    "lon": 102.1402898,
+    "total_road_segments": 60,
+    "primary_road_count": 1,
+    "road_node_density": 1473,
+    "road_complexity_score": 125
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคประจวบคีรีขันธ์",
+    "lat": 11.81,
+    "lon": 99.7965731,
+    "total_road_segments": 520,
+    "primary_road_count": 14,
+    "road_node_density": 2220,
+    "road_complexity_score": 1110
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัดประจวบคีรีขันธ์",
+    "lat": 11.8121516,
+    "lon": 99.7979782,
+    "total_road_segments": 461,
+    "primary_road_count": 12,
+    "road_node_density": 1725,
+    "road_complexity_score": 982
+  },
+  {
+    "zone_anchor": "Mini Bus Station Prachuap",
+    "lat": 11.814008,
+    "lon": 99.7930158,
+    "total_road_segments": 521,
+    "primary_road_count": 16,
+    "road_node_density": 2258,
+    "road_complexity_score": 1122
+  },
+  {
+    "zone_anchor": "ประจวบคีรีขันธ์",
+    "lat": 11.8077762,
+    "lon": 99.7937417,
+    "total_road_segments": 589,
+    "primary_road_count": 17,
+    "road_node_density": 2483,
+    "road_complexity_score": 1263
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมืองประจวบคีรีขันธ์",
+    "lat": 11.8087409,
+    "lon": 99.7965758,
+    "total_road_segments": 526,
+    "primary_road_count": 14,
+    "road_node_density": 2217,
+    "road_complexity_score": 1122
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลเมืองประจวบคีรีขันธ์",
+    "lat": 11.8088314,
+    "lon": 99.7979946,
+    "total_road_segments": 490,
+    "primary_road_count": 12,
+    "road_node_density": 1854,
+    "road_complexity_score": 1040
+  },
+  {
+    "zone_anchor": "Prachuapkhirikan Provincial Health Office",
+    "lat": 11.8082823,
+    "lon": 99.7974914,
+    "total_road_segments": 509,
+    "primary_road_count": 12,
+    "road_node_density": 1915,
+    "road_complexity_score": 1078
+  },
+  {
+    "zone_anchor": "โรงพยาบาลประจวบคีรีขันธ์",
+    "lat": 11.8008842,
+    "lon": 99.7962421,
+    "total_road_segments": 551,
+    "primary_road_count": 13,
+    "road_node_density": 1990,
+    "road_complexity_score": 1167
+  },
+  {
+    "zone_anchor": "สำนักงานหอทะเบียนที่ดิน",
+    "lat": 11.8173082,
+    "lon": 99.7839381,
+    "total_road_segments": 525,
+    "primary_road_count": 12,
+    "road_node_density": 2384,
+    "road_complexity_score": 1110
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคประจวบคีรีขันธ์",
+    "lat": 11.7994465,
+    "lon": 99.7970983,
+    "total_road_segments": 529,
+    "primary_road_count": 13,
+    "road_node_density": 1897,
+    "road_complexity_score": 1123
+  },
+  {
+    "zone_anchor": "Makro",
+    "lat": 11.8192241,
+    "lon": 99.7824083,
+    "total_road_segments": 486,
+    "primary_road_count": 12,
+    "road_node_density": 2315,
+    "road_complexity_score": 1032
+  },
+  {
+    "zone_anchor": "Global House",
+    "lat": 11.8208215,
+    "lon": 99.7820312,
+    "total_road_segments": 451,
+    "primary_road_count": 11,
+    "road_node_density": 2259,
+    "road_complexity_score": 957
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 11.7974094,
+    "lon": 99.7772319,
+    "total_road_segments": 421,
+    "primary_road_count": 9,
+    "road_node_density": 1966,
+    "road_complexity_score": 887
+  },
+  {
+    "zone_anchor": "Minivan Station",
+    "lat": 11.8190998,
+    "lon": 99.7805272,
+    "total_road_segments": 457,
+    "primary_road_count": 11,
+    "road_node_density": 2167,
+    "road_complexity_score": 969
+  },
+  {
+    "zone_anchor": "สนามบินประจวบคีรีขันธ์",
+    "lat": 11.7885361,
+    "lon": 99.8081214,
+    "total_road_segments": 144,
+    "primary_road_count": 5,
+    "road_node_density": 733,
+    "road_complexity_score": 313
+  },
+  {
+    "zone_anchor": "rubber authority of Thailand",
+    "lat": 11.7932669,
+    "lon": 99.7751522,
+    "total_road_segments": 314,
+    "primary_road_count": 8,
+    "road_node_density": 1590,
+    "road_complexity_score": 668
+  },
+  {
+    "zone_anchor": "โรงพยาบาลธนบุรี-คีรีขันธ์",
+    "lat": 11.7946321,
+    "lon": 99.7742808,
+    "total_road_segments": 315,
+    "primary_road_count": 7,
+    "road_node_density": 1560,
+    "road_complexity_score": 665
+  },
+  {
+    "zone_anchor": "หว้ากอ",
+    "lat": 11.7157664,
+    "lon": 99.7499113,
+    "total_road_segments": 89,
+    "primary_road_count": 0,
+    "road_node_density": 747,
+    "road_complexity_score": 178
+  },
+  {
+    "zone_anchor": "ห้างเทพรักษ์เซ็นเตอร์",
+    "lat": 11.8038998,
+    "lon": 98.6424058,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "Dansingkhon Primary Health Care Unit",
+    "lat": 11.77861,
+    "lon": 99.6800285,
+    "total_road_segments": 54,
+    "primary_road_count": 1,
+    "road_node_density": 825,
+    "road_complexity_score": 113
+  },
+  {
+    "zone_anchor": "สาครมินิมาร์ท",
+    "lat": 11.7396938,
+    "lon": 99.7819123,
+    "total_road_segments": 165,
+    "primary_road_count": 0,
+    "road_node_density": 851,
+    "road_complexity_score": 330
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารหัวหิน",
+    "lat": 11.8187066,
+    "lon": 98.6270732,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บ่อนอก",
+    "lat": 12.0037673,
+    "lon": 99.8583773,
+    "total_road_segments": 64,
+    "primary_road_count": 0,
+    "road_node_density": 457,
+    "road_complexity_score": 128
+  },
+  {
+    "zone_anchor": "หนองหิน",
+    "lat": 11.7421762,
+    "lon": 99.7675179,
+    "total_road_segments": 163,
+    "primary_road_count": 9,
+    "road_node_density": 1258,
+    "road_complexity_score": 371
+  },
+  {
+    "zone_anchor": "สถานีขนส่ง (แห่งใหม่) บขส.ประจวบคีรีขันธ์",
+    "lat": 11.8113692,
+    "lon": 99.6594586,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "โลตัส ประจวบคีรีขันธ์",
+    "lat": 11.8839631,
+    "lon": 99.7277117,
+    "total_road_segments": 42,
+    "primary_road_count": 0,
+    "road_node_density": 432,
+    "road_complexity_score": 84
+  },
+  {
+    "zone_anchor": "วังด้วน",
+    "lat": 11.6879245,
+    "lon": 99.7224194,
+    "total_road_segments": 49,
+    "primary_road_count": 1,
+    "road_node_density": 401,
+    "road_complexity_score": 103
+  },
+  {
+    "zone_anchor": "บิ๊กซีมินิ ซอยสุขใจ8",
+    "lat": 12.1014584,
+    "lon": 99.8125442,
+    "total_road_segments": 78,
+    "primary_road_count": 1,
+    "road_node_density": 972,
+    "road_complexity_score": 161
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดประจวบ",
+    "lat": 11.813516,
+    "lon": 98.7529916,
+    "total_road_segments": 3,
+    "primary_road_count": 0,
+    "road_node_density": 176,
+    "road_complexity_score": 6
+  },
+  {
+    "zone_anchor": "คั่นกระได",
+    "lat": 11.8712363,
+    "lon": 99.811052,
+    "total_road_segments": 85,
+    "primary_road_count": 0,
+    "road_node_density": 784,
+    "road_complexity_score": 170
+  },
+  {
+    "zone_anchor": "นวกาญจน์ ของฝากเมืองประจวบฯ",
+    "lat": 11.8038732,
+    "lon": 99.2198502,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์ วิทยาเขตวังไกลกังวล",
+    "lat": 14.1116205,
+    "lon": 101.2609367,
+    "total_road_segments": 47,
+    "primary_road_count": 0,
+    "road_node_density": 1336,
+    "road_complexity_score": 94
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์ วิทยาเขตวังไกลกังวล",
+    "lat": 13.8630768,
+    "lon": 93.2351448,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์ วิทยาเขตวังไกลกังวล (เขต 3)",
+    "lat": 12.5559254,
+    "lon": 81.4815536,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดประจวบคีรีขันธ์",
+    "lat": 11.8510089,
+    "lon": 98.6285742,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "ทุ่งมะเม่า",
+    "lat": 11.9216535,
+    "lon": 99.8196018,
+    "total_road_segments": 90,
+    "primary_road_count": 2,
+    "road_node_density": 666,
+    "road_complexity_score": 190
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานกองบิน 5 ประจวบคีรีขันธ์",
+    "lat": 12.3218749,
+    "lon": 99.7446718,
+    "total_road_segments": 1,
+    "primary_road_count": 0,
+    "road_node_density": 143,
+    "road_complexity_score": 2
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานกองบิน 5 ประจวบคีรีขันธ์",
+    "lat": 11.7869462,
+    "lon": 99.2312354,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานหัวหิน",
+    "lat": 12.2073267,
+    "lon": 99.8835613,
+    "total_road_segments": 127,
+    "primary_road_count": 0,
+    "road_node_density": 1445,
+    "road_complexity_score": 254
+  },
+  {
+    "zone_anchor": "สนามบินเก่าปราณบุรี",
+    "lat": 12.6277071,
+    "lon": 99.3748263,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "HuaHin Japan Mall ศูนย์รวมสินค้านำเข้าจากญี่ปุ่น",
+    "lat": 12.5448099,
+    "lon": 99.3969,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "WS_HUA HIN",
+    "lat": 12.5577463,
+    "lon": 99.3836118,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "WS_HUA HIN",
+    "lat": 12.2289585,
+    "lon": 99.8145969,
+    "total_road_segments": 108,
+    "primary_road_count": 0,
+    "road_node_density": 1969,
+    "road_complexity_score": 216
+  },
+  {
+    "zone_anchor": "WS_HUA HIN",
+    "lat": 12.5476867,
+    "lon": 99.385395,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บลูพอร์ต หัวหิน",
+    "lat": 12.4727589,
+    "lon": 99.3969606,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "มาร์เก็ตวิลเลจ หัวหิน",
+    "lat": 12.1808098,
+    "lon": 99.8781822,
+    "total_road_segments": 64,
+    "primary_road_count": 0,
+    "road_node_density": 864,
+    "road_complexity_score": 128
+  },
+  {
+    "zone_anchor": "มาร์เก็ตวิลเลจ หัวหิน",
+    "lat": 12.5577463,
+    "lon": 98.8068295,
+    "total_road_segments": 64,
+    "primary_road_count": 0,
+    "road_node_density": 1859,
+    "road_complexity_score": 128
+  },
+  {
+    "zone_anchor": "มาร์เก็ตวิลเลจ หัวหิน",
+    "lat": 12.1685399,
+    "lon": 99.7835184,
+    "total_road_segments": 13,
+    "primary_road_count": 0,
+    "road_node_density": 451,
+    "road_complexity_score": 26
+  },
+  {
+    "zone_anchor": "ร้านเจริญภัณฑ์เซ็นทรัลประจวบฯ",
+    "lat": 12.1906434,
+    "lon": 99.8801757,
+    "total_road_segments": 76,
+    "primary_road_count": 0,
+    "road_node_density": 1032,
+    "road_complexity_score": 152
+  },
+  {
+    "zone_anchor": "Big Kiang",
+    "lat": 12.5271262,
+    "lon": 99.3871404,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "Mini BigC ซอยแนบเคหาสน์ 6",
+    "lat": 12.1752545,
+    "lon": 99.2575016,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บิ๊กซี มาร์เก็ต หัวหิน",
+    "lat": 12.5761933,
+    "lon": 99.3668714,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บิ๊กซีมินิ บางจาก บายพาส ปรานบุรี,ประจวบคีรีขันธ์",
+    "lat": 12.4351611,
+    "lon": 99.3355596,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บิ๊กซีมินิ หนองขอนทับใต้ ประจวบคิรีขันธ์",
+    "lat": 12.5629399,
+    "lon": 99.3218071,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บิ๊กซีมินิ แฟรนไชส์ บางจาก ห้วยยาง",
+    "lat": 11.6245068,
+    "lon": 99.0923453,
+    "total_road_segments": 2,
+    "primary_road_count": 0,
+    "road_node_density": 270,
+    "road_complexity_score": 4
+  },
+  {
+    "zone_anchor": "มินิบิ๊กซี เขาตะเกียบ",
+    "lat": 12.487381,
+    "lon": 99.351762,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลนครพิษณุโลก",
+    "lat": 16.8157981,
+    "lon": 100.263631,
+    "total_road_segments": 1787,
+    "primary_road_count": 40,
+    "road_node_density": 7068,
+    "road_complexity_score": 3774
+  },
+  {
+    "zone_anchor": "Shopping mall - mainly electronic & electricals with several cafes and toilets",
+    "lat": 16.8154657,
+    "lon": 100.2632342,
+    "total_road_segments": 1794,
+    "primary_road_count": 43,
+    "road_node_density": 7082,
+    "road_complexity_score": 3803
+  },
+  {
+    "zone_anchor": "ห้างสรรพสินค้าท็อปแลนด์อาเขต",
+    "lat": 16.8153859,
+    "lon": 100.263294,
+    "total_road_segments": 1793,
+    "primary_road_count": 43,
+    "road_node_density": 7082,
+    "road_complexity_score": 3801
+  },
+  {
+    "zone_anchor": "Tuktuk to bus station",
+    "lat": 16.8139713,
+    "lon": 100.2646378,
+    "total_road_segments": 1758,
+    "primary_road_count": 36,
+    "road_node_density": 6802,
+    "road_complexity_score": 3696
+  },
+  {
+    "zone_anchor": "พิษณุโลก",
+    "lat": 16.8149757,
+    "lon": 100.2657009,
+    "total_road_segments": 1773,
+    "primary_road_count": 36,
+    "road_node_density": 6860,
+    "road_complexity_score": 3726
+  },
+  {
+    "zone_anchor": "Sukhothai Thammathirat Open University",
+    "lat": 16.817204,
+    "lon": 100.2608116,
+    "total_road_segments": 1795,
+    "primary_road_count": 43,
+    "road_node_density": 7189,
+    "road_complexity_score": 3805
+  },
+  {
+    "zone_anchor": "Bangkok Hospital",
+    "lat": 16.8165509,
+    "lon": 100.2732794,
+    "total_road_segments": 1803,
+    "primary_road_count": 39,
+    "road_node_density": 6951,
+    "road_complexity_score": 3801
+  },
+  {
+    "zone_anchor": "Phitsanulok Primary Educational Service Office 1",
+    "lat": 16.8213274,
+    "lon": 100.2601447,
+    "total_road_segments": 1744,
+    "primary_road_count": 43,
+    "road_node_density": 7144,
+    "road_complexity_score": 3703
+  },
+  {
+    "zone_anchor": "ท็อปแลนด์พลาซ่า",
+    "lat": 16.8217742,
+    "lon": 100.2644126,
+    "total_road_segments": 1759,
+    "primary_road_count": 45,
+    "road_node_density": 7215,
+    "road_complexity_score": 3743
+  },
+  {
+    "zone_anchor": "บิ๊กซี ซูเปอร์เซ็นเตอร์ พิษณุโลก",
+    "lat": 16.815859,
+    "lon": 100.2536076,
+    "total_road_segments": 1701,
+    "primary_road_count": 42,
+    "road_node_density": 7265,
+    "road_complexity_score": 3612
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมืองพิษณุโลก",
+    "lat": 16.8246458,
+    "lon": 100.2593216,
+    "total_road_segments": 1711,
+    "primary_road_count": 44,
+    "road_node_density": 7225,
+    "road_complexity_score": 3642
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัดพิษณุโลก",
+    "lat": 16.8263059,
+    "lon": 100.2599096,
+    "total_road_segments": 1697,
+    "primary_road_count": 44,
+    "road_node_density": 7221,
+    "road_complexity_score": 3614
+  },
+  {
+    "zone_anchor": "สำนักงานปศุสัตว์เขต 6",
+    "lat": 16.8270105,
+    "lon": 100.2597605,
+    "total_road_segments": 1693,
+    "primary_road_count": 38,
+    "road_node_density": 7090,
+    "road_complexity_score": 3576
+  },
+  {
+    "zone_anchor": "สำนักงานอัยการจังหวัดพิษณุโลก",
+    "lat": 16.8274957,
+    "lon": 100.2601132,
+    "total_road_segments": 1682,
+    "primary_road_count": 38,
+    "road_node_density": 7157,
+    "road_complexity_score": 3554
+  },
+  {
+    "zone_anchor": "สำนักงานที่ดินอำเภอเมืองพิษณุโลก",
+    "lat": 16.8248823,
+    "lon": 100.2595499,
+    "total_road_segments": 1716,
+    "primary_road_count": 44,
+    "road_node_density": 7278,
+    "road_complexity_score": 3652
+  },
+  {
+    "zone_anchor": "แม็คโคร ฟู้ดเซอร์วิส พิษณุโลก 2",
+    "lat": 16.8158414,
+    "lon": 100.2502377,
+    "total_road_segments": 1580,
+    "primary_road_count": 40,
+    "road_node_density": 6999,
+    "road_complexity_score": 3360
+  },
+  {
+    "zone_anchor": "รวมแพทย์ พิษณุโลก",
+    "lat": 16.8097268,
+    "lon": 100.2596553,
+    "total_road_segments": 1735,
+    "primary_road_count": 44,
+    "road_node_density": 6918,
+    "road_complexity_score": 3690
+  },
+  {
+    "zone_anchor": "โรงพยาบาลพุทธชินราช พิษณุโลก",
+    "lat": 16.8083847,
+    "lon": 100.2636897,
+    "total_road_segments": 1690,
+    "primary_road_count": 36,
+    "road_node_density": 6604,
+    "road_complexity_score": 3560
+  },
+  {
+    "zone_anchor": "Pitsanuvej Hospital",
+    "lat": 16.8085266,
+    "lon": 100.2598115,
+    "total_road_segments": 1712,
+    "primary_road_count": 34,
+    "road_node_density": 6738,
+    "road_complexity_score": 3594
+  },
+  {
+    "zone_anchor": "Phitsanulok Bus Terminal 1",
+    "lat": 16.8185104,
+    "lon": 100.2789958,
+    "total_road_segments": 1633,
+    "primary_road_count": 37,
+    "road_node_density": 6062,
+    "road_complexity_score": 3451
+  },
+  {
+    "zone_anchor": "โรงพยาบาลค่ายสมเด็จพระนเรศวร",
+    "lat": 16.8341789,
+    "lon": 100.2539582,
+    "total_road_segments": 1517,
+    "primary_road_count": 27,
+    "road_node_density": 6893,
+    "road_complexity_score": 3169
+  },
+  {
+    "zone_anchor": "อินเตอร์เวชการ",
+    "lat": 16.8057099,
+    "lon": 100.2550784,
+    "total_road_segments": 1565,
+    "primary_road_count": 28,
+    "road_node_density": 6320,
+    "road_complexity_score": 3270
+  },
+  {
+    "zone_anchor": "Purple Songthaew to bus terminal 2 and train station",
+    "lat": 16.8186752,
+    "lon": 100.2792073,
+    "total_road_segments": 1630,
+    "primary_road_count": 35,
+    "road_node_density": 6043,
+    "road_complexity_score": 3435
+  },
+  {
+    "zone_anchor": "แม็คโคร พิษณุโลก",
+    "lat": 16.8051371,
+    "lon": 100.2772682,
+    "total_road_segments": 1389,
+    "primary_road_count": 29,
+    "road_node_density": 5043,
+    "road_complexity_score": 2923
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดพิษณุโลก แห่งที่ 1 (บ้านคลอง)",
+    "lat": 16.8339467,
+    "lon": 100.2437563,
+    "total_road_segments": 1228,
+    "primary_road_count": 18,
+    "road_node_density": 5825,
+    "road_complexity_score": 2546
+  },
+  {
+    "zone_anchor": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคลอง",
+    "lat": 16.8359456,
+    "lon": 100.2478056,
+    "total_road_segments": 1328,
+    "primary_road_count": 23,
+    "road_node_density": 6499,
+    "road_complexity_score": 2771
+  },
+  {
+    "zone_anchor": "Big C @ พิษณุโลก",
+    "lat": 16.8158668,
+    "lon": 100.2896811,
+    "total_road_segments": 1267,
+    "primary_road_count": 27,
+    "road_node_density": 4603,
+    "road_complexity_score": 2669
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสาร จังหวัดพิษณุโลก แห่งที่ 1",
+    "lat": 16.8233065,
+    "lon": 100.2870792,
+    "total_road_segments": 1332,
+    "primary_road_count": 21,
+    "road_node_density": 4928,
+    "road_complexity_score": 2769
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลนครพิษณุโลก",
+    "lat": 16.7953935,
+    "lon": 100.2328359,
+    "total_road_segments": 962,
+    "primary_road_count": 24,
+    "road_node_density": 4942,
+    "road_complexity_score": 2044
+  },
+  {
+    "zone_anchor": "VIP Terminal",
+    "lat": 16.7952872,
+    "lon": 100.2736231,
+    "total_road_segments": 1005,
+    "primary_road_count": 13,
+    "road_node_density": 3813,
+    "road_complexity_score": 2075
+  },
+  {
+    "zone_anchor": "เอกคลินิกกายภาพบำบัด",
+    "lat": 16.796282,
+    "lon": 100.2231632,
+    "total_road_segments": 1006,
+    "primary_road_count": 35,
+    "road_node_density": 5511,
+    "road_complexity_score": 2187
+  },
+  {
+    "zone_anchor": "Makro",
+    "lat": 16.7943331,
+    "lon": 100.2321692,
+    "total_road_segments": 939,
+    "primary_road_count": 23,
+    "road_node_density": 4832,
+    "road_complexity_score": 1993
+  },
+  {
+    "zone_anchor": "เทสโก้ โลตัส พิษณุโลก โคกช้าง",
+    "lat": 16.8190628,
+    "lon": 100.30107,
+    "total_road_segments": 942,
+    "primary_road_count": 22,
+    "road_node_density": 3783,
+    "road_complexity_score": 1994
+  },
+  {
+    "zone_anchor": "โฮมโปร @ พิษณุโลก",
+    "lat": 16.8191045,
+    "lon": 100.2981981,
+    "total_road_segments": 1019,
+    "primary_road_count": 22,
+    "road_node_density": 3989,
+    "road_complexity_score": 2148
+  },
+  {
+    "zone_anchor": "เทสโก้ โลตัส เอ็กซ์ตร้า พิษณุโลก ท่าทอง",
+    "lat": 16.7990069,
+    "lon": 100.2164174,
+    "total_road_segments": 951,
+    "primary_road_count": 38,
+    "road_node_density": 5382,
+    "road_complexity_score": 2092
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 16.7991233,
+    "lon": 100.2164966,
+    "total_road_segments": 951,
+    "primary_road_count": 38,
+    "road_node_density": 5385,
+    "road_complexity_score": 2092
+  },
+  {
+    "zone_anchor": "จักรกลที่2",
+    "lat": 16.7901887,
+    "lon": 100.2065668,
+    "total_road_segments": 848,
+    "primary_road_count": 37,
+    "road_node_density": 4930,
+    "road_complexity_score": 1881
+  },
+  {
+    "zone_anchor": "คณะกรรมการการเลือกตั้งประจำจังหวัด พิษณุโลก",
+    "lat": 16.7974214,
+    "lon": 100.2123137,
+    "total_road_segments": 880,
+    "primary_road_count": 35,
+    "road_node_density": 5041,
+    "road_complexity_score": 1935
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดพิษณุโลก แห่งที่ 2",
+    "lat": 16.8126698,
+    "lon": 100.29405,
+    "total_road_segments": 1094,
+    "primary_road_count": 23,
+    "road_node_density": 4136,
+    "road_complexity_score": 2303
+  },
+  {
+    "zone_anchor": "โลตัส พิษณุโลก 1 (โคกช้าง)",
+    "lat": 16.8123914,
+    "lon": 100.2177193,
+    "total_road_segments": 748,
+    "primary_road_count": 24,
+    "road_node_density": 4411,
+    "road_complexity_score": 1616
+  },
+  {
+    "zone_anchor": "Central Phitsanulok",
+    "lat": 16.840548,
+    "lon": 100.2330487,
+    "total_road_segments": 944,
+    "primary_road_count": 8,
+    "road_node_density": 5136,
+    "road_complexity_score": 1928
+  },
+  {
+    "zone_anchor": "ห้างสรรพสินค้าท็อปแลนด์พลาซ่า",
+    "lat": 16.8216272,
+    "lon": 100.2286262,
+    "total_road_segments": 835,
+    "primary_road_count": 14,
+    "road_node_density": 4024,
+    "road_complexity_score": 1740
+  },
+  {
+    "zone_anchor": "อบต. บึงพระ",
+    "lat": 16.7486873,
+    "lon": 100.2683188,
+    "total_road_segments": 634,
+    "primary_road_count": 9,
+    "road_node_density": 3716,
+    "road_complexity_score": 1313
+  },
+  {
+    "zone_anchor": "โรงพยาบาลส่งเสริมสุขภาพตำบลบึงพระ",
+    "lat": 16.745616,
+    "lon": 100.2688479,
+    "total_road_segments": 581,
+    "primary_road_count": 9,
+    "road_node_density": 3408,
+    "road_complexity_score": 1207
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยนเรศวร",
+    "lat": 16.7425197,
+    "lon": 100.1933308,
+    "total_road_segments": 819,
+    "primary_road_count": 14,
+    "road_node_density": 4455,
+    "road_complexity_score": 1708
+  },
+  {
+    "zone_anchor": "โรงพยาบาลมหาวิทยาลัยนเรศวร",
+    "lat": 16.7485505,
+    "lon": 100.1893614,
+    "total_road_segments": 864,
+    "primary_road_count": 14,
+    "road_node_density": 4433,
+    "road_complexity_score": 1798
+  },
+  {
+    "zone_anchor": "บึงพระ",
+    "lat": 16.7481115,
+    "lon": 100.2640645,
+    "total_road_segments": 590,
+    "primary_road_count": 9,
+    "road_node_density": 3438,
+    "road_complexity_score": 1225
+  },
+  {
+    "zone_anchor": "ไทยมาร์ท อิเลคโทรนิคส์ มอลล์ (เซ็นเตอร์) (สาขาโคกช้าง)",
+    "lat": 16.8156931,
+    "lon": 100.3075797,
+    "total_road_segments": 771,
+    "primary_road_count": 25,
+    "road_node_density": 3233,
+    "road_complexity_score": 1667
+  },
+  {
+    "zone_anchor": "โรงพยาบาลกองบิน 46",
+    "lat": 16.7877478,
+    "lon": 100.2703124,
+    "total_road_segments": 827,
+    "primary_road_count": 17,
+    "road_node_density": 3452,
+    "road_complexity_score": 1739
+  },
+  {
+    "zone_anchor": "สรรพากรพื้นที่พิษณุโลก",
+    "lat": 16.8494718,
+    "lon": 100.2625713,
+    "total_road_segments": 1173,
+    "primary_road_count": 11,
+    "road_node_density": 5747,
+    "road_complexity_score": 2401
+  },
+  {
+    "zone_anchor": "หน่วยบินตำรวจ จว.พิษณุโลก",
+    "lat": 16.7764162,
+    "lon": 100.2236601,
+    "total_road_segments": 584,
+    "primary_road_count": 15,
+    "road_node_density": 3596,
+    "road_complexity_score": 1243
+  },
+  {
+    "zone_anchor": "บ้านเต็งหนาม",
+    "lat": 16.8554916,
+    "lon": 100.2666171,
+    "total_road_segments": 1072,
+    "primary_road_count": 11,
+    "road_node_density": 5419,
+    "road_complexity_score": 2199
+  },
+  {
+    "zone_anchor": "บริษัทบิ๊กบอสการเกษตร",
+    "lat": 16.8249143,
+    "lon": 100.3312944,
+    "total_road_segments": 562,
+    "primary_road_count": 32,
+    "road_node_density": 2721,
+    "road_complexity_score": 1284
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานพิษณุโลก",
+    "lat": 16.7815527,
+    "lon": 100.2779196,
+    "total_road_segments": 552,
+    "primary_road_count": 16,
+    "road_node_density": 2432,
+    "road_complexity_score": 1184
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชภัฎพิบูลสงคราม",
+    "lat": 16.8302633,
+    "lon": 100.2105768,
+    "total_road_segments": 390,
+    "primary_road_count": 2,
+    "road_node_density": 2478,
+    "road_complexity_score": 790
+  },
+  {
+    "zone_anchor": "หอประชุมศรีวชิรโชติ",
+    "lat": 16.8300344,
+    "lon": 100.2076788,
+    "total_road_segments": 389,
+    "primary_road_count": 2,
+    "road_node_density": 2478,
+    "road_complexity_score": 788
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดพิษณุโลก แห่งที่ 1",
+    "lat": 16.8340128,
+    "lon": 100.2077045,
+    "total_road_segments": 371,
+    "primary_road_count": 2,
+    "road_node_density": 2311,
+    "road_complexity_score": 752
+  },
+  {
+    "zone_anchor": "บ้านใหม่",
+    "lat": 16.6901016,
+    "lon": 100.2729108,
+    "total_road_segments": 181,
+    "primary_road_count": 1,
+    "road_node_density": 2232,
+    "road_complexity_score": 367
+  },
+  {
+    "zone_anchor": "องค์การบริหารส่วนจังหวัดพิษณุโลก",
+    "lat": 16.8171301,
+    "lon": 100.3413025,
+    "total_road_segments": 601,
+    "primary_road_count": 32,
+    "road_node_density": 3582,
+    "road_complexity_score": 1362
+  },
+  {
+    "zone_anchor": "องค์การบริหารส่วนตำบล ท่าโพธิ์",
+    "lat": 16.7634502,
+    "lon": 100.1801086,
+    "total_road_segments": 548,
+    "primary_road_count": 44,
+    "road_node_density": 3068,
+    "road_complexity_score": 1316
+  },
+  {
+    "zone_anchor": "การไฟฟ้าส่วนภูมิภาคสำนักงานการไฟฟ้าเขต 2 ภาคเหนือ",
+    "lat": 16.8178903,
+    "lon": 100.3211,
+    "total_road_segments": 605,
+    "primary_road_count": 36,
+    "road_node_density": 2617,
+    "road_complexity_score": 1390
+  },
+  {
+    "zone_anchor": "บ้านตูม",
+    "lat": 16.9089905,
+    "lon": 100.2504351,
+    "total_road_segments": 192,
+    "primary_road_count": 3,
+    "road_node_density": 2091,
+    "road_complexity_score": 399
+  },
+  {
+    "zone_anchor": "องค์การบริหารส่วนตำบลไผ่ขอดอน",
+    "lat": 16.91773,
+    "lon": 100.1817133,
+    "total_road_segments": 163,
+    "primary_road_count": 27,
+    "road_node_density": 1266,
+    "road_complexity_score": 461
+  },
+  {
+    "zone_anchor": "บ่อปูนเลี้ยงปลา",
+    "lat": 16.8642237,
+    "lon": 100.1876129,
+    "total_road_segments": 383,
+    "primary_road_count": 0,
+    "road_node_density": 3205,
+    "road_complexity_score": 766
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนาพิษณุโลก",
+    "lat": 16.8616382,
+    "lon": 100.1829123,
+    "total_road_segments": 252,
+    "primary_road_count": 0,
+    "road_node_density": 2453,
+    "road_complexity_score": 504
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา พิษณุโลก",
+    "lat": 16.8622353,
+    "lon": 100.183003,
+    "total_road_segments": 265,
+    "primary_road_count": 0,
+    "road_node_density": 2553,
+    "road_complexity_score": 530
+  },
+  {
+    "zone_anchor": "เพาะเลี้ยงปลาสวยงาม",
+    "lat": 16.8641014,
+    "lon": 100.1871065,
+    "total_road_segments": 367,
+    "primary_road_count": 0,
+    "road_node_density": 3082,
+    "road_complexity_score": 734
+  },
+  {
+    "zone_anchor": "Phitsanulok airport",
+    "lat": 16.771648,
+    "lon": 100.2815374,
+    "total_road_segments": 470,
+    "primary_road_count": 13,
+    "road_node_density": 2174,
+    "road_complexity_score": 1005
+  },
+  {
+    "zone_anchor": "ตึก13อาคารเรียนสาขาวิชาประมง",
+    "lat": 16.8640776,
+    "lon": 100.1878497,
+    "total_road_segments": 389,
+    "primary_road_count": 2,
+    "road_node_density": 3367,
+    "road_complexity_score": 788
+  },
+  {
+    "zone_anchor": "แม็คโคร พิษณุโลก",
+    "lat": 16.7944329,
+    "lon": 100.196152,
+    "total_road_segments": 537,
+    "primary_road_count": 27,
+    "road_node_density": 3556,
+    "road_complexity_score": 1209
+  },
+  {
+    "zone_anchor": "แม็คโคร พิษณุโลก",
+    "lat": 16.7944329,
+    "lon": 100.1601031,
+    "total_road_segments": 73,
+    "primary_road_count": 0,
+    "road_node_density": 918,
+    "road_complexity_score": 146
+  },
+  {
+    "zone_anchor": "โรบินสัน พิษณุโลก",
+    "lat": 16.8411807,
+    "lon": 100.1960387,
+    "total_road_segments": 195,
+    "primary_road_count": 2,
+    "road_node_density": 1737,
+    "road_complexity_score": 400
+  },
+  {
+    "zone_anchor": "Phitsanulok Bus Terminal 2",
+    "lat": 16.811625,
+    "lon": 100.3299878,
+    "total_road_segments": 605,
+    "primary_road_count": 36,
+    "road_node_density": 3348,
+    "road_complexity_score": 1390
+  },
+  {
+    "zone_anchor": "Purple Songtaew to Bus Terminal 1 and Train station",
+    "lat": 16.8124291,
+    "lon": 100.3303021,
+    "total_road_segments": 614,
+    "primary_road_count": 36,
+    "road_node_density": 3369,
+    "road_complexity_score": 1408
+  },
+  {
+    "zone_anchor": "แขวงการทางพิษณุโลก",
+    "lat": 16.9240728,
+    "lon": 100.3564972,
+    "total_road_segments": 127,
+    "primary_road_count": 10,
+    "road_node_density": 1568,
+    "road_complexity_score": 304
+  },
+  {
+    "zone_anchor": "โรงพยาบาลพิษณุโลก ฮอสพิทอล",
+    "lat": 16.9202705,
+    "lon": 100.3177937,
+    "total_road_segments": 77,
+    "primary_road_count": 0,
+    "road_node_density": 1099,
+    "road_complexity_score": 154
+  },
+  {
+    "zone_anchor": "โรงพยาบาลพิษณุโลก ฮอสพิทอล",
+    "lat": 16.9199899,
+    "lon": 100.070538,
+    "total_road_segments": 23,
+    "primary_road_count": 0,
+    "road_node_density": 539,
+    "road_complexity_score": 46
+  },
+  {
+    "zone_anchor": "โรงพยาบาลพิษณุโลก ฮอสพิทอล",
+    "lat": 16.80566,
+    "lon": 100.1110044,
+    "total_road_segments": 10,
+    "primary_road_count": 0,
+    "road_node_density": 171,
+    "road_complexity_score": 20
+  },
+  {
+    "zone_anchor": "โรงพยาบาลวัดโบสถ์",
+    "lat": 16.9886371,
+    "lon": 100.1829676,
+    "total_road_segments": 72,
+    "primary_road_count": 1,
+    "road_node_density": 949,
+    "road_complexity_score": 149
+  },
+  {
+    "zone_anchor": "โลตัส ขอนแก่น",
+    "lat": 16.6097453,
+    "lon": 101.5588194,
+    "total_road_segments": 4,
+    "primary_road_count": 0,
+    "road_node_density": 198,
+    "road_complexity_score": 8
+  },
+  {
+    "zone_anchor": "โลตัส พิษณุโลก 2 (โลตัสท่าทอง)",
+    "lat": 16.8187208,
+    "lon": 99.1474233,
+    "total_road_segments": 139,
+    "primary_road_count": 8,
+    "road_node_density": 2016,
+    "road_complexity_score": 318
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 12.6837191,
+    "lon": 101.2692904,
+    "total_road_segments": 2196,
+    "primary_road_count": 121,
+    "road_node_density": 7685,
+    "road_complexity_score": 4997
+  },
+  {
+    "zone_anchor": "คลินิกชุมชนอบอุ่น",
+    "lat": 12.6742578,
+    "lon": 101.2787691,
+    "total_road_segments": 2078,
+    "primary_road_count": 99,
+    "road_node_density": 7390,
+    "road_complexity_score": 4651
+  },
+  {
+    "zone_anchor": "โรงพยาบาลระยอง",
+    "lat": 12.6827662,
+    "lon": 101.2764916,
+    "total_road_segments": 2210,
+    "primary_road_count": 151,
+    "road_node_density": 7701,
+    "road_complexity_score": 5175
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคระยอง",
+    "lat": 12.6677469,
+    "lon": 101.2715653,
+    "total_road_segments": 1628,
+    "primary_road_count": 56,
+    "road_node_density": 5786,
+    "road_complexity_score": 3536
+  },
+  {
+    "zone_anchor": "Amphur Muang Rayong District Office",
+    "lat": 12.668385,
+    "lon": 101.2748247,
+    "total_road_segments": 1744,
+    "primary_road_count": 73,
+    "road_node_density": 6290,
+    "road_complexity_score": 3853
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลนครระยอง",
+    "lat": 12.6755391,
+    "lon": 101.2782043,
+    "total_road_segments": 2123,
+    "primary_road_count": 98,
+    "road_node_density": 7490,
+    "road_complexity_score": 4736
+  },
+  {
+    "zone_anchor": "Rayong Bus Terminal",
+    "lat": 12.6838738,
+    "lon": 101.2737062,
+    "total_road_segments": 2170,
+    "primary_road_count": 135,
+    "road_node_density": 7673,
+    "road_complexity_score": 5015
+  },
+  {
+    "zone_anchor": "สำนักงานที่ดิน จังหวัดระยอง",
+    "lat": 12.6689842,
+    "lon": 101.2737306,
+    "total_road_segments": 1769,
+    "primary_road_count": 76,
+    "road_node_density": 6385,
+    "road_complexity_score": 3918
+  },
+  {
+    "zone_anchor": "ระยอง ช๊อปปิ้งมอลล์",
+    "lat": 12.6780606,
+    "lon": 101.2502641,
+    "total_road_segments": 1585,
+    "primary_road_count": 43,
+    "road_node_density": 6254,
+    "road_complexity_score": 3385
+  },
+  {
+    "zone_anchor": "แม็คโคร",
+    "lat": 12.6954215,
+    "lon": 101.2637356,
+    "total_road_segments": 1828,
+    "primary_road_count": 101,
+    "road_node_density": 6973,
+    "road_complexity_score": 4161
+  },
+  {
+    "zone_anchor": "Central Rayong",
+    "lat": 12.6960182,
+    "lon": 101.2683791,
+    "total_road_segments": 1702,
+    "primary_road_count": 106,
+    "road_node_density": 6534,
+    "road_complexity_score": 3934
+  },
+  {
+    "zone_anchor": "Robinson",
+    "lat": 12.6965758,
+    "lon": 101.2684029,
+    "total_road_segments": 1675,
+    "primary_road_count": 100,
+    "road_node_density": 6524,
+    "road_complexity_score": 3850
+  },
+  {
+    "zone_anchor": "HomePro",
+    "lat": 12.6842422,
+    "lon": 101.2446223,
+    "total_road_segments": 1537,
+    "primary_road_count": 51,
+    "road_node_density": 6662,
+    "road_complexity_score": 3329
+  },
+  {
+    "zone_anchor": "Home Mart",
+    "lat": 12.6835616,
+    "lon": 101.2568609,
+    "total_road_segments": 1911,
+    "primary_road_count": 61,
+    "road_node_density": 7215,
+    "road_complexity_score": 4127
+  },
+  {
+    "zone_anchor": "Bangkok Rayong Cancer Hospital",
+    "lat": 12.6767798,
+    "lon": 101.2334407,
+    "total_road_segments": 1153,
+    "primary_road_count": 36,
+    "road_node_density": 5141,
+    "road_complexity_score": 2486
+  },
+  {
+    "zone_anchor": "บิ๊กซี ระยอง",
+    "lat": 12.6915426,
+    "lon": 101.2428589,
+    "total_road_segments": 1659,
+    "primary_road_count": 69,
+    "road_node_density": 7308,
+    "road_complexity_score": 3663
+  },
+  {
+    "zone_anchor": "บิ๊กซี ระยอง",
+    "lat": 12.6915434,
+    "lon": 101.2583087,
+    "total_road_segments": 1852,
+    "primary_road_count": 99,
+    "road_node_density": 7050,
+    "road_complexity_score": 4199
+  },
+  {
+    "zone_anchor": "สตาร์ไอที เซ็นเตอร์",
+    "lat": 12.6860818,
+    "lon": 101.2340354,
+    "total_road_segments": 1530,
+    "primary_road_count": 37,
+    "road_node_density": 6643,
+    "road_complexity_score": 3245
+  },
+  {
+    "zone_anchor": "Lotus's go fresh",
+    "lat": 12.6251704,
+    "lon": 101.4309377,
+    "total_road_segments": 404,
+    "primary_road_count": 9,
+    "road_node_density": 2024,
+    "road_complexity_score": 853
+  },
+  {
+    "zone_anchor": "MR.DIY",
+    "lat": 12.6251338,
+    "lon": 101.4307234,
+    "total_road_segments": 403,
+    "primary_road_count": 9,
+    "road_node_density": 2022,
+    "road_complexity_score": 851
+  },
+  {
+    "zone_anchor": "บิ๊กซี ระยอง แพชชั่น ช้อปปิ้ง เดสติเนชั่น",
+    "lat": 12.6993534,
+    "lon": 101.259187,
+    "total_road_segments": 1575,
+    "primary_road_count": 90,
+    "road_node_density": 6489,
+    "road_complexity_score": 3600
+  },
+  {
+    "zone_anchor": "เซ็นทรัล ระยอง",
+    "lat": 12.6937008,
+    "lon": 101.2505523,
+    "total_road_segments": 1752,
+    "primary_road_count": 72,
+    "road_node_density": 7265,
+    "road_complexity_score": 3864
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 12.6993848,
+    "lon": 101.2686003,
+    "total_road_segments": 1497,
+    "primary_road_count": 80,
+    "road_node_density": 6247,
+    "road_complexity_score": 3394
+  },
+  {
+    "zone_anchor": "Home Mart",
+    "lat": 12.6991398,
+    "lon": 101.2526711,
+    "total_road_segments": 1513,
+    "primary_road_count": 63,
+    "road_node_density": 6738,
+    "road_complexity_score": 3341
+  },
+  {
+    "zone_anchor": "โฮมโปร&เมกาโฮม ระยอง ทับมา",
+    "lat": 12.6992035,
+    "lon": 101.2488413,
+    "total_road_segments": 1442,
+    "primary_road_count": 56,
+    "road_node_density": 6894,
+    "road_complexity_score": 3164
+  },
+  {
+    "zone_anchor": "Robinson Department Store Rayong",
+    "lat": 12.6960138,
+    "lon": 101.2323829,
+    "total_road_segments": 1549,
+    "primary_road_count": 76,
+    "road_node_density": 6929,
+    "road_complexity_score": 3478
+  },
+  {
+    "zone_anchor": "Cherdchai Tour",
+    "lat": 12.628735,
+    "lon": 101.4418242,
+    "total_road_segments": 321,
+    "primary_road_count": 9,
+    "road_node_density": 1697,
+    "road_complexity_score": 687
+  },
+  {
+    "zone_anchor": "Van Station Bangkok-Ekkamai-Bangna",
+    "lat": 12.6280843,
+    "lon": 101.4391863,
+    "total_road_segments": 331,
+    "primary_road_count": 9,
+    "road_node_density": 1740,
+    "road_complexity_score": 707
+  },
+  {
+    "zone_anchor": "Bangkok Rayong Hospital",
+    "lat": 12.6747231,
+    "lon": 101.2213708,
+    "total_road_segments": 932,
+    "primary_road_count": 32,
+    "road_node_density": 3898,
+    "road_complexity_score": 2024
+  },
+  {
+    "zone_anchor": "Makro food service",
+    "lat": 12.6296994,
+    "lon": 101.4436548,
+    "total_road_segments": 305,
+    "primary_road_count": 7,
+    "road_node_density": 1619,
+    "road_complexity_score": 645
+  },
+  {
+    "zone_anchor": "ศูนย์บริการสาธารณสุข ปากน้ำ",
+    "lat": 12.6610428,
+    "lon": 101.2606406,
+    "total_road_segments": 712,
+    "primary_road_count": 0,
+    "road_node_density": 2916,
+    "road_complexity_score": 1424
+  },
+  {
+    "zone_anchor": "ขนส่งผู้โดยสารจังหวัดระยอง สถานี 1",
+    "lat": 12.6820092,
+    "lon": 101.2049174,
+    "total_road_segments": 1100,
+    "primary_road_count": 39,
+    "road_node_density": 5478,
+    "road_complexity_score": 2395
+  },
+  {
+    "zone_anchor": "โรงพยาบาลศรีระยอง",
+    "lat": 12.6954638,
+    "lon": 101.2925317,
+    "total_road_segments": 1169,
+    "primary_road_count": 79,
+    "road_node_density": 5502,
+    "road_complexity_score": 2733
+  },
+  {
+    "zone_anchor": "Bangkok Rayong Clinic",
+    "lat": 12.5717777,
+    "lon": 101.46433,
+    "total_road_segments": 81,
+    "primary_road_count": 0,
+    "road_node_density": 567,
+    "road_complexity_score": 162
+  },
+  {
+    "zone_anchor": "สถานีอนามัยเกาะเสม็ด",
+    "lat": 12.5703545,
+    "lon": 101.4644665,
+    "total_road_segments": 83,
+    "primary_road_count": 0,
+    "road_node_density": 603,
+    "road_complexity_score": 166
+  },
+  {
+    "zone_anchor": "ขนส่งผู้โดยสารจังหวัดระยอง สถานี 1",
+    "lat": 12.6833674,
+    "lon": 101.2015916,
+    "total_road_segments": 1078,
+    "primary_road_count": 34,
+    "road_node_density": 5565,
+    "road_complexity_score": 2326
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 12.7169968,
+    "lon": 101.165725,
+    "total_road_segments": 1055,
+    "primary_road_count": 41,
+    "road_node_density": 5455,
+    "road_complexity_score": 2315
+  },
+  {
+    "zone_anchor": "ศูนย์การค้าแพชชั่น ช้อปปิ้งเดสติเนชั่น",
+    "lat": 12.6838462,
+    "lon": 101.2128082,
+    "total_road_segments": 1307,
+    "primary_road_count": 40,
+    "road_node_density": 5673,
+    "road_complexity_score": 2814
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเฉลิมพระเกียรติ สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี",
+    "lat": 12.7301456,
+    "lon": 101.1362951,
+    "total_road_segments": 617,
+    "primary_road_count": 48,
+    "road_node_density": 3319,
+    "road_complexity_score": 1474
+  },
+  {
+    "zone_anchor": "ไทวัสดุ",
+    "lat": 12.6716759,
+    "lon": 101.3040601,
+    "total_road_segments": 1137,
+    "primary_road_count": 111,
+    "road_node_density": 4624,
+    "road_complexity_score": 2829
+  },
+  {
+    "zone_anchor": "ไชยยงค์ค้าไม้",
+    "lat": 12.6530885,
+    "lon": 101.3365696,
+    "total_road_segments": 467,
+    "primary_road_count": 12,
+    "road_node_density": 3200,
+    "road_complexity_score": 994
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลนครมาบตาพุด",
+    "lat": 12.7248498,
+    "lon": 101.1264238,
+    "total_road_segments": 513,
+    "primary_road_count": 36,
+    "road_node_density": 2871,
+    "road_complexity_score": 1206
+  },
+  {
+    "zone_anchor": "YB รถเหลือง",
+    "lat": 12.6945832,
+    "lon": 101.1976553,
+    "total_road_segments": 1189,
+    "primary_road_count": 38,
+    "road_node_density": 5959,
+    "road_complexity_score": 2568
+  },
+  {
+    "zone_anchor": "Immigration Office",
+    "lat": 12.7230222,
+    "lon": 101.1279597,
+    "total_road_segments": 553,
+    "primary_road_count": 40,
+    "road_node_density": 2823,
+    "road_complexity_score": 1306
+  },
+  {
+    "zone_anchor": "Rayong Immigration",
+    "lat": 12.7230528,
+    "lon": 101.1278875,
+    "total_road_segments": 553,
+    "primary_road_count": 41,
+    "road_node_density": 2821,
+    "road_complexity_score": 1311
+  },
+  {
+    "zone_anchor": "โรงพยาบาลบำรุงราษฎร์ระยอง",
+    "lat": 12.6927319,
+    "lon": 101.204963,
+    "total_road_segments": 1278,
+    "primary_road_count": 39,
+    "road_node_density": 5814,
+    "road_complexity_score": 2751
+  },
+  {
+    "zone_anchor": "วิทยาลัยอาชีวศึกษา โปลีเทคนิคระยอง",
+    "lat": 12.6628151,
+    "lon": 101.3134647,
+    "total_road_segments": 830,
+    "primary_road_count": 50,
+    "road_node_density": 3495,
+    "road_complexity_score": 1910
+  },
+  {
+    "zone_anchor": "ที่ทำการองค์การบริหารส่วนตำบลตะพง",
+    "lat": 12.6458878,
+    "lon": 101.3513218,
+    "total_road_segments": 440,
+    "primary_road_count": 10,
+    "road_node_density": 3341,
+    "road_complexity_score": 930
+  },
+  {
+    "zone_anchor": "โรงพยาบาลมาบตาพุด",
+    "lat": 12.7183739,
+    "lon": 101.1264977,
+    "total_road_segments": 616,
+    "primary_road_count": 28,
+    "road_node_density": 3013,
+    "road_complexity_score": 1372
+  },
+  {
+    "zone_anchor": "Rayong Immigration",
+    "lat": 12.7240988,
+    "lon": 101.141135,
+    "total_road_segments": 602,
+    "primary_road_count": 51,
+    "road_node_density": 3125,
+    "road_complexity_score": 1459
+  },
+  {
+    "zone_anchor": "ศูนย์ราชการจังหวัดระยอง",
+    "lat": 12.7069947,
+    "lon": 101.1831963,
+    "total_road_segments": 1007,
+    "primary_road_count": 45,
+    "road_node_density": 4852,
+    "road_complexity_score": 2239
+  },
+  {
+    "zone_anchor": "โรงพยาบาลมงกุฏระยอง",
+    "lat": 12.7332477,
+    "lon": 101.1577052,
+    "total_road_segments": 734,
+    "primary_road_count": 50,
+    "road_node_density": 4318,
+    "road_complexity_score": 1718
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดระยอง แห่งที่2",
+    "lat": 12.7014245,
+    "lon": 101.2158289,
+    "total_road_segments": 1213,
+    "primary_road_count": 29,
+    "road_node_density": 5268,
+    "road_complexity_score": 2571
+  },
+  {
+    "zone_anchor": "The Ozone Lifestyle Mall",
+    "lat": 12.6981372,
+    "lon": 101.1787427,
+    "total_road_segments": 961,
+    "primary_road_count": 38,
+    "road_node_density": 4701,
+    "road_complexity_score": 2112
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดระยอง 2",
+    "lat": 12.7007747,
+    "lon": 101.1441526,
+    "total_road_segments": 864,
+    "primary_road_count": 8,
+    "road_node_density": 3241,
+    "road_complexity_score": 1768
+  },
+  {
+    "zone_anchor": "EOD",
+    "lat": 12.658938,
+    "lon": 100.9973859,
+    "total_road_segments": 117,
+    "primary_road_count": 0,
+    "road_node_density": 544,
+    "road_complexity_score": 234
+  },
+  {
+    "zone_anchor": "คณะวิทยาศาสตร์ พลังงานและสิ่งแวดล้อม",
+    "lat": 12.8238327,
+    "lon": 101.2153613,
+    "total_road_segments": 376,
+    "primary_road_count": 26,
+    "road_node_density": 1864,
+    "road_complexity_score": 882
+  },
+  {
+    "zone_anchor": "มาบตาพุด",
+    "lat": 12.6908417,
+    "lon": 101.1283275,
+    "total_road_segments": 1042,
+    "primary_road_count": 4,
+    "road_node_density": 4090,
+    "road_complexity_score": 2104
+  },
+  {
+    "zone_anchor": "โลตัส ระยอง",
+    "lat": 12.6838462,
+    "lon": 101.1046615,
+    "total_road_segments": 323,
+    "primary_road_count": 0,
+    "road_node_density": 2104,
+    "road_complexity_score": 646
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัด สุรินทร์",
+    "lat": 14.8822331,
+    "lon": 103.4921611,
+    "total_road_segments": 968,
+    "primary_road_count": 60,
+    "road_node_density": 4603,
+    "road_complexity_score": 2236
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมือง จ.สุรินทร์",
+    "lat": 14.8820394,
+    "lon": 103.4932273,
+    "total_road_segments": 987,
+    "primary_road_count": 67,
+    "road_node_density": 4749,
+    "road_complexity_score": 2309
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคสุรินทร์",
+    "lat": 14.8784792,
+    "lon": 103.5010714,
+    "total_road_segments": 995,
+    "primary_road_count": 66,
+    "road_node_density": 5020,
+    "road_complexity_score": 2320
+  },
+  {
+    "zone_anchor": "Tourism Authority of Thailand",
+    "lat": 14.884219,
+    "lon": 103.4986675,
+    "total_road_segments": 957,
+    "primary_road_count": 75,
+    "road_node_density": 4783,
+    "road_complexity_score": 2289
+  },
+  {
+    "zone_anchor": "โรงพยาบาลค่ายวีรวัฒน์โยธิน",
+    "lat": 14.8705053,
+    "lon": 103.4854174,
+    "total_road_segments": 732,
+    "primary_road_count": 26,
+    "road_node_density": 3672,
+    "road_complexity_score": 1594
+  },
+  {
+    "zone_anchor": "สวนสาธารณะเฉลิมฉลอง 80 พรรษา พระบาทสมเด็จพระเจ้าอยู่หัวฯ",
+    "lat": 14.871609,
+    "lon": 103.4973612,
+    "total_road_segments": 987,
+    "primary_road_count": 50,
+    "road_node_density": 4972,
+    "road_complexity_score": 2224
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานสุรินทร์ภักดี",
+    "lat": 14.8675541,
+    "lon": 103.4976195,
+    "total_road_segments": 891,
+    "primary_road_count": 47,
+    "road_node_density": 4612,
+    "road_complexity_score": 2017
+  },
+  {
+    "zone_anchor": "โรงพยาบาลสุรินทร์",
+    "lat": 14.8765262,
+    "lon": 103.503433,
+    "total_road_segments": 945,
+    "primary_road_count": 60,
+    "road_node_density": 4767,
+    "road_complexity_score": 2190
+  },
+  {
+    "zone_anchor": "Surin Province Bus Station",
+    "lat": 14.8891391,
+    "lon": 103.4966069,
+    "total_road_segments": 869,
+    "primary_road_count": 63,
+    "road_node_density": 4283,
+    "road_complexity_score": 2053
+  },
+  {
+    "zone_anchor": "เพชรเกษมพลาช่า",
+    "lat": 14.8887118,
+    "lon": 103.49439,
+    "total_road_segments": 884,
+    "primary_road_count": 61,
+    "road_node_density": 4370,
+    "road_complexity_score": 2073
+  },
+  {
+    "zone_anchor": "แหลมทองพาณิชย์",
+    "lat": 14.8896205,
+    "lon": 103.4746461,
+    "total_road_segments": 581,
+    "primary_road_count": 24,
+    "road_node_density": 3260,
+    "road_complexity_score": 1282
+  },
+  {
+    "zone_anchor": "โลตัส สุรินทร์",
+    "lat": 14.8798798,
+    "lon": 103.469148,
+    "total_road_segments": 470,
+    "primary_road_count": 20,
+    "road_node_density": 2567,
+    "road_complexity_score": 1040
+  },
+  {
+    "zone_anchor": "Lotus's go fresh โลตัส โกเฟรช ซูเปอร์มาร์เก็ต สุรินทร์พลาซ่า",
+    "lat": 14.8905098,
+    "lon": 103.4719838,
+    "total_road_segments": 518,
+    "primary_road_count": 19,
+    "road_node_density": 3097,
+    "road_complexity_score": 1131
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชภัฏสุรินทร์",
+    "lat": 14.8589668,
+    "lon": 103.4855175,
+    "total_road_segments": 574,
+    "primary_road_count": 11,
+    "road_node_density": 2967,
+    "road_complexity_score": 1203
+  },
+  {
+    "zone_anchor": "บริษัทนครชัยแอร์ จำกัด",
+    "lat": 14.8983252,
+    "lon": 103.4988643,
+    "total_road_segments": 613,
+    "primary_road_count": 42,
+    "road_node_density": 3086,
+    "road_complexity_score": 1436
+  },
+  {
+    "zone_anchor": "สุรินทร์ พลาซ่า",
+    "lat": 14.8900814,
+    "lon": 102.9139917,
+    "total_road_segments": 71,
+    "primary_road_count": 0,
+    "road_node_density": 839,
+    "road_complexity_score": 142
+  },
+  {
+    "zone_anchor": "Robinson",
+    "lat": 14.877616,
+    "lon": 103.5318377,
+    "total_road_segments": 418,
+    "primary_road_count": 19,
+    "road_node_density": 2472,
+    "road_complexity_score": 931
+  },
+  {
+    "zone_anchor": "บุฤๅษี",
+    "lat": 14.8899487,
+    "lon": 103.5763229,
+    "total_road_segments": 85,
+    "primary_road_count": 2,
+    "road_node_density": 989,
+    "road_complexity_score": 180
+  },
+  {
+    "zone_anchor": "ลำชี",
+    "lat": 14.8998501,
+    "lon": 103.4228262,
+    "total_road_segments": 175,
+    "primary_road_count": 14,
+    "road_node_density": 1411,
+    "road_complexity_score": 420
+  },
+  {
+    "zone_anchor": "เฉลิมกาญจนา",
+    "lat": 14.8047305,
+    "lon": 103.453009,
+    "total_road_segments": 119,
+    "primary_road_count": 2,
+    "road_node_density": 1389,
+    "road_complexity_score": 248
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดสุรินทร์",
+    "lat": 14.7629749,
+    "lon": 103.452139,
+    "total_road_segments": 75,
+    "primary_road_count": 0,
+    "road_node_density": 938,
+    "road_complexity_score": 150
+  },
+  {
+    "zone_anchor": "โรบินสันไลฟ์สไตล์ สุรินทร์",
+    "lat": 14.8760076,
+    "lon": 102.9559768,
+    "total_road_segments": 64,
+    "primary_road_count": 0,
+    "road_node_density": 659,
+    "road_complexity_score": 128
+  },
+  {
+    "zone_anchor": "โรบินสันไลฟ์สไตล์ สุรินทร์",
+    "lat": 15.0348658,
+    "lon": 103.594049,
+    "total_road_segments": 25,
+    "primary_road_count": 0,
+    "road_node_density": 436,
+    "road_complexity_score": 50
+  },
+  {
+    "zone_anchor": "โรบินสันไลฟ์สไตล์ สุรินทร์",
+    "lat": 14.8760076,
+    "lon": 103.2443679,
+    "total_road_segments": 64,
+    "primary_road_count": 2,
+    "road_node_density": 1226,
+    "road_complexity_score": 138
+  },
+  {
+    "zone_anchor": "อุดรเดลิเวอรี่ : UDonDelivery",
+    "lat": 17.4096115,
+    "lon": 102.7926044,
+    "total_road_segments": 1929,
+    "primary_road_count": 54,
+    "road_node_density": 7535,
+    "road_complexity_score": 4128
+  },
+  {
+    "zone_anchor": "แลนด์มาร์ก (ตึกคอม)",
+    "lat": 17.4087885,
+    "lon": 102.7922617,
+    "total_road_segments": 1951,
+    "primary_road_count": 54,
+    "road_node_density": 7557,
+    "road_complexity_score": 4172
+  },
+  {
+    "zone_anchor": "Big Town Hall",
+    "lat": 17.4144226,
+    "lon": 102.7884078,
+    "total_road_segments": 1957,
+    "primary_road_count": 77,
+    "road_node_density": 7510,
+    "road_complexity_score": 4299
+  },
+  {
+    "zone_anchor": "Passport office",
+    "lat": 17.415339,
+    "lon": 102.786678,
+    "total_road_segments": 1947,
+    "primary_road_count": 91,
+    "road_node_density": 7449,
+    "road_complexity_score": 4349
+  },
+  {
+    "zone_anchor": "ที่ว่าการอำเภอเมือง",
+    "lat": 17.4156399,
+    "lon": 102.785891,
+    "total_road_segments": 1903,
+    "primary_road_count": 93,
+    "road_node_density": 7303,
+    "road_complexity_score": 4271
+  },
+  {
+    "zone_anchor": "โรงพยาบาลหมอสุขุม",
+    "lat": 17.4116778,
+    "lon": 102.78763,
+    "total_road_segments": 2014,
+    "primary_road_count": 71,
+    "road_node_density": 7566,
+    "road_complexity_score": 4383
+  },
+  {
+    "zone_anchor": "โรงพยาบาลหมอไพโรจน์",
+    "lat": 17.4158776,
+    "lon": 102.7915755,
+    "total_road_segments": 1885,
+    "primary_road_count": 79,
+    "road_node_density": 7439,
+    "road_complexity_score": 4165
+  },
+  {
+    "zone_anchor": "Central Udon",
+    "lat": 17.4059649,
+    "lon": 102.8003233,
+    "total_road_segments": 1823,
+    "primary_road_count": 71,
+    "road_node_density": 7027,
+    "road_complexity_score": 4001
+  },
+  {
+    "zone_anchor": "Robinson's Department Store Udon Thani",
+    "lat": 17.4053067,
+    "lon": 102.7996559,
+    "total_road_segments": 1827,
+    "primary_road_count": 65,
+    "road_node_density": 7046,
+    "road_complexity_score": 3979
+  },
+  {
+    "zone_anchor": "สมาคมธรรมศาสตร์ อุดรธานี",
+    "lat": 17.4111538,
+    "lon": 102.7819672,
+    "total_road_segments": 1892,
+    "primary_road_count": 106,
+    "road_node_density": 7054,
+    "road_complexity_score": 4314
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชภัฏอุดรธานี",
+    "lat": 17.3978628,
+    "lon": 102.7941783,
+    "total_road_segments": 1629,
+    "primary_road_count": 59,
+    "road_node_density": 6037,
+    "road_complexity_score": 3553
+  },
+  {
+    "zone_anchor": "วิทยาลัยสารพัดช่างอุดรธานี",
+    "lat": 17.3980403,
+    "lon": 102.7899076,
+    "total_road_segments": 1591,
+    "primary_road_count": 53,
+    "road_node_density": 5842,
+    "road_complexity_score": 3447
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารแห่งที่ 1",
+    "lat": 17.4031466,
+    "lon": 102.8001455,
+    "total_road_segments": 1775,
+    "primary_road_count": 65,
+    "road_node_density": 6660,
+    "road_complexity_score": 3875
+  },
+  {
+    "zone_anchor": "โรงพยาบาล วัฒนา",
+    "lat": 17.4216091,
+    "lon": 102.7838538,
+    "total_road_segments": 1772,
+    "primary_road_count": 110,
+    "road_node_density": 7075,
+    "road_complexity_score": 4094
+  },
+  {
+    "zone_anchor": "Provincial Waterworks Authority Udon Thani",
+    "lat": 17.4192325,
+    "lon": 102.7784525,
+    "total_road_segments": 1707,
+    "primary_road_count": 103,
+    "road_node_density": 6555,
+    "road_complexity_score": 3929
+  },
+  {
+    "zone_anchor": "Bangkok Hospital",
+    "lat": 17.4066764,
+    "lon": 102.8035264,
+    "total_road_segments": 1803,
+    "primary_road_count": 84,
+    "road_node_density": 6927,
+    "road_complexity_score": 4026
+  },
+  {
+    "zone_anchor": "โรงพยาบาลอุดรธานี",
+    "lat": 17.4149312,
+    "lon": 102.7803421,
+    "total_road_segments": 1832,
+    "primary_road_count": 105,
+    "road_node_density": 6869,
+    "road_complexity_score": 4189
+  },
+  {
+    "zone_anchor": "อุดรธานี",
+    "lat": 17.4041726,
+    "lon": 102.8055689,
+    "total_road_segments": 1739,
+    "primary_road_count": 88,
+    "road_node_density": 6615,
+    "road_complexity_score": 3918
+  },
+  {
+    "zone_anchor": "Night Market",
+    "lat": 17.4054636,
+    "lon": 102.8047308,
+    "total_road_segments": 1778,
+    "primary_road_count": 84,
+    "road_node_density": 6805,
+    "road_complexity_score": 3976
+  },
+  {
+    "zone_anchor": "โลตัส พลัส อุดรธานี",
+    "lat": 17.4063326,
+    "lon": 102.7754764,
+    "total_road_segments": 1650,
+    "primary_road_count": 85,
+    "road_node_density": 6342,
+    "road_complexity_score": 3725
+  },
+  {
+    "zone_anchor": "Posri Village",
+    "lat": 17.4147077,
+    "lon": 102.7758026,
+    "total_road_segments": 1697,
+    "primary_road_count": 92,
+    "road_node_density": 6584,
+    "road_complexity_score": 3854
+  },
+  {
+    "zone_anchor": "ยูดี ทาวน์",
+    "lat": 17.4021028,
+    "lon": 102.804568,
+    "total_road_segments": 1756,
+    "primary_road_count": 85,
+    "road_node_density": 6666,
+    "road_complexity_score": 3937
+  },
+  {
+    "zone_anchor": "ยูดีทาวน์",
+    "lat": 17.4034393,
+    "lon": 102.8046992,
+    "total_road_segments": 1753,
+    "primary_road_count": 84,
+    "road_node_density": 6684,
+    "road_complexity_score": 3926
+  },
+  {
+    "zone_anchor": "Udon Thani Municipal Service Center",
+    "lat": 17.3965204,
+    "lon": 102.8096739,
+    "total_road_segments": 1658,
+    "primary_road_count": 96,
+    "road_node_density": 5974,
+    "road_complexity_score": 3796
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเอกอุดร, AEK",
+    "lat": 17.3976651,
+    "lon": 102.8029955,
+    "total_road_segments": 1651,
+    "primary_road_count": 64,
+    "road_node_density": 5964,
+    "road_complexity_score": 3622
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 17.401321,
+    "lon": 102.8046007,
+    "total_road_segments": 1747,
+    "primary_road_count": 85,
+    "road_node_density": 6591,
+    "road_complexity_score": 3919
+  },
+  {
+    "zone_anchor": "โรงพยาบาลรัตนแพทย์",
+    "lat": 17.4074345,
+    "lon": 102.7686775,
+    "total_road_segments": 1421,
+    "primary_road_count": 70,
+    "road_node_density": 5605,
+    "road_complexity_score": 3192
+  },
+  {
+    "zone_anchor": "โรงพยาบาลชัยเกษมการแพทย์",
+    "lat": 17.3947754,
+    "lon": 102.8096294,
+    "total_road_segments": 1641,
+    "primary_road_count": 106,
+    "road_node_density": 5973,
+    "road_complexity_score": 3812
+  },
+  {
+    "zone_anchor": "NakhonchAdair bus terminal",
+    "lat": 17.3951689,
+    "lon": 102.8105694,
+    "total_road_segments": 1636,
+    "primary_road_count": 110,
+    "road_node_density": 5879,
+    "road_complexity_score": 3822
+  },
+  {
+    "zone_anchor": "HomePro",
+    "lat": 17.4192908,
+    "lon": 102.8120026,
+    "total_road_segments": 1298,
+    "primary_road_count": 49,
+    "road_node_density": 5522,
+    "road_complexity_score": 2841
+  },
+  {
+    "zone_anchor": "แม็คโคร",
+    "lat": 17.3900135,
+    "lon": 102.8162806,
+    "total_road_segments": 1601,
+    "primary_road_count": 112,
+    "road_node_density": 5826,
+    "road_complexity_score": 3762
+  },
+  {
+    "zone_anchor": "เซ็นทรัล อุดร",
+    "lat": 17.392528,
+    "lon": 102.78666,
+    "total_road_segments": 1272,
+    "primary_road_count": 36,
+    "road_node_density": 4443,
+    "road_complexity_score": 2724
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดอุดรธานี แห่งที่2",
+    "lat": 17.4145241,
+    "lon": 102.7641294,
+    "total_road_segments": 1279,
+    "primary_road_count": 83,
+    "road_node_density": 5358,
+    "road_complexity_score": 2973
+  },
+  {
+    "zone_anchor": "สถาบันการพลศึกษา วิทยาเขตอุดรธานี",
+    "lat": 17.4057693,
+    "lon": 102.7667736,
+    "total_road_segments": 1345,
+    "primary_road_count": 73,
+    "road_node_density": 5257,
+    "road_complexity_score": 3055
+  },
+  {
+    "zone_anchor": "รพ.หมอไพโรจน์",
+    "lat": 17.4348063,
+    "lon": 102.7922787,
+    "total_road_segments": 1389,
+    "primary_road_count": 101,
+    "road_node_density": 5673,
+    "road_complexity_score": 3283
+  },
+  {
+    "zone_anchor": "โฮมมาร์ท",
+    "lat": 17.4224184,
+    "lon": 102.8116235,
+    "total_road_segments": 1181,
+    "primary_road_count": 44,
+    "road_node_density": 5095,
+    "road_complexity_score": 2582
+  },
+  {
+    "zone_anchor": "Go Wholesale",
+    "lat": 17.4311227,
+    "lon": 102.8022124,
+    "total_road_segments": 1260,
+    "primary_road_count": 85,
+    "road_node_density": 5307,
+    "road_complexity_score": 2945
+  },
+  {
+    "zone_anchor": "หนองขอนกว้าง",
+    "lat": 17.3752613,
+    "lon": 102.81311,
+    "total_road_segments": 1239,
+    "primary_road_count": 104,
+    "road_node_density": 4545,
+    "road_complexity_score": 2998
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 17.386627,
+    "lon": 102.824382,
+    "total_road_segments": 1517,
+    "primary_road_count": 92,
+    "road_node_density": 5330,
+    "road_complexity_score": 3494
+  },
+  {
+    "zone_anchor": "Thai Watsadu",
+    "lat": 17.3752823,
+    "lon": 102.8274586,
+    "total_road_segments": 1307,
+    "primary_road_count": 108,
+    "road_node_density": 4825,
+    "road_complexity_score": 3154
+  },
+  {
+    "zone_anchor": "วิทยาลัยสันตพล",
+    "lat": 17.3881165,
+    "lon": 102.8275019,
+    "total_road_segments": 1409,
+    "primary_road_count": 92,
+    "road_node_density": 5048,
+    "road_complexity_score": 3278
+  },
+  {
+    "zone_anchor": "นครชัยแอร์",
+    "lat": 17.3715181,
+    "lon": 102.8120255,
+    "total_road_segments": 1105,
+    "primary_road_count": 65,
+    "road_node_density": 3994,
+    "road_complexity_score": 2535
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคโนโลยีบ้านจั่น",
+    "lat": 17.3624689,
+    "lon": 102.8164052,
+    "total_road_segments": 1045,
+    "primary_road_count": 65,
+    "road_node_density": 4013,
+    "road_complexity_score": 2415
+  },
+  {
+    "zone_anchor": "สำนักงานส่งเสริมสวัสดิการ และสวัสดิภาพครู และบุคลากรทางการศึกษ",
+    "lat": 17.3616609,
+    "lon": 102.8163151,
+    "total_road_segments": 1026,
+    "primary_road_count": 64,
+    "road_node_density": 3950,
+    "road_complexity_score": 2372
+  },
+  {
+    "zone_anchor": "แท็กซี่จ่าเดช",
+    "lat": 17.3925508,
+    "lon": 102.8365482,
+    "total_road_segments": 1103,
+    "primary_road_count": 78,
+    "road_node_density": 4241,
+    "road_complexity_score": 2596
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานนานาชาติอุดรธานี",
+    "lat": 17.3856661,
+    "lon": 102.7875796,
+    "total_road_segments": 939,
+    "primary_road_count": 14,
+    "road_node_density": 3753,
+    "road_complexity_score": 1948
+  },
+  {
+    "zone_anchor": "เซ็นทรัล อุดร",
+    "lat": 17.4407518,
+    "lon": 102.7940441,
+    "total_road_segments": 1077,
+    "primary_road_count": 92,
+    "road_node_density": 4385,
+    "road_complexity_score": 2614
+  },
+  {
+    "zone_anchor": "โรงพยาบาลค่ายประจักษ์ศิลปาคม",
+    "lat": 17.3699739,
+    "lon": 102.8118659,
+    "total_road_segments": 1084,
+    "primary_road_count": 65,
+    "road_node_density": 3975,
+    "road_complexity_score": 2493
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารอุดรธานี แห่งที่ 1",
+    "lat": 17.3481353,
+    "lon": 102.8215365,
+    "total_road_segments": 720,
+    "primary_road_count": 45,
+    "road_node_density": 3324,
+    "road_complexity_score": 1665
+  },
+  {
+    "zone_anchor": "โกลบอลเฮ้าส์",
+    "lat": 17.4264413,
+    "lon": 102.8129828,
+    "total_road_segments": 1049,
+    "primary_road_count": 48,
+    "road_node_density": 4671,
+    "road_complexity_score": 2338
+  },
+  {
+    "zone_anchor": "แขวงการทางอุดรธานี",
+    "lat": 17.3866434,
+    "lon": 102.763338,
+    "total_road_segments": 862,
+    "primary_road_count": 44,
+    "road_node_density": 3963,
+    "road_complexity_score": 1944
+  },
+  {
+    "zone_anchor": "ศูนย์บำบัดรักษายาเสพติดอุดรธานี",
+    "lat": 17.267074,
+    "lon": 102.8804287,
+    "total_road_segments": 291,
+    "primary_road_count": 25,
+    "road_node_density": 1367,
+    "road_complexity_score": 707
+  },
+  {
+    "zone_anchor": "Global House",
+    "lat": 17.3422562,
+    "lon": 102.8340322,
+    "total_road_segments": 476,
+    "primary_road_count": 22,
+    "road_node_density": 2648,
+    "road_complexity_score": 1062
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคโนโลยีไคโกะอุดรธานี",
+    "lat": 17.3335843,
+    "lon": 102.8300516,
+    "total_road_segments": 450,
+    "primary_road_count": 16,
+    "road_node_density": 2609,
+    "road_complexity_score": 980
+  },
+  {
+    "zone_anchor": "Home Store",
+    "lat": 17.3357599,
+    "lon": 102.8341476,
+    "total_road_segments": 427,
+    "primary_road_count": 16,
+    "road_node_density": 2253,
+    "road_complexity_score": 934
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดอุดรธานีแห่งที่2",
+    "lat": 17.2694528,
+    "lon": 102.8787003,
+    "total_road_segments": 286,
+    "primary_road_count": 30,
+    "road_node_density": 1323,
+    "road_complexity_score": 722
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาล เมืองโนนสูง-น้ำคำ",
+    "lat": 17.2745244,
+    "lon": 102.8752711,
+    "total_road_segments": 306,
+    "primary_road_count": 33,
+    "road_node_density": 1561,
+    "road_complexity_score": 777
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลตำบล หนองไผ่",
+    "lat": 17.2532683,
+    "lon": 102.8905833,
+    "total_road_segments": 193,
+    "primary_road_count": 19,
+    "road_node_density": 1075,
+    "road_complexity_score": 481
+  },
+  {
+    "zone_anchor": "สำนักทางหลวงชนบทที่ 15 (อุดรธานี)",
+    "lat": 17.2571514,
+    "lon": 102.8876108,
+    "total_road_segments": 213,
+    "primary_road_count": 19,
+    "road_node_density": 1153,
+    "road_complexity_score": 521
+  },
+  {
+    "zone_anchor": "โรงพยาบาล มะเร็ง อุดรธานี",
+    "lat": 17.2633659,
+    "lon": 102.8825237,
+    "total_road_segments": 263,
+    "primary_road_count": 24,
+    "road_node_density": 1413,
+    "road_complexity_score": 646
+  },
+  {
+    "zone_anchor": "โรงพยาบาลธัญญารักษ์ อุดรธานี",
+    "lat": 17.2643663,
+    "lon": 102.8815502,
+    "total_road_segments": 290,
+    "primary_road_count": 24,
+    "road_node_density": 1436,
+    "road_complexity_score": 700
+  },
+  {
+    "zone_anchor": "สำนักงานเศรษฐกิจการเกษตร เขต 3",
+    "lat": 17.3248532,
+    "lon": 102.8421834,
+    "total_road_segments": 359,
+    "primary_road_count": 10,
+    "road_node_density": 2022,
+    "road_complexity_score": 768
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 17.3824557,
+    "lon": 102.7457742,
+    "total_road_segments": 461,
+    "primary_road_count": 36,
+    "road_node_density": 2609,
+    "road_complexity_score": 1102
+  },
+  {
+    "zone_anchor": "หมวดทางหลวงชัยพร",
+    "lat": 17.3144341,
+    "lon": 102.8502542,
+    "total_road_segments": 369,
+    "primary_road_count": 11,
+    "road_node_density": 1812,
+    "road_complexity_score": 793
+  },
+  {
+    "zone_anchor": "Sangthai Metal Sheet",
+    "lat": 17.365953,
+    "lon": 102.7112027,
+    "total_road_segments": 215,
+    "primary_road_count": 49,
+    "road_node_density": 1580,
+    "road_complexity_score": 675
+  },
+  {
+    "zone_anchor": "ศูนย์บริการทางสังคมเพื่อผู้สูงอายุ",
+    "lat": 17.3136249,
+    "lon": 102.8490686,
+    "total_road_segments": 374,
+    "primary_road_count": 11,
+    "road_node_density": 1799,
+    "road_complexity_score": 803
+  },
+  {
+    "zone_anchor": "สถานีพัฒนาที่ดิน อุดรธานี",
+    "lat": 17.294721,
+    "lon": 102.8634614,
+    "total_road_segments": 365,
+    "primary_road_count": 21,
+    "road_node_density": 1666,
+    "road_complexity_score": 835
+  },
+  {
+    "zone_anchor": "ศูนย์สงเคราะห์บุคคลปัญญาอ่อน ภาคตะวันออกเฉียงเหนือ",
+    "lat": 17.3130539,
+    "lon": 102.8496622,
+    "total_road_segments": 373,
+    "primary_road_count": 9,
+    "road_node_density": 1771,
+    "road_complexity_score": 791
+  },
+  {
+    "zone_anchor": "SGC Home Solution",
+    "lat": 17.3690929,
+    "lon": 102.85759,
+    "total_road_segments": 584,
+    "primary_road_count": 22,
+    "road_node_density": 2210,
+    "road_complexity_score": 1278
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคกาญจนาภิเษก",
+    "lat": 17.2598697,
+    "lon": 102.88514,
+    "total_road_segments": 224,
+    "primary_road_count": 24,
+    "road_node_density": 1145,
+    "road_complexity_score": 568
+  },
+  {
+    "zone_anchor": "สถาบันการอาชีวศึกษา ภาคตะวันออกเฉียงเหนือ๑",
+    "lat": 17.2594928,
+    "lon": 102.8857441,
+    "total_road_segments": 215,
+    "primary_road_count": 23,
+    "road_node_density": 1098,
+    "road_complexity_score": 545
+  },
+  {
+    "zone_anchor": "หนองตะไก้",
+    "lat": 17.2673053,
+    "lon": 102.8945569,
+    "total_road_segments": 207,
+    "primary_road_count": 16,
+    "road_node_density": 1107,
+    "road_complexity_score": 494
+  },
+  {
+    "zone_anchor": "Home Hub",
+    "lat": 17.4643351,
+    "lon": 102.7967522,
+    "total_road_segments": 535,
+    "primary_road_count": 42,
+    "road_node_density": 2533,
+    "road_complexity_score": 1280
+  },
+  {
+    "zone_anchor": "ด่านกักกันสัตว์ อุดรธานี",
+    "lat": 17.2977762,
+    "lon": 102.8608704,
+    "total_road_segments": 388,
+    "primary_road_count": 24,
+    "road_node_density": 1800,
+    "road_complexity_score": 896
+  },
+  {
+    "zone_anchor": "โลตัส อุดรธานี 2 (นาดี)",
+    "lat": 17.381989,
+    "lon": 102.7101171,
+    "total_road_segments": 193,
+    "primary_road_count": 35,
+    "road_node_density": 2010,
+    "road_complexity_score": 561
+  },
+  {
+    "zone_anchor": "เซ็นทรัล อุดร",
+    "lat": 17.405906,
+    "lon": 102.727987,
+    "total_road_segments": 332,
+    "primary_road_count": 3,
+    "road_node_density": 2922,
+    "road_complexity_score": 679
+  },
+  {
+    "zone_anchor": "การไฟฟ้าส่วนภูมิภาค",
+    "lat": 17.3675679,
+    "lon": 102.7595901,
+    "total_road_segments": 539,
+    "primary_road_count": 34,
+    "road_node_density": 2761,
+    "road_complexity_score": 1248
+  },
+  {
+    "zone_anchor": "ตึกคอม แลนด์มาร์ค อุดรธานี",
+    "lat": 17.4043336,
+    "lon": 102.6775889,
+    "total_road_segments": 56,
+    "primary_road_count": 1,
+    "road_node_density": 853,
+    "road_complexity_score": 117
+  },
+  {
+    "zone_anchor": "ยูดี ทาวน์ อุดรธานี",
+    "lat": 17.4103833,
+    "lon": 102.6736563,
+    "total_road_segments": 49,
+    "primary_road_count": 1,
+    "road_node_density": 926,
+    "road_complexity_score": 103
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารอุดรธานี แห่งที่ 1",
+    "lat": 17.4030959,
+    "lon": 102.6561849,
+    "total_road_segments": 17,
+    "primary_road_count": 1,
+    "road_node_density": 614,
+    "road_complexity_score": 39
+  },
+  {
+    "zone_anchor": "ตึกคอม แลนด์มาร์ค อุดรธานี",
+    "lat": 17.4087094,
+    "lon": 102.647985,
+    "total_road_segments": 17,
+    "primary_road_count": 1,
+    "road_node_density": 560,
+    "road_complexity_score": 39
+  },
+  {
+    "zone_anchor": "Udon Thani Rajabhat University, Sam Phrao Campus",
+    "lat": 17.4523844,
+    "lon": 102.9308051,
+    "total_road_segments": 53,
+    "primary_road_count": 1,
+    "road_node_density": 883,
+    "road_complexity_score": 111
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดอุดรธานี แห่งที่ 2",
+    "lat": 17.2695005,
+    "lon": 102.7345625,
+    "total_road_segments": 37,
+    "primary_road_count": 0,
+    "road_node_density": 701,
+    "road_complexity_score": 74
+  },
+  {
+    "zone_anchor": "Nursing College",
+    "lat": 15.2364205,
+    "lon": 104.8674546,
+    "total_road_segments": 1498,
+    "primary_road_count": 119,
+    "road_node_density": 5198,
+    "road_complexity_score": 3591
+  },
+  {
+    "zone_anchor": "Polytechnic college",
+    "lat": 15.2303956,
+    "lon": 104.8503263,
+    "total_road_segments": 1539,
+    "primary_road_count": 148,
+    "road_node_density": 5593,
+    "road_complexity_score": 3818
+  },
+  {
+    "zone_anchor": "Nakhon Ubon Ratchathani City Municipal Office",
+    "lat": 15.228207,
+    "lon": 104.8594734,
+    "total_road_segments": 1525,
+    "primary_road_count": 145,
+    "road_node_density": 5502,
+    "road_complexity_score": 3775
+  },
+  {
+    "zone_anchor": "Ubon Ratchathani provincial education office",
+    "lat": 15.229018,
+    "lon": 104.8599635,
+    "total_road_segments": 1558,
+    "primary_road_count": 143,
+    "road_node_density": 5549,
+    "road_complexity_score": 3831
+  },
+  {
+    "zone_anchor": "Sunpasitinter Hospital",
+    "lat": 15.234387,
+    "lon": 104.8660807,
+    "total_road_segments": 1542,
+    "primary_road_count": 124,
+    "road_node_density": 5436,
+    "road_complexity_score": 3704
+  },
+  {
+    "zone_anchor": "โรงพยาบาลสรรพสิทธิประสงค์",
+    "lat": 15.2365981,
+    "lon": 104.8655675,
+    "total_road_segments": 1580,
+    "primary_road_count": 131,
+    "road_node_density": 5423,
+    "road_complexity_score": 3815
+  },
+  {
+    "zone_anchor": "SK Park",
+    "lat": 15.2443831,
+    "lon": 104.8479439,
+    "total_road_segments": 1585,
+    "primary_road_count": 111,
+    "road_node_density": 5706,
+    "road_complexity_score": 3725
+  },
+  {
+    "zone_anchor": "City Plaza Mail",
+    "lat": 15.2562984,
+    "lon": 104.8479893,
+    "total_road_segments": 1596,
+    "primary_road_count": 111,
+    "road_node_density": 5534,
+    "road_complexity_score": 3747
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัย การจัดการและเทคโนโลยี อีสเทิร์น",
+    "lat": 15.2647222,
+    "lon": 104.843334,
+    "total_road_segments": 1778,
+    "primary_road_count": 165,
+    "road_node_density": 6309,
+    "road_complexity_score": 4381
+  },
+  {
+    "zone_anchor": "Phra Si Maha Phot Psychiatric Hospital",
+    "lat": 15.2508312,
+    "lon": 104.8412386,
+    "total_road_segments": 1734,
+    "primary_road_count": 162,
+    "road_node_density": 6279,
+    "road_complexity_score": 4278
+  },
+  {
+    "zone_anchor": "โรงพยาบาลราชเวชอุบล",
+    "lat": 15.2673357,
+    "lon": 104.8431275,
+    "total_road_segments": 1778,
+    "primary_road_count": 164,
+    "road_node_density": 6395,
+    "road_complexity_score": 4376
+  },
+  {
+    "zone_anchor": "Mr.DIY",
+    "lat": 15.2529873,
+    "lon": 104.8495098,
+    "total_road_segments": 1508,
+    "primary_road_count": 81,
+    "road_node_density": 5325,
+    "road_complexity_score": 3421
+  },
+  {
+    "zone_anchor": "Faculity of Industrial Technology",
+    "lat": 15.2439923,
+    "lon": 104.8411182,
+    "total_road_segments": 1573,
+    "primary_road_count": 163,
+    "road_node_density": 5813,
+    "road_complexity_score": 3961
+  },
+  {
+    "zone_anchor": "เซ็นทรัล อุบล",
+    "lat": 15.2478884,
+    "lon": 104.8404693,
+    "total_road_segments": 1723,
+    "primary_road_count": 166,
+    "road_node_density": 6282,
+    "road_complexity_score": 4276
+  },
+  {
+    "zone_anchor": "faculity of agriculture",
+    "lat": 15.2438526,
+    "lon": 104.8401607,
+    "total_road_segments": 1560,
+    "primary_road_count": 161,
+    "road_node_density": 5783,
+    "road_complexity_score": 3925
+  },
+  {
+    "zone_anchor": "อุบลราชธานีสถานีขนส่ง",
+    "lat": 15.2729297,
+    "lon": 104.8371103,
+    "total_road_segments": 1739,
+    "primary_road_count": 151,
+    "road_node_density": 6235,
+    "road_complexity_score": 4233
+  },
+  {
+    "zone_anchor": "Makro",
+    "lat": 15.2686139,
+    "lon": 104.832699,
+    "total_road_segments": 1651,
+    "primary_road_count": 159,
+    "road_node_density": 5994,
+    "road_complexity_score": 4097
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานนานาชาติอุบลราชธานี",
+    "lat": 15.246905,
+    "lon": 104.870735,
+    "total_road_segments": 1171,
+    "primary_road_count": 45,
+    "road_node_density": 4257,
+    "road_complexity_score": 2567
+  },
+  {
+    "zone_anchor": "Provincial Waterworks Authority",
+    "lat": 15.2386886,
+    "lon": 104.8358617,
+    "total_road_segments": 1257,
+    "primary_road_count": 132,
+    "road_node_density": 4803,
+    "road_complexity_score": 3174
+  },
+  {
+    "zone_anchor": "Ubon Ratchatani Rajabhat University",
+    "lat": 15.2450232,
+    "lon": 104.8376828,
+    "total_road_segments": 1586,
+    "primary_road_count": 169,
+    "road_node_density": 5886,
+    "road_complexity_score": 4017
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานอุบลราชธานี",
+    "lat": 15.2530214,
+    "lon": 104.8692181,
+    "total_road_segments": 1136,
+    "primary_road_count": 32,
+    "road_node_density": 4497,
+    "road_complexity_score": 2432
+  },
+  {
+    "zone_anchor": "โรงพยาบาลกองบิน 21",
+    "lat": 15.2566437,
+    "lon": 104.8649633,
+    "total_road_segments": 1186,
+    "primary_road_count": 23,
+    "road_node_density": 4548,
+    "road_complexity_score": 2487
+  },
+  {
+    "zone_anchor": "สำนักบริหารพื้นที่อนุรักษ์ที่ 9 (อุบลราชธานี)",
+    "lat": 15.2664132,
+    "lon": 104.8231449,
+    "total_road_segments": 1176,
+    "primary_road_count": 110,
+    "road_node_density": 4935,
+    "road_complexity_score": 2902
+  },
+  {
+    "zone_anchor": "Central Ubon",
+    "lat": 15.2399884,
+    "lon": 104.8232834,
+    "total_road_segments": 777,
+    "primary_road_count": 78,
+    "road_node_density": 3732,
+    "road_complexity_score": 1944
+  },
+  {
+    "zone_anchor": "SCG home",
+    "lat": 15.2321737,
+    "lon": 104.822596,
+    "total_road_segments": 549,
+    "primary_road_count": 68,
+    "road_node_density": 2967,
+    "road_complexity_score": 1438
+  },
+  {
+    "zone_anchor": "Thai Watsadu",
+    "lat": 15.2328126,
+    "lon": 104.8242513,
+    "total_road_segments": 605,
+    "primary_road_count": 67,
+    "road_node_density": 3195,
+    "road_complexity_score": 1545
+  },
+  {
+    "zone_anchor": "ศูนย์เมล็ดพันธุ์ข้าว อุบลราชธานี",
+    "lat": 15.2649496,
+    "lon": 104.8214792,
+    "total_road_segments": 1055,
+    "primary_road_count": 110,
+    "road_node_density": 4567,
+    "road_complexity_score": 2660
+  },
+  {
+    "zone_anchor": "สำนักงานบังคับคดี จังหวัดอุบลราชธานี",
+    "lat": 15.2692712,
+    "lon": 104.8185155,
+    "total_road_segments": 933,
+    "primary_road_count": 79,
+    "road_node_density": 4397,
+    "road_complexity_score": 2261
+  },
+  {
+    "zone_anchor": "อุบล พลาซ่า",
+    "lat": 15.2309961,
+    "lon": 104.8195571,
+    "total_road_segments": 423,
+    "primary_road_count": 58,
+    "road_node_density": 2381,
+    "road_complexity_score": 1136
+  },
+  {
+    "zone_anchor": "สำนักงานเกษตรจังหวัด อุบลราชธานี",
+    "lat": 15.2654364,
+    "lon": 104.8209804,
+    "total_road_segments": 1045,
+    "primary_road_count": 108,
+    "road_node_density": 4565,
+    "road_complexity_score": 2630
+  },
+  {
+    "zone_anchor": "อุบลสแควร์",
+    "lat": 15.2697673,
+    "lon": 104.8048395,
+    "total_road_segments": 388,
+    "primary_road_count": 11,
+    "road_node_density": 3003,
+    "road_complexity_score": 831
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชธานี",
+    "lat": 15.2358082,
+    "lon": 104.8159232,
+    "total_road_segments": 399,
+    "primary_road_count": 59,
+    "road_node_density": 2278,
+    "road_complexity_score": 1093
+  },
+  {
+    "zone_anchor": "Wing 21 Hospital",
+    "lat": 15.260649,
+    "lon": 104.8701431,
+    "total_road_segments": 1023,
+    "primary_road_count": 57,
+    "road_node_density": 4333,
+    "road_complexity_score": 2331
+  },
+  {
+    "zone_anchor": "ศูนย์ราชการ จังหวัดอุบลราชธานี",
+    "lat": 15.2770031,
+    "lon": 104.8044836,
+    "total_road_segments": 388,
+    "primary_road_count": 11,
+    "road_node_density": 3135,
+    "road_complexity_score": 831
+  },
+  {
+    "zone_anchor": "เทศบาล เมืองแจระแม",
+    "lat": 15.2759907,
+    "lon": 104.8001694,
+    "total_road_segments": 286,
+    "primary_road_count": 15,
+    "road_node_density": 2650,
+    "road_complexity_score": 647
+  },
+  {
+    "zone_anchor": "HomeHub",
+    "lat": 15.2145347,
+    "lon": 104.814643,
+    "total_road_segments": 257,
+    "primary_road_count": 31,
+    "road_node_density": 2036,
+    "road_complexity_score": 669
+  },
+  {
+    "zone_anchor": "สหสิน ปอแซ",
+    "lat": 15.2793416,
+    "lon": 104.7959232,
+    "total_road_segments": 260,
+    "primary_road_count": 11,
+    "road_node_density": 2787,
+    "road_complexity_score": 575
+  },
+  {
+    "zone_anchor": "ที่ว่าการ องค์การบริหารส่วนตำบล",
+    "lat": 15.3230251,
+    "lon": 104.7276076,
+    "total_road_segments": 150,
+    "primary_road_count": 6,
+    "road_node_density": 1549,
+    "road_complexity_score": 330
+  },
+  {
+    "zone_anchor": "ที่ทำการองค์การบริหารส่วนตำบล ปะอาว",
+    "lat": 15.3535247,
+    "lon": 104.7255233,
+    "total_road_segments": 129,
+    "primary_road_count": 0,
+    "road_node_density": 2107,
+    "road_complexity_score": 258
+  },
+  {
+    "zone_anchor": "OTOP Center Ubon ศูนย์แสดงสินค้า OTOP อุบลราชธานี",
+    "lat": 15.2448691,
+    "lon": 104.8101638,
+    "total_road_segments": 388,
+    "primary_road_count": 44,
+    "road_node_density": 2594,
+    "road_complexity_score": 996
+  },
+  {
+    "zone_anchor": "หมวดทางหลวง หนองไฮ",
+    "lat": 15.3118238,
+    "lon": 104.7484562,
+    "total_road_segments": 116,
+    "primary_road_count": 7,
+    "road_node_density": 1211,
+    "road_complexity_score": 267
+  },
+  {
+    "zone_anchor": "Robinson Ubon Ratchathani",
+    "lat": 15.2409943,
+    "lon": 104.7872292,
+    "total_road_segments": 76,
+    "primary_road_count": 0,
+    "road_node_density": 1425,
+    "road_complexity_score": 152
+  },
+  {
+    "zone_anchor": "Robinson Ubon Ratchathani",
+    "lat": 15.2409943,
+    "lon": 104.8026787,
+    "total_road_segments": 90,
+    "primary_road_count": 0,
+    "road_node_density": 1384,
+    "road_complexity_score": 180
+  },
+  {
+    "zone_anchor": "โรงเเรมยูเพลส มหาวิทยาลัยอุบลราชธานี",
+    "lat": 15.117235,
+    "lon": 104.9028512,
+    "total_road_segments": 684,
+    "primary_road_count": 36,
+    "road_node_density": 4843,
+    "road_complexity_score": 1548
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดอุบลราชธานี",
+    "lat": 15.8560533,
+    "lon": 103.8352772,
+    "total_road_segments": 68,
+    "primary_road_count": 1,
+    "road_node_density": 975,
+    "road_complexity_score": 141
+  },
+  {
+    "zone_anchor": "โรงพยาบาลสรรพสิทธิประสงค์ อุบลราชธานี",
+    "lat": 15.2075055,
+    "lon": 105.0895743,
+    "total_road_segments": 42,
+    "primary_road_count": 0,
+    "road_node_density": 999,
+    "road_complexity_score": 84
+  },
+  {
+    "zone_anchor": "โรงพยาบาลอุบลรักษ์ ธนบุรี",
+    "lat": 15.2310205,
+    "lon": 104.2943492,
+    "total_road_segments": 31,
+    "primary_road_count": 3,
+    "road_node_density": 884,
+    "road_complexity_score": 77
+  },
+  {
+    "zone_anchor": "ศูนย์ราชการกระทรวงการคลัง",
+    "lat": 19.912839,
+    "lon": 99.8412509,
+    "total_road_segments": 2652,
+    "primary_road_count": 173,
+    "road_node_density": 10171,
+    "road_complexity_score": 6169
+  },
+  {
+    "zone_anchor": "Songtaew Station",
+    "lat": 19.9100832,
+    "lon": 99.8299072,
+    "total_road_segments": 2784,
+    "primary_road_count": 138,
+    "road_node_density": 10763,
+    "road_complexity_score": 6258
+  },
+  {
+    "zone_anchor": "โรงพยาบาลโอเวอร์บรุ๊ค",
+    "lat": 19.9119224,
+    "lon": 99.8290823,
+    "total_road_segments": 2751,
+    "primary_road_count": 137,
+    "road_node_density": 10727,
+    "road_complexity_score": 6187
+  },
+  {
+    "zone_anchor": "ห้างสรรพสินค้าเอดิสัน",
+    "lat": 19.9057265,
+    "lon": 99.8326939,
+    "total_road_segments": 2833,
+    "primary_road_count": 146,
+    "road_node_density": 10619,
+    "road_complexity_score": 6396
+  },
+  {
+    "zone_anchor": "สำนักงานส่งเสริมการศึกษานอกระบบและการศึกษาตามอัธยาศัยจังหวัดเชียงราย (กศน.)",
+    "lat": 19.9135721,
+    "lon": 99.8310221,
+    "total_road_segments": 2750,
+    "primary_road_count": 144,
+    "road_node_density": 10995,
+    "road_complexity_score": 6220
+  },
+  {
+    "zone_anchor": "การประปาส่วนภูมิภาค สาขาเชียงราย",
+    "lat": 19.9148267,
+    "lon": 99.8258873,
+    "total_road_segments": 2556,
+    "primary_road_count": 110,
+    "road_node_density": 10317,
+    "road_complexity_score": 5662
+  },
+  {
+    "zone_anchor": "สากลนคร",
+    "lat": 19.9077897,
+    "lon": 99.8312289,
+    "total_road_segments": 2764,
+    "primary_road_count": 142,
+    "road_node_density": 10414,
+    "road_complexity_score": 6238
+  },
+  {
+    "zone_anchor": "ฝ่ายการสารวัตร มณฑลทหารบกที่ ๓๗",
+    "lat": 19.9169261,
+    "lon": 99.8225,
+    "total_road_segments": 2231,
+    "primary_road_count": 82,
+    "road_node_density": 9326,
+    "road_complexity_score": 4872
+  },
+  {
+    "zone_anchor": "สำนักงานปศุสัตว์จังหวัดเชียงราย",
+    "lat": 19.9038217,
+    "lon": 99.8327132,
+    "total_road_segments": 2884,
+    "primary_road_count": 147,
+    "road_node_density": 10744,
+    "road_complexity_score": 6503
+  },
+  {
+    "zone_anchor": "สำนักงานสหกรณ์จังหวัดเชียงราย",
+    "lat": 19.9027817,
+    "lon": 99.8324818,
+    "total_road_segments": 2892,
+    "primary_road_count": 142,
+    "road_node_density": 10697,
+    "road_complexity_score": 6494
+  },
+  {
+    "zone_anchor": "วิทยาลัยอาชีวศึกษาเชียงราย",
+    "lat": 19.9096783,
+    "lon": 99.8365167,
+    "total_road_segments": 2807,
+    "primary_road_count": 155,
+    "road_node_density": 10627,
+    "road_complexity_score": 6389
+  },
+  {
+    "zone_anchor": "กรมสรรพากรพื้นที่สาขาเมืองเชียงราย",
+    "lat": 19.9094794,
+    "lon": 99.8256502,
+    "total_road_segments": 2698,
+    "primary_road_count": 129,
+    "road_node_density": 10457,
+    "road_complexity_score": 6041
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดเชียงราย 1",
+    "lat": 19.9046593,
+    "lon": 99.834473,
+    "total_road_segments": 2864,
+    "primary_road_count": 148,
+    "road_node_density": 10639,
+    "road_complexity_score": 6468
+  },
+  {
+    "zone_anchor": "โรงพยาบาล เชียงรายประชานุเคราะห์",
+    "lat": 19.900775,
+    "lon": 99.8302868,
+    "total_road_segments": 2857,
+    "primary_road_count": 141,
+    "road_node_density": 10618,
+    "road_complexity_score": 6419
+  },
+  {
+    "zone_anchor": "ก.พานิช",
+    "lat": 19.9024522,
+    "lon": 99.8326093,
+    "total_road_segments": 2891,
+    "primary_road_count": 142,
+    "road_node_density": 10704,
+    "road_complexity_score": 6492
+  },
+  {
+    "zone_anchor": "วิทยาลัยอาชีวศึกษาพณิชยการเชียงราย",
+    "lat": 19.9039332,
+    "lon": 99.8277178,
+    "total_road_segments": 2774,
+    "primary_road_count": 139,
+    "road_node_density": 10357,
+    "road_complexity_score": 6243
+  },
+  {
+    "zone_anchor": "ศูนย์ป้องกันและบรรเทาสาธารณภัยเขต 15 เชียงราย (ปภ.)",
+    "lat": 19.9091783,
+    "lon": 99.8224488,
+    "total_road_segments": 2539,
+    "primary_road_count": 109,
+    "road_node_density": 9850,
+    "road_complexity_score": 5623
+  },
+  {
+    "zone_anchor": "สำนักงานทรัพยากรธรรมชาติและสิ่งแวดล้อมจังหวัดเชียงราย",
+    "lat": 19.9096683,
+    "lon": 99.8233013,
+    "total_road_segments": 2564,
+    "primary_road_count": 113,
+    "road_node_density": 9934,
+    "road_complexity_score": 5693
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคเชียงราย",
+    "lat": 19.9029368,
+    "lon": 99.8270277,
+    "total_road_segments": 2775,
+    "primary_road_count": 136,
+    "road_node_density": 10386,
+    "road_complexity_score": 6230
+  },
+  {
+    "zone_anchor": "CR Provincial Education Office",
+    "lat": 19.9000677,
+    "lon": 99.8267761,
+    "total_road_segments": 2664,
+    "primary_road_count": 137,
+    "road_node_density": 9982,
+    "road_complexity_score": 6013
+  },
+  {
+    "zone_anchor": "ศูนย์อาสาสมัครป้องกันภัยฝ่ายพลเรือน (อปพร) เขต 15",
+    "lat": 19.9096877,
+    "lon": 99.8223874,
+    "total_road_segments": 2523,
+    "primary_road_count": 108,
+    "road_node_density": 9808,
+    "road_complexity_score": 5586
+  },
+  {
+    "zone_anchor": "แขวงทางหลวงเชียงรายที่ 1",
+    "lat": 19.9179191,
+    "lon": 99.8456609,
+    "total_road_segments": 2095,
+    "primary_road_count": 141,
+    "road_node_density": 8702,
+    "road_complexity_score": 4895
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเชียง รายอินเดอร์",
+    "lat": 19.8950679,
+    "lon": 99.8311234,
+    "total_road_segments": 2479,
+    "primary_road_count": 151,
+    "road_node_density": 8939,
+    "road_complexity_score": 5713
+  },
+  {
+    "zone_anchor": "Greenpark Community Mall Chiangrai - กรีนพาร์ค คอมมูนิตี้มอลล์ เชียงราย",
+    "lat": 19.9189108,
+    "lon": 99.8201753,
+    "total_road_segments": 1830,
+    "primary_road_count": 71,
+    "road_node_density": 7960,
+    "road_complexity_score": 4015
+  },
+  {
+    "zone_anchor": "โรงบาลค่ายเม็งรายมหาราช",
+    "lat": 19.9045666,
+    "lon": 99.8136009,
+    "total_road_segments": 1805,
+    "primary_road_count": 46,
+    "road_node_density": 7462,
+    "road_complexity_score": 3840
+  },
+  {
+    "zone_anchor": "วิทยาลัยเชียงราย",
+    "lat": 19.927892,
+    "lon": 99.8274119,
+    "total_road_segments": 1467,
+    "primary_road_count": 39,
+    "road_node_density": 7190,
+    "road_complexity_score": 3129
+  },
+  {
+    "zone_anchor": "สนามบินเก่าเชียงราย",
+    "lat": 19.8896906,
+    "lon": 99.8276212,
+    "total_road_segments": 1986,
+    "primary_road_count": 118,
+    "road_node_density": 7881,
+    "road_complexity_score": 4562
+  },
+  {
+    "zone_anchor": "ศาลากลางจังหวัดเชียงราย",
+    "lat": 19.9205931,
+    "lon": 99.8138336,
+    "total_road_segments": 1066,
+    "primary_road_count": 20,
+    "road_node_density": 5677,
+    "road_complexity_score": 2232
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 19.8884416,
+    "lon": 99.8378671,
+    "total_road_segments": 1624,
+    "primary_road_count": 95,
+    "road_node_density": 6883,
+    "road_complexity_score": 3723
+  },
+  {
+    "zone_anchor": "เซ็นทรัล เชียงราย",
+    "lat": 19.886284,
+    "lon": 99.8330265,
+    "total_road_segments": 1568,
+    "primary_road_count": 86,
+    "road_node_density": 6843,
+    "road_complexity_score": 3566
+  },
+  {
+    "zone_anchor": "โรบินสัน",
+    "lat": 19.885928,
+    "lon": 99.832687,
+    "total_road_segments": 1540,
+    "primary_road_count": 84,
+    "road_node_density": 6764,
+    "road_complexity_score": 3500
+  },
+  {
+    "zone_anchor": "SCG Home Solution",
+    "lat": 19.8849286,
+    "lon": 99.8361189,
+    "total_road_segments": 1426,
+    "primary_road_count": 91,
+    "road_node_density": 6430,
+    "road_complexity_score": 3307
+  },
+  {
+    "zone_anchor": "ทีเจ มอลล์ ค้าส่ง",
+    "lat": 19.9128402,
+    "lon": 99.8601551,
+    "total_road_segments": 1193,
+    "primary_road_count": 64,
+    "road_node_density": 5843,
+    "road_complexity_score": 2706
+  },
+  {
+    "zone_anchor": "MegaHome",
+    "lat": 19.9786942,
+    "lon": 99.8617131,
+    "total_road_segments": 896,
+    "primary_road_count": 34,
+    "road_node_density": 4785,
+    "road_complexity_score": 1962
+  },
+  {
+    "zone_anchor": "โรงพยาบาลเกษมราษฎร์ ศรีบุรินทร์",
+    "lat": 19.8779262,
+    "lon": 99.835561,
+    "total_road_segments": 1068,
+    "primary_road_count": 79,
+    "road_node_density": 5526,
+    "road_complexity_score": 2531
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยราชภัฏเชียงราย",
+    "lat": 19.984584,
+    "lon": 99.848539,
+    "total_road_segments": 768,
+    "primary_road_count": 25,
+    "road_node_density": 4436,
+    "road_complexity_score": 1661
+  },
+  {
+    "zone_anchor": "สำนักงานประมงจังหวัดเชียงราย",
+    "lat": 19.9266068,
+    "lon": 99.8657406,
+    "total_road_segments": 829,
+    "primary_road_count": 29,
+    "road_node_density": 4797,
+    "road_complexity_score": 1803
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยพะเยา วิทยาเขตเชียงราย",
+    "lat": 19.9253907,
+    "lon": 99.8674719,
+    "total_road_segments": 838,
+    "primary_road_count": 33,
+    "road_node_density": 4714,
+    "road_complexity_score": 1841
+  },
+  {
+    "zone_anchor": "ศูนย์บริหารการทะเบียนภาค สาขาเชียงราย",
+    "lat": 19.9283591,
+    "lon": 99.866177,
+    "total_road_segments": 816,
+    "primary_road_count": 25,
+    "road_node_density": 4812,
+    "road_complexity_score": 1757
+  },
+  {
+    "zone_anchor": "หอประชุมใหญ่",
+    "lat": 19.9828153,
+    "lon": 99.8449437,
+    "total_road_segments": 668,
+    "primary_road_count": 21,
+    "road_node_density": 4093,
+    "road_complexity_score": 1441
+  },
+  {
+    "zone_anchor": "Foreigner marriage",
+    "lat": 19.8770231,
+    "lon": 99.8307144,
+    "total_road_segments": 1076,
+    "primary_road_count": 73,
+    "road_node_density": 5503,
+    "road_complexity_score": 2517
+  },
+  {
+    "zone_anchor": "Bangkok Hospital",
+    "lat": 19.99276,
+    "lon": 99.8634925,
+    "total_road_segments": 732,
+    "primary_road_count": 29,
+    "road_node_density": 4004,
+    "road_complexity_score": 1609
+  },
+  {
+    "zone_anchor": "สำนักงานคณะกรรมการการเลือกตั้งประจำจังหวัดเชียงราย",
+    "lat": 19.9254438,
+    "lon": 99.8692871,
+    "total_road_segments": 811,
+    "primary_road_count": 28,
+    "road_node_density": 4665,
+    "road_complexity_score": 1762
+  },
+  {
+    "zone_anchor": "Mae Fah Luang University Hospital",
+    "lat": 20.0409151,
+    "lon": 99.8943982,
+    "total_road_segments": 396,
+    "primary_road_count": 13,
+    "road_node_density": 3452,
+    "road_complexity_score": 857
+  },
+  {
+    "zone_anchor": "Home Sukkapan",
+    "lat": 19.8713492,
+    "lon": 99.8282141,
+    "total_road_segments": 989,
+    "primary_road_count": 96,
+    "road_node_density": 5292,
+    "road_complexity_score": 2458
+  },
+  {
+    "zone_anchor": "ไทวัสดุ",
+    "lat": 19.8728432,
+    "lon": 99.8295198,
+    "total_road_segments": 1032,
+    "primary_road_count": 95,
+    "road_node_density": 5434,
+    "road_complexity_score": 2539
+  },
+  {
+    "zone_anchor": "สำนักวิชาทันตแพทย์ศาสตร์",
+    "lat": 20.0313472,
+    "lon": 99.8780749,
+    "total_road_segments": 529,
+    "primary_road_count": 20,
+    "road_node_density": 3879,
+    "road_complexity_score": 1158
+  },
+  {
+    "zone_anchor": "สำนักงานหนังสือเดินทาง เชียงราย",
+    "lat": 19.9300453,
+    "lon": 99.8652225,
+    "total_road_segments": 830,
+    "primary_road_count": 25,
+    "road_node_density": 4761,
+    "road_complexity_score": 1785
+  },
+  {
+    "zone_anchor": "องค์การบริหารส่วนจังหวัดเชียงราย",
+    "lat": 19.9298929,
+    "lon": 99.8652721,
+    "total_road_segments": 831,
+    "primary_road_count": 25,
+    "road_node_density": 4785,
+    "road_complexity_score": 1787
+  },
+  {
+    "zone_anchor": "Big C",
+    "lat": 19.9598279,
+    "lon": 99.8556602,
+    "total_road_segments": 869,
+    "primary_road_count": 59,
+    "road_node_density": 4992,
+    "road_complexity_score": 2033
+  },
+  {
+    "zone_anchor": "แม็คโคร",
+    "lat": 19.9566973,
+    "lon": 99.8528416,
+    "total_road_segments": 849,
+    "primary_road_count": 53,
+    "road_node_density": 4804,
+    "road_complexity_score": 1963
+  },
+  {
+    "zone_anchor": "โรงพยาบาลศูนย์การแพทย์\nมหาวิทยาลัยแม่ฟ้าหลวง",
+    "lat": 20.0308661,
+    "lon": 99.8801527,
+    "total_road_segments": 530,
+    "primary_road_count": 25,
+    "road_node_density": 3883,
+    "road_complexity_score": 1185
+  },
+  {
+    "zone_anchor": "บิ๊กซี เชียงราย",
+    "lat": 19.9239811,
+    "lon": 99.8054593,
+    "total_road_segments": 687,
+    "primary_road_count": 14,
+    "road_node_density": 4873,
+    "road_complexity_score": 1444
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยแม่ฟ้าหลวง",
+    "lat": 20.0502025,
+    "lon": 99.8956668,
+    "total_road_segments": 356,
+    "primary_road_count": 0,
+    "road_node_density": 3005,
+    "road_complexity_score": 712
+  },
+  {
+    "zone_anchor": "สถานกักพืชเชียงราย",
+    "lat": 19.9304693,
+    "lon": 99.8644754,
+    "total_road_segments": 836,
+    "primary_road_count": 22,
+    "road_node_density": 4719,
+    "road_complexity_score": 1782
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยรามคำแหง สาขาวิทยบริการเฉลิมพระเกียรติ จังหวัดเชียงราย",
+    "lat": 19.9259789,
+    "lon": 99.8714528,
+    "total_road_segments": 737,
+    "primary_road_count": 26,
+    "road_node_density": 4393,
+    "road_complexity_score": 1604
+  },
+  {
+    "zone_anchor": "ศูนย์ราชการกระทรวงแรงงาน จังหวัดเชียงราย",
+    "lat": 19.9300013,
+    "lon": 99.8663424,
+    "total_road_segments": 789,
+    "primary_road_count": 23,
+    "road_node_density": 4598,
+    "road_complexity_score": 1693
+  },
+  {
+    "zone_anchor": "สำนักงานคุมประพฤติจังหวัดเชียงราย",
+    "lat": 19.9301166,
+    "lon": 99.8673786,
+    "total_road_segments": 747,
+    "primary_road_count": 23,
+    "road_node_density": 4486,
+    "road_complexity_score": 1609
+  },
+  {
+    "zone_anchor": "สำนักงานที่ดินจังหวัดเชียงราย",
+    "lat": 19.9275107,
+    "lon": 99.869167,
+    "total_road_segments": 754,
+    "primary_road_count": 26,
+    "road_node_density": 4578,
+    "road_complexity_score": 1638
+  },
+  {
+    "zone_anchor": "สำนักงานพลังงานจังหวัดเชียงราย",
+    "lat": 19.9276049,
+    "lon": 99.8701637,
+    "total_road_segments": 726,
+    "primary_road_count": 26,
+    "road_node_density": 4403,
+    "road_complexity_score": 1582
+  },
+  {
+    "zone_anchor": "สำนักงานสวัสดิการและคุ้มครองแรงงานจังหวัดเชียงราย",
+    "lat": 19.9306066,
+    "lon": 99.8657894,
+    "total_road_segments": 790,
+    "primary_road_count": 23,
+    "road_node_density": 4623,
+    "road_complexity_score": 1695
+  },
+  {
+    "zone_anchor": "Home Pro",
+    "lat": 19.8644253,
+    "lon": 99.8396205,
+    "total_road_segments": 839,
+    "primary_road_count": 89,
+    "road_node_density": 4856,
+    "road_complexity_score": 2123
+  },
+  {
+    "zone_anchor": "Changrai provincial tourism municipality",
+    "lat": 19.8250042,
+    "lon": 99.7687929,
+    "total_road_segments": 352,
+    "primary_road_count": 54,
+    "road_node_density": 2711,
+    "road_complexity_score": 974
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 2",
+    "lat": 19.8581553,
+    "lon": 99.821032,
+    "total_road_segments": 707,
+    "primary_road_count": 49,
+    "road_node_density": 4484,
+    "road_complexity_score": 1659
+  },
+  {
+    "zone_anchor": "โรงพยาบาลส่งเสริมสุขภาพตำบล",
+    "lat": 19.8766339,
+    "lon": 99.7866967,
+    "total_road_segments": 470,
+    "primary_road_count": 21,
+    "road_node_density": 3183,
+    "road_complexity_score": 1045
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคโนโลยีอาชีวศึกษาเชียงราย",
+    "lat": 19.9384405,
+    "lon": 99.8533485,
+    "total_road_segments": 1005,
+    "primary_road_count": 67,
+    "road_node_density": 5160,
+    "road_complexity_score": 2345
+  },
+  {
+    "zone_anchor": "Lotus's",
+    "lat": 19.8940233,
+    "lon": 99.863458,
+    "total_road_segments": 726,
+    "primary_road_count": 44,
+    "road_node_density": 3936,
+    "road_complexity_score": 1672
+  },
+  {
+    "zone_anchor": "สำนักงานทางหลวงชนบทที่ 17 (เชียงราย)",
+    "lat": 19.9290431,
+    "lon": 99.8709939,
+    "total_road_segments": 671,
+    "primary_road_count": 23,
+    "road_node_density": 4131,
+    "road_complexity_score": 1457
+  },
+  {
+    "zone_anchor": "สำนักงานโยธาธิการและผังเมืองจังหวัดเชียงราย",
+    "lat": 19.9290947,
+    "lon": 99.8702038,
+    "total_road_segments": 683,
+    "primary_road_count": 23,
+    "road_node_density": 4242,
+    "road_complexity_score": 1481
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลตำบลสันทราย",
+    "lat": 19.8568674,
+    "lon": 99.8155712,
+    "total_road_segments": 583,
+    "primary_road_count": 35,
+    "road_node_density": 3612,
+    "road_complexity_score": 1341
+  },
+  {
+    "zone_anchor": "ศูนย์วิจัยพืชสวนเชียงราย",
+    "lat": 19.8734326,
+    "lon": 99.7795163,
+    "total_road_segments": 410,
+    "primary_road_count": 21,
+    "road_node_density": 2687,
+    "road_complexity_score": 925
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่ง จังหวัดเชียงราย",
+    "lat": 19.9287528,
+    "lon": 99.8734332,
+    "total_road_segments": 647,
+    "primary_road_count": 23,
+    "road_node_density": 3985,
+    "road_complexity_score": 1409
+  },
+  {
+    "zone_anchor": "สำนักงานขนส่งจังหวัดเชียงราย",
+    "lat": 19.9283116,
+    "lon": 99.8735516,
+    "total_road_segments": 663,
+    "primary_road_count": 23,
+    "road_node_density": 4001,
+    "road_complexity_score": 1441
+  },
+  {
+    "zone_anchor": "ที่ทำการ องค์การบริหารส่วนตำบลท่าสุด",
+    "lat": 20.0646138,
+    "lon": 99.8749117,
+    "total_road_segments": 422,
+    "primary_road_count": 6,
+    "road_node_density": 3357,
+    "road_complexity_score": 874
+  },
+  {
+    "zone_anchor": "โรงพยาบาลวัดห้วยปลากั้งเพื่อสังคม",
+    "lat": 19.9490313,
+    "lon": 99.8079668,
+    "total_road_segments": 488,
+    "primary_road_count": 6,
+    "road_node_density": 4015,
+    "road_complexity_score": 1006
+  },
+  {
+    "zone_anchor": "วิทยาลัยเทคนิคกาญจนาภิเษกเชียงราย",
+    "lat": 19.8622117,
+    "lon": 99.7668121,
+    "total_road_segments": 312,
+    "primary_road_count": 9,
+    "road_node_density": 2518,
+    "road_complexity_score": 669
+  },
+  {
+    "zone_anchor": "วิทยาลัยการอาชีพเชียงราย",
+    "lat": 19.8506583,
+    "lon": 99.8478659,
+    "total_road_segments": 510,
+    "primary_road_count": 42,
+    "road_node_density": 3428,
+    "road_complexity_score": 1230
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลตำบลดอยลาน",
+    "lat": 19.6841408,
+    "lon": 99.926506,
+    "total_road_segments": 124,
+    "primary_road_count": 3,
+    "road_node_density": 2021,
+    "road_complexity_score": 263
+  },
+  {
+    "zone_anchor": "ท่าอากาศยานเชียงราย",
+    "lat": 19.9506465,
+    "lon": 99.8817597,
+    "total_road_segments": 335,
+    "primary_road_count": 15,
+    "road_node_density": 2492,
+    "road_complexity_score": 745
+  },
+  {
+    "zone_anchor": "อาคารผู้โดยสาร",
+    "lat": 19.9542993,
+    "lon": 99.8791788,
+    "total_road_segments": 405,
+    "primary_road_count": 21,
+    "road_node_density": 2778,
+    "road_complexity_score": 915
+  },
+  {
+    "zone_anchor": "โลตัส โกเฟรช ไนท์บาซาร์ เชียงราย(1721)",
+    "lat": 19.9042715,
+    "lon": 99.2566925,
+    "total_road_segments": 36,
+    "primary_road_count": 0,
+    "road_node_density": 1170,
+    "road_complexity_score": 72
+  },
+  {
+    "zone_anchor": "บิ๊กซี เชียงราย",
+    "lat": 19.8884329,
+    "lon": 99.7657084,
+    "total_road_segments": 92,
+    "primary_road_count": 2,
+    "road_node_density": 1166,
+    "road_complexity_score": 194
+  },
+  {
+    "zone_anchor": "โรบินสัน เชียงราย",
+    "lat": 19.8864083,
+    "lon": 99.7626062,
+    "total_road_segments": 45,
+    "primary_road_count": 0,
+    "road_node_density": 852,
+    "road_complexity_score": 90
+  },
+  {
+    "zone_anchor": "วิทยาลัยเกษตรและเทคโนโลยีเชียงราย",
+    "lat": 19.9447763,
+    "lon": 99.9007233,
+    "total_road_segments": 206,
+    "primary_road_count": 0,
+    "road_node_density": 1681,
+    "road_complexity_score": 412
+  },
+  {
+    "zone_anchor": "มหาวิทยาลัยพะเยา วิทยาเขตเชียงราย",
+    "lat": 19.9254137,
+    "lon": 99.7234498,
+    "total_road_segments": 59,
+    "primary_road_count": 0,
+    "road_node_density": 1431,
+    "road_complexity_score": 118
+  },
+  {
+    "zone_anchor": "วิทยาลัยเชียงราย",
+    "lat": 19.8643777,
+    "lon": 99.641328,
+    "total_road_segments": 14,
+    "primary_road_count": 3,
+    "road_node_density": 589,
+    "road_complexity_score": 43
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 1 (ท่ารถเก่า)",
+    "lat": 19.9045782,
+    "lon": 98.6808007,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 1 (ท่ารถเก่า)",
+    "lat": 19.8729454,
+    "lon": 99.0597352,
+    "total_road_segments": 23,
+    "primary_road_count": 1,
+    "road_node_density": 754,
+    "road_complexity_score": 51
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารจังหวัดเชียงราย แห่งที่ 2",
+    "lat": 19.7979776,
+    "lon": 99.9574845,
+    "total_road_segments": 81,
+    "primary_road_count": 1,
+    "road_node_density": 970,
+    "road_complexity_score": 167
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารเชียงรายแห่งที่ 2",
+    "lat": 19.8987631,
+    "lon": 98.7504669,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "สถานีขนส่งผู้โดยสารเชียงรายแห่งที่ 2",
+    "lat": 19.858082,
+    "lon": 98.667581,
+    "total_road_segments": 2,
+    "primary_road_count": 0,
+    "road_node_density": 698,
+    "road_complexity_score": 4
+  },
+  {
+    "zone_anchor": "สำนักงานสาธารณสุขจังหวัดเชียงราย",
+    "lat": 19.8490666,
+    "lon": 99.8613292,
+    "total_road_segments": 339,
+    "primary_road_count": 34,
+    "road_node_density": 3031,
+    "road_complexity_score": 848
+  },
+  {
+    "zone_anchor": "สำนักงานเทศบาลตำบลท่าสาย",
+    "lat": 19.8509407,
+    "lon": 99.8586001,
+    "total_road_segments": 333,
+    "primary_road_count": 27,
+    "road_node_density": 2658,
+    "road_complexity_score": 801
+  },
+  {
+    "zone_anchor": "บิ๊กซี ซูเปอร์เซ็นเตอร์ เชียงราย 2 สนามบิน",
+    "lat": 19.8884329,
+    "lon": 97.5306773,
+    "total_road_segments": 0,
+    "primary_road_count": 0,
+    "road_node_density": 0,
+    "road_complexity_score": 0
+  },
+  {
+    "zone_anchor": "บิ๊กซี เชียงราย",
+    "lat": 18.1921665,
+    "lon": 101.3286332,
+    "total_road_segments": 3,
+    "primary_road_count": 0,
+    "road_node_density": 218,
+    "road_complexity_score": 6
+  },
+  {
+    "zone_anchor": "โลตัส แม่สาย",
+    "lat": 20.4073292,
+    "lon": 99.3063815,
+    "total_road_segments": 2,
+    "primary_road_count": 0,
+    "road_node_density": 158,
+    "road_complexity_score": 4
+  },
+  {
+    "zone_anchor": "โลตัส โกเฟรช ไนท์บาซาร์ เชียงราย(1721)",
+    "lat": 19.9795466,
+    "lon": 100.0785245,
+    "total_road_segments": 39,
+    "primary_road_count": 0,
+    "road_node_density": 785,
+    "road_complexity_score": 78
+  }
+]

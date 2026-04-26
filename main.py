@@ -5,7 +5,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scrapers.bank_loans import run_scraper as run_bank_scraper
-from scrapers.reic_trends import scrape_dotproperty_trends
+from scrapers.dotproperty_trends import scrape_dotproperty_trends
 from scrapers.livinginsider_trends import scrape_livinginsider_trends
 from scrapers.baania_trends import scrape_baania_trends
 from scrapers.landmarks import scrape_landmarks
@@ -22,11 +22,12 @@ def main():
     print("========================================")
     
     raw_bank_path = "data/raw/bank_loans_raw.json"
-    raw_dotproperty_path = "data/raw/reic_trends_raw.json"
+    raw_dotproperty_path = "data/raw/dotproperty_trends_raw.json"
     raw_baania_path = "data/raw/baania_trends_raw.json"
     raw_livinginsider_path = "data/raw/livinginsider_trends_raw.json"
     raw_landmarks_path = "data/raw/landmarks_raw.json"
     processed_bank_path = "data/processed/bank_loans_clean.csv"
+    reic_processed_path = "data/processed/reic_trends.csv"
     processed_property_path = "data/processed/property_trends.csv"
     processed_landmarks_path = "data/processed/landmarks_clean.csv"
     processed_zones_path = "data/processed/zone_profiles.csv"
@@ -51,14 +52,18 @@ def main():
     )
     clean_landmarks(raw_landmarks_path, processed_landmarks_path)
     
-    # 2b. Zone Analysis (Landmark proximity profiles)
-    print("\n[Phase 2b] Analyzing Zone Profiles...")
+    # 2b. Zone Analysis (Landmark proximity profiles + Market Context)
+    print("\n[Phase 2b] Analyzing Zone Profiles with Insights...")
     analyze_zones(
         raw_landmarks_path,
         processed_zones_path,
         radius_km=2.0,
         landmarks_clean_path=processed_landmarks_path,
-        property_trends_path=processed_property_path
+        property_trends_path=processed_property_path,
+        reic_trends_path=reic_processed_path,
+        population_path="data/processed/population_stats.csv",
+        road_path="data/raw/road_network.json",
+        flood_path="data/raw/flood_risk_raw.json"
     )
 
     # 2c. Data Quality Gate

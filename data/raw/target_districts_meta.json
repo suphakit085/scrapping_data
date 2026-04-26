@@ -1,0 +1,3342 @@
+{
+  "Khon Kaen": [
+    {
+      "name_th": "อำเภอบ้านแฮด",
+      "name_en": "Ban Haet District",
+      "province_th": "",
+      "lat": 16.2175425,
+      "lon": 102.7599122,
+      "osm_id": 17847683
+    },
+    {
+      "name_th": "อำเภอดอนจาน",
+      "name_en": "Don Chan District",
+      "province_th": "",
+      "lat": 16.4766562,
+      "lon": 103.7144454,
+      "osm_id": 18918307
+    },
+    {
+      "name_th": "อำเภอห้วยเม็ก",
+      "name_en": "Huai Mek District",
+      "province_th": "",
+      "lat": 16.6293801,
+      "lon": 103.259731,
+      "osm_id": 18918396
+    },
+    {
+      "name_th": "อำเภอกมลาไสย",
+      "name_en": "Kamalasai District",
+      "province_th": "",
+      "lat": 16.2877438,
+      "lon": 103.5809699,
+      "osm_id": 18918573
+    },
+    {
+      "name_th": "อำเภอฆ้องชัย",
+      "name_en": "Khong Chai District",
+      "province_th": "",
+      "lat": 16.2629039,
+      "lon": 103.4772908,
+      "osm_id": 18921750
+    },
+    {
+      "name_th": "อำเภอเมืองกาฬสินธุ์",
+      "name_en": "Mueang Kalasin District",
+      "province_th": "",
+      "lat": 16.503952,
+      "lon": 103.5605775,
+      "osm_id": 18922046
+    },
+    {
+      "name_th": "อำเภอหนองกุงศรี",
+      "name_en": "Nong Kung Si District",
+      "province_th": "",
+      "lat": 16.7307003,
+      "lon": 103.3243232,
+      "osm_id": 18922121
+    },
+    {
+      "name_th": "อำเภอร่องคำ",
+      "name_en": "Rong Kham District",
+      "province_th": "",
+      "lat": 16.2915498,
+      "lon": 103.7187255,
+      "osm_id": 18922139
+    },
+    {
+      "name_th": "อำเภอสหัสขันธ์",
+      "name_en": "Sahatsakhan District",
+      "province_th": "",
+      "lat": 16.7320001,
+      "lon": 103.5754721,
+      "osm_id": 18922161
+    },
+    {
+      "name_th": "อำเภอสามชัย",
+      "name_en": "Sam Chai District",
+      "province_th": "",
+      "lat": 16.9115217,
+      "lon": 103.5096094,
+      "osm_id": 18922239
+    },
+    {
+      "name_th": "อำเภอท่าคันโท",
+      "name_en": "Tha Khantho District",
+      "province_th": "",
+      "lat": 16.8765695,
+      "lon": 103.2548124,
+      "osm_id": 18928914
+    },
+    {
+      "name_th": "อำเภอยางตลาด",
+      "name_en": "Yang Talat District",
+      "province_th": "",
+      "lat": 16.4523871,
+      "lon": 103.3374148,
+      "osm_id": 18929004
+    },
+    {
+      "name_th": "อำเภอบ้านฝาง",
+      "name_en": "Ban Fang District",
+      "province_th": "",
+      "lat": 16.5017479,
+      "lon": 102.6092216,
+      "osm_id": 18931642
+    },
+    {
+      "name_th": "อำเภอบ้านไผ่",
+      "name_en": "Ban Phai District",
+      "province_th": "",
+      "lat": 16.0317656,
+      "lon": 102.7738907,
+      "osm_id": 18931689
+    },
+    {
+      "name_th": "อำเภอชนบท",
+      "name_en": "Chonnabot District",
+      "province_th": "",
+      "lat": 16.0267824,
+      "lon": 102.5401624,
+      "osm_id": 18931768
+    },
+    {
+      "name_th": "อำเภอชุมแพ",
+      "name_en": "Chum Phae District",
+      "province_th": "",
+      "lat": 16.6578453,
+      "lon": 102.1233229,
+      "osm_id": 18931789
+    },
+    {
+      "name_th": "อำเภอโคกโพธิ์ไชย",
+      "name_en": "Khok Pho Chai District",
+      "province_th": "",
+      "lat": 16.0693948,
+      "lon": 102.3864014,
+      "osm_id": 18931819
+    },
+    {
+      "name_th": "อำเภอกระนวน",
+      "name_en": "Kranuan District",
+      "province_th": "",
+      "lat": 16.76735,
+      "lon": 103.0847371,
+      "osm_id": 18931871
+    },
+    {
+      "name_th": "อำเภอมัญจาคีรี",
+      "name_en": "Mancha Khiri District",
+      "province_th": "",
+      "lat": 16.2336077,
+      "lon": 102.5195327,
+      "osm_id": 18934372
+    },
+    {
+      "name_th": "อำเภอเมืองขอนแก่น",
+      "name_en": "Mueang Khon Kaen District",
+      "province_th": "",
+      "lat": 16.4273026,
+      "lon": 102.8255387,
+      "osm_id": 18934428
+    },
+    {
+      "name_th": "อำเภอน้ำพอง",
+      "name_en": "Nam Phong District",
+      "province_th": "",
+      "lat": 16.69736,
+      "lon": 102.8675039,
+      "osm_id": 18934447
+    },
+    {
+      "name_th": "อำเภอโนนศิลา",
+      "name_en": "Non Sila District",
+      "province_th": "",
+      "lat": 15.9783959,
+      "lon": 102.6854698,
+      "osm_id": 18934548
+    },
+    {
+      "name_th": "อำเภอหนองนาคำ",
+      "name_en": "Nong Na Kham District",
+      "province_th": "",
+      "lat": 16.814187,
+      "lon": 102.323326,
+      "osm_id": 18934555
+    },
+    {
+      "name_th": "อำเภอหนองเรือ",
+      "name_en": "Nong Ruea District",
+      "province_th": "",
+      "lat": 16.4909994,
+      "lon": 102.4340691,
+      "osm_id": 18934571
+    },
+    {
+      "name_th": "อำเภอหนองสองห้อง",
+      "name_en": "Nong Song Hong District",
+      "province_th": "",
+      "lat": 15.7687164,
+      "lon": 102.8031976,
+      "osm_id": 18934635
+    },
+    {
+      "name_th": "อำเภอพล",
+      "name_en": "Phon District",
+      "province_th": "",
+      "lat": 15.8195068,
+      "lon": 102.581262,
+      "osm_id": 18934652
+    },
+    {
+      "name_th": "อำเภอพระยืน",
+      "name_en": "Phra Yuen District",
+      "province_th": "",
+      "lat": 16.3099371,
+      "lon": 102.6531506,
+      "osm_id": 18934674
+    },
+    {
+      "name_th": "อำเภอภูเวียง",
+      "name_en": "Phu Wiang District",
+      "province_th": "",
+      "lat": 16.6727954,
+      "lon": 102.4436511,
+      "osm_id": 18934703
+    },
+    {
+      "name_th": "อำเภอเปือยน้อย",
+      "name_en": "Pueai Noi District",
+      "province_th": "",
+      "lat": 15.8929569,
+      "lon": 102.8530775,
+      "osm_id": 18934715
+    },
+    {
+      "name_th": "อำเภอซำสูง",
+      "name_en": "Sam Sung District",
+      "province_th": "",
+      "lat": 16.5556216,
+      "lon": 103.055925,
+      "osm_id": 18934730
+    },
+    {
+      "name_th": "อำเภอสีชมพู",
+      "name_en": "Si Chomphu District",
+      "province_th": "",
+      "lat": 16.7572982,
+      "lon": 102.1193561,
+      "osm_id": 18934823
+    },
+    {
+      "name_th": "อำเภออุบลรัตน์",
+      "name_en": "Ubolratana District",
+      "province_th": "",
+      "lat": 16.7948278,
+      "lon": 102.655086,
+      "osm_id": 18934871
+    },
+    {
+      "name_th": "อำเภอแวงน้อย",
+      "name_en": "Waeng Noi District",
+      "province_th": "",
+      "lat": 15.7978833,
+      "lon": 102.4160337,
+      "osm_id": 18934886
+    },
+    {
+      "name_th": "อำเภอแวงใหญ่",
+      "name_en": "Waeng Yai District",
+      "province_th": "",
+      "lat": 15.9350128,
+      "lon": 102.4679383,
+      "osm_id": 18934895
+    },
+    {
+      "name_th": "อำเภอเวียงเก่า",
+      "name_en": "Wiang Kao District",
+      "province_th": "",
+      "lat": 16.7214892,
+      "lon": 102.2605008,
+      "osm_id": 18934909
+    },
+    {
+      "name_th": "อำเภอจังหาร",
+      "name_en": "Changhan District",
+      "province_th": "",
+      "lat": 16.1581276,
+      "lon": 103.5987265,
+      "osm_id": 18935562
+    },
+    {
+      "name_th": "อำเภอบ้านแท่น",
+      "name_en": "Ban Thaen District",
+      "province_th": "",
+      "lat": 16.3604883,
+      "lon": 102.3392042,
+      "osm_id": 18935970
+    },
+    {
+      "name_th": "อำเภอเมืองร้อยเอ็ด",
+      "name_en": "Mueang Roi Et District",
+      "province_th": "",
+      "lat": 16.0136555,
+      "lon": 103.5937699,
+      "osm_id": 18936095
+    },
+    {
+      "name_th": "อำเภอแก้งคร้อ",
+      "name_en": "Kaeng Khro District",
+      "province_th": "",
+      "lat": 16.133935,
+      "lon": 102.2275006,
+      "osm_id": 18936301
+    },
+    {
+      "name_th": "อำเภอคอนสวรรค์",
+      "name_en": "Khon Sawan District",
+      "province_th": "",
+      "lat": 15.9218187,
+      "lon": 102.2639935,
+      "osm_id": 18936513
+    },
+    {
+      "name_th": "อำเภอภูเขียว",
+      "name_en": "Phu Khiao District",
+      "province_th": "",
+      "lat": 16.3390322,
+      "lon": 102.1600182,
+      "osm_id": 18936750
+    },
+    {
+      "name_th": "อำเภอศรีสมเด็จ",
+      "name_en": "Si Somdet District",
+      "province_th": "",
+      "lat": 16.0298755,
+      "lon": 103.5136633,
+      "osm_id": 18954866
+    },
+    {
+      "name_th": "อำเภอโนนสัง",
+      "name_en": "Non Sang District",
+      "province_th": "",
+      "lat": 16.9063997,
+      "lon": 102.5234699,
+      "osm_id": 18971443
+    },
+    {
+      "name_th": "อำเภอบรบือ",
+      "name_en": "Borabue District",
+      "province_th": "",
+      "lat": 16.0061874,
+      "lon": 103.1035951,
+      "osm_id": 18971553
+    },
+    {
+      "name_th": "อำเภอเชียงยืน",
+      "name_en": "Chiang Yuen District",
+      "province_th": "",
+      "lat": 16.4165582,
+      "lon": 103.0665306,
+      "osm_id": 18971578
+    },
+    {
+      "name_th": "อำเภอชื่นชม",
+      "name_en": "Chuen Chom District",
+      "province_th": "",
+      "lat": 16.5481348,
+      "lon": 103.140659,
+      "osm_id": 18971599
+    },
+    {
+      "name_th": "อำเภอแกดำ",
+      "name_en": "Kae Dam District",
+      "province_th": "",
+      "lat": 16.054041,
+      "lon": 103.3987009,
+      "osm_id": 18971615
+    },
+    {
+      "name_th": "อำเภอกันทรวิชัย",
+      "name_en": "Kantharawichai District",
+      "province_th": "",
+      "lat": 16.2914246,
+      "lon": 103.2807817,
+      "osm_id": 18971648
+    },
+    {
+      "name_th": "อำเภอโกสุมพิสัย",
+      "name_en": "Kosum Phisai District",
+      "province_th": "",
+      "lat": 16.2700783,
+      "lon": 103.0090553,
+      "osm_id": 18971745
+    },
+    {
+      "name_th": "อำเภอกุดรัง",
+      "name_en": "Kut Rang District",
+      "province_th": "",
+      "lat": 16.0390322,
+      "lon": 102.9639052,
+      "osm_id": 18971760
+    },
+    {
+      "name_th": "อำเภอเมืองมหาสารคาม",
+      "name_en": "Mueang Maha Sarakham District",
+      "province_th": "",
+      "lat": 16.10465,
+      "lon": 103.3108791,
+      "osm_id": 18971831
+    },
+    {
+      "name_th": "อำเภอนาเชือก",
+      "name_en": "Na Chueak District",
+      "province_th": "",
+      "lat": 15.8081366,
+      "lon": 103.0457898,
+      "osm_id": 18971909
+    },
+    {
+      "name_th": "อำเภอวาปีปทุม",
+      "name_en": "Wapi Pathum District",
+      "province_th": "",
+      "lat": 15.8626062,
+      "lon": 103.318866,
+      "osm_id": 18971975
+    },
+    {
+      "name_th": "อำเภอบัวลาย",
+      "name_en": "Bua Lai District",
+      "province_th": "",
+      "lat": 15.6691192,
+      "lon": 102.5118423,
+      "osm_id": 18975550
+    }
+  ],
+  "Ubon Ratchathani": [
+    {
+      "name_th": "อำเภอหัวตะพาน",
+      "name_en": "Hua Taphan District",
+      "province_th": "",
+      "lat": 15.6646491,
+      "lon": 104.5281638,
+      "osm_id": 18906015
+    },
+    {
+      "name_th": "อำเภอลืออำนาจ",
+      "name_en": "Lue Amnat District",
+      "province_th": "",
+      "lat": 15.6974256,
+      "lon": 104.7018296,
+      "osm_id": 18906062
+    },
+    {
+      "name_th": "อำเภอเมืองอำนาจเจริญ",
+      "name_en": "Mueang Amnat Charoen District",
+      "province_th": "",
+      "lat": 15.8749453,
+      "lon": 104.6279128,
+      "osm_id": 18906414
+    },
+    {
+      "name_th": "อำเภอปทุมราชวงศา",
+      "name_en": "Pathum Ratchawongsa District",
+      "province_th": "",
+      "lat": 15.8853646,
+      "lon": 104.9048193,
+      "osm_id": 18906491
+    },
+    {
+      "name_th": "อำเภอพนา",
+      "name_en": "Phana District",
+      "province_th": "",
+      "lat": 15.6616777,
+      "lon": 104.85496,
+      "osm_id": 18906637
+    },
+    {
+      "name_th": "อำเภอเสนางคนิคม",
+      "name_en": "Senangkhanikhom District",
+      "province_th": "",
+      "lat": 16.0444455,
+      "lon": 104.6775038,
+      "osm_id": 18906652
+    },
+    {
+      "name_th": "อำเภอป่าติ้ว",
+      "name_en": "Pa Tio District",
+      "province_th": "",
+      "lat": 15.8657951,
+      "lon": 104.3876497,
+      "osm_id": 18918405
+    },
+    {
+      "name_th": "อำเภอเมืองยโสธร",
+      "name_en": "Mueang Yasothon District",
+      "province_th": "",
+      "lat": 15.8316947,
+      "lon": 104.1878511,
+      "osm_id": 18918534
+    },
+    {
+      "name_th": "อำเภอมหาชนะชัย",
+      "name_en": "Maha Chana Chai District",
+      "province_th": "",
+      "lat": 15.5060548,
+      "lon": 104.2558704,
+      "osm_id": 18918589
+    },
+    {
+      "name_th": "อำเภอค้อวัง",
+      "name_en": "Kho Wang District",
+      "province_th": "",
+      "lat": 15.3750085,
+      "lon": 104.3399015,
+      "osm_id": 18921882
+    },
+    {
+      "name_th": "อำเภอคำเขื่อนแก้ว",
+      "name_en": "Kham Khuean Kaeo District",
+      "province_th": "",
+      "lat": 15.6544661,
+      "lon": 104.3403805,
+      "osm_id": 18921934
+    },
+    {
+      "name_th": "อำเภอบุณฑริก",
+      "name_en": "Buntharik District",
+      "province_th": "",
+      "lat": 14.6710828,
+      "lon": 105.4158652,
+      "osm_id": 18929401
+    },
+    {
+      "name_th": "อำเภอเดชอุดม",
+      "name_en": "Det Udom District",
+      "province_th": "",
+      "lat": 14.8287203,
+      "lon": 105.0522821,
+      "osm_id": 18929509
+    },
+    {
+      "name_th": "อำเภอดอนมดแดง",
+      "name_en": "Don Mot Daeng District",
+      "province_th": "",
+      "lat": 15.3981537,
+      "lon": 105.0233956,
+      "osm_id": 18929632
+    },
+    {
+      "name_th": "อำเภอเขมราฐ",
+      "name_en": "Khemarat District",
+      "province_th": "",
+      "lat": 15.9495908,
+      "lon": 105.2119937,
+      "osm_id": 18929985
+    },
+    {
+      "name_th": "อำเภอโขงเจียม",
+      "name_en": "Khong Chiam District",
+      "province_th": "",
+      "lat": 15.4625263,
+      "lon": 105.4905947,
+      "osm_id": 18931413
+    },
+    {
+      "name_th": "อำเภอเขื่องใน",
+      "name_en": "Khueang Nai District",
+      "province_th": "",
+      "lat": 15.3961704,
+      "lon": 104.540971,
+      "osm_id": 18931532
+    },
+    {
+      "name_th": "อำเภอกุดข้าวปุ้น",
+      "name_en": "Kut Khaopun District",
+      "province_th": "",
+      "lat": 15.8320466,
+      "lon": 105.0373346,
+      "osm_id": 18931613
+    },
+    {
+      "name_th": "อำเภอเหล่าเสือโก้ก",
+      "name_en": "Lao Suea Kok District",
+      "province_th": "",
+      "lat": 15.4440023,
+      "lon": 104.9219361,
+      "osm_id": 18931666
+    },
+    {
+      "name_th": "อำเภอม่วงสามสิบ",
+      "name_en": "Muang Sam Sip District",
+      "province_th": "",
+      "lat": 15.5260832,
+      "lon": 104.7184096,
+      "osm_id": 18931682
+    },
+    {
+      "name_th": "อำเภอเมืองอุบลราชธานี",
+      "name_en": "Mueang Ubon Ratchathani District",
+      "province_th": "",
+      "lat": 15.2975864,
+      "lon": 104.8535081,
+      "osm_id": 18931767
+    },
+    {
+      "name_th": "อำเภอนาจะหลวย",
+      "name_en": "Na Chaluai District",
+      "province_th": "",
+      "lat": 14.5519936,
+      "lon": 105.2103431,
+      "osm_id": 18931810
+    },
+    {
+      "name_th": "อำเภอนาตาล",
+      "name_en": "Na Tan District",
+      "province_th": "",
+      "lat": 15.9288344,
+      "lon": 105.2609341,
+      "osm_id": 18931818
+    },
+    {
+      "name_th": "อำเภอนาเยีย",
+      "name_en": "Na Yia District",
+      "province_th": "",
+      "lat": 15.0647151,
+      "lon": 105.0801976,
+      "osm_id": 18931865
+    },
+    {
+      "name_th": "อำเภอน้ำขุ่น",
+      "name_en": "Nam Khun District",
+      "province_th": "",
+      "lat": 14.5495598,
+      "lon": 104.9054803,
+      "osm_id": 18934570
+    },
+    {
+      "name_th": "อำเภอน้ำยืน",
+      "name_en": "Nam Yuen District",
+      "province_th": "",
+      "lat": 14.4426273,
+      "lon": 105.0848323,
+      "osm_id": 18934602
+    },
+    {
+      "name_th": "อำเภอพิบูลมังสาหาร",
+      "name_en": "Phibun Mangsahan District",
+      "province_th": "",
+      "lat": 15.1610538,
+      "lon": 105.2148431,
+      "osm_id": 18934659
+    },
+    {
+      "name_th": "อำเภอโพธิ์ไทร",
+      "name_en": "Pho Sai District",
+      "province_th": "",
+      "lat": 15.76872,
+      "lon": 105.3556709,
+      "osm_id": 18934716
+    },
+    {
+      "name_th": "อำเภอสำโรง",
+      "name_en": "Samrong District",
+      "province_th": "",
+      "lat": 14.959337,
+      "lon": 104.7870074,
+      "osm_id": 18934776
+    },
+    {
+      "name_th": "อำเภอสว่างวีระวงศ์",
+      "name_en": "Sawang Wirawong District",
+      "province_th": "",
+      "lat": 15.2360751,
+      "lon": 105.0592888,
+      "osm_id": 18934873
+    },
+    {
+      "name_th": "อำเภอศรีเมืองใหม่",
+      "name_en": "Si Mueang Mai District",
+      "province_th": "",
+      "lat": 15.5595028,
+      "lon": 105.4118124,
+      "osm_id": 18934908
+    },
+    {
+      "name_th": "อำเภอสิรินธร",
+      "name_en": "Sirindhorn District",
+      "province_th": "",
+      "lat": 15.1109989,
+      "lon": 105.4502759,
+      "osm_id": 18935055
+    },
+    {
+      "name_th": "อำเภอตาลสุม",
+      "name_en": "Tan Sum District",
+      "province_th": "",
+      "lat": 15.3969934,
+      "lon": 105.1521992,
+      "osm_id": 18935079
+    },
+    {
+      "name_th": "อำเภอทุ่งศรีอุดม",
+      "name_en": "Thung Si Udom District",
+      "province_th": "",
+      "lat": 14.7386794,
+      "lon": 104.9149453,
+      "osm_id": 18935287
+    },
+    {
+      "name_th": "อำเภอตระการพืชผล",
+      "name_en": "Trakan Phuet Phon District",
+      "province_th": "",
+      "lat": 15.6008552,
+      "lon": 105.0725877,
+      "osm_id": 18935366
+    },
+    {
+      "name_th": "อำเภอวารินชำราบ",
+      "name_en": "Warin Chamrap District",
+      "province_th": "",
+      "lat": 15.0919413,
+      "lon": 104.8377806,
+      "osm_id": 18935632
+    },
+    {
+      "name_th": "อำเภอพนมไพร",
+      "name_en": "Phanom Phrai District",
+      "province_th": "",
+      "lat": 15.6925408,
+      "lon": 104.0781532,
+      "osm_id": 18936655
+    },
+    {
+      "name_th": "อำเภอเบญจลักษ์",
+      "name_en": "Benchalak District",
+      "province_th": "",
+      "lat": 14.7867746,
+      "lon": 104.7075338,
+      "osm_id": 18936717
+    },
+    {
+      "name_th": "อำเภอกันทรลักษ์",
+      "name_en": "Kantharalak District",
+      "province_th": "",
+      "lat": 14.5715702,
+      "lon": 104.698519,
+      "osm_id": 18955017
+    },
+    {
+      "name_th": "อำเภอกันทรารมย์",
+      "name_en": "Kanthararom District",
+      "province_th": "",
+      "lat": 15.1158822,
+      "lon": 104.5817277,
+      "osm_id": 18955188
+    },
+    {
+      "name_th": "อำเภอขุนหาญ",
+      "name_en": "Khun Han District",
+      "province_th": "",
+      "lat": 14.547527,
+      "lon": 104.4014111,
+      "osm_id": 18955386
+    },
+    {
+      "name_th": "อำเภอเมืองศรีสะเกษ",
+      "name_en": "Mueang Si Sa Ket District",
+      "province_th": "",
+      "lat": 15.0993869,
+      "lon": 104.3505859,
+      "osm_id": 18955500
+    },
+    {
+      "name_th": "อำเภอน้ำเกลี้ยง",
+      "name_en": "Nam Kliang District",
+      "province_th": "",
+      "lat": 14.9106978,
+      "lon": 104.5250652,
+      "osm_id": 18955665
+    },
+    {
+      "name_th": "อำเภอโนนคูณ",
+      "name_en": "Non Khun District",
+      "province_th": "",
+      "lat": 14.9161565,
+      "lon": 104.7037746,
+      "osm_id": 18955856
+    },
+    {
+      "name_th": "อำเภอพยุห์",
+      "name_en": "Phayu District",
+      "province_th": "",
+      "lat": 14.9007269,
+      "lon": 104.3749068,
+      "osm_id": 18955940
+    },
+    {
+      "name_th": "อำเภอไพรบึง",
+      "name_en": "Phrai Bueng District",
+      "province_th": "",
+      "lat": 14.767887,
+      "lon": 104.3492998,
+      "osm_id": 18956069
+    },
+    {
+      "name_th": "อำเภอราษีไศล",
+      "name_en": "Rasi Salai District",
+      "province_th": "",
+      "lat": 15.3490971,
+      "lon": 104.1673913,
+      "osm_id": 18959157
+    },
+    {
+      "name_th": "อำเภอศรีรัตนะ",
+      "name_en": "Si Rattana District",
+      "province_th": "",
+      "lat": 14.8086786,
+      "lon": 104.4962091,
+      "osm_id": 18959216
+    },
+    {
+      "name_th": "อำเภอศิลาลาด",
+      "name_en": "Sila Lat District",
+      "province_th": "",
+      "lat": 15.490116,
+      "lon": 104.0957544,
+      "osm_id": 18959301
+    },
+    {
+      "name_th": "อำเภออุทุมพรพิสัย",
+      "name_en": "Uthumphon Phisai District",
+      "province_th": "",
+      "lat": 15.1100284,
+      "lon": 104.160092,
+      "osm_id": 18959441
+    },
+    {
+      "name_th": "อำเภอวังหิน",
+      "name_en": "Wang Hin District",
+      "province_th": "",
+      "lat": 14.9686402,
+      "lon": 104.2080778,
+      "osm_id": 18959479
+    },
+    {
+      "name_th": "อำเภอยางชุมน้อย",
+      "name_en": "Yang Chum Noi District",
+      "province_th": "",
+      "lat": 15.2453226,
+      "lon": 104.3865107,
+      "osm_id": 18959548
+    }
+  ],
+  "Prachuap Khiri Khan": [
+    {
+      "name_th": "อำเภอหัวหิน",
+      "name_en": "Hua Hin District",
+      "province_th": "",
+      "lat": 12.4947881,
+      "lon": 99.6930962,
+      "osm_id": 18252311
+    },
+    {
+      "name_th": "อำเภอสามร้อยยอด",
+      "name_en": "Sam Roi Yot District",
+      "province_th": "",
+      "lat": 12.2410424,
+      "lon": 99.7332323,
+      "osm_id": 18936057
+    },
+    {
+      "name_th": "อำเภอกุยบุรี",
+      "name_en": "Kui Buri District",
+      "province_th": "",
+      "lat": 12.1111511,
+      "lon": 99.7762574,
+      "osm_id": 18936188
+    },
+    {
+      "name_th": "อำเภอเมืองประจวบคีรีขันธ์",
+      "name_en": "Mueang Prachuap Khiri Khan District",
+      "province_th": "",
+      "lat": 11.8588725,
+      "lon": 99.7451631,
+      "osm_id": 18936307
+    },
+    {
+      "name_th": "อำเภอปราณบุรี",
+      "name_en": "Pran Buri District",
+      "province_th": "",
+      "lat": 12.405796,
+      "lon": 99.7019042,
+      "osm_id": 18936558
+    },
+    {
+      "name_th": "อำเภอทับสะแก",
+      "name_en": "Thap Sakae District",
+      "province_th": "",
+      "lat": 11.5448665,
+      "lon": 99.5676987,
+      "osm_id": 18936574
+    },
+    {
+      "name_th": "อำเภอบางสะพาน",
+      "name_en": "Bang Saphan District",
+      "province_th": "",
+      "lat": 11.301373,
+      "lon": 99.4331308,
+      "osm_id": 18936680
+    },
+    {
+      "name_th": "อำเภอบางสะพานน้อย",
+      "name_en": "Bang Saphan Noi District",
+      "province_th": "",
+      "lat": 11.0874834,
+      "lon": 99.3558796,
+      "osm_id": 18936727
+    }
+  ],
+  "Udon Thani": [
+    {
+      "name_th": "อำเภอบ้านม่วง",
+      "name_en": "Ban Muang District",
+      "province_th": "",
+      "lat": 17.9192091,
+      "lon": 103.5355199,
+      "osm_id": 18921773
+    },
+    {
+      "name_th": "อำเภอเจริญศิลป์",
+      "name_en": "Charoen Sin District",
+      "province_th": "",
+      "lat": 17.6367195,
+      "lon": 103.535763,
+      "osm_id": 18921849
+    },
+    {
+      "name_th": "อำเภอบ้านผือ",
+      "name_en": "Ban Phue District",
+      "province_th": "",
+      "lat": 17.7227143,
+      "lon": 102.4923141,
+      "osm_id": 18921883
+    },
+    {
+      "name_th": "อำเภอบ้านดุง",
+      "name_en": "Ban Dung District",
+      "province_th": "",
+      "lat": 17.7085819,
+      "lon": 103.2587161,
+      "osm_id": 18921932
+    },
+    {
+      "name_th": "อำเภอไชยวาน",
+      "name_en": "Chai Wan District",
+      "province_th": "",
+      "lat": 17.2281761,
+      "lon": 103.2979051,
+      "osm_id": 18921996
+    },
+    {
+      "name_th": "อำเภอกู่แก้ว",
+      "name_en": "Ku Kaeo District",
+      "province_th": "",
+      "lat": 17.1669944,
+      "lon": 103.1632039,
+      "osm_id": 18928913
+    },
+    {
+      "name_th": "อำเภอกุมภวาปี",
+      "name_en": "Kumphawapi District",
+      "province_th": "",
+      "lat": 17.0736017,
+      "lon": 102.9774637,
+      "osm_id": 18929019
+    },
+    {
+      "name_th": "อำเภอกุดจับ",
+      "name_en": "Kut Chap District",
+      "province_th": "",
+      "lat": 17.4373432,
+      "lon": 102.5452471,
+      "osm_id": 18929252
+    },
+    {
+      "name_th": "อำเภอเมืองอุดรธานี",
+      "name_en": "Mueang Udon Thani District",
+      "province_th": "",
+      "lat": 17.3899608,
+      "lon": 102.7781012,
+      "osm_id": 18929325
+    },
+    {
+      "name_th": "อำเภอสว่างแดนดิน",
+      "name_en": "Sawang Daen Din District",
+      "province_th": "",
+      "lat": 17.4758745,
+      "lon": 103.4593166,
+      "osm_id": 18929458
+    },
+    {
+      "name_th": "อำเภอนายูง",
+      "name_en": "Na Yung District",
+      "province_th": "",
+      "lat": 17.9385765,
+      "lon": 102.1458316,
+      "osm_id": 18929508
+    },
+    {
+      "name_th": "อำเภอส่องดาว",
+      "name_en": "Song Dao District",
+      "province_th": "",
+      "lat": 17.3146992,
+      "lon": 103.4351227,
+      "osm_id": 18931283
+    },
+    {
+      "name_th": "อำเภอน้ำโสม",
+      "name_en": "Nam Som District",
+      "province_th": "",
+      "lat": 17.758859,
+      "lon": 102.1712656,
+      "osm_id": 18931304
+    },
+    {
+      "name_th": "อำเภอโนนสะอาด",
+      "name_en": "Non Sa-at District",
+      "province_th": "",
+      "lat": 16.9689955,
+      "lon": 102.8724316,
+      "osm_id": 18931404
+    },
+    {
+      "name_th": "อำเภอหนองหาน",
+      "name_en": "Nong Han District",
+      "province_th": "",
+      "lat": 17.3597296,
+      "lon": 103.1176391,
+      "osm_id": 18931488
+    },
+    {
+      "name_th": "อำเภอหนองแสง",
+      "name_en": "Nong Saeng District",
+      "province_th": "",
+      "lat": 17.1389743,
+      "lon": 102.7652332,
+      "osm_id": 18931632
+    },
+    {
+      "name_th": "อำเภอวาริชภูมิ",
+      "name_en": "Waritchaphum District",
+      "province_th": "",
+      "lat": 17.2601931,
+      "lon": 103.6045783,
+      "osm_id": 18931650
+    },
+    {
+      "name_th": "อำเภอหนองวัวซอ",
+      "name_en": "Nong Wua So District",
+      "province_th": "",
+      "lat": 17.1842617,
+      "lon": 102.5698235,
+      "osm_id": 18931684
+    },
+    {
+      "name_th": "อำเภอเพ็ญ",
+      "name_en": "Phen District",
+      "province_th": "",
+      "lat": 17.6841285,
+      "lon": 102.9050849,
+      "osm_id": 18931764
+    },
+    {
+      "name_th": "อำเภอเขาสวนกวาง",
+      "name_en": "Khao Suan Kwang District",
+      "province_th": "",
+      "lat": 16.936924,
+      "lon": 102.8096958,
+      "osm_id": 18931815
+    },
+    {
+      "name_th": "อำเภอพิบูลย์รักษ์",
+      "name_en": "Phibun Rak District",
+      "province_th": "",
+      "lat": 17.5364221,
+      "lon": 103.0552985,
+      "osm_id": 18931816
+    },
+    {
+      "name_th": "อำเภอประจักษ์ศิลปาคม",
+      "name_en": "Prachak Sinlapakhom District",
+      "province_th": "",
+      "lat": 17.2567831,
+      "lon": 102.9945532,
+      "osm_id": 18934529
+    },
+    {
+      "name_th": "อำเภอศรีธาตุ",
+      "name_en": "Si That District",
+      "province_th": "",
+      "lat": 17.0411338,
+      "lon": 103.2129609,
+      "osm_id": 18934576
+    },
+    {
+      "name_th": "อำเภอทุ่งฝน",
+      "name_en": "Thung Fon District",
+      "province_th": "",
+      "lat": 17.5042692,
+      "lon": 103.2256615,
+      "osm_id": 18934613
+    },
+    {
+      "name_th": "อำเภอวังสามหมอ",
+      "name_en": "Wang Sam Mo District",
+      "province_th": "",
+      "lat": 17.0164952,
+      "lon": 103.4923212,
+      "osm_id": 18934630
+    },
+    {
+      "name_th": "อำเภอเอราวัณ",
+      "name_en": "Erawan District",
+      "province_th": "",
+      "lat": 17.2785071,
+      "lon": 101.9769765,
+      "osm_id": 18959827
+    },
+    {
+      "name_th": "อำเภอนาด้วง",
+      "name_en": "Na Duang District",
+      "province_th": "",
+      "lat": 17.5380605,
+      "lon": 102.0038708,
+      "osm_id": 18959922
+    },
+    {
+      "name_th": "อำเภอผาขาว",
+      "name_en": "Pha Khao District",
+      "province_th": "",
+      "lat": 17.0526197,
+      "lon": 102.0263584,
+      "osm_id": 18960175
+    },
+    {
+      "name_th": "อำเภอเมืองหนองบัวลำภู",
+      "name_en": "Mueang Nong Bua Lam Phu District",
+      "province_th": "",
+      "lat": 17.1509843,
+      "lon": 102.4154171,
+      "osm_id": 18971299
+    },
+    {
+      "name_th": "อำเภอนากลาง",
+      "name_en": "Na Klang District",
+      "province_th": "",
+      "lat": 17.3129908,
+      "lon": 102.2567025,
+      "osm_id": 18971350
+    },
+    {
+      "name_th": "อำเภอนาวัง",
+      "name_en": "Na Wang District",
+      "province_th": "",
+      "lat": 17.3136152,
+      "lon": 102.0615849,
+      "osm_id": 18971412
+    },
+    {
+      "name_th": "อำเภอศรีบุญเรือง",
+      "name_en": "Si Bun Rueang District",
+      "province_th": "",
+      "lat": 16.9961768,
+      "lon": 102.2173613,
+      "osm_id": 18971530
+    },
+    {
+      "name_th": "อำเภอสุวรรณคูหา",
+      "name_en": "Suwannakhuha District",
+      "province_th": "",
+      "lat": 17.5507676,
+      "lon": 102.2409175,
+      "osm_id": 18971552
+    },
+    {
+      "name_th": "อำเภอเฝ้าไร่",
+      "name_en": "Fao Rai​ District",
+      "province_th": "",
+      "lat": 18.0006833,
+      "lon": 103.2946979,
+      "osm_id": 18971619
+    },
+    {
+      "name_th": "อำเภอเมืองหนองคาย",
+      "name_en": "Mueang Nong Khai District",
+      "province_th": "",
+      "lat": 17.8444734,
+      "lon": 102.8300114,
+      "osm_id": 18971672
+    },
+    {
+      "name_th": "อำเภอโพธิ์ตาก",
+      "name_en": "Pho Tak District",
+      "province_th": "",
+      "lat": 17.89672,
+      "lon": 102.4291527,
+      "osm_id": 18971709
+    },
+    {
+      "name_th": "อำเภอโพนพิสัย",
+      "name_en": "Phon Phisai District",
+      "province_th": "",
+      "lat": 17.9826693,
+      "lon": 103.1087887,
+      "osm_id": 18971758
+    },
+    {
+      "name_th": "อำเภอสระใคร",
+      "name_en": "Sakhrai District",
+      "province_th": "",
+      "lat": 17.678362,
+      "lon": 102.6982671,
+      "osm_id": 18972032
+    },
+    {
+      "name_th": "อำเภอสร้างคอม",
+      "name_en": "Sang Khom District",
+      "province_th": "",
+      "lat": 17.7935475,
+      "lon": 103.0416984,
+      "osm_id": 18972063
+    },
+    {
+      "name_th": "อำเภอสังคม",
+      "name_en": "Sangkhom District",
+      "province_th": "",
+      "lat": 18.0694247,
+      "lon": 102.2289474,
+      "osm_id": 18972219
+    },
+    {
+      "name_th": "อำเภอศรีเชียงใหม่",
+      "name_en": "Si Chiang Mai District",
+      "province_th": "",
+      "lat": 17.9339972,
+      "lon": 102.5002497,
+      "osm_id": 18972346
+    },
+    {
+      "name_th": "อำเภอท่าบ่อ",
+      "name_en": "Tha Bo District",
+      "province_th": "",
+      "lat": 17.7942753,
+      "lon": 102.5503631,
+      "osm_id": 18972478
+    }
+  ],
+  "Rayong": [
+    {
+      "name_th": "อำเภอบ้านฉาง",
+      "name_en": "Ban Chang District",
+      "province_th": "",
+      "lat": 12.737979,
+      "lon": 101.0454003,
+      "osm_id": 18955437
+    },
+    {
+      "name_th": "อำเภอบ้านค่าย",
+      "name_en": "Ban Khai District",
+      "province_th": "",
+      "lat": 12.8331413,
+      "lon": 101.3504827,
+      "osm_id": 18955494
+    },
+    {
+      "name_th": "อำเภอเขาชะเมา",
+      "name_en": "Khao Chamao District",
+      "province_th": "",
+      "lat": 12.9967491,
+      "lon": 101.6890653,
+      "osm_id": 18955535
+    },
+    {
+      "name_th": "อำเภอแกลง",
+      "name_en": "Klaeng District",
+      "province_th": "",
+      "lat": 12.7682094,
+      "lon": 101.6670342,
+      "osm_id": 18955627
+    },
+    {
+      "name_th": "อำเภอเมืองระยอง",
+      "name_en": "Mueang Rayong District",
+      "province_th": "",
+      "lat": 12.6913656,
+      "lon": 101.3080092,
+      "osm_id": 18955763
+    },
+    {
+      "name_th": "อำเภอนิคมพัฒนา",
+      "name_en": "Nikhom Phatthana District",
+      "province_th": "",
+      "lat": 12.8401147,
+      "lon": 101.1443019,
+      "osm_id": 18955776
+    },
+    {
+      "name_th": "อำเภอปลวกแดง",
+      "name_en": "Pluak Daeng District",
+      "province_th": "",
+      "lat": 12.9738179,
+      "lon": 101.2535929,
+      "osm_id": 18955805
+    },
+    {
+      "name_th": "อำเภอวังจันทร์",
+      "name_en": "Wang Chan District",
+      "province_th": "",
+      "lat": 12.9701661,
+      "lon": 101.4984563,
+      "osm_id": 18955831
+    },
+    {
+      "name_th": "อำเภอแก่งหางแมว",
+      "name_en": "Kaeng Hang Maeo District",
+      "province_th": "",
+      "lat": 13.0836937,
+      "lon": 101.8714341,
+      "osm_id": 18989064
+    },
+    {
+      "name_th": "อำเภอเขาคิชฌกูฏ",
+      "name_en": "Khao Khitchakut District",
+      "province_th": "",
+      "lat": 12.9665901,
+      "lon": 102.0952872,
+      "osm_id": 18989211
+    },
+    {
+      "name_th": "อำเภอแหลมสิงห์",
+      "name_en": "Laem Sing District",
+      "province_th": "",
+      "lat": 12.4551899,
+      "lon": 102.0989579,
+      "osm_id": 18993850
+    },
+    {
+      "name_th": "อำเภอเมืองจันทบุรี",
+      "name_en": "Mueang Chanthaburi District",
+      "province_th": "",
+      "lat": 12.6298235,
+      "lon": 102.117087,
+      "osm_id": 18994223
+    },
+    {
+      "name_th": "อำเภอนายายอาม",
+      "name_en": "Na Yai Am District",
+      "province_th": "",
+      "lat": 12.7541623,
+      "lon": 101.8725099,
+      "osm_id": 18994273
+    },
+    {
+      "name_th": "อำเภอท่าใหม่",
+      "name_en": "Tha Mai District",
+      "province_th": "",
+      "lat": 12.7179006,
+      "lon": 101.9715183,
+      "osm_id": 18994426
+    },
+    {
+      "name_th": "อำเภอสัตหีบ",
+      "name_en": "Sattahip District",
+      "province_th": "",
+      "lat": 12.6873992,
+      "lon": 100.8565618,
+      "osm_id": 18996908
+    }
+  ],
+  "Chonburi": [
+    {
+      "name_th": "เขตพระนคร",
+      "name_en": "Phra Nakhon District",
+      "province_th": "",
+      "lat": 13.7557908,
+      "lon": 100.498408,
+      "osm_id": 92053
+    },
+    {
+      "name_th": "เขตสัมพันธวงศ์",
+      "name_en": "Samphanthawong District",
+      "province_th": "",
+      "lat": 13.7378687,
+      "lon": 100.5079655,
+      "osm_id": 92056
+    },
+    {
+      "name_th": "เขตป้อมปราบศัตรูพ่าย",
+      "name_en": "Pom Prap Sattru Phai District",
+      "province_th": "",
+      "lat": 13.7510012,
+      "lon": 100.5106404,
+      "osm_id": 92058
+    },
+    {
+      "name_th": "เขตบางรัก",
+      "name_en": "Bang Rak District",
+      "province_th": "",
+      "lat": 13.7279347,
+      "lon": 100.5282752,
+      "osm_id": 92061
+    },
+    {
+      "name_th": "เขตปทุมวัน",
+      "name_en": "Pathum Wan District",
+      "province_th": "",
+      "lat": 13.7378708,
+      "lon": 100.5342421,
+      "osm_id": 92063
+    },
+    {
+      "name_th": "เขตราชเทวี",
+      "name_en": "Ratchathewi District",
+      "province_th": "",
+      "lat": 13.7610976,
+      "lon": 100.5419797,
+      "osm_id": 92064
+    },
+    {
+      "name_th": "เขตพญาไท",
+      "name_en": "Phaya Thai District",
+      "province_th": "",
+      "lat": 13.7802548,
+      "lon": 100.5449004,
+      "osm_id": 92068
+    },
+    {
+      "name_th": "เขตดุสิต",
+      "name_en": "Dusit District",
+      "province_th": "",
+      "lat": 13.7765959,
+      "lon": 100.5182974,
+      "osm_id": 92069
+    },
+    {
+      "name_th": "เขตบางซื่อ",
+      "name_en": "Bang Sue District",
+      "province_th": "",
+      "lat": 13.8237801,
+      "lon": 100.525723,
+      "osm_id": 1639285
+    },
+    {
+      "name_th": "เขตจตุจักร",
+      "name_en": "Chatuchak District",
+      "province_th": "",
+      "lat": 13.8267259,
+      "lon": 100.5640913,
+      "osm_id": 1639286
+    },
+    {
+      "name_th": "เขตดอนเมือง",
+      "name_en": "Don Mueang District",
+      "province_th": "",
+      "lat": 13.9213509,
+      "lon": 100.5928487,
+      "osm_id": 1639287
+    },
+    {
+      "name_th": "เขตหลักสี่",
+      "name_en": "Lak Si District",
+      "province_th": "",
+      "lat": 13.8821365,
+      "lon": 100.5692861,
+      "osm_id": 1639288
+    },
+    {
+      "name_th": "อำเภอบางกรวย",
+      "name_en": "Bang Kruai District",
+      "province_th": "",
+      "lat": 13.8128528,
+      "lon": 100.41711,
+      "osm_id": 2688299
+    },
+    {
+      "name_th": "อำเภอเมืองนนทบุรี",
+      "name_en": "Mueang Nonthaburi District",
+      "province_th": "",
+      "lat": 13.8538153,
+      "lon": 100.4887516,
+      "osm_id": 2688300
+    },
+    {
+      "name_th": "อำเภอปากเกร็ด",
+      "name_en": "Pak Kret District",
+      "province_th": "",
+      "lat": 13.9362321,
+      "lon": 100.4743185,
+      "osm_id": 2688301
+    },
+    {
+      "name_th": "อำเภอบางบัวทอง",
+      "name_en": "Bang Bua Thong District",
+      "province_th": "",
+      "lat": 13.9318649,
+      "lon": 100.3885171,
+      "osm_id": 2689552
+    },
+    {
+      "name_th": "อำเภอบางใหญ่",
+      "name_en": "Bang Yai District",
+      "province_th": "",
+      "lat": 13.8645938,
+      "lon": 100.3715646,
+      "osm_id": 2689553
+    },
+    {
+      "name_th": "อำเภอคลองหลวง",
+      "name_en": "Khlong Luang District",
+      "province_th": "",
+      "lat": 14.1033244,
+      "lon": 100.6688918,
+      "osm_id": 2913006
+    },
+    {
+      "name_th": "อำเภอลำลูกกา",
+      "name_en": "Lam Luk Ka District",
+      "province_th": "",
+      "lat": 13.9922569,
+      "lon": 100.7599741,
+      "osm_id": 2913007
+    },
+    {
+      "name_th": "อำเภอลาดหลุมแก้ว",
+      "name_en": "Lat Lum Kaeo District",
+      "province_th": "",
+      "lat": 14.0435232,
+      "lon": 100.4141427,
+      "osm_id": 2913008
+    },
+    {
+      "name_th": "อำเภอเมืองปทุมธานี",
+      "name_en": "Mueang Pathum Thani District",
+      "province_th": "",
+      "lat": 14.0049266,
+      "lon": 100.527415,
+      "osm_id": 2913009
+    },
+    {
+      "name_th": "อำเภอหนองเสือ",
+      "name_en": "Nong Suea District",
+      "province_th": "",
+      "lat": 14.1604436,
+      "lon": 100.8536262,
+      "osm_id": 2913010
+    },
+    {
+      "name_th": "อำเภอสามโคก",
+      "name_en": "Sam Khok District",
+      "province_th": "",
+      "lat": 14.0806635,
+      "lon": 100.502859,
+      "osm_id": 2913011
+    },
+    {
+      "name_th": "อำเภอธัญบุรี",
+      "name_en": "Thanyaburi District",
+      "province_th": "",
+      "lat": 14.0327043,
+      "lon": 100.7581941,
+      "osm_id": 2913012
+    },
+    {
+      "name_th": "เขตบางเขน",
+      "name_en": "Bang Khen District",
+      "province_th": "",
+      "lat": 13.8711313,
+      "lon": 100.6361095,
+      "osm_id": 2938030
+    },
+    {
+      "name_th": "เขตดินแดง",
+      "name_en": "Din Daeng District",
+      "province_th": "",
+      "lat": 13.7781099,
+      "lon": 100.5591603,
+      "osm_id": 2938031
+    },
+    {
+      "name_th": "เขตห้วยขวาง",
+      "name_en": "Huai Khwang District",
+      "province_th": "",
+      "lat": 13.7720971,
+      "lon": 100.5836665,
+      "osm_id": 2938032
+    },
+    {
+      "name_th": "เขตคลองเตย",
+      "name_en": "Khlong Toei District",
+      "province_th": "",
+      "lat": 13.7193216,
+      "lon": 100.5761931,
+      "osm_id": 2938033
+    },
+    {
+      "name_th": "เขตลาดพร้าว",
+      "name_en": "Lat Phrao District",
+      "province_th": "",
+      "lat": 13.8220773,
+      "lon": 100.6127733,
+      "osm_id": 2938034
+    },
+    {
+      "name_th": "เขตสายไหม",
+      "name_en": "Sai Mai District",
+      "province_th": "",
+      "lat": 13.9121205,
+      "lon": 100.6505725,
+      "osm_id": 2938035
+    },
+    {
+      "name_th": "เขตวัฒนา",
+      "name_en": "Vadhana District",
+      "province_th": "",
+      "lat": 13.7266051,
+      "lon": 100.5784794,
+      "osm_id": 2938036
+    },
+    {
+      "name_th": "เขตบางกะปิ",
+      "name_en": "Bang Kapi District",
+      "province_th": "",
+      "lat": 13.778858,
+      "lon": 100.6400074,
+      "osm_id": 2939952
+    },
+    {
+      "name_th": "เขตบางกอกใหญ่",
+      "name_en": "Bangkok Yai District",
+      "province_th": "",
+      "lat": 13.735138,
+      "lon": 100.4768189,
+      "osm_id": 2939953
+    },
+    {
+      "name_th": "เขตตลิ่งชัน",
+      "name_en": "Taling Chan District",
+      "province_th": "",
+      "lat": 13.770654,
+      "lon": 100.4380319,
+      "osm_id": 2939954
+    },
+    {
+      "name_th": "เขตทวีวัฒนา",
+      "name_en": "Thawi Watthana District",
+      "province_th": "",
+      "lat": 13.7701352,
+      "lon": 100.3694596,
+      "osm_id": 2939955
+    },
+    {
+      "name_th": "เขตวังทองหลาง",
+      "name_en": "Wang Thonglang District",
+      "province_th": "",
+      "lat": 13.7770163,
+      "lon": 100.6095034,
+      "osm_id": 2939956
+    },
+    {
+      "name_th": "เขตบางพลัด",
+      "name_en": "Bang Phlat District",
+      "province_th": "",
+      "lat": 13.7875801,
+      "lon": 100.4918985,
+      "osm_id": 2942281
+    },
+    {
+      "name_th": "เขตบางกอกน้อย",
+      "name_en": "Bangkok Noi District",
+      "province_th": "",
+      "lat": 13.765282,
+      "lon": 100.4722881,
+      "osm_id": 2942282
+    },
+    {
+      "name_th": "เขตหนองแขม",
+      "name_en": "Nong Khaem District",
+      "province_th": "",
+      "lat": 13.6963337,
+      "lon": 100.3582947,
+      "osm_id": 2942283
+    },
+    {
+      "name_th": "เขตบางแค",
+      "name_en": "Bang Khae District",
+      "province_th": "",
+      "lat": 13.7109584,
+      "lon": 100.3902223,
+      "osm_id": 2946804
+    },
+    {
+      "name_th": "เขตบึงกุ่ม",
+      "name_en": "Bueng Kum District",
+      "province_th": "",
+      "lat": 13.8090109,
+      "lon": 100.6504786,
+      "osm_id": 2946805
+    },
+    {
+      "name_th": "เขตคันนายาว",
+      "name_en": "Khan Na Yao District",
+      "province_th": "",
+      "lat": 13.8192004,
+      "lon": 100.6754885,
+      "osm_id": 2946806
+    },
+    {
+      "name_th": "เขตภาษีเจริญ",
+      "name_en": "Phasi Charoen District",
+      "province_th": "",
+      "lat": 13.7177651,
+      "lon": 100.4425093,
+      "osm_id": 2946807
+    },
+    {
+      "name_th": "เขตคลองสามวา",
+      "name_en": "Khlong Sam Wa District",
+      "province_th": "",
+      "lat": 13.8735026,
+      "lon": 100.7350878,
+      "osm_id": 2997412
+    },
+    {
+      "name_th": "เขตบางนา",
+      "name_en": "Bang Na District",
+      "province_th": "",
+      "lat": 13.6659661,
+      "lon": 100.6165844,
+      "osm_id": 3146412
+    },
+    {
+      "name_th": "เขตมีนบุรี",
+      "name_en": "Min Buri District",
+      "province_th": "",
+      "lat": 13.8110663,
+      "lon": 100.7523762,
+      "osm_id": 3146413
+    },
+    {
+      "name_th": "เขตประเวศ",
+      "name_en": "Prawet District",
+      "province_th": "",
+      "lat": 13.6970035,
+      "lon": 100.6732337,
+      "osm_id": 3146414
+    },
+    {
+      "name_th": "เขตสะพานสูง",
+      "name_en": "Saphan Sung District",
+      "province_th": "",
+      "lat": 13.7653819,
+      "lon": 100.6878636,
+      "osm_id": 3146415
+    },
+    {
+      "name_th": "เขตพระโขนง",
+      "name_en": "Phra Khanong District",
+      "province_th": "",
+      "lat": 13.6923959,
+      "lon": 100.6123532,
+      "osm_id": 3146642
+    },
+    {
+      "name_th": "เขตสวนหลวง",
+      "name_en": "Suan Luang District",
+      "province_th": "",
+      "lat": 13.7253928,
+      "lon": 100.6286635,
+      "osm_id": 3146643
+    },
+    {
+      "name_th": "เขตจอมทอง",
+      "name_en": "Chom Thong District",
+      "province_th": "",
+      "lat": 13.6884954,
+      "lon": 100.4618178,
+      "osm_id": 3147007
+    },
+    {
+      "name_th": "เขตราษฎร์บูรณะ",
+      "name_en": "Rat Burana District",
+      "province_th": "",
+      "lat": 13.6746401,
+      "lon": 100.5010626,
+      "osm_id": 3147008
+    },
+    {
+      "name_th": "เขตทุ่งครุ",
+      "name_en": "Thung Khru District",
+      "province_th": "",
+      "lat": 13.6305889,
+      "lon": 100.4954273,
+      "osm_id": 3147104
+    },
+    {
+      "name_th": "เขตคลองสาน",
+      "name_en": "Khlong San District",
+      "province_th": "",
+      "lat": 13.7222322,
+      "lon": 100.5024532,
+      "osm_id": 3147280
+    },
+    {
+      "name_th": "เขตธนบุรี",
+      "name_en": "Thon Buri District",
+      "province_th": "",
+      "lat": 13.7185881,
+      "lon": 100.4831046,
+      "osm_id": 3147281
+    },
+    {
+      "name_th": "เขตบางบอน",
+      "name_en": "Bang Bon District",
+      "province_th": "",
+      "lat": 13.6571719,
+      "lon": 100.3959077,
+      "osm_id": 3147312
+    },
+    {
+      "name_th": "เขตบางขุนเทียน",
+      "name_en": "Bang Khun Thian District",
+      "province_th": "",
+      "lat": 13.5866773,
+      "lon": 100.4291385,
+      "osm_id": 3147313
+    },
+    {
+      "name_th": "เขตสาทร",
+      "name_en": "Sathon District",
+      "province_th": "",
+      "lat": 13.7134631,
+      "lon": 100.5309011,
+      "osm_id": 3147425
+    },
+    {
+      "name_th": "เขตบางคอแหลม",
+      "name_en": "Bang Kho Laem District",
+      "province_th": "",
+      "lat": 13.6975573,
+      "lon": 100.5104698,
+      "osm_id": 3147455
+    },
+    {
+      "name_th": "เขตยานนาวา",
+      "name_en": "Yan Nawa District",
+      "province_th": "",
+      "lat": 13.6941931,
+      "lon": 100.5359609,
+      "osm_id": 3147456
+    },
+    {
+      "name_th": "เขตลาดกระบัง",
+      "name_en": "Lat Krabang District",
+      "province_th": "",
+      "lat": 13.7449259,
+      "lon": 100.792769,
+      "osm_id": 3147500
+    },
+    {
+      "name_th": "เขตหนองจอก",
+      "name_en": "Nong Chok District",
+      "province_th": "",
+      "lat": 13.8420093,
+      "lon": 100.8629655,
+      "osm_id": 3147501
+    },
+    {
+      "name_th": "อำเภอพระสมุทรเจดีย์",
+      "name_en": "Phra Samut Chedi District",
+      "province_th": "",
+      "lat": 13.5581133,
+      "lon": 100.5194923,
+      "osm_id": 10958328
+    },
+    {
+      "name_th": "อำเภอบางบ่อ",
+      "name_en": "Bang Bo District",
+      "province_th": "",
+      "lat": 13.5872786,
+      "lon": 100.8668002,
+      "osm_id": 11580980
+    },
+    {
+      "name_th": "อำเภอบางเสาธง",
+      "name_en": "Bang Sao Thong District",
+      "province_th": "",
+      "lat": 13.6325937,
+      "lon": 100.81088,
+      "osm_id": 11580981
+    },
+    {
+      "name_th": "อำเภอบางพลี",
+      "name_en": "Bang Phli District",
+      "province_th": "",
+      "lat": 13.6146873,
+      "lon": 100.7113254,
+      "osm_id": 11580982
+    },
+    {
+      "name_th": "อำเภอเมืองสมุทรปราการ",
+      "name_en": "Mueang Samut Prakan District",
+      "province_th": "",
+      "lat": 13.5767582,
+      "lon": 100.6690669,
+      "osm_id": 11580983
+    },
+    {
+      "name_th": "อำเภอพระประแดง",
+      "name_en": "Phra Pradaeng District",
+      "province_th": "",
+      "lat": 13.6526188,
+      "lon": 100.553797,
+      "osm_id": 11580984
+    },
+    {
+      "name_th": "อำเภอนครชัยศรี",
+      "name_en": "Nakhon Chai Si District",
+      "province_th": "",
+      "lat": 13.8137562,
+      "lon": 100.1828793,
+      "osm_id": 18931531
+    },
+    {
+      "name_th": "อำเภอพุทธมณฑล",
+      "name_en": "Phutthamonthon District",
+      "province_th": "",
+      "lat": 13.8340094,
+      "lon": 100.2848758,
+      "osm_id": 18931587
+    },
+    {
+      "name_th": "อำเภอสามพราน",
+      "name_en": "Sam Phran District",
+      "province_th": "",
+      "lat": 13.7259954,
+      "lon": 100.2001972,
+      "osm_id": 18931634
+    },
+    {
+      "name_th": "อำเภอบ้านแพ้ว",
+      "name_en": "Ban Phaeo District",
+      "province_th": "",
+      "lat": 13.5850542,
+      "lon": 100.1300443,
+      "osm_id": 18931677
+    },
+    {
+      "name_th": "อำเภอบ้านโพธิ์",
+      "name_en": "Ban Pho District",
+      "province_th": "",
+      "lat": 13.6260208,
+      "lon": 101.0918887,
+      "osm_id": 18934749
+    },
+    {
+      "name_th": "อำเภอบางคล้า",
+      "name_en": "Bang Khla District",
+      "province_th": "",
+      "lat": 13.7512722,
+      "lon": 101.2030709,
+      "osm_id": 18934775
+    },
+    {
+      "name_th": "อำเภอบางน้ำเปรี้ยว",
+      "name_en": "Bang Nam Priao District",
+      "province_th": "",
+      "lat": 13.869388,
+      "lon": 101.0337075,
+      "osm_id": 18934870
+    },
+    {
+      "name_th": "อำเภอกระทุ่มแบน",
+      "name_en": "Krathum Baen District",
+      "province_th": "",
+      "lat": 13.663689,
+      "lon": 100.2586717,
+      "osm_id": 18934962
+    },
+    {
+      "name_th": "อำเภอบางปะกง",
+      "name_en": "Bang Pakong District",
+      "province_th": "",
+      "lat": 13.5481225,
+      "lon": 100.9614261,
+      "osm_id": 18934985
+    },
+    {
+      "name_th": "อำเภอเมืองสมุทรสาคร",
+      "name_en": "Mueang Samut Sakhon District",
+      "province_th": "",
+      "lat": 13.5330891,
+      "lon": 100.2366264,
+      "osm_id": 18935071
+    },
+    {
+      "name_th": "อำเภอคลองเขื่อน",
+      "name_en": "Khlong Khuean District",
+      "province_th": "",
+      "lat": 13.7746559,
+      "lon": 101.1568317,
+      "osm_id": 18935078
+    },
+    {
+      "name_th": "อำเภอเมืองฉะเชิงเทรา",
+      "name_en": "Mueang Chachoengsao District",
+      "province_th": "",
+      "lat": 13.7176043,
+      "lon": 100.9996183,
+      "osm_id": 18935187
+    },
+    {
+      "name_th": "อำเภอพนมสารคาม",
+      "name_en": "Phanom Sarakham District",
+      "province_th": "",
+      "lat": 13.7343742,
+      "lon": 101.4365992,
+      "osm_id": 18935234
+    },
+    {
+      "name_th": "อำเภอแปลงยาว",
+      "name_en": "Plaeng Yao District",
+      "province_th": "",
+      "lat": 13.550025,
+      "lon": 101.3531143,
+      "osm_id": 18935353
+    },
+    {
+      "name_th": "อำเภอราชสาส์น",
+      "name_en": "Ratchasan District",
+      "province_th": "",
+      "lat": 13.7715249,
+      "lon": 101.2866199,
+      "osm_id": 18935464
+    },
+    {
+      "name_th": "อำเภอสนามชัยเขต",
+      "name_en": "Sanam Chai Khet District",
+      "province_th": "",
+      "lat": 13.6110191,
+      "lon": 101.6538179,
+      "osm_id": 18935568
+    },
+    {
+      "name_th": "อำเภอท่าตะเกียบ",
+      "name_en": "Tha Takiap District",
+      "province_th": "",
+      "lat": 13.3892671,
+      "lon": 101.7392177,
+      "osm_id": 18935739
+    },
+    {
+      "name_th": "อำเภอบ้านสร้าง",
+      "name_en": "Ban Sang District",
+      "province_th": "",
+      "lat": 13.9568646,
+      "lon": 101.2600967,
+      "osm_id": 18955945
+    },
+    {
+      "name_th": "อำเภอเมืองปราจีนบุรี",
+      "name_en": "Mueang Prachin Buri District",
+      "province_th": "",
+      "lat": 14.1102441,
+      "lon": 101.3864642,
+      "osm_id": 18956090
+    },
+    {
+      "name_th": "อำเภอศรีมหาโพธิ",
+      "name_en": "Si Maha Phot District",
+      "province_th": "",
+      "lat": 13.876247,
+      "lon": 101.5403459,
+      "osm_id": 18959656
+    },
+    {
+      "name_th": "อำเภอศรีมโหสถ",
+      "name_en": "Si Mahosot District",
+      "province_th": "",
+      "lat": 13.8671667,
+      "lon": 101.4433437,
+      "osm_id": 18959665
+    },
+    {
+      "name_th": "อำเภอองครักษ์",
+      "name_en": "Ongkharak District",
+      "province_th": "",
+      "lat": 14.1021576,
+      "lon": 101.0434711,
+      "osm_id": 18972581
+    },
+    {
+      "name_th": "อำเภอศรีราชา",
+      "name_en": "Si Racha District",
+      "province_th": "",
+      "lat": 13.1387443,
+      "lon": 101.0499688,
+      "osm_id": 18994506
+    },
+    {
+      "name_th": "อำเภอพนัสนิคม",
+      "name_en": "Phanat Nikhom District",
+      "province_th": "",
+      "lat": 13.4516146,
+      "lon": 101.240074,
+      "osm_id": 18996916
+    },
+    {
+      "name_th": "อำเภอพานทอง",
+      "name_en": "Phan Thong District",
+      "province_th": "",
+      "lat": 13.4648081,
+      "lon": 101.0743569,
+      "osm_id": 18997026
+    },
+    {
+      "name_th": "อำเภอหนองใหญ่",
+      "name_en": "Nong Yai District",
+      "province_th": "",
+      "lat": 13.1534818,
+      "lon": 101.3873244,
+      "osm_id": 18997074
+    },
+    {
+      "name_th": "อำเภอเมืองชลบุรี",
+      "name_en": "Mueang Chon Buri District",
+      "province_th": "",
+      "lat": 13.351313,
+      "lon": 100.9873695,
+      "osm_id": 18997107
+    },
+    {
+      "name_th": "อำเภอเกาะสีชัง",
+      "name_en": "Ko Si Chang District",
+      "province_th": "",
+      "lat": 13.1490559,
+      "lon": 100.8163053,
+      "osm_id": 18997142
+    },
+    {
+      "name_th": "อำเภอบ้านบึง",
+      "name_en": "Ban Bueng District",
+      "province_th": "",
+      "lat": 13.2403499,
+      "lon": 101.1797393,
+      "osm_id": 19051921
+    },
+    {
+      "name_th": "อำเภอบางละมุง",
+      "name_en": "Bang Lamung District",
+      "province_th": "",
+      "lat": 12.9211703,
+      "lon": 100.8752643,
+      "osm_id": 19051992
+    },
+    {
+      "name_th": "อำเภอบ่อทอง",
+      "name_en": "Bo Thong District",
+      "province_th": "",
+      "lat": 13.2309867,
+      "lon": 101.4932474,
+      "osm_id": 19052120
+    },
+    {
+      "name_th": "อำเภอเกาะจันทร์",
+      "name_en": "Ko Chan District",
+      "province_th": "",
+      "lat": 13.4034742,
+      "lon": 101.4099894,
+      "osm_id": 19052334
+    }
+  ],
+  "Surin": [
+    {
+      "name_th": "อำเภอเขวาสินรินทร์",
+      "name_en": "Khwao Sinrin District",
+      "province_th": "",
+      "lat": 15.0133328,
+      "lon": 103.6151698,
+      "osm_id": 17816949
+    },
+    {
+      "name_th": "อำเภอกระสัง",
+      "name_en": "Krasang District",
+      "province_th": "",
+      "lat": 14.9431151,
+      "lon": 103.3107201,
+      "osm_id": 18931300
+    },
+    {
+      "name_th": "อำเภอเกษตรวิสัย",
+      "name_en": "Kaset Wisai District",
+      "province_th": "",
+      "lat": 15.6035015,
+      "lon": 103.5505505,
+      "osm_id": 18935897
+    },
+    {
+      "name_th": "อำเภอหนองฮี",
+      "name_en": "Nong Hi District",
+      "province_th": "",
+      "lat": 15.5801763,
+      "lon": 104.0099533,
+      "osm_id": 18936275
+    },
+    {
+      "name_th": "อำเภอโพนทราย",
+      "name_en": "Phon Sai District",
+      "province_th": "",
+      "lat": 15.4820437,
+      "lon": 103.9428895,
+      "osm_id": 18936859
+    },
+    {
+      "name_th": "อำเภอบึงบูรพ์",
+      "name_en": "Bueng Bun District",
+      "province_th": "",
+      "lat": 15.3080158,
+      "lon": 104.0625554,
+      "osm_id": 18954743
+    },
+    {
+      "name_th": "อำเภอห้วยทับทัน",
+      "name_en": "Huai Thap Than District",
+      "province_th": "",
+      "lat": 15.0319214,
+      "lon": 104.0259698,
+      "osm_id": 18954856
+    },
+    {
+      "name_th": "อำเภอสุวรรณภูมิ",
+      "name_en": "Suwannaphum District",
+      "province_th": "",
+      "lat": 15.6064996,
+      "lon": 103.804529,
+      "osm_id": 18955158
+    },
+    {
+      "name_th": "อำเภอขุขันธ์",
+      "name_en": "Khukhan District",
+      "province_th": "",
+      "lat": 14.7008371,
+      "lon": 104.1559616,
+      "osm_id": 18955295
+    },
+    {
+      "name_th": "อำเภอเมืองจันทร์",
+      "name_en": "Mueang Chan District",
+      "province_th": "",
+      "lat": 15.1911128,
+      "lon": 104.03011,
+      "osm_id": 18955426
+    },
+    {
+      "name_th": "อำเภอโพธิ์ศรีสุวรรณ",
+      "name_en": "Pho Si Suwan District",
+      "province_th": "",
+      "lat": 15.2278195,
+      "lon": 104.0500842,
+      "osm_id": 18955961
+    },
+    {
+      "name_th": "อำเภอภูสิงห์",
+      "name_en": "Phu Sing District",
+      "province_th": "",
+      "lat": 14.4915692,
+      "lon": 104.1550913,
+      "osm_id": 18956128
+    },
+    {
+      "name_th": "อำเภอปรางค์กู่",
+      "name_en": "Prang Ku District",
+      "province_th": "",
+      "lat": 14.8462866,
+      "lon": 104.0207365,
+      "osm_id": 18956165
+    },
+    {
+      "name_th": "อำเภอบัวเชด",
+      "name_en": "Buachet District",
+      "province_th": "",
+      "lat": 14.4844034,
+      "lon": 103.9707965,
+      "osm_id": 18972438
+    },
+    {
+      "name_th": "อำเภอจอมพระ",
+      "name_en": "Chom Phra District",
+      "province_th": "",
+      "lat": 15.1334637,
+      "lon": 103.5783832,
+      "osm_id": 18972499
+    },
+    {
+      "name_th": "อำเภอกาบเชิง",
+      "name_en": "Kap Choeng District",
+      "province_th": "",
+      "lat": 14.4685614,
+      "lon": 103.5716959,
+      "osm_id": 18972641
+    },
+    {
+      "name_th": "อำเภอลำดวน",
+      "name_en": "Lamduan District",
+      "province_th": "",
+      "lat": 14.7164084,
+      "lon": 103.6931933,
+      "osm_id": 18975245
+    },
+    {
+      "name_th": "อำเภอเมืองสุรินทร์",
+      "name_en": "Mueang Surin District",
+      "province_th": "",
+      "lat": 14.9142947,
+      "lon": 103.4862644,
+      "osm_id": 18975352
+    },
+    {
+      "name_th": "อำเภอโนนนารายณ์",
+      "name_en": "Non Narai District",
+      "province_th": "",
+      "lat": 15.1992176,
+      "lon": 103.914747,
+      "osm_id": 18975416
+    },
+    {
+      "name_th": "อำเภอพนมดงรัก",
+      "name_en": "Phanom Dong Rak District",
+      "province_th": "",
+      "lat": 14.4333071,
+      "lon": 103.3115833,
+      "osm_id": 18975589
+    },
+    {
+      "name_th": "อำเภอปราสาท",
+      "name_en": "Prasat District",
+      "province_th": "",
+      "lat": 14.6289206,
+      "lon": 103.420351,
+      "osm_id": 18975840
+    },
+    {
+      "name_th": "อำเภอรัตนบุรี",
+      "name_en": "Rattanaburi District",
+      "province_th": "",
+      "lat": 15.3350438,
+      "lon": 103.9256836,
+      "osm_id": 18975899
+    },
+    {
+      "name_th": "อำเภอสำโรงทาบ",
+      "name_en": "Samrong Thap District",
+      "province_th": "",
+      "lat": 15.033114,
+      "lon": 103.93515,
+      "osm_id": 18975998
+    },
+    {
+      "name_th": "อำเภอสังขะ",
+      "name_en": "Sangkha District",
+      "province_th": "",
+      "lat": 14.5423503,
+      "lon": 103.8392812,
+      "osm_id": 18976059
+    },
+    {
+      "name_th": "อำเภอสนม",
+      "name_en": "Sanom District",
+      "province_th": "",
+      "lat": 15.1962701,
+      "lon": 103.782341,
+      "osm_id": 18976097
+    },
+    {
+      "name_th": "อำเภอศรีณรงค์",
+      "name_en": "Si Narong District",
+      "province_th": "",
+      "lat": 14.7935362,
+      "lon": 103.8816896,
+      "osm_id": 18976223
+    },
+    {
+      "name_th": "อำเภอศีขรภูมิ",
+      "name_en": "Sikhoraphum District",
+      "province_th": "",
+      "lat": 14.9514236,
+      "lon": 103.7947818,
+      "osm_id": 18976251
+    },
+    {
+      "name_th": "อำเภอท่าตูม",
+      "name_en": "Tha Tum District",
+      "province_th": "",
+      "lat": 15.310772,
+      "lon": 103.6289773,
+      "osm_id": 18976439
+    }
+  ],
+  "Buriram": [
+    {
+      "name_th": "อำเภอห้วยราช",
+      "name_en": "Huai Rat District",
+      "province_th": "",
+      "lat": 15.0059033,
+      "lon": 103.23672,
+      "osm_id": 17817574
+    },
+    {
+      "name_th": "อำเภอเมืองบุรีรัมย์",
+      "name_en": "Mueang Buri Ram District",
+      "province_th": "",
+      "lat": 14.9482605,
+      "lon": 103.0618224,
+      "osm_id": 17817575
+    },
+    {
+      "name_th": "อำเภอบ้านด่าน",
+      "name_en": "Ban Dan District",
+      "province_th": "",
+      "lat": 15.1390198,
+      "lon": 103.1934993,
+      "osm_id": 17817576
+    },
+    {
+      "name_th": "อำเภอเฉลิมพระเกียรติ",
+      "name_en": "Chaloem Phra Kiat District",
+      "province_th": "",
+      "lat": 14.9936795,
+      "lon": 102.301677,
+      "osm_id": 17824172
+    },
+    {
+      "name_th": "อำเภอบ้านกรวด",
+      "name_en": "Ban Kruat District",
+      "province_th": "",
+      "lat": 14.4154751,
+      "lon": 103.1018059,
+      "osm_id": 18922186
+    },
+    {
+      "name_th": "อำเภอบ้านใหม่ไชยพจน์",
+      "name_en": "Ban Mai Chaiyaphot District",
+      "province_th": "",
+      "lat": 15.5713138,
+      "lon": 102.8511137,
+      "osm_id": 18929074
+    },
+    {
+      "name_th": "อำเภอเฉลิมพระเกียรติ",
+      "name_en": "Chaloem Phra Kiat District",
+      "province_th": "",
+      "lat": 14.577211,
+      "lon": 102.8721119,
+      "osm_id": 18929095
+    },
+    {
+      "name_th": "อำเภอชำนิ",
+      "name_en": "Chamni District",
+      "province_th": "",
+      "lat": 14.787235,
+      "lon": 102.8139123,
+      "osm_id": 18929146
+    },
+    {
+      "name_th": "อำเภอแคนดง",
+      "name_en": "Khaen Dong District",
+      "province_th": "",
+      "lat": 15.3245661,
+      "lon": 103.1332476,
+      "osm_id": 18929511
+    },
+    {
+      "name_th": "อำเภอคูเมือง",
+      "name_en": "Khu Mueang District",
+      "province_th": "",
+      "lat": 15.282711,
+      "lon": 103.0513332,
+      "osm_id": 18929921
+    },
+    {
+      "name_th": "อำเภอละหานทราย",
+      "name_en": "Lahan Sai District",
+      "province_th": "",
+      "lat": 14.3247461,
+      "lon": 102.8903806,
+      "osm_id": 18931446
+    },
+    {
+      "name_th": "อำเภอลำปลายมาศ",
+      "name_en": "Lam Plai Mat District",
+      "province_th": "",
+      "lat": 15.0186019,
+      "lon": 102.858455,
+      "osm_id": 18931507
+    },
+    {
+      "name_th": "อำเภอนาโพธิ์",
+      "name_en": "Na Pho District",
+      "province_th": "",
+      "lat": 15.6991959,
+      "lon": 102.9411736,
+      "osm_id": 18931675
+    },
+    {
+      "name_th": "อำเภอนางรอง",
+      "name_en": "Nang Rong District",
+      "province_th": "",
+      "lat": 14.6278595,
+      "lon": 102.7828509,
+      "osm_id": 18931706
+    },
+    {
+      "name_th": "อำเภอโนนดินแดง",
+      "name_en": "Non Din Daeng District",
+      "province_th": "",
+      "lat": 14.2537192,
+      "lon": 102.6307785,
+      "osm_id": 18931765
+    },
+    {
+      "name_th": "อำเภอโนนสุวรรณ",
+      "name_en": "Non Suwan District",
+      "province_th": "",
+      "lat": 14.564748,
+      "lon": 102.5699303,
+      "osm_id": 18931771
+    },
+    {
+      "name_th": "อำเภอหนองหงส์",
+      "name_en": "Nong Hong District",
+      "province_th": "",
+      "lat": 14.8754179,
+      "lon": 102.673346,
+      "osm_id": 18931790
+    },
+    {
+      "name_th": "อำเภอหนองกี่",
+      "name_en": "Nong Ki District",
+      "province_th": "",
+      "lat": 14.7123121,
+      "lon": 102.5839973,
+      "osm_id": 18931821
+    },
+    {
+      "name_th": "อำเภอปะคำ",
+      "name_en": "Pakham District",
+      "province_th": "",
+      "lat": 14.3975386,
+      "lon": 102.6727772,
+      "osm_id": 18934356
+    },
+    {
+      "name_th": "อำเภอพลับพลาชัย",
+      "name_en": "Phlapphla Chai District",
+      "province_th": "",
+      "lat": 14.7222882,
+      "lon": 103.1741502,
+      "osm_id": 18934392
+    },
+    {
+      "name_th": "อำเภอพุทไธสง",
+      "name_en": "Phutthaisong District",
+      "province_th": "",
+      "lat": 15.5466038,
+      "lon": 102.97686,
+      "osm_id": 18934527
+    },
+    {
+      "name_th": "อำเภอประโคนชัย",
+      "name_en": "Prakhon Chai District",
+      "province_th": "",
+      "lat": 14.6253034,
+      "lon": 103.0993413,
+      "osm_id": 18934569
+    },
+    {
+      "name_th": "อำเภอสตึก",
+      "name_en": "Satuek District",
+      "province_th": "",
+      "lat": 15.2233977,
+      "lon": 103.3304716,
+      "osm_id": 18934621
+    },
+    {
+      "name_th": "อำเภอปทุมรัตต์",
+      "name_en": "Pathum Rat District",
+      "province_th": "",
+      "lat": 15.6259698,
+      "lon": 103.3806635,
+      "osm_id": 18936570
+    },
+    {
+      "name_th": "อำเภอนาดูน",
+      "name_en": "Na Dun District",
+      "province_th": "",
+      "lat": 15.7185687,
+      "lon": 103.234075,
+      "osm_id": 18971922
+    },
+    {
+      "name_th": "อำเภอพยัคฆภูมิพิสัย",
+      "name_en": "Phayakkhaphum Phisai District",
+      "province_th": "",
+      "lat": 15.5312899,
+      "lon": 103.2359101,
+      "osm_id": 18971964
+    },
+    {
+      "name_th": "อำเภอยางสีสุราช",
+      "name_en": "Yang Sisurat District",
+      "province_th": "",
+      "lat": 15.6524494,
+      "lon": 103.0939018,
+      "osm_id": 18971980
+    },
+    {
+      "name_th": "อำเภอชุมพลบุรี",
+      "name_en": "Chumphon Buri District",
+      "province_th": "",
+      "lat": 15.3825735,
+      "lon": 103.3435507,
+      "osm_id": 18972550
+    },
+    {
+      "name_th": "อำเภอจักราช",
+      "name_en": "Chakkarat District",
+      "province_th": "",
+      "lat": 14.9680398,
+      "lon": 102.439921,
+      "osm_id": 18975752
+    },
+    {
+      "name_th": "อำเภอโชคชัย",
+      "name_en": "Chok Chai District",
+      "province_th": "",
+      "lat": 14.7545545,
+      "lon": 102.212042,
+      "osm_id": 18975902
+    },
+    {
+      "name_th": "อำเภอชุมพวง",
+      "name_en": "Chum Phuang District",
+      "province_th": "",
+      "lat": 15.2664953,
+      "lon": 102.7434539,
+      "osm_id": 18975990
+    },
+    {
+      "name_th": "อำเภอห้วยแถลง",
+      "name_en": "Huai Thalaeng District",
+      "province_th": "",
+      "lat": 15.0507624,
+      "lon": 102.6444432,
+      "osm_id": 18976077
+    },
+    {
+      "name_th": "อำเภอลำทะเมนชัย",
+      "name_en": "Lam Thamenchai District",
+      "province_th": "",
+      "lat": 15.2856925,
+      "lon": 102.9055891,
+      "osm_id": 18976244
+    },
+    {
+      "name_th": "อำเภอเมืองยาง",
+      "name_en": "Mueang Yang District",
+      "province_th": "",
+      "lat": 15.4424026,
+      "lon": 102.8835009,
+      "osm_id": 18976285
+    },
+    {
+      "name_th": "อำเภอโนนแดง",
+      "name_en": "Non Daeng District",
+      "province_th": "",
+      "lat": 15.4536606,
+      "lon": 102.5210608,
+      "osm_id": 18976416
+    },
+    {
+      "name_th": "อำเภอโนนสูง",
+      "name_en": "Non Sung District",
+      "province_th": "",
+      "lat": 15.2068791,
+      "lon": 102.2780187,
+      "osm_id": 18976448
+    },
+    {
+      "name_th": "อำเภอหนองบุญมาก",
+      "name_en": "Nong Bun Mak District",
+      "province_th": "",
+      "lat": 14.7241199,
+      "lon": 102.3692975,
+      "osm_id": 18976466
+    },
+    {
+      "name_th": "อำเภอพิมาย",
+      "name_en": "Phimai District",
+      "province_th": "",
+      "lat": 15.2769812,
+      "lon": 102.5394822,
+      "osm_id": 18976719
+    },
+    {
+      "name_th": "อำเภอประทาย",
+      "name_en": "Prathai District",
+      "province_th": "",
+      "lat": 15.5795275,
+      "lon": 102.7164086,
+      "osm_id": 18976830
+    },
+    {
+      "name_th": "อำเภอสีดา",
+      "name_en": "Sida District",
+      "province_th": "",
+      "lat": 15.5658878,
+      "lon": 102.5420252,
+      "osm_id": 18976841
+    },
+    {
+      "name_th": "อำเภอเสิงสาง",
+      "name_en": "Soeng Sang District",
+      "province_th": "",
+      "lat": 14.3796057,
+      "lon": 102.5208728,
+      "osm_id": 18988567
+    }
+  ],
+  "Phitsanulok": [
+    {
+      "name_th": "อำเภอคลองขลุง",
+      "name_en": "Khlong Khlung District",
+      "province_th": "",
+      "lat": 16.2351106,
+      "lon": 99.6860228,
+      "osm_id": 18324323
+    },
+    {
+      "name_th": "อำเภอทรายทองวัฒนา",
+      "name_en": "Sai Thong Watthana District",
+      "province_th": "",
+      "lat": 16.2999447,
+      "lon": 99.8800531,
+      "osm_id": 18337613
+    },
+    {
+      "name_th": "อำเภอบึงสามัคคี",
+      "name_en": "Bueng Samakkhi District",
+      "province_th": "",
+      "lat": 16.2299531,
+      "lon": 99.9553893,
+      "osm_id": 18337683
+    },
+    {
+      "name_th": "อำเภอไทรงาม",
+      "name_en": "Sai Ngam District",
+      "province_th": "",
+      "lat": 16.444702,
+      "lon": 99.8688829,
+      "osm_id": 18338444
+    },
+    {
+      "name_th": "อำเภอลานกระบือ",
+      "name_en": "Lan Krabue District",
+      "province_th": "",
+      "lat": 16.6160554,
+      "lon": 99.8788185,
+      "osm_id": 18338574
+    },
+    {
+      "name_th": "อำเภอพรานกระต่าย",
+      "name_en": "Phran Kratai District",
+      "province_th": "",
+      "lat": 16.7150852,
+      "lon": 99.5260168,
+      "osm_id": 18343166
+    },
+    {
+      "name_th": "อำเภอเมืองกำแพงเพชร",
+      "name_en": "Mueang Kamphaeng Phet District",
+      "province_th": "",
+      "lat": 16.4198881,
+      "lon": 99.5002471,
+      "osm_id": 18343549
+    },
+    {
+      "name_th": "อำเภอบึงนาราง",
+      "name_en": "Bueng Na Rang District",
+      "province_th": "",
+      "lat": 16.1731689,
+      "lon": 100.1424539,
+      "osm_id": 18478027
+    },
+    {
+      "name_th": "อำเภอโพธิ์ประทับช้าง",
+      "name_en": "Pho Prathap Chang District",
+      "province_th": "",
+      "lat": 16.3208212,
+      "lon": 100.1760516,
+      "osm_id": 18478044
+    },
+    {
+      "name_th": "อำเภอสามง่าม",
+      "name_en": "Sam Ngam District",
+      "province_th": "",
+      "lat": 16.4806484,
+      "lon": 100.120097,
+      "osm_id": 18478241
+    },
+    {
+      "name_th": "อำเภอวชิรบารมี",
+      "name_en": "Wachirabarami District",
+      "province_th": "",
+      "lat": 16.5245392,
+      "lon": 100.094928,
+      "osm_id": 18478284
+    },
+    {
+      "name_th": "อำเภอลับแล",
+      "name_en": "Laplae District",
+      "province_th": "",
+      "lat": 17.6575735,
+      "lon": 99.9990481,
+      "osm_id": 18918398
+    },
+    {
+      "name_th": "อำเภอเมืองอุตรดิตถ์",
+      "name_en": "Mueang Uttaradit District",
+      "province_th": "",
+      "lat": 17.685206,
+      "lon": 100.2039711,
+      "osm_id": 18918456
+    },
+    {
+      "name_th": "อำเภอพิชัย",
+      "name_en": "Phichai District",
+      "province_th": "",
+      "lat": 17.2913795,
+      "lon": 100.1257153,
+      "osm_id": 18918535
+    },
+    {
+      "name_th": "อำเภอทองแสนขัน",
+      "name_en": "Thong Saen Khan District",
+      "province_th": "",
+      "lat": 17.4967713,
+      "lon": 100.4221215,
+      "osm_id": 18918607
+    },
+    {
+      "name_th": "อำเภอตรอน",
+      "name_en": "Tron District",
+      "province_th": "",
+      "lat": 17.4690746,
+      "lon": 100.0914467,
+      "osm_id": 18918628
+    },
+    {
+      "name_th": "อำเภอบ้านด่านลานหอย",
+      "name_en": "Ban Dan Lan Hoi District",
+      "province_th": "",
+      "lat": 17.0275477,
+      "lon": 99.4794301,
+      "osm_id": 18971721
+    },
+    {
+      "name_th": "อำเภอคีรีมาศ",
+      "name_en": "Khiri Mat District",
+      "province_th": "",
+      "lat": 16.8256571,
+      "lon": 99.7479673,
+      "osm_id": 18971754
+    },
+    {
+      "name_th": "อำเภอกงไกรลาศ",
+      "name_en": "Kong Krailat District",
+      "province_th": "",
+      "lat": 16.9417237,
+      "lon": 99.9758313,
+      "osm_id": 18971830
+    },
+    {
+      "name_th": "อำเภอเมืองสุโขทัย",
+      "name_en": "Mueang Sukhothai District",
+      "province_th": "",
+      "lat": 17.014753,
+      "lon": 99.7902347,
+      "osm_id": 18971898
+    },
+    {
+      "name_th": "อำเภอสวรรคโลก",
+      "name_en": "Sawankhalok District",
+      "province_th": "",
+      "lat": 17.3283936,
+      "lon": 99.8246007,
+      "osm_id": 18971905
+    },
+    {
+      "name_th": "อำเภอศรีนคร",
+      "name_en": "Si Nakhon District",
+      "province_th": "",
+      "lat": 17.3859963,
+      "lon": 99.9694684,
+      "osm_id": 18971954
+    },
+    {
+      "name_th": "อำเภอศรีสำโรง",
+      "name_en": "Si Samrong District",
+      "province_th": "",
+      "lat": 17.1766423,
+      "lon": 99.7218029,
+      "osm_id": 18972082
+    },
+    {
+      "name_th": "อำเภอทุ่งเสลี่ยม",
+      "name_en": "Thung Saliam District",
+      "province_th": "",
+      "lat": 17.3768515,
+      "lon": 99.5655843,
+      "osm_id": 18972277
+    },
+    {
+      "name_th": "อำเภอบรรพตพิสัย",
+      "name_en": "Banphot Phisai District",
+      "province_th": "",
+      "lat": 16.0147619,
+      "lon": 99.9840356,
+      "osm_id": 18988764
+    },
+    {
+      "name_th": "อำเภอบางมูลนาก",
+      "name_en": "Bang Mun Nak District",
+      "province_th": "",
+      "lat": 16.044461,
+      "lon": 100.4214127,
+      "osm_id": 18993725
+    },
+    {
+      "name_th": "อำเภอเมืองพิจิตร",
+      "name_en": "Mueang Phichit District",
+      "province_th": "",
+      "lat": 16.4029293,
+      "lon": 100.3779329,
+      "osm_id": 18993782
+    },
+    {
+      "name_th": "อำเภอโพทะเล",
+      "name_en": "Pho Thale District",
+      "province_th": "",
+      "lat": 16.0594957,
+      "lon": 100.2404682,
+      "osm_id": 18993849
+    },
+    {
+      "name_th": "อำเภอสากเหล็ก",
+      "name_en": "Sak Lek District",
+      "province_th": "",
+      "lat": 16.5093464,
+      "lon": 100.4978698,
+      "osm_id": 18993893
+    },
+    {
+      "name_th": "อำเภอทับคล้อ",
+      "name_en": "Thap Khlo District",
+      "province_th": "",
+      "lat": 16.1919601,
+      "lon": 100.6029322,
+      "osm_id": 18993938
+    },
+    {
+      "name_th": "อำเภอตะพานหิน",
+      "name_en": "Taphan Hin District",
+      "province_th": "",
+      "lat": 16.1993102,
+      "lon": 100.417253,
+      "osm_id": 18993959
+    },
+    {
+      "name_th": "อำเภอวังทรายพูน",
+      "name_en": "Wang Sai Phun District",
+      "province_th": "",
+      "lat": 16.3804159,
+      "lon": 100.5190343,
+      "osm_id": 18993974
+    },
+    {
+      "name_th": "อำเภอบางกระทุ่ม",
+      "name_en": "Bang Krathum District",
+      "province_th": "",
+      "lat": 16.6139152,
+      "lon": 100.3499125,
+      "osm_id": 18993990
+    },
+    {
+      "name_th": "อำเภอชาติตระการ",
+      "name_en": "Chat Trakan District",
+      "province_th": "",
+      "lat": 17.4216161,
+      "lon": 100.689934,
+      "osm_id": 18994023
+    },
+    {
+      "name_th": "อำเภอเมืองพิษณุโลก",
+      "name_en": "Mueang Phitsanulok District",
+      "province_th": "",
+      "lat": 16.8045729,
+      "lon": 100.3069904,
+      "osm_id": 18994043
+    },
+    {
+      "name_th": "อำเภอนครไทย",
+      "name_en": "Nakhon Thai District",
+      "province_th": "",
+      "lat": 17.1299422,
+      "lon": 100.8531974,
+      "osm_id": 18994078
+    },
+    {
+      "name_th": "อำเภอเนินมะปราง",
+      "name_en": "Noen Maprang District",
+      "province_th": "",
+      "lat": 16.557208,
+      "lon": 100.7218668,
+      "osm_id": 18994126
+    },
+    {
+      "name_th": "อำเภอพรหมพิราม",
+      "name_en": "Phrom Phiram District",
+      "province_th": "",
+      "lat": 17.0651477,
+      "lon": 100.1389162,
+      "osm_id": 18994188
+    },
+    {
+      "name_th": "อำเภอวังทอง",
+      "name_en": "Wang Thong District",
+      "province_th": "",
+      "lat": 16.8500262,
+      "lon": 100.6214228,
+      "osm_id": 18994261
+    },
+    {
+      "name_th": "อำเภอวัดโบสถ์",
+      "name_en": "Wat Bot District",
+      "province_th": "",
+      "lat": 17.1603787,
+      "lon": 100.3924361,
+      "osm_id": 18994274
+    },
+    {
+      "name_th": "อำเภอชนแดน",
+      "name_en": "Chon Daen District",
+      "province_th": "",
+      "lat": 16.1121224,
+      "lon": 100.8136432,
+      "osm_id": 18994345
+    },
+    {
+      "name_th": "อำเภอเขาค้อ",
+      "name_en": "Khao Kho District",
+      "province_th": "",
+      "lat": 16.6869355,
+      "lon": 100.9747865,
+      "osm_id": 18994437
+    },
+    {
+      "name_th": "อำเภอวังโป่ง",
+      "name_en": "Wang Pong District",
+      "province_th": "",
+      "lat": 16.3492457,
+      "lon": 100.8217384,
+      "osm_id": 18996795
+    },
+    {
+      "name_th": "อำเภอบางระกำ",
+      "name_en": "Bang Rakam District",
+      "province_th": "",
+      "lat": 16.7438174,
+      "lon": 100.039789,
+      "osm_id": 19096932
+    }
+  ],
+  "Chiang Rai": [
+    {
+      "name_th": "อำเภอเมืองพะเยา",
+      "name_en": "Mueang Phayao District",
+      "province_th": "",
+      "lat": 19.1508202,
+      "lon": 99.8625277,
+      "osm_id": 3427220
+    },
+    {
+      "name_th": "อำเภอแม่สาย",
+      "name_en": "Mae Sai District",
+      "province_th": "",
+      "lat": 20.3612462,
+      "lon": 99.9234443,
+      "osm_id": 15652307
+    },
+    {
+      "name_th": "อำเภอเชียงแสน",
+      "name_en": "Chiang Saen District",
+      "province_th": "",
+      "lat": 20.2906178,
+      "lon": 100.1344398,
+      "osm_id": 15652433
+    },
+    {
+      "name_th": "อำเภอแม่ฟ้าหลวง",
+      "name_en": "Mae Fa Luang District",
+      "province_th": "",
+      "lat": 20.250524,
+      "lon": 99.6482597,
+      "osm_id": 15652513
+    },
+    {
+      "name_th": "อำเภอแม่จัน",
+      "name_en": "Mae Chan District",
+      "province_th": "",
+      "lat": 20.1644087,
+      "lon": 99.7896408,
+      "osm_id": 15654572
+    },
+    {
+      "name_th": "อำเภอดอยหลวง",
+      "name_en": "Doi Luang District",
+      "province_th": "",
+      "lat": 20.1406503,
+      "lon": 100.1591805,
+      "osm_id": 15654590
+    },
+    {
+      "name_th": "อำเภอเชียงคำ",
+      "name_en": "Chiang Kham District",
+      "province_th": "",
+      "lat": 19.4839,
+      "lon": 100.3728081,
+      "osm_id": 18906272
+    },
+    {
+      "name_th": "อำเภอจุน",
+      "name_en": "Chun District",
+      "province_th": "",
+      "lat": 19.3545757,
+      "lon": 100.157581,
+      "osm_id": 18906314
+    },
+    {
+      "name_th": "อำเภอดอกคำใต้",
+      "name_en": "Dok Khamtai District",
+      "province_th": "",
+      "lat": 19.1268098,
+      "lon": 100.0388322,
+      "osm_id": 18906391
+    },
+    {
+      "name_th": "อำเภอแม่ใจ",
+      "name_en": "Mae Chai District",
+      "province_th": "",
+      "lat": 19.3726511,
+      "lon": 99.8012602,
+      "osm_id": 18906445
+    },
+    {
+      "name_th": "อำเภอภูกามยาว",
+      "name_en": "Phu Kamyao District",
+      "province_th": "",
+      "lat": 19.3201814,
+      "lon": 99.9698466,
+      "osm_id": 18906483
+    },
+    {
+      "name_th": "อำเภอภูซาง",
+      "name_en": "Phu Sang District",
+      "province_th": "",
+      "lat": 19.6414028,
+      "lon": 100.3701829,
+      "osm_id": 18906519
+    },
+    {
+      "name_th": "อำเภอปง",
+      "name_en": "Pong District",
+      "province_th": "",
+      "lat": 19.2045391,
+      "lon": 100.3679922,
+      "osm_id": 18906633
+    },
+    {
+      "name_th": "อำเภอวังเหนือ",
+      "name_en": "Wang Nuea District",
+      "province_th": "",
+      "lat": 19.1581433,
+      "lon": 99.6494211,
+      "osm_id": 18955989
+    },
+    {
+      "name_th": "อำเภอไชยปราการ",
+      "name_en": "Chai Prakan District",
+      "province_th": "",
+      "lat": 19.696495,
+      "lon": 99.1771732,
+      "osm_id": 18994462
+    },
+    {
+      "name_th": "อำเภอฝาง",
+      "name_en": "Fang District",
+      "province_th": "",
+      "lat": 19.9094228,
+      "lon": 99.1940155,
+      "osm_id": 18996823
+    },
+    {
+      "name_th": "อำเภอแม่อาย",
+      "name_en": "Mae Ai District",
+      "province_th": "",
+      "lat": 19.9611486,
+      "lon": 99.3491799,
+      "osm_id": 18997092
+    },
+    {
+      "name_th": "อำเภอพร้าว",
+      "name_en": "Phrao District",
+      "province_th": "",
+      "lat": 19.2884364,
+      "lon": 99.209911,
+      "osm_id": 19036206
+    },
+    {
+      "name_th": "อำเภอเวียงป่าเป้า",
+      "name_en": "Wiang Pa Pao District",
+      "province_th": "",
+      "lat": 19.2720527,
+      "lon": 99.4407853,
+      "osm_id": 19051842
+    },
+    {
+      "name_th": "อำเภอแม่สรวย",
+      "name_en": "Mae Suai District",
+      "province_th": "",
+      "lat": 19.7199431,
+      "lon": 99.452616,
+      "osm_id": 19051852
+    },
+    {
+      "name_th": "อำเภอเชียงของ",
+      "name_en": "Chiang Khong District",
+      "province_th": "",
+      "lat": 20.1778255,
+      "lon": 100.336597,
+      "osm_id": 19051857
+    },
+    {
+      "name_th": "อำเภอพาน",
+      "name_en": "Phan District",
+      "province_th": "",
+      "lat": 19.5666484,
+      "lon": 99.7459611,
+      "osm_id": 19051861
+    },
+    {
+      "name_th": "อำเภอขุนตาล",
+      "name_en": "Khun Tan District",
+      "province_th": "",
+      "lat": 19.8835267,
+      "lon": 100.2736888,
+      "osm_id": 19051867
+    },
+    {
+      "name_th": "อำเภอป่าแดด",
+      "name_en": "Pa Daet District",
+      "province_th": "",
+      "lat": 19.5159795,
+      "lon": 99.9886704,
+      "osm_id": 19051869
+    },
+    {
+      "name_th": "อำเภอเวียงแก่น",
+      "name_en": "Wiang Kaen District",
+      "province_th": "",
+      "lat": 20.0154862,
+      "lon": 100.4604886,
+      "osm_id": 19051879
+    },
+    {
+      "name_th": "อำเภอเทิง",
+      "name_en": "Thoeng District",
+      "province_th": "",
+      "lat": 19.691838,
+      "lon": 100.1879664,
+      "osm_id": 19051880
+    },
+    {
+      "name_th": "อำเภอพญาเม็งราย",
+      "name_en": "Phaya Mengrai District",
+      "province_th": "",
+      "lat": 19.8799774,
+      "lon": 100.1520062,
+      "osm_id": 19051902
+    },
+    {
+      "name_th": "อำเภอเมืองเชียงราย",
+      "name_en": "Mueang Chiang Rai District",
+      "province_th": "",
+      "lat": 19.8777623,
+      "lon": 99.7389567,
+      "osm_id": 19051912
+    },
+    {
+      "name_th": "อำเภอเวียงเชียงรุ้ง",
+      "name_en": "Wiang Chiang Rung District",
+      "province_th": "",
+      "lat": 20.0123551,
+      "lon": 100.08297,
+      "osm_id": 19051917
+    },
+    {
+      "name_th": "อำเภอเวียงชัย",
+      "name_en": "Wiang Chai District",
+      "province_th": "",
+      "lat": 19.8621959,
+      "lon": 99.9782846,
+      "osm_id": 19052466
+    },
+    {
+      "name_th": "อำเภอแม่ลาว",
+      "name_en": "Mae Lao District",
+      "province_th": "",
+      "lat": 19.7786715,
+      "lon": 99.7106306,
+      "osm_id": 19052605
+    }
+  ]
+}

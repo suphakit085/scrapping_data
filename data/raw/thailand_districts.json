@@ -1,0 +1,820 @@
+[
+  {
+    "type": "relation",
+    "id": 18934428,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1374152358,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374337053,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1301956025,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1384912192,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374154294,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1301956029,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1301956023,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1301956022,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1072622427,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 282851489,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1072622425,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1370885541,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 104364094,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1072622424,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 123727773,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374337054,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374337055,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374337052,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "fixme": "Please add Thai name for this district.",
+      "name": "อำเภอเมืองขอนแก่น",
+      "name:en": "Mueang Khon Kaen District",
+      "name:th": "อำเภอเมืองขอนแก่น",
+      "short_name": "เมืองขอนแก่น",
+      "type": "boundary",
+      "province": "ขอนแก่น"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18931767,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1374140600,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1371161037,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1371161038,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374161304,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1384904982,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1384904981,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1384904983,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374161305,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374096545,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374154832,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374157438,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองอุบลราชธานี",
+      "name:en": "Mueang Ubon Ratchathani District",
+      "name:th": "อำเภอเมืองอุบลราชธานี",
+      "short_name": "เมืองอุบลราชธานี",
+      "type": "boundary",
+      "province": "อุบลราชธานี"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18955763,
+    "members": [
+      {
+        "type": "way",
+        "ref": 26610096,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 190387798,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 26609854,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 26610107,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 190387799,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 190387801,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 238497959,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 190387804,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 171225413,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1375559755,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1375568801,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1375546454,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1375568802,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1375541657,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 589096410,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 589096409,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1465514558,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1465514559,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 307523298,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 154541319,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองระยอง",
+      "name:en": "Mueang Rayong District",
+      "name:th": "อำเภอเมืองระยอง",
+      "short_name": "เมืองระยอง",
+      "type": "boundary",
+      "wikidata": "Q476074",
+      "wikipedia": "th:อำเภอเมืองระยอง",
+      "province": "ระยอง"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18997107,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1330355798,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 727303514,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1377766754,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1377987391,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1377980737,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1078786370,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 515787245,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1354959435,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1078786369,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1354959437,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1078786366,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 515787244,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1078786365,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1078786364,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองชลบุรี",
+      "name:en": "Mueang Chon Buri District",
+      "name:th": "อำเภอเมืองชลบุรี",
+      "short_name": "เมืองชลบุรี",
+      "type": "boundary",
+      "wikidata": "Q476013",
+      "province": "ชลบุรี"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 19051912,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1381910981,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1157826694,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381910984,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381910980,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381910978,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381910983,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381891522,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381888114,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381884151,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381910982,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1381881283,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 141066705,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1369934106,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองเชียงราย",
+      "name:en": "Mueang Chiang Rai District",
+      "name:th": "อำเภอเมืองเชียงราย",
+      "name:zh-Hans": "清莱直辖县",
+      "short_name": "เมืองเชียงราย",
+      "type": "boundary",
+      "wikidata": "Q476010",
+      "wikipedia": "en:Mueang Chiang Rai district",
+      "province": "เชียงราย"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18929325,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1374050806,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084568,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084569,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084570,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084571,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1373605125,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374080176,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084566,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374084567,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองอุดรธานี",
+      "name:en": "Mueang Udon Thani District",
+      "name:th": "อำเภอเมืองอุดรธานี",
+      "short_name": "เมืองอุดรธานี",
+      "type": "boundary",
+      "wikidata": "Q476110",
+      "wikipedia": "th:อำเภอเมืองอุดรธานี",
+      "province": "อุดรธานี"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18936307,
+    "members": [
+      {
+        "type": "way",
+        "ref": 157701266,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701272,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701277,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701276,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701274,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 447958308,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 447958312,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701265,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 157701270,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1369795577,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374408353,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 889265896,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 890187959,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1369795529,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1374402342,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1369795576,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 890187962,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1469824992,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1462572696,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022634469,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022634470,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1462572697,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1469825425,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 890187963,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022777132,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022777129,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022750647,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022750644,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022750642,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022750643,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1022750639,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองประจวบคีรีขันธ์",
+      "name:en": "Mueang Prachuap Khiri Khan District",
+      "name:th": "อำเภอเมืองประจวบคีรีขันธ์",
+      "short_name": "เมืองประจวบคีรีขันธ์",
+      "type": "boundary",
+      "wikidata": "Q476067",
+      "province": "ประจวบคีรีขันธ์"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 18975352,
+    "members": [
+      {
+        "type": "way",
+        "ref": 1376663324,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376663322,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376480619,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376480618,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376480621,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1300081682,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1300081680,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1300081687,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376466445,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1371164459,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1371164460,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 713684900,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 37019592,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 261816712,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1474820452,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 636823036,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1072622436,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1371164462,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376663323,
+        "role": "outer"
+      },
+      {
+        "type": "way",
+        "ref": 1376658822,
+        "role": "outer"
+      }
+    ],
+    "tags": {
+      "admin_level": "6",
+      "boundary": "administrative",
+      "name": "อำเภอเมืองสุรินทร์",
+      "name:en": "Mueang Surin District",
+      "name:th": "อำเภอเมืองสุรินทร์",
+      "short_name": "เมืองสุรินทร์",
+      "type": "boundary",
+      "province": "สุรินทร์"
+    }
+  }
+]

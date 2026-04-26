@@ -113,7 +113,7 @@ def scrape_dotproperty_trends(output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(final_results, f, ensure_ascii=False, indent=4)
         
-    print(f"Saved deep analytics data to {output_path}")
+    print(f"Saved DotProperty price data to {output_path}")
 
 if __name__ == "__main__":
-    scrape_dotproperty_trends("../data/raw/reic_trends_raw.json")
+    scrape_dotproperty_trends("../data/raw/dotproperty_trends_raw.json")

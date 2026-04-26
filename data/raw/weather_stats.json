@@ -1,0 +1,82 @@
+{
+  "ขอนแก่น": {
+    "max_temp_2023": 42.2,
+    "min_temp_2023": 12.0,
+    "max_rain_2023": 145.4,
+    "avg_temp": 28.5,
+    "annual_rainfall": 40.8,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "อุบลราชธานี": {
+    "max_temp_2023": 41.2,
+    "min_temp_2023": 13.0,
+    "max_rain_2023": 92.9,
+    "avg_temp": 28.5,
+    "annual_rainfall": 75.9,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "ชลบุรี": {
+    "max_temp_2023": 38.0,
+    "min_temp_2023": 18.5,
+    "max_rain_2023": 114.1,
+    "avg_temp": 28.5,
+    "annual_rainfall": 53.1,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "ระยอง": {
+    "max_temp_2023": 36.6,
+    "min_temp_2023": 19.5,
+    "max_rain_2023": 101.8,
+    "avg_temp": 28.5,
+    "annual_rainfall": 127.4,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "อุดรธานี": {
+    "max_temp_2023": 44.1,
+    "min_temp_2023": 9.9,
+    "max_rain_2023": 67.9,
+    "avg_temp": 28.5,
+    "annual_rainfall": 90.4,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "บุรีรัมย์": {
+    "max_temp_2023": 41.4,
+    "min_temp_2023": 11.9,
+    "max_rain_2023": 72.7,
+    "avg_temp": 28.5,
+    "annual_rainfall": 1200.0,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "เชียงราย": {
+    "max_temp_2023": 39.9,
+    "min_temp_2023": 10.3,
+    "max_rain_2023": 92.1,
+    "avg_temp": 28.5,
+    "annual_rainfall": 40.1,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "พิษณุโลก": {
+    "max_temp_2023": 41.0,
+    "min_temp_2023": 13.0,
+    "max_rain_2023": 122.9,
+    "avg_temp": 28.5,
+    "annual_rainfall": 44.0,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "ประจวบคีรีขันธ์": {
+    "max_temp_2023": 39.5,
+    "min_temp_2023": 19.4,
+    "max_rain_2023": 79.5,
+    "avg_temp": 28.5,
+    "annual_rainfall": 70.8,
+    "data_source": "Dynamic TMD API (2026)"
+  },
+  "สุรินทร์": {
+    "max_temp_2023": 41.4,
+    "min_temp_2023": 11.2,
+    "max_rain_2023": 89.5,
+    "avg_temp": 28.5,
+    "annual_rainfall": 51.8,
+    "data_source": "Dynamic TMD API (2026)"
+  }
+}
