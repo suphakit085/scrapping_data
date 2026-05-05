@@ -1262,6 +1262,13 @@
   {
     "province":"ระยอง",
     "amphoe":"ระยอง",
+    "tambon":"มาบตาพุด",
+    "property_type":"Condo",
+    "median_price":1990000.0
+  },
+  {
+    "province":"ระยอง",
+    "amphoe":"ระยอง",
     "tambon":"อภิทาวน์",
     "property_type":"Condo",
     "median_price":1690000.0

@@ -274,14 +274,6 @@
   {
     "province": "ขอนแก่น",
     "amphoe": "ขอนแก่น",
-    "tambon": "ศิลา",
-    "property_type": "Townhome",
-    "price": 1450000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ขอนแก่น",
-    "amphoe": "ขอนแก่น",
     "tambon": "ในเมือง",
     "property_type": "Townhome",
     "price": 1300000.0,
@@ -300,23 +292,15 @@
     "amphoe": "ขอนแก่น",
     "tambon": "ศิลา",
     "property_type": "Townhome",
+    "price": 1450000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ขอนแก่น",
+    "amphoe": "ขอนแก่น",
+    "tambon": "ศิลา",
+    "property_type": "Townhome",
     "price": 1790000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ขอนแก่น",
-    "amphoe": "ขอนแก่น",
-    "tambon": "ในเมือง",
-    "property_type": "Townhome",
-    "price": 1990000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ขอนแก่น",
-    "amphoe": "ขอนแก่น",
-    "tambon": "ในเมือง",
-    "property_type": "Townhome",
-    "price": 1375000.0,
     "source": "Baania"
   },
   {
@@ -341,6 +325,22 @@
     "tambon": "ในเมือง",
     "property_type": "Townhome",
     "price": 1590000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ขอนแก่น",
+    "amphoe": "ขอนแก่น",
+    "tambon": "ในเมือง",
+    "property_type": "Townhome",
+    "price": 1990000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ขอนแก่น",
+    "amphoe": "ขอนแก่น",
+    "tambon": "ในเมือง",
+    "property_type": "Townhome",
+    "price": 1375000.0,
     "source": "Baania"
   },
   {
@@ -385,14 +385,6 @@
   },
   {
     "province": "ขอนแก่น",
-    "amphoe": "เอนทริโอ",
-    "tambon": "ดิ",
-    "property_type": "Condo",
-    "price": 1100000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ขอนแก่น",
     "amphoe": "ทาดิโอ้",
     "tambon": "เดอะ",
     "property_type": "Condo",
@@ -401,18 +393,18 @@
   },
   {
     "province": "ขอนแก่น",
-    "amphoe": "บลิซ",
-    "tambon": "ศุภาลัย",
+    "amphoe": "เอนทริโอ",
+    "tambon": "ดิ",
     "property_type": "Condo",
-    "price": 1710000.0,
+    "price": 1100000.0,
     "source": "Baania"
   },
   {
     "province": "ขอนแก่น",
-    "amphoe": "วิลเลจ",
-    "tambon": "คาสเซีย",
+    "amphoe": "บลิซ",
+    "tambon": "ศุภาลัย",
     "property_type": "Condo",
-    "price": 2150000.0,
+    "price": 1710000.0,
     "source": "Baania"
   },
   {
@@ -426,9 +418,9 @@
   {
     "province": "ขอนแก่น",
     "amphoe": "วิลเลจ",
-    "tambon": "บ้านเพิ่มสุข",
+    "tambon": "คาสเซีย",
     "property_type": "Condo",
-    "price": 1100000.0,
+    "price": 2150000.0,
     "source": "Baania"
   },
   {
@@ -437,6 +429,14 @@
     "tambon": "วี",
     "property_type": "Condo",
     "price": 1990000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ขอนแก่น",
+    "amphoe": "วิลเลจ",
+    "tambon": "บ้านเพิ่มสุข",
+    "property_type": "Condo",
+    "price": 1100000.0,
     "source": "Baania"
   },
   {
@@ -538,17 +538,17 @@
   {
     "province": "ขอนแก่น",
     "amphoe": "ขอนแก่น",
-    "tambon": "บ้านทุ่ม",
+    "tambon": "ในเมือง",
     "property_type": "Condo",
-    "price": 2390000.0,
+    "price": 2490000.0,
     "source": "Baania"
   },
   {
     "province": "ขอนแก่น",
     "amphoe": "ขอนแก่น",
-    "tambon": "ในเมือง",
+    "tambon": "บ้านทุ่ม",
     "property_type": "Condo",
-    "price": 2490000.0,
+    "price": 2390000.0,
     "source": "Baania"
   },
   {
@@ -601,18 +601,18 @@
   },
   {
     "province": "ขอนแก่น",
-    "amphoe": "ชุมแพ",
-    "tambon": "ไชยสอ",
-    "property_type": "Condo",
-    "price": 1890000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ขอนแก่น",
     "amphoe": "พล",
     "tambon": "ลอมคอม",
     "property_type": "Condo",
     "price": 1100000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ขอนแก่น",
+    "amphoe": "ชุมแพ",
+    "tambon": "ไชยสอ",
+    "property_type": "Condo",
+    "price": 1890000.0,
     "source": "Baania"
   },
   {
@@ -625,18 +625,18 @@
   },
   {
     "province": "อุบลราชธานี",
-    "amphoe": "วิลล์",
-    "tambon": "ศุภาลัย",
-    "property_type": "House",
-    "price": 2650000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "อุบลราชธานี",
     "amphoe": "โมด้า",
     "tambon": "ศุภาลัย",
     "property_type": "House",
     "price": 3660000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "อุบลราชธานี",
+    "amphoe": "วิลล์",
+    "tambon": "ศุภาลัย",
+    "property_type": "House",
+    "price": 2650000.0,
     "source": "Baania"
   },
   {
@@ -658,17 +658,17 @@
   {
     "province": "อุบลราชธานี",
     "amphoe": "อุบลราชธานี",
-    "tambon": "ขามใหญ่",
+    "tambon": "ในเมือง",
     "property_type": "House",
-    "price": 2370000.0,
+    "price": 5500000.0,
     "source": "Baania"
   },
   {
     "province": "อุบลราชธานี",
     "amphoe": "อุบลราชธานี",
-    "tambon": "ในเมือง",
+    "tambon": "ขามใหญ่",
     "property_type": "House",
-    "price": 5500000.0,
+    "price": 2370000.0,
     "source": "Baania"
   },
   {
@@ -762,17 +762,17 @@
   {
     "province": "อุบลราชธานี",
     "amphoe": "อุบลราชธานี",
-    "tambon": "กุดลาด",
+    "tambon": "แจระแม",
     "property_type": "House",
-    "price": 2990000.0,
+    "price": 6900000.0,
     "source": "Baania"
   },
   {
     "province": "อุบลราชธานี",
     "amphoe": "อุบลราชธานี",
-    "tambon": "แจระแม",
+    "tambon": "กุดลาด",
     "property_type": "House",
-    "price": 6900000.0,
+    "price": 2990000.0,
     "source": "Baania"
   },
   {
@@ -812,7 +812,7 @@
     "amphoe": "อุบลราชธานี",
     "tambon": "ขามใหญ่",
     "property_type": "House",
-    "price": 5573700.0,
+    "price": 2990000.0,
     "source": "Baania"
   },
   {
@@ -828,7 +828,7 @@
     "amphoe": "อุบลราชธานี",
     "tambon": "ขามใหญ่",
     "property_type": "House",
-    "price": 2990000.0,
+    "price": 5573700.0,
     "source": "Baania"
   },
   {
@@ -852,7 +852,7 @@
     "amphoe": "อุบลราชธานี",
     "tambon": "ขามใหญ่",
     "property_type": "House",
-    "price": 2292880.0,
+    "price": 2700000.0,
     "source": "Baania"
   },
   {
@@ -860,7 +860,7 @@
     "amphoe": "อุบลราชธานี",
     "tambon": "ขามใหญ่",
     "property_type": "House",
-    "price": 2700000.0,
+    "price": 2292880.0,
     "source": "Baania"
   },
   {
@@ -1625,14 +1625,6 @@
   },
   {
     "province": "ประจวบคีรีขันธ์",
-    "amphoe": "หัวหิน",
-    "tambon": "หินเหล็กไฟ",
-    "property_type": "House",
-    "price": 3600000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ประจวบคีรีขันธ์",
     "amphoe": "ปราณบุรี",
     "tambon": "ปากน้ำปราณ",
     "property_type": "House",
@@ -1645,6 +1637,14 @@
     "tambon": "หินเหล็กไฟ",
     "property_type": "House",
     "price": 5800000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ประจวบคีรีขันธ์",
+    "amphoe": "หัวหิน",
+    "tambon": "หินเหล็กไฟ",
+    "property_type": "House",
+    "price": 3600000.0,
     "source": "Baania"
   },
   {
@@ -1770,6 +1770,14 @@
   {
     "province": "ประจวบคีรีขันธ์",
     "amphoe": "หัวหิน",
+    "tambon": "หัวหิน",
+    "property_type": "Townhome",
+    "price": 1690000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ประจวบคีรีขันธ์",
+    "amphoe": "หัวหิน",
     "tambon": "หนองแก",
     "property_type": "Townhome",
     "price": 4990000.0,
@@ -1789,14 +1797,6 @@
     "tambon": "หนองแก",
     "property_type": "Townhome",
     "price": 2390000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ประจวบคีรีขันธ์",
-    "amphoe": "หัวหิน",
-    "tambon": "หัวหิน",
-    "property_type": "Townhome",
-    "price": 1690000.0,
     "source": "Baania"
   },
   {
@@ -1857,18 +1857,18 @@
   },
   {
     "province": "ประจวบคีรีขันธ์",
-    "amphoe": "ปราณบุรี",
-    "tambon": "ปากน้ำปราณ",
-    "property_type": "Townhome",
-    "price": 3990000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "ประจวบคีรีขันธ์",
     "amphoe": "หัวหิน",
     "tambon": "หัวหิน",
     "property_type": "Townhome",
     "price": 8400000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "ประจวบคีรีขันธ์",
+    "amphoe": "ปราณบุรี",
+    "tambon": "ปากน้ำปราณ",
+    "property_type": "Townhome",
+    "price": 3990000.0,
     "source": "Baania"
   },
   {
@@ -2322,17 +2322,17 @@
   {
     "province": "อุดรธานี",
     "amphoe": "อุดรธานี",
-    "tambon": "อภิทาวน์",
+    "tambon": "เอกมันตรา",
     "property_type": "House",
-    "price": 3990000.0,
+    "price": 2900000.0,
     "source": "Baania"
   },
   {
     "province": "อุดรธานี",
     "amphoe": "อุดรธานี",
-    "tambon": "เอกมันตรา",
+    "tambon": "อภิทาวน์",
     "property_type": "House",
-    "price": 2900000.0,
+    "price": 3990000.0,
     "source": "Baania"
   },
   {
@@ -2361,6 +2361,14 @@
   },
   {
     "province": "อุดรธานี",
+    "amphoe": "อุดรธานี",
+    "tambon": "บ้านหรรษา",
+    "property_type": "House",
+    "price": 3200000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "อุดรธานี",
     "amphoe": "การ์เด้นวิลล์",
     "tambon": "ศุภาลัย",
     "property_type": "House",
@@ -2373,14 +2381,6 @@
     "tambon": "เคหะชุมชนและบริการชุมชน",
     "property_type": "House",
     "price": 2420000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "อุดรธานี",
-    "amphoe": "อุดรธานี",
-    "tambon": "บ้านหรรษา",
-    "property_type": "House",
-    "price": 3200000.0,
     "source": "Baania"
   },
   {
@@ -2490,6 +2490,14 @@
   {
     "province": "อุดรธานี",
     "amphoe": "อุดรธานี",
+    "tambon": "หนองบัว",
+    "property_type": "House",
+    "price": 4000000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "อุดรธานี",
+    "amphoe": "อุดรธานี",
     "tambon": "หมูม่น",
     "property_type": "House",
     "price": 3560000.0,
@@ -2501,14 +2509,6 @@
     "tambon": "นาดี",
     "property_type": "House",
     "price": 3240000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "อุดรธานี",
-    "amphoe": "อุดรธานี",
-    "tambon": "หนองบัว",
-    "property_type": "House",
-    "price": 4000000.0,
     "source": "Baania"
   },
   {
@@ -3896,6 +3896,14 @@
     "source": "Baania"
   },
   {
+    "province": "ระยอง",
+    "amphoe": "ระยอง",
+    "tambon": "มาบตาพุด",
+    "property_type": "Condo",
+    "price": 1990000.0,
+    "source": "Baania"
+  },
+  {
     "province": "ชลบุรี",
     "amphoe": "คาซ่า",
     "tambon": "บริษัท",
@@ -4106,17 +4114,17 @@
   {
     "province": "ชลบุรี",
     "amphoe": "ชลบุรี",
-    "tambon": "สำนักบก",
+    "tambon": "อ่างศิลา",
     "property_type": "Condo",
-    "price": 1890000.0,
+    "price": 1980000.0,
     "source": "Baania"
   },
   {
     "province": "ชลบุรี",
     "amphoe": "ชลบุรี",
-    "tambon": "อ่างศิลา",
+    "tambon": "สำนักบก",
     "property_type": "Condo",
-    "price": 1980000.0,
+    "price": 1890000.0,
     "source": "Baania"
   },
   {
@@ -4596,7 +4604,7 @@
     "amphoe": "พิษณุโลก",
     "tambon": "หัวรอ",
     "property_type": "House",
-    "price": 2000000.0,
+    "price": 2450000.0,
     "source": "Baania"
   },
   {
@@ -4604,7 +4612,7 @@
     "amphoe": "พิษณุโลก",
     "tambon": "หัวรอ",
     "property_type": "House",
-    "price": 2450000.0,
+    "price": 2000000.0,
     "source": "Baania"
   },
   {
@@ -4613,14 +4621,6 @@
     "tambon": "ท่าทอง",
     "property_type": "House",
     "price": 2550000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "พิษณุโลก",
-    "amphoe": "พิษณุโลก",
-    "tambon": "บ้านกร่าง",
-    "property_type": "House",
-    "price": 2500000.0,
     "source": "Baania"
   },
   {
@@ -4645,6 +4645,14 @@
     "tambon": "สมอแข",
     "property_type": "House",
     "price": 2379000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "พิษณุโลก",
+    "amphoe": "พิษณุโลก",
+    "tambon": "บ้านกร่าง",
+    "property_type": "House",
+    "price": 2500000.0,
     "source": "Baania"
   },
   {
@@ -4706,17 +4714,17 @@
   {
     "province": "พิษณุโลก",
     "amphoe": "พิษณุโลก",
-    "tambon": "ท่าโพธิ์",
+    "tambon": "บ้านกร่าง",
     "property_type": "House",
-    "price": 2500000.0,
+    "price": 2990000.0,
     "source": "Baania"
   },
   {
     "province": "พิษณุโลก",
     "amphoe": "พิษณุโลก",
-    "tambon": "บ้านกร่าง",
+    "tambon": "ท่าโพธิ์",
     "property_type": "House",
-    "price": 2990000.0,
+    "price": 2500000.0,
     "source": "Baania"
   },
   {
@@ -4754,6 +4762,14 @@
   {
     "province": "พิษณุโลก",
     "amphoe": "พิษณุโลก",
+    "tambon": "ท่าโพธิ์",
+    "property_type": "House",
+    "price": 6790000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "พิษณุโลก",
+    "amphoe": "พิษณุโลก",
     "tambon": "บ้านกร่าง",
     "property_type": "House",
     "price": 1990000.0,
@@ -4765,14 +4781,6 @@
     "tambon": "บ้านกร่าง",
     "property_type": "House",
     "price": 2000000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "พิษณุโลก",
-    "amphoe": "พิษณุโลก",
-    "tambon": "ท่าโพธิ์",
-    "property_type": "House",
-    "price": 6790000.0,
     "source": "Baania"
   },
   {
@@ -4804,7 +4812,7 @@
     "amphoe": "พิษณุโลก",
     "tambon": "วัดจันทร์",
     "property_type": "Townhome",
-    "price": 1690000.0,
+    "price": 2042900.0,
     "source": "Baania"
   },
   {
@@ -4812,7 +4820,7 @@
     "amphoe": "พิษณุโลก",
     "tambon": "วัดจันทร์",
     "property_type": "Townhome",
-    "price": 2042900.0,
+    "price": 1690000.0,
     "source": "Baania"
   },
   {
@@ -5170,6 +5178,14 @@
   {
     "province": "เชียงราย",
     "amphoe": "เชียงราย",
+    "tambon": "ท่าสาย",
+    "property_type": "House",
+    "price": 3600000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "เชียงราย",
+    "amphoe": "เชียงราย",
     "tambon": "ริมกก",
     "property_type": "House",
     "price": 9900000.0,
@@ -5181,22 +5197,6 @@
     "tambon": "นางแล",
     "property_type": "House",
     "price": 1200000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "เชียงราย",
-    "amphoe": "เชียงราย",
-    "tambon": "ท่าสาย",
-    "property_type": "House",
-    "price": 3600000.0,
-    "source": "Baania"
-  },
-  {
-    "province": "เชียงราย",
-    "amphoe": "การ์เด้นวิลล์",
-    "tambon": "ศุภาลัย",
-    "property_type": "House",
-    "price": 2990000.0,
     "source": "Baania"
   },
   {
@@ -5221,6 +5221,14 @@
     "tambon": "ศุภาลัย",
     "property_type": "House",
     "price": 2900000.0,
+    "source": "Baania"
+  },
+  {
+    "province": "เชียงราย",
+    "amphoe": "การ์เด้นวิลล์",
+    "tambon": "ศุภาลัย",
+    "property_type": "House",
+    "price": 2990000.0,
     "source": "Baania"
   },
   {
@@ -5372,7 +5380,7 @@
     "amphoe": "เชียงราย",
     "tambon": "บ้านดู่",
     "property_type": "Condo",
-    "price": 1790000.0,
+    "price": 1890000.0,
     "source": "Baania"
   },
   {
@@ -5380,7 +5388,7 @@
     "amphoe": "เชียงราย",
     "tambon": "บ้านดู่",
     "property_type": "Condo",
-    "price": 1890000.0,
+    "price": 1790000.0,
     "source": "Baania"
   },
   {

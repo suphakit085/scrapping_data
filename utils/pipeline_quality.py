@@ -18,7 +18,11 @@ def validate_pipeline_outputs(landmarks_path, property_trends_path, zones_path, 
     messages = []
     ok = True
 
-    for path in [landmarks_path, property_trends_path, zones_path]:
+    paths_to_check = [landmarks_path, zones_path]
+    if property_trends_path:
+        paths_to_check.append(property_trends_path)
+
+    for path in paths_to_check:
         if not os.path.exists(path):
             ok = False
             messages.append(f"[ERROR] Missing required file: {path}")
@@ -27,13 +31,13 @@ def validate_pipeline_outputs(landmarks_path, property_trends_path, zones_path, 
         return ok, messages
 
     landmarks = _read_csv_rows(landmarks_path)
-    trends = _read_csv_rows(property_trends_path)
     zones = _read_csv_rows(zones_path)
+    trends = _read_csv_rows(property_trends_path) if property_trends_path and os.path.exists(property_trends_path) else []
 
     if not landmarks:
         ok = False
         messages.append(f"[ERROR] Empty landmarks file: {landmarks_path}")
-    if not trends:
+    if property_trends_path and not trends:
         ok = False
         messages.append(f"[ERROR] Empty trends file: {property_trends_path}")
     if not zones:
@@ -68,39 +72,40 @@ def validate_pipeline_outputs(landmarks_path, property_trends_path, zones_path, 
         messages.extend([f"  - {m}" for m in missing_layers])
 
     # 2) trends: each province should have all required property types and positive median_price
-    trends_map = {}
-    bad_median = 0
-    for r in trends:
-        prov = (r.get("province") or "").strip()
-        ptype = (r.get("property_type") or "").strip()
-        median_raw = r.get("median_price")
-        if prov and ptype:
-            trends_map.setdefault(prov, set()).add(ptype)
+    if property_trends_path and trends:
+        trends_map = {}
+        bad_median = 0
+        for r in trends:
+            prov = (r.get("province") or "").strip()
+            ptype = (r.get("property_type") or "").strip()
+            median_raw = r.get("median_price")
+            if prov and ptype:
+                trends_map.setdefault(prov, set()).add(ptype)
 
-        try:
-            if float(median_raw) <= 0:
+            try:
+                if float(median_raw) <= 0:
+                    bad_median += 1
+            except Exception:
                 bad_median += 1
-        except Exception:
-            bad_median += 1
 
-    if len(trends_map) != expected_province_count:
-        ok = False
-        messages.append(
-            f"[ERROR] Trends province count={len(trends_map)} (expected {expected_province_count})"
-        )
+        if len(trends_map) != expected_province_count:
+            ok = False
+            messages.append(
+                f"[ERROR] Trends province count={len(trends_map)} (expected {expected_province_count})"
+            )
 
-    missing_types = []
-    for prov, ptypes in sorted(trends_map.items()):
-        if not REQUIRED_PROPERTY_TYPES.issubset(ptypes):
-            missing_types.append(f"{prov}: missing {sorted(REQUIRED_PROPERTY_TYPES - ptypes)}")
-    if missing_types:
-        ok = False
-        messages.append("[ERROR] Trends property-type coverage is incomplete by province")
-        messages.extend([f"  - {m}" for m in missing_types])
+        missing_types = []
+        for prov, ptypes in sorted(trends_map.items()):
+            if not REQUIRED_PROPERTY_TYPES.issubset(ptypes):
+                missing_types.append(f"{prov}: missing {sorted(REQUIRED_PROPERTY_TYPES - ptypes)}")
+        if missing_types:
+            ok = False
+            messages.append("[ERROR] Trends property-type coverage is incomplete by province")
+            messages.extend([f"  - {m}" for m in missing_types])
 
-    if bad_median > 0:
-        ok = False
-        messages.append(f"[ERROR] Trends has {bad_median} row(s) with missing/invalid median_price")
+        if bad_median > 0:
+            ok = False
+            messages.append(f"[ERROR] Trends has {bad_median} row(s) with missing/invalid median_price")
 
     # 3) zones: rows must match number of layer-1 anchors
     layer1_count = sum(1 for r in landmarks if str(r.get("layer") or "").strip() == "1")

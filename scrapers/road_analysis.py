@@ -4,16 +4,19 @@ import os
 import time
 import pandas as pd
 
-def fetch_road_network(zones_path, output_path, radius_km=2.0):
+def fetch_road_network(landmarks_path, output_path, radius_km=2.0):
     """
-    ดึงข้อมูลโครงข่ายถนนรอบๆ Anchor ของแต่ละโซน
-    เพื่อประเมินความสะดวกในการเดินทาง (Connectivity)
+    ดึงข้อมูลโครงข่ายถนนรอบๆ Anchor ของแต่ละโซน โดยอ้างอิงจาก Landmarks Raw (Layer 1)
     """
-    if not os.path.exists(zones_path):
-        print(f"[Error] {zones_path} not found. Please run analyzer first.")
+    if not os.path.exists(landmarks_path):
+        print(f"[Error] {landmarks_path} not found.")
         return
 
-    df_zones = pd.read_csv(zones_path, encoding='utf-8-sig')
+    with open(landmarks_path, "r", encoding="utf-8") as f:
+        all_landmarks = json.load(f)
+    
+    # กรองเฉพาะ Layer 1 (Anchor หลักของโซน)
+    layer1 = [l for l in all_landmarks if l.get("layer") == 1]
     
     print(f"--- Fetching Road Connectivity Data (OSM) ---")
     
@@ -37,13 +40,12 @@ def fetch_road_network(zones_path, output_path, radius_km=2.0):
         "Accept-Language": "en"
     }
 
-    for idx, row in df_zones.iterrows():
-        name = str(row['zone_anchor']).replace('\u200b', '').strip()
+    for item in layer1:
+        name = str(item.get('name', 'Unknown')).replace('\u200b', '').strip()
         if name in done_anchors:
-            # print(f"  Skipping {name} (Already processed)")
             continue
             
-        lat, lon = row['lat'], row['lon']
+        lat, lon = item['lat'], item['lon']
         print(f"  Analyzing roads for: {name}...", end=" ", flush=True)
 
         query = f"""
@@ -91,4 +93,4 @@ def fetch_road_network(zones_path, output_path, radius_km=2.0):
     print(f"\n[Success] Road network data saved to {output_path}")
 
 if __name__ == "__main__":
-    fetch_road_network("data/processed/zone_profiles.csv", "data/raw/road_network.json")
+    fetch_road_network("data/raw/landmarks_raw.json", "data/raw/road_network.json")
