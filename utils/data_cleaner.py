@@ -113,7 +113,7 @@ def clean_landmarks(raw_file_path, processed_file_path):
             
             for keys, group in layer_df.groupby(['province', 'category']):
                 category_name = keys[1]
-                large_area_categories = ["โรงเรียน", "มหาวิทยาลัย", "วิทยาลัย", "สวนสาธารณะ", "บึง/ทะเลสาบ", "สนามกีฬา"]
+                large_area_categories = ["โรงเรียน", "มหาวิทยาลัย", "วิทยาลัย", "สวนสาธารณะ", "บึง/ทะเลสาบ", "สนามกีฬา", "สนามบิน", "โรงพยาบาล"]
                 
                 # กำหนดรัศมีพิเศษสำหรับสถานที่ที่มีพื้นที่กว้าง (400m)
                 if category_name in large_area_categories:
