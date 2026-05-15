@@ -11,6 +11,8 @@ Google Maps Discovery + Sync Scraper
 """
 
 from playwright.sync_api import sync_playwright
+from shapely.geometry import Point, shape
+from shapely.prepared import prep
 import json
 import os
 import re
@@ -70,6 +72,107 @@ PROVINCES = [
 ]
 
 
+TARGET_BOUNDARY_PATH = "data/raw/target_admin_boundaries.geojson"
+
+PROVINCE_SLUG_TO_ADM1 = {
+    "khon-kaen": "Khon Kaen",
+    "ubon-ratchathani": "Ubon Ratchathani",
+    "prachuap-khiri-khan": "Prachuap Khiri Khan",
+    "udon-thani": "Udon Thani",
+    "rayong": "Rayong",
+    "chonburi": "Chon Buri",
+    "surin": "Surin",
+    "buriram": "Buri Ram",
+    "phitsanulok": "Phitsanulok",
+    "chiang-rai": "Chiang Rai",
+}
+
+PROVINCE_ALIASES = {
+    "chonburi": "Chon Buri",
+    "chon buri": "Chon Buri",
+    "buriram": "Buri Ram",
+    "buri ram": "Buri Ram",
+    "prachuapkhirikhan": "Prachuap Khiri Khan",
+    "prachuap khiri khan": "Prachuap Khiri Khan",
+}
+
+
+def _repo_path(relative_path: str) -> str:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    return os.path.join(repo_root, relative_path)
+
+
+def normalize_province_name(name):
+    if not name:
+        return ""
+
+    cleaned = str(name).strip()
+    key = re.sub(r"[^a-z0-9]+", " ", cleaned.lower()).strip()
+    compact_key = key.replace(" ", "")
+
+    if key in PROVINCE_ALIASES:
+        return PROVINCE_ALIASES[key]
+    if compact_key in PROVINCE_ALIASES:
+        return PROVINCE_ALIASES[compact_key]
+
+    for canonical in PROVINCE_SLUG_TO_ADM1.values():
+        canonical_key = re.sub(r"[^a-z0-9]+", " ", canonical.lower()).strip()
+        if key == canonical_key or compact_key == canonical_key.replace(" ", ""):
+            return canonical
+
+    return cleaned
+
+
+def load_target_boundaries(boundary_path=TARGET_BOUNDARY_PATH):
+    abs_path = _repo_path(boundary_path)
+    if not os.path.exists(abs_path):
+        print(f"  [WARN] Target boundary file not found: {abs_path}")
+        print("  [WARN] Run: python utils/preprocess_target_boundaries.py")
+        print("  [WARN] Falling back to Thailand bounding-box filtering only.")
+        return {}
+
+    with open(abs_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    boundaries = {}
+    for feature in data.get("features", []):
+        props = feature.get("properties") or {}
+        province = normalize_province_name(
+            props.get("adm1_name_normalized") or props.get("adm1_name")
+        )
+        if not province:
+            continue
+
+        try:
+            boundaries.setdefault(province, []).append(prep(shape(feature["geometry"])))
+        except Exception as e:
+            print(f"  [WARN] Skipping invalid boundary for {province}: {e}")
+
+    print(
+        f"  [OK] Loaded province boundaries: "
+        f"{len(boundaries)} provinces, {sum(len(v) for v in boundaries.values())} polygons"
+    )
+    return boundaries
+
+
+def is_in_thailand_bounds(lat, lon):
+    return (5.0 <= lat <= 20.5) and (97.0 <= lon <= 106.0)
+
+
+def is_point_in_target_province(lat, lon, province_en, province_boundaries):
+    if not is_in_thailand_bounds(lat, lon):
+        return False
+
+    province_key = normalize_province_name(province_en)
+    province_geoms = province_boundaries.get(province_key)
+    if not province_geoms:
+        return True
+
+    point = Point(lon, lat)
+    return any(geom.contains(point) or geom.intersects(point) for geom in province_geoms)
+
+
 def _load_local_iconic_targets(config_path="data/raw/local_iconic_targets.json"):
     """
     Load province-specific Layer 2 search targets.
@@ -127,12 +230,12 @@ def _load_local_iconic_targets(config_path="data/raw/local_iconic_targets.json")
 
 def extract_lat_lon_from_url(url: str):
     """ดึง lat/lon จาก URL ของ Google Maps"""
-    # Pattern: @16.4322,102.8236,
-    match = re.search(r'@(-?\d+\.\d+),(-?\d+\.\d+)', url)
+    # Pattern 1: !3d16.4322!4d102.8236 (Pin location - Prioritize this)
+    match = re.search(r'!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)', url)
     if match:
         return float(match.group(1)), float(match.group(2))
-    # Pattern: !3d16.4322!4d102.8236
-    match = re.search(r'!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)', url)
+    # Pattern 2: @16.4322,102.8236, (Viewport center - Fallback)
+    match = re.search(r'@(-?\d+\.\d+),(-?\d+\.\d+)', url)
     if match:
         return float(match.group(1)), float(match.group(2))
     return None, None
@@ -162,8 +265,12 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
             name_el = page.query_selector('h1.duvuxb') # Class ปกติของชื่อสถานที่ในหน้า Place
             name = name_el.inner_text().strip() if name_el else search_query
             if lat and lon:
-                print(f"(Direct Match: {name})", end=" ")
-                return [{"name": name, "lat": lat, "lon": lon}]
+                if is_in_thailand_bounds(lat, lon):
+                    print(f"(Direct Match: {name})", end=" ")
+                    return [{"name": name, "lat": lat, "lon": lon}]
+                else:
+                    print(f"(Skipped: Out of bounds - {name})", end=" ")
+                    return []
 
         # 2. ถ้าไม่ Redirect ให้รอหน้ารายการ (Feed) ตามปกติ
         try:
@@ -203,11 +310,14 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
                     lat, lon = None, None
 
                 if lat and lon:
-                    results.append({
-                        "name": name,
-                        "lat": lat,
-                        "lon": lon,
-                    })
+                    if is_in_thailand_bounds(lat, lon):
+                        results.append({
+                            "name": name,
+                            "lat": lat,
+                            "lon": lon,
+                        })
+                    else:
+                        print(f"    [Warning] พิกัดอยู่นอกประเทศไทย ข้ามสถานที่: {name}")
 
                 # กลับไปหน้า Search
                 page.go_back()
@@ -239,6 +349,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
 
     new_pois = []
     local_iconic_by_province = _load_local_iconic_targets()
+    province_boundaries = load_target_boundaries()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -259,7 +370,10 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
         for province in PROVINCES:
             thai_name = province["name"]
             slug = province["slug"]
+            province_en = normalize_province_name(PROVINCE_SLUG_TO_ADM1.get(slug, slug))
             print(f"\n[{thai_name}]")
+            if province_boundaries and province_en not in province_boundaries:
+                print(f"  [WARN] No boundary found for {province_en}; using country bounds only.")
 
             targets = list(SEARCH_TARGETS)
             targets.extend(local_iconic_by_province.get(thai_name, []))
@@ -272,6 +386,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                     target.get("category", "").strip().lower(),
                     int(target.get("layer", 2)),
                 )
+
                 if not key[0] or key in seen_queries:
                     continue
                 seen_queries.add(key)
@@ -285,11 +400,23 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                 print(f"  Searching '{query}'...", end=" ", flush=True)
                 pois = scrape_google_maps_pois(thai_name, query, page)
 
-                # Dedup: Layer 1 ใช้ radius 300m (anchor ใหญ่ อาจมีพิกัดต่างกันนิดหน่อย)
-                #        Layer 2/3 ใช้ radius 100m
-                dedup_radius_km = 0.3 if layer == 1 else 0.1
+                # Dedup: สถานที่ที่มีพื้นที่กว้างใช้ radius 400m
+                large_area_categories = ["โรงเรียน", "มหาวิทยาลัย", "วิทยาลัย", "สวนสาธารณะ", "บึง/ทะเลสาบ", "สนามกีฬา"]
+                if category in large_area_categories:
+                    dedup_radius_km = 0.4
+                else:
+                    # Layer 1 ใช้ radius 300m (anchor ใหญ่), Layer 2/3 ใช้ radius 100m
+                    dedup_radius_km = 0.3 if layer == 1 else 0.1
+
                 added = 0
+                skipped_outside_province = 0
                 for poi in pois:
+                    if not is_point_in_target_province(
+                        poi["lat"], poi["lon"], province_en, province_boundaries
+                    ):
+                        skipped_outside_province += 1
+                        continue
+
                     is_duplicate = False
                     for existing in osm_pois + new_pois:
                         if existing.get("province") != thai_name:
@@ -318,7 +445,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                         }
                         new_pois.append({
                             "province":    thai_name,
-                            "province_en": slug,
+                            "province_en": province_en,
                             "name":        poi["name"],
                             "name_en":     "",
                             "category":    category,
@@ -332,7 +459,12 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                         })
                         added += 1
 
-                print(f"{len(pois)} found, {added} new added.")
+                outside_msg = (
+                    f", {skipped_outside_province} outside province skipped"
+                    if skipped_outside_province
+                    else ""
+                )
+                print(f"{len(pois)} found, {added} new added{outside_msg}.")
                 time.sleep(1.5)
 
         browser.close()

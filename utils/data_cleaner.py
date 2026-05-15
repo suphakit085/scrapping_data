@@ -111,10 +111,17 @@ def clean_landmarks(raw_file_path, processed_file_path):
             layer_df = df_to_clean[df_to_clean['layer'] == layer_val]
             if layer_df.empty: continue
             
-            # กำหนดรัศมี: Layer 1 (ห้าง/รพ.) = 300m, Layer 2/3 (ร้านค้า/วัด) = 100m
-            radius = 300 if layer_val == 1 else 100
-            
-            for _, group in layer_df.groupby(['province', 'category']):
+            for keys, group in layer_df.groupby(['province', 'category']):
+                category_name = keys[1]
+                large_area_categories = ["โรงเรียน", "มหาวิทยาลัย", "วิทยาลัย", "สวนสาธารณะ", "บึง/ทะเลสาบ", "สนามกีฬา"]
+                
+                # กำหนดรัศมีพิเศษสำหรับสถานที่ที่มีพื้นที่กว้าง (400m)
+                if category_name in large_area_categories:
+                    radius = 400
+                else:
+                    # ปกติ: Layer 1 (ห้าง/รพ.) = 300m, Layer 2/3 (ร้านค้า/วัด) = 100m
+                    radius = 300 if layer_val == 1 else 100
+
                 to_drop |= _dedup_group(group, radius_m=radius, prefer_osm=(layer_val != 1))
         
         return to_drop
@@ -132,11 +139,28 @@ def clean_landmarks(raw_file_path, processed_file_path):
     # ========== Phase 3: Remove unnamed ==========
     df = df[df['name'].astype(str).str.strip() != '']
 
+    # ========== Phase 4: Keyword Blacklisting ==========
+    blacklist_words = ["บ้านฉัน", "test", "ทดสอบ", "ปิดแล้ว", "เจ๊ง", "dummy"]
+    
+    def is_garbage(name):
+        n = str(name).lower()
+        if len(n) < 2:
+            return True
+        for bw in blacklist_words:
+            if bw in n:
+                return True
+        return False
+        
+    garbage_mask = df['name'].apply(is_garbage)
+    garbage_removed = garbage_mask.sum()
+    df = df[~garbage_mask]
+
     # ========== Summary ==========
     total_removed = before_total - len(df)
     print(f"  Dedup Summary (Layer-Aware):")
     print(f"    Exact match removed: {exact_removed}")
     print(f"    Fuzzy/Proximity removed: {fuzzy_removed}")
+    print(f"    Garbage keywords removed: {garbage_removed}")
     print(f"    Total removed: {total_removed} ({before_total} -> {len(df)})")
 
     # Standardize province names
