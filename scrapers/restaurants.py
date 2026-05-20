@@ -45,13 +45,9 @@ PROVINCE_DATA = [
 ]
 
 GEOJSON_SEARCH_KEYWORDS = [
-    "ร้านอาหาร", 
-    "คาเฟ่", 
-    "ร้านกาแฟ",
-    "ร้านก๋วยเตี๋ยว", 
-    "ร้านอาหารตามสั่ง",
-    "ร้านส้มตำ",
-    "หมูกระทะ"
+    "ร้านอาหาร อีสาน ส้มตำ ลาบก้อย",          # ดึงร้านอาหารทั่วไป + กลุ่มอาหารอีสาน/ลาบก้อยท้องถิ่น
+    "คาเฟ่ ร้านกาแฟ เบเกอรี่",               # กลุ่มเครื่องดื่มและขนมหวาน
+    "ร้านก๋วยเตี๋ยว อาหารตามสั่ง หมูกระทะ ชาบู"     # กลุ่มมื้อด่วน มื้อหลัก และปิ้งย่างยอดนิยม
 ]
 # OSM / Overpass API Helpers
 # ============================================================
@@ -462,6 +458,7 @@ def scrape_restaurants(
     osm_last_edit_filter: bool = False, osm_last_edit_min_ce: int = None,
     osm_created_filter: bool = False, osm_created_min_ce: int = None,
     gmaps_review_filter: bool = False, gmaps_review_min_ce: int = None,
+    selected_provinces: list = None,
 ):
     if parallel_workers is None:
         parallel_workers = prompt_parallel_workers("Restaurants", default_workers=4)
@@ -476,6 +473,11 @@ def scrape_restaurants(
         osm_last_edit_filter, osm_last_edit_min_ce = prompt_osm_last_edit_filter()
         osm_created_filter, osm_created_min_ce = prompt_osm_created_filter()
         gmaps_review_filter, gmaps_review_min_ce = prompt_gmaps_review_filter()
+        
+    # กรองรายการจังหวัดที่จะรัน
+    target_provinces = PROVINCE_DATA
+    if selected_provinces:
+        target_provinces = [p for p in PROVINCE_DATA if p['slug'] in selected_provinces or p['name'] in selected_provinces]
         
     print("  Search areas: GeoJSON admin3 centroids")
     province_boundaries = load_target_boundaries()
@@ -496,7 +498,7 @@ def scrape_restaurants(
     # รันแบบขนาน (Parallel) โดยใช้ ThreadPoolExecutor 
     with concurrent.futures.ThreadPoolExecutor(max_workers=parallel_workers) as executor:
         futures = []
-        for province in PROVINCE_DATA:
+        for province in target_provinces:
             futures.append(
                 executor.submit(
                     scrape_province_task,

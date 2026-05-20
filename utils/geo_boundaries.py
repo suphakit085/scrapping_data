@@ -180,6 +180,13 @@ def reverse_geocode(lat, lon, tree, polygons, properties):
 
 
 def prompt_admin_areas(scraper_name):
+    # Check env var first
+    env_val = os.environ.get("EXTRACT_ADMIN_AREAS") or os.environ.get("EXTRACT_TAMBONS")
+    if env_val is not None:
+        val_bool = env_val.strip().lower() in ('y', 'yes', 'true', '1')
+        print(f"[CI/Non-Interactive] {scraper_name} Extract Admin Areas: {val_bool} (via Env)")
+        return val_bool
+
     print(f"\n⚙️  [Terminal UI - {scraper_name}]")
     print("❓ คุณต้องการดึงข้อมูล อำเภอ (District) และ ตำบล (Sub-district) ด้วยหรือไม่?")
     print("   👉 [y] ยอมรับ (ใช้เวลาโหลด GeoJSON เพิ่มประมาณ 10-15 วินาที)")
@@ -280,6 +287,21 @@ def prompt_gmaps_review_filter():
     """ถามผู้ใช้ว่าต้องการกรองโดยวันที่ Review ล่าสุดจาก Google Maps ไหม
     คืนค่า: (enable: bool, min_ce_year: int | None)
     """
+    env_year = os.environ.get("GMAPS_REVIEW_YEAR")
+    if env_year is not None:
+        env_year = env_year.strip().lower()
+        if env_year in ('n', 'no', 'none', 'false', '0'):
+            print("[CI/Non-Interactive] Google Maps Review Freshness Filter: Disabled")
+            return False, None
+        try:
+            be = int(env_year)
+            min_ce = be_to_ce(be) if be > 2400 else be
+            print(f"[CI/Non-Interactive] Google Maps Review Freshness Filter: Active (>= {ce_to_be(min_ce)} BE)")
+            return True, min_ce
+        except ValueError:
+            print("[CI/Non-Interactive] Google Maps Review Freshness Filter: Disabled (Invalid Env)")
+            return False, None
+
     print("\n⚙️  [Terminal UI - Google Maps Review Freshness Filter]")
     print("❓ ต้องการกรองร้านที่ไม่มีรีวิวใหม่หรือไม่?")
     print("   👉 [y] กำหนดปี พ.ศ. ขั้นต่ำของรีวิวล่าสุด")
@@ -306,6 +328,21 @@ def prompt_osm_last_edit_filter():
     """ถามผู้ใช้ว่าต้องการกรองโดย OSM timestamp (วันแก้ไขล่าสุด) ไหม
     คืนค่า: (enable: bool, min_ce_year: int | None)
     """
+    env_year = os.environ.get("OSM_LAST_EDIT_YEAR")
+    if env_year is not None:
+        env_year = env_year.strip().lower()
+        if env_year in ('n', 'no', 'none', 'false', '0'):
+            print("[CI/Non-Interactive] OSM Last Edit Filter: Disabled")
+            return False, None
+        try:
+            be = int(env_year)
+            min_ce = be_to_ce(be) if be > 2400 else be
+            print(f"[CI/Non-Interactive] OSM Last Edit Filter: Active (>= {ce_to_be(min_ce)} BE)")
+            return True, min_ce
+        except ValueError:
+            print("[CI/Non-Interactive] OSM Last Edit Filter: Disabled (Invalid Env)")
+            return False, None
+
     print("\n⚙️  [Terminal UI - OSM Last Edit Filter]")
     print("❓ ต้องการกรอง OSM POI ที่ไม่มีการอัปเดตหรือไม่?")
     print("   👉 [y] กำหนดปี พ.ศ. ขั้นต่ำของการแก้ไขล่าสุด")
@@ -332,6 +369,21 @@ def prompt_osm_created_filter():
     """ถามผู้ใช้ว่าต้องการกรองโดยปีที่สร้าง OSM (ใช้ version=1 + timestamp เป็น proxy) ไหม
     คืนค่า: (enable: bool, min_ce_year: int | None)
     """
+    env_year = os.environ.get("OSM_CREATED_YEAR")
+    if env_year is not None:
+        env_year = env_year.strip().lower()
+        if env_year in ('n', 'no', 'none', 'false', '0'):
+            print("[CI/Non-Interactive] OSM Created Year Filter: Disabled")
+            return False, None
+        try:
+            be = int(env_year)
+            min_ce = be_to_ce(be) if be > 2400 else be
+            print(f"[CI/Non-Interactive] OSM Created Year Filter: Active (>= {ce_to_be(min_ce)} BE)")
+            return True, min_ce
+        except ValueError:
+            print("[CI/Non-Interactive] OSM Created Year Filter: Disabled (Invalid Env)")
+            return False, None
+
     print("\n⚙️  [Terminal UI - OSM Created Year Filter]")
     print("❓ ต้องการดึงเฉพาะ OSM POI ที่สร้างตั้งแต่ปีที่กำหนดหรือไม่?")
     print("   (ใช้ version=1 + timestamp เป็น proxy ของวันที่สร้าง)")
@@ -357,6 +409,16 @@ def prompt_osm_created_filter():
 
 def prompt_parallel_workers(label: str, default_workers: int = 4, max_recommended: int = 8) -> int:
     """ถามผู้ใช้ใน Terminal ณ จุดเริ่มต้น เพื่อกำหนดจำนวนคนทำงานขนานในหัวข้อนั้นๆ"""
+    env_workers = os.environ.get("PARALLEL_WORKERS")
+    if env_workers is not None:
+        try:
+            val = int(env_workers.strip())
+            print(f"[CI/Non-Interactive] Parallel Workers for {label}: {val} (via Env)")
+            return val
+        except ValueError:
+            print(f"[CI/Non-Interactive] Parallel Workers for {label}: Defaulting to {default_workers}")
+            return default_workers
+
     print(f"\n⚙️  [Terminal UI - {label} Parallel Settings]")
     print(f"❓ ต้องการระบุจำนวนคนทำงานขนาน (Parallel Workers) หรือไม่?")
     print(f"   👉 กรอกตัวเลขระหว่าง 1 ถึง {max_recommended} (แนะนำ: {default_workers})")
@@ -388,6 +450,26 @@ def prompt_resume_or_fresh(label: str, temp_dir: str) -> bool:
     import shutil
     import time
     
+    env_resume = os.environ.get("RESUME_MODE")
+    if env_resume is not None:
+        env_resume = env_resume.strip().lower()
+        if env_resume in ('r', 'resume', 'true', '1'):
+            print(f"[CI/Non-Interactive] Resume Mode Active (via Env)")
+            return True
+        elif env_resume in ('f', 'fresh', 'false', '0'):
+            # Start fresh - perform standard backup
+            if os.path.exists(temp_dir):
+                temp_files = glob.glob(os.path.join(temp_dir, "*.json"))
+                if temp_files:
+                    timestamp = time.strftime("%Y%m%d_%H%M%S")
+                    backup_dir = f"{temp_dir.rstrip('/\\\\')}_backup_{timestamp}"
+                    print(f"[CI/Non-Interactive] Starting Fresh. Moving older temp files to backup: {os.path.basename(backup_dir)}")
+                    try:
+                        shutil.move(temp_dir, backup_dir)
+                    except Exception as e:
+                        print(f"[CI/Non-Interactive] Backup move failed: {e}")
+            return False
+
     if not os.path.exists(temp_dir):
         return True
         
