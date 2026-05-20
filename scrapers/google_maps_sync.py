@@ -18,6 +18,12 @@ import os
 import re
 import time
 
+from utils.geo_boundaries import (
+    build_spatial_index,
+    reverse_geocode,
+    prompt_admin_areas,
+)
+
 
 # =============================================================
 # SEARCH_TARGETS — POI ที่จะให้บอทค้นหาจาก Google Maps
@@ -70,6 +76,21 @@ PROVINCES = [
     {"name": "พิษณุโลก",        "slug": "phitsanulok"},
     {"name": "เชียงราย",        "slug": "chiang-rai"},
 ]
+
+
+CLOSED_LABELS = [
+    "permanently closed",
+    "temporarily closed",
+    "closed permanently",
+    "closed temporarily",
+    "ปิดถาวร",
+    "ปิดชั่วคราว",
+]
+
+
+def is_closed_google_maps_text(text):
+    lowered = (text or "").lower()
+    return any(label in lowered for label in CLOSED_LABELS)
 
 
 TARGET_BOUNDARY_PATH = "data/raw/target_admin_boundaries.geojson"
@@ -260,6 +281,9 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
         # 1. ตรวจสอบก่อนว่ามัน Redirect ไปหน้าสถานที่เดียว (Place Page) เลยหรือเปล่า
         current_url = page.url
         if "/maps/place/" in current_url:
+            if is_closed_google_maps_text(page.content()):
+                print("(Skipped: Closed place)", end=" ")
+                return []
             lat, lon = extract_lat_lon_from_url(current_url)
             # ดึงชื่อจากหัวข้อหน้าเว็บ
             name_el = page.query_selector('h1.duvuxb') # Class ปกติของชื่อสถานที่ในหน้า Place
@@ -291,6 +315,12 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
         for item in items[:max_results]:
             try:
                 # ชื่อสถานที่
+                try:
+                    if is_closed_google_maps_text(item.inner_text()):
+                        continue
+                except Exception:
+                    pass
+
                 name_el = item.query_selector('div.qBF1Pd, .fontHeadlineSmall, [aria-label]')
                 name = name_el.inner_text().strip() if name_el else ""
                 if not name:
@@ -304,6 +334,10 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
                 try:
                     item.click()
                     page.wait_for_timeout(1500)
+                    if is_closed_google_maps_text(page.content()):
+                        page.go_back()
+                        page.wait_for_timeout(1000)
+                        continue
                     current_url = page.url
                     lat, lon = extract_lat_lon_from_url(current_url)
                 except:
@@ -332,13 +366,17 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
     return results
 
 
-def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
+def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_areas: bool = None):
     """
     Main function: ค้นหา POI จาก Google Maps แล้วรวมกับข้อมูล OSM ที่มีอยู่
     """
     print("=" * 55)
     print("Google Maps Sync (Hybrid Enrichment)")
     print("=" * 55)
+
+    # Prompt the user via interactive terminal UI if not passed
+    if extract_admin_areas is None:
+        extract_admin_areas = prompt_admin_areas("Google Maps Sync")
 
     # โหลดข้อมูล OSM เดิมเพื่อใช้ Dedup
     osm_pois = []
@@ -350,6 +388,21 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
     new_pois = []
     local_iconic_by_province = _load_local_iconic_targets()
     province_boundaries = load_target_boundaries()
+
+    if extract_admin_areas:
+        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
+        # Enrich existing OSM POIs if they don't have district/sub_district
+        print("  -> Enriching existing OSM POIs with district and sub-district information...")
+        for poi in osm_pois:
+            if "district" not in poi or "sub_district" not in poi:
+                lat, lon = poi.get("lat"), poi.get("lon")
+                if lat and lon:
+                    district, sub_district = reverse_geocode(lat, lon, spatial_tree, spatial_polygons, spatial_properties)
+                    poi["district"] = district
+                    poi["sub_district"] = sub_district
+    else:
+        print("  -> Skipping Sub-district and District extraction.")
+        spatial_tree, spatial_polygons, spatial_properties = None, [], []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -443,9 +496,14 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str):
                             2: "จุดอัตลักษณ์พื้นที่",
                             3: "สิ่งอำนวยความสะดวก",
                         }
+                        
+                        district, sub_district = reverse_geocode(poi["lat"], poi["lon"], spatial_tree, spatial_polygons, spatial_properties) if extract_admin_areas else ("", "")
+
                         new_pois.append({
                             "province":    thai_name,
                             "province_en": province_en,
+                            "district":    district,
+                            "sub_district": sub_district,
                             "name":        poi["name"],
                             "name_en":     "",
                             "category":    category,

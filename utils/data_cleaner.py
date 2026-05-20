@@ -15,7 +15,7 @@ def clean_bank_loans(raw_file_path, processed_file_path):
     df.to_csv(processed_file_path, index=False, encoding='utf-8-sig')
     print(f"Cleaned bank data saved to {processed_file_path}")
 
-def clean_landmarks(raw_file_path, processed_file_path):
+def clean_landmarks(raw_file_paths, processed_file_path, restaurants_output_path=None):
     """
     Cleans and standardizes POI/Landmarks data.
     - Phase 1:   Exact Dedup (name + lat + lon)
@@ -25,18 +25,27 @@ def clean_landmarks(raw_file_path, processed_file_path):
     """
     import math
 
-    if not os.path.exists(raw_file_path):
-        print(f"Error: Raw file {raw_file_path} not found.")
-        return
+    if isinstance(raw_file_paths, str):
+        raw_file_paths = [raw_file_paths]
 
-    with open(raw_file_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    all_data = []
+    for path in raw_file_paths:
+        if not os.path.exists(path):
+            print(f"Warning: Raw file {path} not found. Skipping.")
+            continue
+        with open(path, 'r', encoding='utf-8') as f:
+            try:
+                data = json.load(f)
+                if data:
+                    all_data.extend(data)
+            except json.JSONDecodeError:
+                print(f"Warning: Error decoding JSON from {path}")
 
-    if not data:
+    if not all_data:
         print("Warning: No landmarks data to clean.")
         return
 
-    df = pd.DataFrame(data)
+    df = pd.DataFrame(all_data)
     before_total = len(df)
 
     # ========== Helper Functions (ใช้ร่วมกันทุก Phase) ==========
@@ -55,7 +64,13 @@ def clean_landmarks(raw_file_path, processed_file_path):
         n = str(name).strip().lower()
         for noise in ["สาขา", "branch", "(", ")", "-", "–", ".", ","]:
             n = n.replace(noise, " ")
-        return " ".join(n.split())
+            
+        # ตัดคำทั่วไปออกเพื่อเน้นเทียบชื่อเฉพาะ
+        words = n.split()
+        stop_words = {"ร้านอาหาร", "ร้าน", "คาเฟ่", "cafe", "restaurant", "food", "court"}
+        words = [w for w in words if w not in stop_words]
+        
+        return " ".join(words)
 
     def _name_is_similar(name_a, name_b):
         a = _normalize_name(name_a)
@@ -118,9 +133,13 @@ def clean_landmarks(raw_file_path, processed_file_path):
                 # กำหนดรัศมีพิเศษสำหรับสถานที่ที่มีพื้นที่กว้าง (400m)
                 if category_name in large_area_categories:
                     radius = 400
+                elif layer_val == 1:
+                    radius = 300
+                elif layer_val == 2:
+                    radius = 100
                 else:
-                    # ปกติ: Layer 1 (ห้าง/รพ.) = 300m, Layer 2/3 (ร้านค้า/วัด) = 100m
-                    radius = 300 if layer_val == 1 else 100
+                    # Layer 3 ร้านอาหาร/สะดวกซื้อ ลดรัศมีเหลือ 40m เพื่อป้องกันการลบร้านใกล้เคียง
+                    radius = 40
 
                 to_drop |= _dedup_group(group, radius_m=radius, prefer_osm=(layer_val != 1))
         
@@ -140,7 +159,7 @@ def clean_landmarks(raw_file_path, processed_file_path):
     df = df[df['name'].astype(str).str.strip() != '']
 
     # ========== Phase 4: Keyword Blacklisting ==========
-    blacklist_words = ["บ้านฉัน", "test", "ทดสอบ", "ปิดแล้ว", "เจ๊ง", "dummy"]
+    blacklist_words = ["บ้านฉัน", "test", "ทดสอบ", "ปิดแล้ว", "เจ๊ง", "dummy", "ปิดกิจการ", "ปิดถาวร", "closed", "ย้ายร้าน", "permanently closed"]
     
     def is_garbage(name):
         n = str(name).lower()
@@ -176,12 +195,24 @@ def clean_landmarks(raw_file_path, processed_file_path):
 
     df = df.sort_values(['province', 'layer', 'category', 'name']).reset_index(drop=True)
 
-    output_cols = ['province', 'province_en', 'name', 'name_en',
-                   'category', 'layer', 'layer_name', 'lat', 'lon', 'source']
+    output_cols = [
+        'province', 'province_en', 'district', 'sub_district',
+        'name', 'name_en', 'category', 'layer', 'layer_name',
+        'lat', 'lon', 'source',
+        'osm_timestamp', 'osm_last_edit_year_ce', 'osm_last_edit_year_be',
+        'osm_created_year_ce', 'osm_created_year_be', 'osm_version',
+        'gmaps_last_review_year_ce', 'gmaps_last_review_year_be',
+    ]
     df = df[[c for c in output_cols if c in df.columns]]
 
     os.makedirs(os.path.dirname(processed_file_path), exist_ok=True)
     df.to_csv(processed_file_path, index=False, encoding='utf-8-sig')
+
+    if restaurants_output_path:
+        restaurants_df = df[df['category'] == 'ร้านอาหาร']
+        os.makedirs(os.path.dirname(restaurants_output_path), exist_ok=True)
+        restaurants_df.to_csv(restaurants_output_path, index=False, encoding='utf-8-sig')
+        print(f"  Restaurants subset saved to: {restaurants_output_path} ({len(restaurants_df)} POIs)")
 
     print(f"  Landmarks summary:")
     for layer in sorted(df['layer'].unique()):

@@ -2,7 +2,7 @@
 
 เอกสารนี้สรุปสถาปัตยกรรมของโปรเจก `ai_web_scrpping` สำหรับใช้เป็นฐานร่วมของทีมในการพัฒนาต่อ, debug pipeline, และคุยเรื่อง data contract ให้ตรงกัน
 
-อัปเดตจากโค้ดใน repo ณ วันที่ `2026-04-27`
+อัปเดตจากโค้ดใน repo ณ วันที่ `2026-05-15`
 
 ## 1. เป้าหมายของระบบ
 
@@ -69,7 +69,7 @@
 หมายเหตุ:
 
 - ตัวชื่อไฟล์ทำให้เข้าใจว่าเป็น "zones only" แต่จริง ๆ มีการ scrape population, weather, roads ด้วย
-- ในโค้ดปัจจุบันเรียก `validate_pipeline_outputs()` ไม่ครบ arguments
+- มีการรวม Pipeline ย่อยและการตรวจสอบ Data Quality ไว้ครบถ้วน
 
 ## 4. High-Level Architecture
 
@@ -118,6 +118,10 @@ flowchart TD
   ดึงประชากรระดับ district/tambon
 - [scrapers/weather_data.py](/C:/ai_web_scrpping/scrapers/weather_data.py:1)
   ดึง weather จาก TMD API
+- `scrapers/flood_risk.py`
+  ดึงข้อมูลพื้นที่เสี่ยงน้ำท่วม
+- `scrapers/setup_districts_v5.py` / `scrapers/setup_tambons.py`
+  ดึงและสร้างฐานข้อมูลโครงสร้างอำเภอ/ตำบลเบื้องต้น
 
 ### 5.2 Utils
 
@@ -131,6 +135,10 @@ flowchart TD
   ตรวจความครบของ outputs
 - [utils/aws_uploader.py](/C:/ai_web_scrpping/utils/aws_uploader.py:1)
   upload processed files ไป S3
+- `utils/district_lookup_creator.py` / `utils/preprocess_target_boundaries.py`
+  ประมวลผลข้อมูลขอบเขตพื้นที่ให้พร้อมใช้งาน
+- `utils/quick_verify.py`
+  สคริปต์สั้นสำหรับตรวจสอบข้อมูลเฉพาะจุด
 
 ## 6. Detailed Data Flow
 
@@ -460,31 +468,7 @@ python -m playwright install chromium
 
 - full pipeline มีโอกาสพังตั้งแต่ import stage
 
-### 12.2 Validation call mismatch in `run_zones_only.py`
-
-`validate_pipeline_outputs()` ต้องรับ:
-
-- `landmarks_path`
-- `property_trends_path`
-- `zones_path`
-
-แต่ใน `run_zones_only.py` ส่งแค่ `zones_path`
-
-ผลกระทบ:
-
-- pipeline นี้จะพังเมื่อถึงขั้น validation
-
-### 12.3 Flood data shape mismatch in `zone_analyzer.py`
-
-โค้ดส่วนหนึ่งอ่าน `flood_risk_raw.json` แบบเหมือนเป็น list ของจุดที่มี `lat/lon`
-แต่ไฟล์จริงเป็น `GeoJSON FeatureCollection`
-
-ผลกระทบ:
-
-- การวิเคราะห์แต่ละ anchor มีโอกาส error แล้วถูก skip
-- เป็นเหตุผลหลักที่ `zone_profiles.csv` ตอนนี้ว่าง
-
-### 12.4 Property trend inputs are not fully used in zone scoring
+### 12.2 Property trend inputs are not fully used in zone scoring
 
 แม้ `zone_analyzer.py` จะรับ `property_trends_path` และโหลด `micro_price_index`
 แต่ฟีเจอร์ราคายังไม่ได้ถูกนำเข้าไปใน output และ `strategic_score` อย่างเป็นระบบ
@@ -493,7 +477,7 @@ python -m playwright install chromium
 
 - analytical output ยังไม่สะท้อน market layer ตามที่ชื่อระบบบอกไว้เต็มที่
 
-### 12.5 Encoding problems in source files
+### 12.3 Encoding problems in source files
 
 หลายไฟล์มีข้อความไทยที่แสดงเป็น mojibake
 
@@ -538,10 +522,8 @@ python -m playwright install chromium
 
 ### Phase 1: Stabilize execution
 
-- แก้ function name mismatch
-- แก้ validation call mismatch
-- แก้ flood parser ใน zone analyzer
-- ทำให้ `zone_profiles.csv` กลับมามีข้อมูล
+- แก้ function name mismatch ใน `main.py`
+- ทำให้ `zone_profiles.csv` กลับมามีข้อมูลสมบูรณ์ยิ่งขึ้น
 
 ### Phase 2: Formalize contracts
 

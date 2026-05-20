@@ -1,6 +1,11 @@
-import boto3
+try:
+    import boto3
+    from botocore.exceptions import NoCredentialsError, PartialCredentialsError
+    BOTO3_AVAILABLE = True
+except ImportError:
+    BOTO3_AVAILABLE = False
+
 import os
-from botocore.exceptions import NoCredentialsError, PartialCredentialsError
 
 def upload_to_s3(file_path, bucket_name, s3_prefix=""):
     """
@@ -11,6 +16,11 @@ def upload_to_s3(file_path, bucket_name, s3_prefix=""):
     - bucket_name: The name of the S3 bucket.
     - s3_prefix: Optional folder path inside the S3 bucket.
     """
+    if not BOTO3_AVAILABLE:
+        print(f"  [SKIP] boto3 ไม่ได้ติดตั้ง ข้ามการ Upload {file_path} ไปยัง S3")
+        print(f"  [INFO] หากต้องการใช้งาน AWS ให้รัน: pip install boto3")
+        return False
+        
     if not os.path.exists(file_path):
         print(f"Error: File {file_path} does not exist.")
         return False

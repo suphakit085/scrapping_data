@@ -3,6 +3,16 @@ import json
 import os
 import time
 
+from utils.geo_boundaries import (
+    build_spatial_index,
+    reverse_geocode,
+    prompt_admin_areas,
+    parse_osm_timestamp_year,
+    ce_to_be,
+    prompt_osm_last_edit_filter,
+    prompt_osm_created_filter,
+)
+
 OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter"
 
 def run_overpass_query(query: str) -> list:
@@ -81,7 +91,7 @@ def build_layer1_query(area_id: int) -> str:
       nwr["building"="government"](area.searchArea);
       nwr["office"="government"](area.searchArea);
     );
-    out center tags;
+    out center meta tags;
     """
 
 def build_layer2_query(area_id: int) -> str:
@@ -115,7 +125,7 @@ def build_layer2_query(area_id: int) -> str:
       nwr["tourism"="zoo"](area.searchArea);
       nwr["tourism"="theme_park"](area.searchArea);
     );
-    out center tags;
+    out center meta tags;
     """
 
 def build_layer3_query(area_id: int) -> str:
@@ -154,7 +164,7 @@ def build_layer3_query(area_id: int) -> str:
       // Transport: Gas stations
       nwr["amenity"="fuel"](area.searchArea);
     );
-    out center tags;
+    out center meta tags;
     """
 
 
@@ -301,10 +311,27 @@ LAYER_BUILDERS = [
     (3, "สิ่งอำนวยความสะดวก",  build_layer3_query),
 ]
 
-def scrape_landmarks(output_path: str):
+def scrape_landmarks(
+    output_path: str,
+    extract_admin_areas: bool = None,
+    osm_last_edit_filter: bool = False, osm_last_edit_min_ce: int = None,
+    osm_created_filter: bool = False, osm_created_min_ce: int = None,
+):
     print("=" * 50)
     print("Starting Landmarks Scraper (Overpass API)")
     print("=" * 50)
+
+    if extract_admin_areas is None:
+        extract_admin_areas = prompt_admin_areas("Landmarks Scraper")
+    if not any([osm_last_edit_filter, osm_created_filter]):
+        osm_last_edit_filter, osm_last_edit_min_ce = prompt_osm_last_edit_filter()
+        osm_created_filter, osm_created_min_ce = prompt_osm_created_filter()
+
+    if extract_admin_areas:
+        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
+    else:
+        print("  -> Skipping Sub-district and District extraction.")
+        spatial_tree, spatial_polygons, spatial_properties = None, [], []
 
     all_pois = []
 
@@ -332,15 +359,32 @@ def scrape_landmarks(output_path: str):
                 name    = tags.get("name", tags.get("name:th", tags.get("name:en", "")))
                 name_en = tags.get("name:en", "")
 
-                # Skip unnamed POIs for Layer 1 & 2 (ต้องมีชื่อ)
                 if not name and layer_num < 3:
                     continue
 
+                # ── OSM Freshness Filters ───────────────────────────────────
+                osm_ts = el.get("timestamp", "")
+                osm_version = el.get("version", None)
+                last_edit_year_ce = parse_osm_timestamp_year(osm_ts)
+                last_edit_year_be = ce_to_be(last_edit_year_ce) if last_edit_year_ce else None
+
+                if osm_last_edit_filter and osm_last_edit_min_ce and last_edit_year_ce:
+                    if last_edit_year_ce < osm_last_edit_min_ce:
+                        continue
+
+                if osm_created_filter and osm_created_min_ce and osm_version == 1 and last_edit_year_ce:
+                    if last_edit_year_ce < osm_created_min_ce:
+                        continue
+                # ───────────────────────────────────────────────────────
+
                 category = classify_poi(tags, layer_num)
+                district, sub_district = reverse_geocode(lat, lon, spatial_tree, spatial_polygons, spatial_properties)
 
                 all_pois.append({
                     "province":    thai_name,
                     "province_en": slug,
+                    "district":    district,
+                    "sub_district": sub_district,
                     "name":        name,
                     "name_en":     name_en,
                     "category":    category,
@@ -350,7 +394,9 @@ def scrape_landmarks(output_path: str):
                     "lon":         lon,
                     "osm_type":    el.get("type"),
                     "osm_id":      el.get("id"),
-                    "source":      "OpenStreetMap / Overpass API"
+                    "osm_last_edit_year_be": last_edit_year_be,
+                    "osm_version": osm_version,
+                    "source":      "OpenStreetMap / Overpass API",
                 })
                 count += 1
 
