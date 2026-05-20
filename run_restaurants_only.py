@@ -6,18 +6,22 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from scrapers.restaurants import scrape_restaurants
 from utils.data_cleaner import clean_landmarks
-from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers
+from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers, prompt_resume_or_fresh
 
 def main():
     print("========================================")
     print("Starting Restaurants-Only Pipeline")
     print("========================================")
     
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    temp_restaurants_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_restaurants"))
+    
+    # Check resume upfront
+    prompt_resume_or_fresh("Restaurants Pipeline", temp_restaurants_dir)
+    
     # Prompt user once at the pipeline entrypoint
     extract_admin_areas = prompt_admin_areas("Restaurants Pipeline")
     pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
-    
-    script_dir = os.path.dirname(os.path.abspath(__file__))
     
     # กำหนด Path ของไฟล์ต่างๆ (แบบ absolute ปลอดภัยและชัดเจน)
     restaurants_raw_path = os.path.abspath(os.path.join(script_dir, "data/raw/restaurants_raw.json"))

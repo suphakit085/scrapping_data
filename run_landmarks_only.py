@@ -7,19 +7,25 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from scrapers.landmarks import scrape_landmarks
 from scrapers.google_maps_sync import scrape_google_maps_sync
 from utils.data_cleaner import clean_landmarks
-from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers
+from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers, prompt_resume_or_fresh
 
 def main():
     print("========================================")
     print("Starting Landmarks-Only Pipeline")
     print("========================================")
     
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    temp_landmarks_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_landmarks"))
+    temp_gmaps_sync_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_gmaps_sync"))
+    
+    # Check resume upfront
+    prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
+    prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
+    
     # Prompt user once at the pipeline entrypoint (Upfront Questionnaire)
     extract_admin_areas = prompt_admin_areas("Landmarks Pipeline")
     pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
     pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
-    
-    script_dir = os.path.dirname(os.path.abspath(__file__))
     
     raw_path = os.path.abspath(os.path.join(script_dir, "data/raw/landmarks_raw.json"))
     clean_path = os.path.abspath(os.path.join(script_dir, "data/processed/landmarks_clean.csv"))

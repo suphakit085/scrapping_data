@@ -16,7 +16,7 @@ from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
 from utils.pipeline_quality import validate_pipeline_outputs
-from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers
+from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers, prompt_resume_or_fresh
 
 
 # ============================================================
@@ -143,6 +143,33 @@ def main():
     # ── เมนูหลัก ──────────────────────────────────────────
     mode = prompt_scraper_selection()
 
+    # If custom, resolve custom selection upfront
+    custom_sel = None
+    if mode == '4':
+        custom_sel = prompt_custom_selection()
+
+    # ── Check Resume/Start Fresh upfront conditionally ──
+    temp_landmarks_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_landmarks"))
+    temp_gmaps_sync_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_gmaps_sync"))
+    temp_restaurants_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_restaurants"))
+
+    if mode == '1':
+        prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
+        prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
+        prompt_resume_or_fresh("Restaurants", temp_restaurants_dir)
+    elif mode == '2':
+        prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
+        prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
+    elif mode == '3':
+        prompt_resume_or_fresh("Restaurants", temp_restaurants_dir)
+    elif mode == '4' and custom_sel:
+        if custom_sel.get('c'):
+            prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
+        if custom_sel.get('d'):
+            prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
+        if custom_sel.get('e'):
+            prompt_resume_or_fresh("Restaurants", temp_restaurants_dir)
+
     # ── ถามเรื่อง District/Sub-district ──────────────────
     extract_admin_areas = prompt_admin_areas("Pipeline")
 
@@ -150,7 +177,6 @@ def main():
     pw_osm = 2
     pw_gmaps = 3
     pw_restaurants = 4
-    custom_sel = None
 
     if mode == '1':
         pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
@@ -161,8 +187,7 @@ def main():
         pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
     elif mode == '3':
         pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
-    elif mode == '4':
-        custom_sel = prompt_custom_selection()
+    elif mode == '4' and custom_sel:
         if custom_sel.get('c'):
             pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
         if custom_sel.get('d'):
