@@ -1,2 +1,64 @@
+# ==========================================
+# 🐍 Python Environment & Cache
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+
+# ==========================================
+# 🔑 Environment & Credentials (Secrets)
+# ==========================================
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# ==========================================
+# 📊 Scraped Data & Output Files
+# ==========================================
+# Cleaned CSV files (large datasets)
 *.csv
+data/processed/**/*.csv
+
+# Temporary and Cache files
+data/raw/temp_*/
+data/processed/backup/
+data/raw/geocode_cache.json
+
+# Scraped raw JSON datasets (dynamic outputs)
+data/raw/restaurants_raw.json
+data/raw/landmarks_raw.json
+data/raw/bank_loans_raw.json
+data/raw/dotproperty_trends_raw.json
+data/raw/baania_trends_raw.json
+data/raw/baania_trends_raw_raw_listings.json
+data/raw/livinginsider_trends_raw.json
+data/raw/reic_trends_raw.json
 data/raw/flood_risk_raw.json
+
+# ==========================================
+# 🗺️ Huge GIS Dataset (GitHub file limit is 100MB)
+# ==========================================
+# ไฟล์ยักษ์ขนาด 700MB ต้องกด Ignore เสมอเพื่อป้องกัน Push ไม่ผ่านขีดจำกัด 100MB ของ GitHub
+data/the_admin_boundaries.geojson
+
+# ==========================================
+# 💻 OS & IDE Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

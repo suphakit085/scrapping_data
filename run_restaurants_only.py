@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from scrapers.restaurants import scrape_restaurants
 from utils.data_cleaner import clean_landmarks
-from utils.geo_boundaries import prompt_admin_areas
+from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers
 
 def main():
     print("========================================")
@@ -15,17 +15,24 @@ def main():
     
     # Prompt user once at the pipeline entrypoint
     extract_admin_areas = prompt_admin_areas("Restaurants Pipeline")
+    pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
     
-    # กำหนด Path ของไฟล์ต่างๆ
-    restaurants_raw_path = "data/raw/restaurants_raw.json"
-    landmarks_raw_path = "data/raw/landmarks_raw.json" # ไฟล์เดิมที่มีอยู่
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     
-    clean_combined_path = "data/processed/landmarks_clean.csv"
-    restaurants_clean_path = "data/processed/restaurants.csv"
+    # กำหนด Path ของไฟล์ต่างๆ (แบบ absolute ปลอดภัยและชัดเจน)
+    restaurants_raw_path = os.path.abspath(os.path.join(script_dir, "data/raw/restaurants_raw.json"))
+    landmarks_raw_path = os.path.abspath(os.path.join(script_dir, "data/raw/landmarks_raw.json"))
+    
+    clean_combined_path = os.path.abspath(os.path.join(script_dir, "data/processed/landmarks_clean.csv"))
+    restaurants_clean_path = os.path.abspath(os.path.join(script_dir, "data/processed/restaurants.csv"))
     
     # 1. ดึงข้อมูลร้านอาหาร (OSM + Google Maps)
     print("\n[1/2] Scraping Restaurants...")
-    scrape_restaurants(restaurants_raw_path, extract_admin_areas=extract_admin_areas)
+    scrape_restaurants(
+        restaurants_raw_path,
+        parallel_workers=pw_restaurants,
+        extract_admin_areas=extract_admin_areas
+    )
     
     # 2. รวมและทำความสะอาดไฟล์
     print("\n[2/2] Cleaning and Merging Data...")

@@ -17,11 +17,14 @@ import json
 import os
 import re
 import time
+import concurrent.futures
+import shutil
 
 from utils.geo_boundaries import (
     build_spatial_index,
     reverse_geocode,
     prompt_admin_areas,
+    prompt_parallel_workers,
 )
 
 
@@ -366,91 +369,74 @@ def scrape_google_maps_pois(province_name: str, search_query: str, page, max_res
     return results
 
 
-def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_areas: bool = None):
-    """
-    Main function: ค้นหา POI จาก Google Maps แล้วรวมกับข้อมูล OSM ที่มีอยู่
-    """
-    print("=" * 55)
-    print("Google Maps Sync (Hybrid Enrichment)")
-    print("=" * 55)
+def sync_province_task(
+    province: dict,
+    osm_pois: list,
+    local_iconic_by_province: dict,
+    province_boundaries: dict,
+    spatial_tree,
+    spatial_polygons,
+    spatial_properties,
+    extract_admin_areas: bool,
+    temp_dir: str,
+) -> str:
+    """ฟังก์ชันย่อยสำหรับซิงก์ Google Maps 1 จังหวัด (ถูกเรียกใช้ในโหมด Parallel)"""
+    thai_name = province["name"]
+    slug = province["slug"]
+    province_en = normalize_province_name(PROVINCE_SLUG_TO_ADM1.get(slug, slug))
+    
+    temp_file_path = os.path.join(temp_dir, f"gmaps_sync_{slug}.json")
+    if os.path.exists(temp_file_path):
+        print(f"\n📍 [SKIP] พบข้อมูล Sync Google Maps ของ {thai_name} แล้ว โหลดจากไฟล์เดิม (Resume)")
+        return temp_file_path
 
-    # Prompt the user via interactive terminal UI if not passed
-    if extract_admin_areas is None:
-        extract_admin_areas = prompt_admin_areas("Google Maps Sync")
+    print(f"\n📍 เริ่มต้น Sync Google Maps: {thai_name}")
+    
+    try:
+        # Filter existing OSM POIs just for this province to keep search/dedup fast
+        province_osm_pois = [p for p in osm_pois if p.get("province") == thai_name]
+        province_new_pois = []
+        
+        targets = list(SEARCH_TARGETS)
+        targets.extend(local_iconic_by_province.get(thai_name, []))
 
-    # โหลดข้อมูล OSM เดิมเพื่อใช้ Dedup
-    osm_pois = []
-    if os.path.exists(osm_raw_path):
-        with open(osm_raw_path, "r", encoding="utf-8") as f:
-            osm_pois = json.load(f)
-        print(f"  Loaded {len(osm_pois)} existing OSM POIs")
+        seen_queries = set()
+        province_targets = []
+        for target in targets:
+            key = (
+                target.get("query", "").strip().lower(),
+                target.get("category", "").strip().lower(),
+                int(target.get("layer", 2)),
+            )
 
-    new_pois = []
-    local_iconic_by_province = _load_local_iconic_targets()
-    province_boundaries = load_target_boundaries()
+            if not key[0] or key in seen_queries:
+                continue
+            seen_queries.add(key)
+            province_targets.append(target)
 
-    if extract_admin_areas:
-        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
-        # Enrich existing OSM POIs if they don't have district/sub_district
-        print("  -> Enriching existing OSM POIs with district and sub-district information...")
-        for poi in osm_pois:
-            if "district" not in poi or "sub_district" not in poi:
-                lat, lon = poi.get("lat"), poi.get("lon")
-                if lat and lon:
-                    district, sub_district = reverse_geocode(lat, lon, spatial_tree, spatial_polygons, spatial_properties)
-                    poi["district"] = district
-                    poi["sub_district"] = sub_district
-    else:
-        print("  -> Skipping Sub-district and District extraction.")
-        spatial_tree, spatial_polygons, spatial_properties = None, [], []
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=["--lang=th-TH,th"]
-        )
-        context = browser.new_context(
-            locale="th-TH",
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            ),
-            viewport={"width": 1280, "height": 800}
-        )
-        page = context.new_page()
-
-        for province in PROVINCES:
-            thai_name = province["name"]
-            slug = province["slug"]
-            province_en = normalize_province_name(PROVINCE_SLUG_TO_ADM1.get(slug, slug))
-            print(f"\n[{thai_name}]")
-            if province_boundaries and province_en not in province_boundaries:
-                print(f"  [WARN] No boundary found for {province_en}; using country bounds only.")
-
-            targets = list(SEARCH_TARGETS)
-            targets.extend(local_iconic_by_province.get(thai_name, []))
-
-            seen_queries = set()
-            province_targets = []
-            for target in targets:
-                key = (
-                    target.get("query", "").strip().lower(),
-                    target.get("category", "").strip().lower(),
-                    int(target.get("layer", 2)),
-                )
-
-                if not key[0] or key in seen_queries:
-                    continue
-                seen_queries.add(key)
-                province_targets.append(target)
+        # Launch Playwright inside the thread
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=["--lang=th-TH,th"]
+            )
+            context = browser.new_context(
+                locale="th-TH",
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
+                viewport={"width": 1280, "height": 800}
+            )
+            page = context.new_page()
 
             for target in province_targets:
                 query = target["query"]
                 category = target["category"]
                 layer = target["layer"]
 
-                print(f"  Searching '{query}'...", end=" ", flush=True)
+                print(f"  [{thai_name}] Searching '{query}'...", end=" ", flush=True)
                 pois = scrape_google_maps_pois(thai_name, query, page)
 
                 # Dedup: สถานที่ที่มีพื้นที่กว้างใช้ radius 400m
@@ -471,9 +457,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_a
                         continue
 
                     is_duplicate = False
-                    for existing in osm_pois + new_pois:
-                        if existing.get("province") != thai_name:
-                            continue
+                    for existing in province_osm_pois + province_new_pois:
                         ex_lat = existing.get("lat")
                         ex_lon = existing.get("lon")
                         if ex_lat and ex_lon:
@@ -499,7 +483,7 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_a
                         
                         district, sub_district = reverse_geocode(poi["lat"], poi["lon"], spatial_tree, spatial_polygons, spatial_properties) if extract_admin_areas else ("", "")
 
-                        new_pois.append({
+                        province_new_pois.append({
                             "province":    thai_name,
                             "province_en": province_en,
                             "district":    district,
@@ -525,7 +509,103 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_a
                 print(f"{len(pois)} found, {added} new added{outside_msg}.")
                 time.sleep(1.5)
 
-        browser.close()
+            browser.close()
+
+        # Save province-specific sync'd POIs to temp file
+        with open(temp_file_path, "w", encoding="utf-8") as f:
+            json.dump(province_new_pois, f, ensure_ascii=False, indent=2)
+
+        print(f"  => [✅ สำเร็จ] {thai_name}: พบ POI ใหม่ {len(province_new_pois)} แห่ง")
+        return temp_file_path
+
+    except Exception as e:
+        print(f"❌ เกิดข้อผิดพลาดกับ Google Maps Sync จังหวัด {thai_name}: {e}")
+        return None
+
+
+def scrape_google_maps_sync(
+    osm_raw_path: str,
+    output_path: str,
+    parallel_workers: int = None,
+    extract_admin_areas: bool = None,
+):
+    """
+    Main function: ค้นหา POI จาก Google Maps แล้วรวมกับข้อมูล OSM ที่มีอยู่ (แบบรันขนานรายจังหวัด)
+    """
+    if parallel_workers is None:
+        parallel_workers = prompt_parallel_workers("Google Maps Sync", default_workers=3)
+
+    print("=" * 55)
+    print(f"Google Maps Sync (Hybrid Enrichment) - Parallel Workers: {parallel_workers}")
+    print("=" * 55)
+
+    # Prompt the user via interactive terminal UI if not passed
+    if extract_admin_areas is None:
+        extract_admin_areas = prompt_admin_areas("Google Maps Sync")
+
+    # โหลดข้อมูล OSM เดิมเพื่อใช้ Dedup
+    osm_pois = []
+    if os.path.exists(osm_raw_path):
+        with open(osm_raw_path, "r", encoding="utf-8") as f:
+            osm_pois = json.load(f)
+        print(f"  Loaded {len(osm_pois)} existing OSM POIs")
+
+    local_iconic_by_province = _load_local_iconic_targets()
+    province_boundaries = load_target_boundaries()
+
+    if extract_admin_areas:
+        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
+        # Enrich existing OSM POIs if they don't have district/sub_district
+        print("  -> Enriching existing OSM POIs with district and sub-district information...")
+        for poi in osm_pois:
+            if "district" not in poi or "sub_district" not in poi:
+                lat, lon = poi.get("lat"), poi.get("lon")
+                if lat and lon:
+                    district, sub_district = reverse_geocode(lat, lon, spatial_tree, spatial_polygons, spatial_properties)
+                    poi["district"] = district
+                    poi["sub_district"] = sub_district
+    else:
+        print("  -> Skipping Sub-district and District extraction.")
+        spatial_tree, spatial_polygons, spatial_properties = None, [], []
+
+    # สร้างโฟลเดอร์ชั่วคราวสำหรับเก็บไฟล์แยกรายจังหวัดเพื่อป้องกัน Race Condition
+    temp_dir = os.path.join(os.path.dirname(output_path), "temp_gmaps_sync")
+    os.makedirs(temp_dir, exist_ok=True)
+
+    temp_files = []
+
+    # รันแบบขนาน (Parallel) โดยใช้ ThreadPoolExecutor
+    with concurrent.futures.ThreadPoolExecutor(max_workers=parallel_workers) as executor:
+        futures = []
+        for province in PROVINCES:
+            futures.append(
+                executor.submit(
+                    sync_province_task,
+                    province,
+                    osm_pois,
+                    local_iconic_by_province,
+                    province_boundaries,
+                    spatial_tree,
+                    spatial_polygons,
+                    spatial_properties,
+                    extract_admin_areas,
+                    temp_dir,
+                )
+            )
+
+        for future in concurrent.futures.as_completed(futures):
+            t_file = future.result()
+            if t_file:
+                temp_files.append(t_file)
+
+    # รวมไฟล์ใหม่จากแต่ละจังหวัด
+    print(f"\n🔄 กำลังรวมผลลัพธ์ Google Maps Sync จากทั้งหมด {len(temp_files)} จังหวัด...")
+    new_pois = []
+    for t_file in temp_files:
+        if os.path.exists(t_file):
+            with open(t_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                new_pois.extend(data)
 
     # รวมข้อมูล OSM + Google Maps ใหม่
     merged = osm_pois + new_pois
@@ -533,6 +613,12 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_a
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
+
+    # Clean up temp directory
+    try:
+        shutil.rmtree(temp_dir)
+    except:
+        pass
 
     print(f"\n{'='*55}")
     print(f"  OSM POIs:         {len(osm_pois)}")
@@ -543,7 +629,10 @@ def scrape_google_maps_sync(osm_raw_path: str, output_path: str, extract_admin_a
 
 
 if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    correct_path = os.path.abspath(os.path.join(script_dir, "../data/raw/landmarks_raw.json"))
     scrape_google_maps_sync(
-        osm_raw_path="../data/raw/landmarks_raw.json",
-        output_path="../data/raw/landmarks_raw.json"   # Overwrite เดิมหลัง Enrich
+        osm_raw_path=correct_path,
+        output_path=correct_path,
+        parallel_workers=3
     )

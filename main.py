@@ -16,7 +16,7 @@ from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
 from utils.pipeline_quality import validate_pipeline_outputs
-from utils.geo_boundaries import prompt_admin_areas
+from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers
 
 
 # ============================================================
@@ -82,15 +82,15 @@ def prompt_custom_selection():
 # Phase Functions
 # ============================================================
 
-def run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas):
+def run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=2, pw_gmaps=3):
     print("\n[Landmarks] Scraping OSM Landmarks...")
-    scrape_landmarks(raw_landmarks_path, extract_admin_areas=extract_admin_areas)
+    scrape_landmarks(raw_landmarks_path, parallel_workers=pw_osm, extract_admin_areas=extract_admin_areas)
     print("\n[Landmarks] Syncing Google Maps Data...")
-    scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, extract_admin_areas=extract_admin_areas)
+    scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, parallel_workers=pw_gmaps, extract_admin_areas=extract_admin_areas)
 
-def run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas):
+def run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas, pw_restaurants=4):
     print("\n[Restaurants] Scraping...")
-    scrape_restaurants(restaurants_raw_path, extract_admin_areas=extract_admin_areas)
+    scrape_restaurants(restaurants_raw_path, parallel_workers=pw_restaurants, extract_admin_areas=extract_admin_areas)
 
 def run_clean_phase(raw_bank_path, raw_baania_path, raw_livinginsider_path,
                     raw_dotproperty_path, raw_landmarks_path,
@@ -125,25 +125,50 @@ def main():
     print("║       🤖  Automated Web Scraping Pipeline            ║")
     print("╚══════════════════════════════════════════════════════╝")
 
-    # Paths
-    raw_bank_path          = "data/raw/bank_loans_raw.json"
-    raw_dotproperty_path   = "data/raw/dotproperty_trends_raw.json"
-    raw_baania_path        = "data/raw/baania_trends_raw.json"
-    raw_livinginsider_path = "data/raw/livinginsider_trends_raw.json"
-    raw_landmarks_path     = "data/raw/landmarks_raw.json"
-    restaurants_raw_path   = "data/raw/restaurants_raw.json"
-    processed_bank_path        = "data/processed/bank_loans_clean.csv"
-    reic_processed_path        = "data/processed/reic_trends.csv"
-    processed_property_path    = "data/processed/property_trends.csv"
-    processed_landmarks_path   = "data/processed/landmarks_clean.csv"
-    processed_zones_path       = "data/processed/zone_profiles.csv"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Paths (Absolute)
+    raw_bank_path          = os.path.abspath(os.path.join(script_dir, "data/raw/bank_loans_raw.json"))
+    raw_dotproperty_path   = os.path.abspath(os.path.join(script_dir, "data/raw/dotproperty_trends_raw.json"))
+    raw_baania_path        = os.path.abspath(os.path.join(script_dir, "data/raw/baania_trends_raw.json"))
+    raw_livinginsider_path = os.path.abspath(os.path.join(script_dir, "data/raw/livinginsider_trends_raw.json"))
+    raw_landmarks_path     = os.path.abspath(os.path.join(script_dir, "data/raw/landmarks_raw.json"))
+    restaurants_raw_path   = os.path.abspath(os.path.join(script_dir, "data/raw/restaurants_raw.json"))
+    processed_bank_path        = os.path.abspath(os.path.join(script_dir, "data/processed/bank_loans_clean.csv"))
+    reic_processed_path        = os.path.abspath(os.path.join(script_dir, "data/processed/reic_trends.csv"))
+    processed_property_path    = os.path.abspath(os.path.join(script_dir, "data/processed/property_trends.csv"))
+    processed_landmarks_path   = os.path.abspath(os.path.join(script_dir, "data/processed/landmarks_clean.csv"))
+    processed_zones_path       = os.path.abspath(os.path.join(script_dir, "data/processed/zone_profiles.csv"))
 
     # ── เมนูหลัก ──────────────────────────────────────────
     mode = prompt_scraper_selection()
 
     # ── ถามเรื่อง District/Sub-district ──────────────────
-    need_admin = mode in ('1', '2', '3', '4')
     extract_admin_areas = prompt_admin_areas("Pipeline")
+
+    # ── Upfront Questionnaire for Parallel Workers ───────
+    pw_osm = 2
+    pw_gmaps = 3
+    pw_restaurants = 4
+    custom_sel = None
+
+    if mode == '1':
+        pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
+        pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
+        pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
+    elif mode == '2':
+        pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
+        pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
+    elif mode == '3':
+        pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
+    elif mode == '4':
+        custom_sel = prompt_custom_selection()
+        if custom_sel.get('c'):
+            pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
+        if custom_sel.get('d'):
+            pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
+        if custom_sel.get('e'):
+            pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
 
     # ── รันตาม Mode ───────────────────────────────────────
     if mode == '1':
@@ -154,8 +179,8 @@ def main():
         scrape_dotproperty_trends(raw_dotproperty_path)
         scrape_baania_trends(raw_baania_path)
         scrape_livinginsider_trends(raw_livinginsider_path)
-        run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas)
-        run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas)
+        run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=pw_osm, pw_gmaps=pw_gmaps)
+        run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas, pw_restaurants=pw_restaurants)
         run_clean_phase(raw_bank_path, raw_baania_path, raw_livinginsider_path,
                         raw_dotproperty_path, raw_landmarks_path,
                         processed_bank_path, processed_property_path, processed_landmarks_path)
@@ -163,28 +188,27 @@ def main():
     elif mode == '2':
         # Landmarks only
         print("\n🏛️  ดึงเฉพาะ Landmarks")
-        run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas)
+        run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=pw_osm, pw_gmaps=pw_gmaps)
         if os.path.exists(raw_landmarks_path):
             clean_landmarks(raw_landmarks_path, processed_landmarks_path)
 
     elif mode == '3':
         # Restaurants only
         print("\n🍜  ดึงเฉพาะ Restaurants")
-        run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas)
+        run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas, pw_restaurants=pw_restaurants)
 
     elif mode == '4':
         # Custom
         print("\n🛠️  โหมด Custom")
-        sel = prompt_custom_selection()
         print("\n[Phase 1] Scraping Data...")
-        if sel.get('a'): run_bank_scraper(raw_bank_path)
-        if sel.get('b'):
+        if custom_sel.get('a'): run_bank_scraper(raw_bank_path)
+        if custom_sel.get('b'):
             scrape_dotproperty_trends(raw_dotproperty_path)
             scrape_baania_trends(raw_baania_path)
             scrape_livinginsider_trends(raw_livinginsider_path)
-        if sel.get('c'): scrape_landmarks(raw_landmarks_path, extract_admin_areas=extract_admin_areas)
-        if sel.get('d'): scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, extract_admin_areas=extract_admin_areas)
-        if sel.get('e'): run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas)
+        if custom_sel.get('c'): scrape_landmarks(raw_landmarks_path, parallel_workers=pw_osm, extract_admin_areas=extract_admin_areas)
+        if custom_sel.get('d'): scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, parallel_workers=pw_gmaps, extract_admin_areas=extract_admin_areas)
+        if custom_sel.get('e'): run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas, pw_restaurants=pw_restaurants)
 
         run_clean_phase(raw_bank_path, raw_baania_path, raw_livinginsider_path,
                         raw_dotproperty_path, raw_landmarks_path,
@@ -198,9 +222,9 @@ def main():
             landmarks_clean_path=processed_landmarks_path,
             property_trends_path=processed_property_path,
             reic_trends_path=reic_processed_path,
-            population_path="data/processed/population_stats.csv",
-            road_path="data/raw/road_network.json",
-            flood_path="data/raw/flood_risk_raw.json"
+            population_path=os.path.abspath(os.path.join(script_dir, "data/processed/population_stats.csv")),
+            road_path=os.path.abspath(os.path.join(script_dir, "data/raw/road_network.json")),
+            flood_path=os.path.abspath(os.path.join(script_dir, "data/raw/flood_risk_raw.json"))
         )
         print("\n[Phase 2c] Validating Processed Outputs...")
         is_valid, quality_messages = validate_pipeline_outputs(

@@ -2,6 +2,8 @@ import requests
 import json
 import os
 import time
+import concurrent.futures
+import shutil
 
 from utils.geo_boundaries import (
     build_spatial_index,
@@ -11,6 +13,7 @@ from utils.geo_boundaries import (
     ce_to_be,
     prompt_osm_last_edit_filter,
     prompt_osm_created_filter,
+    prompt_parallel_workers,
 )
 
 OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter"
@@ -311,41 +314,28 @@ LAYER_BUILDERS = [
     (3, "สิ่งอำนวยความสะดวก",  build_layer3_query),
 ]
 
-def scrape_landmarks(
-    output_path: str,
-    extract_admin_areas: bool = None,
+def scrape_landmarks_province_task(
+    province: dict,
+    spatial_tree, spatial_polygons, spatial_properties,
+    temp_dir: str,
     osm_last_edit_filter: bool = False, osm_last_edit_min_ce: int = None,
     osm_created_filter: bool = False, osm_created_min_ce: int = None,
 ):
-    print("=" * 50)
-    print("Starting Landmarks Scraper (Overpass API)")
-    print("=" * 50)
+    thai_name = province["name"]
+    slug      = province["slug"]
+    rel_id    = province["relation_id"]
+    area_id   = rel_id + 3600000000
 
-    if extract_admin_areas is None:
-        extract_admin_areas = prompt_admin_areas("Landmarks Scraper")
-    if not any([osm_last_edit_filter, osm_created_filter]):
-        osm_last_edit_filter, osm_last_edit_min_ce = prompt_osm_last_edit_filter()
-        osm_created_filter, osm_created_min_ce = prompt_osm_created_filter()
+    temp_file_path = os.path.join(temp_dir, f"landmarks_{slug}.json")
+    if os.path.exists(temp_file_path):
+        print(f"\n📍 [SKIP] พบข้อมูลแลนด์มาร์กของ {thai_name} แล้ว โหลดจากไฟล์เดิม (Resume)")
+        return temp_file_path
 
-    if extract_admin_areas:
-        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
-    else:
-        print("  -> Skipping Sub-district and District extraction.")
-        spatial_tree, spatial_polygons, spatial_properties = None, [], []
-
-    all_pois = []
-
-    for province in PROVINCE_DATA:
-        thai_name = province["name"]
-        slug      = province["slug"]
-        rel_id    = province["relation_id"]
-        area_id   = rel_id + 3600000000  # Overpass area ID = relation ID + 3.6B
-
-        print(f"\n[{thai_name}]")
-
+    print(f"\n📍 เริ่มต้นดึงข้อมูลแลนด์มาร์ก: {thai_name}")
+    try:
+        province_pois = []
         for layer_num, layer_name, query_builder in LAYER_BUILDERS:
-            print(f"  Layer {layer_num} ({layer_name})...", end=" ")
-
+            print(f"  [{thai_name}] Layer {layer_num} ({layer_name})...", end=" ")
             query    = query_builder(area_id)
             elements = run_overpass_query(query)
             count    = 0
@@ -380,7 +370,7 @@ def scrape_landmarks(
                 category = classify_poi(tags, layer_num)
                 district, sub_district = reverse_geocode(lat, lon, spatial_tree, spatial_polygons, spatial_properties)
 
-                all_pois.append({
+                province_pois.append({
                     "province":    thai_name,
                     "province_en": slug,
                     "district":    district,
@@ -401,12 +391,88 @@ def scrape_landmarks(
                 count += 1
 
             print(f"{count} POIs found.")
-            time.sleep(1.5)  # Polite delay
+            time.sleep(1.0) # Polite delay for OSM mirrors
+
+        with open(temp_file_path, "w", encoding="utf-8") as f:
+            json.dump(province_pois, f, ensure_ascii=False, indent=2)
+
+        return temp_file_path
+    except Exception as e:
+        print(f"❌ เกิดข้อผิดพลาดกับแลนด์มาร์กจังหวัด {thai_name}: {e}")
+        return None
+
+
+def scrape_landmarks(
+    output_path: str,
+    parallel_workers: int = None,
+    extract_admin_areas: bool = None,
+    osm_last_edit_filter: bool = False, osm_last_edit_min_ce: int = None,
+    osm_created_filter: bool = False, osm_created_min_ce: int = None,
+):
+    if parallel_workers is None:
+        parallel_workers = prompt_parallel_workers("OSM Landmarks", default_workers=2)
+
+    print("=" * 50)
+    print(f"Starting Landmarks Scraper (Parallel Workers: {parallel_workers})")
+    print("=" * 50)
+
+    if extract_admin_areas is None:
+        extract_admin_areas = prompt_admin_areas("Landmarks Scraper")
+    if not any([osm_last_edit_filter, osm_created_filter]):
+        osm_last_edit_filter, osm_last_edit_min_ce = prompt_osm_last_edit_filter()
+        osm_created_filter, osm_created_min_ce = prompt_osm_created_filter()
+
+    if extract_admin_areas:
+        spatial_tree, spatial_polygons, spatial_properties = build_spatial_index()
+    else:
+        print("  -> Skipping Sub-district and District extraction.")
+        spatial_tree, spatial_polygons, spatial_properties = None, [], []
+
+    # Create temporary directory for merging
+    temp_dir = os.path.join(os.path.dirname(output_path), "temp_landmarks")
+    os.makedirs(temp_dir, exist_ok=True)
+
+    temp_files = []
+
+    # Run province tasks in parallel
+    with concurrent.futures.ThreadPoolExecutor(max_workers=parallel_workers) as executor:
+        futures = []
+        for province in PROVINCE_DATA:
+            futures.append(
+                executor.submit(
+                    scrape_landmarks_province_task,
+                    province,
+                    spatial_tree, spatial_polygons, spatial_properties,
+                    temp_dir,
+                    osm_last_edit_filter, osm_last_edit_min_ce,
+                    osm_created_filter, osm_created_min_ce,
+                )
+            )
+
+        for future in concurrent.futures.as_completed(futures):
+            t_file = future.result()
+            if t_file:
+                temp_files.append(t_file)
+
+    # Merge Phase
+    print(f"\n🔄 กำลังรวมไฟล์จากทั้งหมด {len(temp_files)} จังหวัด...")
+    all_pois = []
+    for t_file in temp_files:
+        if os.path.exists(t_file):
+            with open(t_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                all_pois.extend(data)
 
     # Save output
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_pois, f, ensure_ascii=False, indent=2)
+
+    # Clean up temp directory
+    try:
+        shutil.rmtree(temp_dir)
+    except:
+        pass
 
     print(f"\n{'='*50}")
     print(f"Done! Total POIs: {len(all_pois)}")
@@ -415,4 +481,6 @@ def scrape_landmarks(
 
 
 if __name__ == "__main__":
-    scrape_landmarks("../data/raw/landmarks_raw.json")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    correct_path = os.path.abspath(os.path.join(script_dir, "../data/raw/landmarks_raw.json"))
+    scrape_landmarks(correct_path)

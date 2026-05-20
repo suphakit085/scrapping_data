@@ -23,6 +23,7 @@ from utils.geo_boundaries import (
     prompt_gmaps_review_filter,
     prompt_osm_last_edit_filter,
     prompt_osm_created_filter,
+    prompt_parallel_workers,
 )
 
 
@@ -456,12 +457,15 @@ def scrape_province_task(
 
 def scrape_restaurants(
     output_path: str,
-    parallel_workers: int = 4,
+    parallel_workers: int = None,
     extract_admin_areas: bool = None,
     osm_last_edit_filter: bool = False, osm_last_edit_min_ce: int = None,
     osm_created_filter: bool = False, osm_created_min_ce: int = None,
     gmaps_review_filter: bool = False, gmaps_review_min_ce: int = None,
 ):
+    if parallel_workers is None:
+        parallel_workers = prompt_parallel_workers("Restaurants", default_workers=4)
+
     print("=" * 60)
     print(f"🚀 Starting Dedicated Restaurant Scraper (Parallel Workers: {parallel_workers})")
     print("=" * 60)
@@ -537,4 +541,6 @@ def scrape_restaurants(
     print("=" * 60)
 
 if __name__ == "__main__":
-    scrape_restaurants("../data/raw/restaurants_raw.json", parallel_workers=4)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    correct_path = os.path.abspath(os.path.join(script_dir, "../data/raw/restaurants_raw.json"))
+    scrape_restaurants(correct_path, parallel_workers=4)

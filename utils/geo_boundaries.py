@@ -351,3 +351,27 @@ def prompt_osm_created_filter():
         print("   ⚠️  กรอกปีไม่ถูกต้อง จะดึงทั้งหมด")
         return False, None
 
+
+def prompt_parallel_workers(label: str, default_workers: int = 4, max_recommended: int = 8) -> int:
+    """ถามผู้ใช้ใน Terminal ณ จุดเริ่มต้น เพื่อกำหนดจำนวนคนทำงานขนานในหัวข้อนั้นๆ"""
+    print(f"\n⚙️  [Terminal UI - {label} Parallel Settings]")
+    print(f"❓ ต้องการระบุจำนวนคนทำงานขนาน (Parallel Workers) หรือไม่?")
+    print(f"   👉 กรอกตัวเลขระหว่าง 1 ถึง {max_recommended} (แนะนำ: {default_workers})")
+    print(f"   👉 กด [Enter] เพื่อใช้ค่าเริ่มต้น ({default_workers})")
+    print(f"   👉 [q] ออกจากโปรแกรม")
+    while True:
+        raw = input(f"   จำนวนคนทำงาน (1-{max_recommended}, Default={default_workers}, หรือ q): ").strip().lower()
+        if raw in ('q', 'quit', 'exit'):
+            print("\n👋 ออกจากโปรแกรมแล้ว")
+            raise SystemExit(0)
+        if not raw:
+            return default_workers
+        try:
+            val = int(raw)
+            if 1 <= val <= 32:
+                return val
+            print("❌ จำนวนไม่อยู่ในช่วงที่กำหนด กรุณาลองใหม่")
+        except ValueError:
+            print("❌ กรุณากรอกจำนวนเป็นตัวเลข หรือพิมพ์ q เพื่อออก")
+
+
