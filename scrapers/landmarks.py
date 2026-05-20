@@ -456,17 +456,48 @@ def scrape_landmarks(
 
     # Merge Phase
     print(f"\n🔄 กำลังรวมไฟล์จากทั้งหมด {len(temp_files)} จังหวัด...")
-    all_pois = []
+    new_scraped_pois = []
     for t_file in temp_files:
         if os.path.exists(t_file):
             with open(t_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                all_pois.extend(data)
+                new_scraped_pois.extend(data)
+
+    # 🆕 โหลดข้อมูลเดิมที่เคยดึงไว้มาเปรียบเทียบ
+    existing_pois = []
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                existing_pois = json.load(f)
+            print(f"  Loaded {len(existing_pois)} existing POIs from {os.path.basename(output_path)}")
+        except Exception:
+            existing_pois = []
+
+    # วิเคราะห์ส่วนต่างและผสานข้อมูลอย่างชาญฉลาด
+    from utils.data_diff import find_new_and_merge
+    merged_pois, new_found = find_new_and_merge(existing_pois, new_scraped_pois)
+
+    # แสดงผล Diff Report
+    print("\n============================================================")
+    print("📊  [Data Diff Report - OSM Landmarks]")
+    print("============================================================")
+    print(f"💾  ไฟล์เปรียบเทียบต้นฉบับ: {os.path.basename(output_path)}")
+    print(f"    ✨ ข้อมูลเดิมที่มี: {len(existing_pois)} แห่ง")
+    print(f"    ✨ ดึงเข้ามาใหม่รอบนี้: {len(new_scraped_pois)} แห่ง")
+    print(f"    🆕 ตรวจพบสถานที่ใหม่เอี่ยม (New Landmarks): {len(new_found)} แห่ง")
+    
+    if new_found:
+        print("\n📝 ตัวอย่างสถานที่ใหม่ที่เพิ่มเข้ามา:")
+        for idx, poi in enumerate(new_found[:10], 1):
+            print(f"    [{idx}] ({poi.get('province')}) {poi.get('name')} (Layer {poi.get('layer')})")
+        if len(new_found) > 10:
+            print(f"    ... และสถานที่ใหม่อื่นๆ อีก {len(new_found) - 10} แห่ง")
+    print("============================================================")
 
     # Save output
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(all_pois, f, ensure_ascii=False, indent=2)
+        json.dump(merged_pois, f, ensure_ascii=False, indent=2)
 
     # Clean up temp directory
     try:
@@ -475,7 +506,7 @@ def scrape_landmarks(
         pass
 
     print(f"\n{'='*50}")
-    print(f"Done! Total POIs: {len(all_pois)}")
+    print(f"Done! Total POIs: {len(merged_pois)}")
     print(f"Saved to: {output_path}")
     print("=" * 50)
 

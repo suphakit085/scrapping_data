@@ -517,17 +517,44 @@ def scrape_restaurants(
     # Merge Phase: รวมไฟล์ทั้งหมดเข้าด้วยกัน
     # ==========================================
     print(f"\n🔄 กำลังรวมไฟล์จากทั้งหมด {len(temp_files)} จังหวัด...")
-    all_restaurants = []
+    new_restaurants = []
     for t_file in temp_files:
         if os.path.exists(t_file):
             with open(t_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                all_restaurants.extend(data)
+                new_restaurants.extend(data)
                 
+    # 🆕 โหลดข้อมูลเดิมที่เคยดึงไว้มาเปรียบเทียบ
+    existing_restaurants = []
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                existing_restaurants = json.load(f)
+            print(f"  Loaded {len(existing_restaurants)} existing restaurants from {os.path.basename(output_path)}")
+        except Exception:
+            existing_restaurants = []
+
+    # วิเคราะห์ส่วนต่างและผสานข้อมูลอย่างชาญฉลาด (ร้านอาหารใช้อัลกอริทึมเดียวกัน)
+    from utils.data_diff import find_new_and_merge
+    merged_restaurants, new_found = find_new_and_merge(existing_restaurants, new_restaurants)
+
+    print("\n============================================================")
+    print("📊  [Data Diff Report - Restaurants Scraper]")
+    print("============================================================")
+    print(f"💾  ไฟล์เปรียบเทียบต้นฉบับ: {os.path.basename(output_path)}")
+    print(f"    ✨ ร้านอาหารเดิมในระบบ: {len(existing_restaurants)} ร้าน")
+    print(f"    ✨ ดึงเข้ามาใหม่รอบนี้: {len(new_restaurants)} ร้าน")
+    print(f"    🆕 ค้นพบร้านอาหารใหม่เพิ่ม: {len(new_found)} ร้าน")
+    if new_found:
+        print("\n📝 ตัวอย่างร้านอาหารใหม่ที่เพิ่มเข้ามา:")
+        for idx, r in enumerate(new_found[:10], 1):
+            print(f"    [{idx}] ({r.get('province')}) {r.get('name')}")
+    print("============================================================")
+
     # Save Final Output
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(all_restaurants, f, ensure_ascii=False, indent=2)
+        json.dump(merged_restaurants, f, ensure_ascii=False, indent=2)
 
     # Clean up temp directory
     try:
@@ -536,7 +563,7 @@ def scrape_restaurants(
         pass
 
     print(f"\n{'='*60}")
-    print(f"✅ Done! Total Restaurants: {len(all_restaurants)}")
+    print(f"✅ Done! Total Restaurants: {len(merged_restaurants)}")
     print(f"💾 Saved to: {output_path}")
     print("=" * 60)
 

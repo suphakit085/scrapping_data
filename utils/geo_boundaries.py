@@ -256,21 +256,24 @@ def parse_review_relative_year(relative_text: str):
 
 def _prompt_year_threshold(prompt_label: str):
     """Helper: ถามปี พ.ศ. ขั้นต่ำ คืนค่าเป็น ค.ศ. หรือ None ถ้าไม่กรอก"""
-    raw = input(prompt_label).strip()
-    if not raw:
-        return None
-    try:
-        be = int(raw)
-        if be > 2400:          # เป็น พ.ศ. แน่นอน
-            return be_to_ce(be)
-        elif be > 1900:        # เป็น ค.ศ. แน่นอน
-            return be
-        else:
-            print("   ⚠️  ปีที่กรอกดูผิดปกติ จะใช้เป็น พ.ศ. โดยอัตโนมัติ")
-            return be_to_ce(be)
-    except ValueError:
-        print("   ⚠️  กรอกปีไม่ถูกต้อง จะดึงข้อมูลทั้งหมด")
-        return None
+    while True:
+        raw = input(prompt_label).strip()
+        if not raw:
+            return None
+        if raw.lower() in ('q', 'quit', 'exit'):
+            print("\n👋 ออกจากโปรแกรมแล้ว")
+            raise SystemExit(0)
+        try:
+            be = int(raw)
+            if be > 2400:          # เป็น พ.ศ. แน่นอน
+                return be_to_ce(be)
+            elif be > 1900:        # เป็น ค.ศ. แน่นอน
+                return be
+            else:
+                print("   ⚠️  ปีที่กรอกดูผิดปกติ จะใช้เป็น พ.ศ. โดยอัตโนมัติ")
+                return be_to_ce(be)
+        except ValueError:
+            print("   ❌ กรุณากรอกเป็นตัวเลขปี พ.ศ./ค.ศ. หรือกด [Enter] เพื่อดึงทั้งหมด (หรือ q เพื่อออก)")
 
 
 def prompt_gmaps_review_filter():
@@ -335,21 +338,21 @@ def prompt_osm_created_filter():
     print("   👉 กรอกปี พ.ศ. เริ่มต้น เช่น 2565")
     print("   👉 กด Enter เพื่อดึงทั้งหมด (ไม่กรอง)")
     print("   👉 [q] ออกจากโปรแกรม")
-    raw = input("   ปี พ.ศ. เริ่มต้น (Enter = ทั้งหมด): ").strip()
-    if raw.lower() in ('q', 'quit', 'exit'):
-        print("\n👋 ออกจากโปรแกรมแล้ว")
-        raise SystemExit(0)
-    if not raw:
-        return False, None
-    try:
-        be = int(raw)
-        min_ce = be_to_ce(be) if be > 2400 else be
-        be_display = ce_to_be(min_ce)
-        print(f"   ✅ จะดึงเฉพาะ OSM POI ที่สร้างตั้งแต่ พ.ศ. {be_display} ขึ้นไป")
-        return True, min_ce
-    except ValueError:
-        print("   ⚠️  กรอกปีไม่ถูกต้อง จะดึงทั้งหมด")
-        return False, None
+    while True:
+        raw = input("   ปี พ.ศ. เริ่มต้น (Enter = ทั้งหมด หรือ q เพื่อออก): ").strip()
+        if raw.lower() in ('q', 'quit', 'exit'):
+            print("\n👋 ออกจากโปรแกรมแล้ว")
+            raise SystemExit(0)
+        if not raw:
+            return False, None
+        try:
+            be = int(raw)
+            min_ce = be_to_ce(be) if be > 2400 else be
+            be_display = ce_to_be(min_ce)
+            print(f"   ✅ จะดึงเฉพาะ OSM POI ที่สร้างตั้งแต่ พ.ศ. {be_display} ขึ้นไป")
+            return True, min_ce
+        except ValueError:
+            print("   ❌ กรุณากรอกเป็นตัวเลขปี พ.ศ./ค.ศ. หรือกด [Enter] เพื่อดึงทั้งหมด (หรือ q เพื่อออก)")
 
 
 def prompt_parallel_workers(label: str, default_workers: int = 4, max_recommended: int = 8) -> int:
@@ -373,5 +376,103 @@ def prompt_parallel_workers(label: str, default_workers: int = 4, max_recommende
             print("❌ จำนวนไม่อยู่ในช่วงที่กำหนด กรุณาลองใหม่")
         except ValueError:
             print("❌ กรุณากรอกจำนวนเป็นตัวเลข หรือพิมพ์ q เพื่อออก")
+
+
+def prompt_resume_or_fresh(label: str, temp_dir: str) -> bool:
+    """
+    ตรวจสอบไฟล์ชั่วคราวเก่า และถามผู้ใช้ว่าต้องการรันต่อ (Resume) หรือเริ่มใหม่แบบปลอดภัย (Start Fresh)
+    - คืนค่า True: รันต่อ (Resume)
+    - คืนค่า False: เริ่มใหม่ (Start Fresh - ซึ่งย้ายไฟล์เก่าไปสำรองแล้ว)
+    """
+    import glob
+    import shutil
+    import time
+    
+    if not os.path.exists(temp_dir):
+        return True
+        
+    temp_files = glob.glob(os.path.join(temp_dir, "*.json"))
+    if not temp_files:
+        return True
+
+    # สร้างชื่อโฟลเดอร์สำรองข้อมูลตามเวลาปัจจุบัน
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    backup_dir = f"{temp_dir.rstrip('/\\\\')}_backup_{timestamp}"
+
+    print(f"\n⚙️  [Terminal UI - {label} Resume Check]")
+    print(f"⚠️  พบข้อมูลชั่วคราวจากการรันครั้งก่อนหน้า ({len(temp_files)} จังหวัด) ในโฟลเดอร์:")
+    print(f"   📂 {os.path.abspath(temp_dir)}")
+    print("❓ คุณต้องการทำงานอย่างไร?")
+    print("   👉 [r] ทำงานต่อจากของเดิม (Resume Mode)")
+    print(f"   👉 [f] เริ่มใหม่ทั้งหมดอย่างปลอดภัย (Start Fresh - สำรองไฟล์เก่าไปที่ {os.path.basename(backup_dir)})")
+    print("   👉 [q] ออกจากโปรแกรม")
+    
+    while True:
+        mode_choice = input("กรุณาเลือก (r/f/q): ").strip().lower()
+        if mode_choice in ('q', 'quit', 'exit'):
+            print("\n👋 ออกจากโปรแกรมแล้ว")
+            raise SystemExit(0)
+            
+        elif mode_choice in ('f', 'fresh', 'startfresh'):
+            print(f"   📦 กำลังย้ายข้อมูลเก่าไปสำรองที่ {os.path.basename(backup_dir)}...")
+            try:
+                shutil.move(temp_dir, backup_dir)
+                print("   ✅ สำรองข้อมูลและเตรียมเริ่มต้นรันใหม่เสร็จสิ้น")
+            except Exception as e:
+                print(f"   ⚠️  ไม่สามารถย้ายโฟลเดอร์ชั่วคราวทั้งหมดได้: {e}")
+            return False
+            
+        elif mode_choice in ('r', 'resume'):
+            print("\n📋 รายการไฟล์ชั่วคราวรายจังหวัดที่ตรวจพบ:")
+            # ดึงเฉพาะชื่อไฟล์และพยายามจับคู่กับชื่อจังหวัดในภาษาไทย
+            file_options = []
+            for idx, filepath in enumerate(sorted(temp_files), 1):
+                filename = os.path.basename(filepath)
+                # พยายามแยกแยะ slug จังหวัด
+                slug_match = re.search(r'_(.+)\.json$', filename)
+                slug_display = slug_match.group(1) if slug_match else filename
+                file_options.append((idx, filepath, filename, slug_display))
+                print(f"   [{idx}] {filename} ({slug_display})")
+                
+            print("\n❓ คุณต้องการรันต่อโดยข้าม (Skip) ไฟล์จังหวัดใดบ้าง?")
+            print("   👉 พิมพ์หมายเลขไฟล์ติดกันเพื่อเลือก เช่น 13 (เลือกไฟล์ 1 และ 3 เพื่อใช้รันต่อ)")
+            print("   👉 กด [Enter] เพื่อรันต่อจากทุกไฟล์ที่มีทั้งหมด (Resume All)")
+            print("   👉 [q] ออกจากโปรแกรม")
+            
+            while True:
+                select_choice = input("กรุณาเลือก (หมายเลขไฟล์, Enter = ใช้ทั้งหมด, หรือ q): ").strip().lower()
+                if select_choice in ('q', 'quit', 'exit'):
+                    print("\n👋 ออกจากโปรแกรมแล้ว")
+                    raise SystemExit(0)
+                
+                # เคส 1: กด Enter คือ ใช้ไฟล์ทั้งหมดรันต่อ
+                if not select_choice:
+                    print("   ✅ ยอมรับไฟล์เดิมทั้งหมดเพื่อรันงานต่อ")
+                    return True
+                    
+                # เคส 2: เลือกเฉพาะบางไฟล์
+                if select_choice.isdigit():
+                    selected_indices = [int(char) for char in select_choice]
+                    # ตรวจความถูกต้องของหมายเลข
+                    if all(1 <= i <= len(file_options) for i in selected_indices):
+                        # สร้างโฟลเดอร์สำรอง
+                        os.makedirs(backup_dir, exist_ok=True)
+                        
+                        keep_paths = [file_options[i-1][1] for i in selected_indices]
+                        kept_names = []
+                        
+                        # ย้ายไฟล์ที่ "ไม่ถูกเลือก" ไปไว้ที่โฟลเดอร์สำรอง
+                        for idx, filepath, filename, slug_display in file_options:
+                            if filepath in keep_paths:
+                                kept_names.append(slug_display)
+                            else:
+                                shutil.move(filepath, os.path.join(backup_dir, filename))
+                                
+                        print(f"   ✅ เก็บไฟล์ไว้รันต่อ: {', '.join(kept_names)}")
+                        print(f"   🧹 ย้ายไฟล์จังหวัดที่เหลือไปสำรองที่ {os.path.basename(backup_dir)} (จะรันใหม่เฉพาะจังหวัดที่ย้าย)")
+                        return True
+                
+                print(f"❌ เลือกไม่ถูกต้อง กรุณาเลือกหมายเลขระหว่าง 1 ถึง {len(file_options)}")
+
 
 
