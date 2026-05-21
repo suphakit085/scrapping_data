@@ -202,8 +202,15 @@ def clean_landmarks(raw_file_paths, processed_file_path, restaurants_output_path
         'osm_timestamp', 'osm_last_edit_year_ce', 'osm_last_edit_year_be',
         'osm_created_year_ce', 'osm_created_year_be', 'osm_version',
         'gmaps_last_review_year_ce', 'gmaps_last_review_year_be',
+        'gmaps_status', 'gmaps_source_matched'
     ]
-    df = df[[c for c in output_cols if c in df.columns]]
+    
+    # บังคับสร้างคอลัมน์ที่ขาดหายไปให้เป็นค่าว่าง (NaN) เสมอ เพื่อรักษาโครงสร้าง CSV ให้ตรงกับ Data Dictionary
+    for col in output_cols:
+        if col not in df.columns:
+            df[col] = pd.NA
+            
+    df = df[output_cols]
 
     os.makedirs(os.path.dirname(processed_file_path), exist_ok=True)
     df.to_csv(processed_file_path, index=False, encoding='utf-8-sig')

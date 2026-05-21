@@ -4,6 +4,9 @@ import os
 import time
 import concurrent.futures
 import shutil
+import threading
+
+overpass_lock = threading.Lock()
 
 from utils.geo_boundaries import (
     build_spatial_index,
@@ -20,22 +23,24 @@ OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter"
 
 def run_overpass_query(query: str) -> list:
     """Run an Overpass QL query and return list of elements."""
-    for mirror in [
-        "https://overpass.kumi.systems/api/interpreter",
-        "https://overpass-api.de/api/interpreter",
-        "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-    ]:
-        try:
-            r = requests.get(mirror, params={"data": query},
-                             headers={"User-Agent": "BI-Pipeline/1.0"},
-                             timeout=60)
-            if r.status_code == 200 and r.text.strip():
-                return r.json().get("elements", [])
-        except Exception as e:
-            print(f"    Mirror {mirror} failed: {e}")
-            continue
-    print("    All Overpass mirrors failed.")
-    return []
+    with overpass_lock:
+        time.sleep(2)  # รักษามารยาท ป้องกันการยิงรัวเกินไป
+        for mirror in [
+            "https://overpass.kumi.systems/api/interpreter",
+            "https://overpass-api.de/api/interpreter",
+            "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+        ]:
+            try:
+                r = requests.get(mirror, params={"data": query},
+                                 headers={"User-Agent": "BI-Pipeline/1.0"},
+                                 timeout=60)
+                if r.status_code == 200 and r.text.strip():
+                    return r.json().get("elements", [])
+            except Exception as e:
+                print(f"    Mirror {mirror} failed: {e}")
+                continue
+        print("    All Overpass mirrors failed.")
+        return []
 
 def get_coords(element: dict) -> tuple:
     """Extract lat/lon from a node or centroid of way/relation."""
@@ -94,7 +99,7 @@ def build_layer1_query(area_id: int) -> str:
       nwr["building"="government"](area.searchArea);
       nwr["office"="government"](area.searchArea);
     );
-    out center meta tags;
+    out center meta;
     """
 
 def build_layer2_query(area_id: int) -> str:
@@ -128,7 +133,7 @@ def build_layer2_query(area_id: int) -> str:
       nwr["tourism"="zoo"](area.searchArea);
       nwr["tourism"="theme_park"](area.searchArea);
     );
-    out center meta tags;
+    out center meta;
     """
 
 def build_layer3_query(area_id: int) -> str:
@@ -167,7 +172,7 @@ def build_layer3_query(area_id: int) -> str:
       // Transport: Gas stations
       nwr["amenity"="fuel"](area.searchArea);
     );
-    out center meta tags;
+    out center meta;
     """
 
 

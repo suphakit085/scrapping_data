@@ -8,6 +8,32 @@ import concurrent.futures
 import glob
 import shutil
 from playwright.sync_api import sync_playwright
+import ctypes
+import threading
+
+overpass_lock = threading.Lock()
+
+class MEMORYSTATUSEX(ctypes.Structure):
+    _fields_ = [
+        ("dwLength", ctypes.c_ulong),
+        ("dwMemoryLoad", ctypes.c_ulong),
+        ("ullTotalPhys", ctypes.c_ulonglong),
+        ("ullAvailPhys", ctypes.c_ulonglong),
+        ("ullTotalPageFile", ctypes.c_ulonglong),
+        ("ullAvailPageFile", ctypes.c_ulonglong),
+        ("ullTotalVirtual", ctypes.c_ulonglong),
+        ("ullAvailVirtual", ctypes.c_ulonglong),
+        ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+    ]
+
+def get_system_ram_load() -> int:
+    try:
+        stat = MEMORYSTATUSEX()
+        stat.dwLength = ctypes.sizeof(stat)
+        ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(stat))
+        return stat.dwMemoryLoad
+    except Exception:
+        return 50
 
 from utils.geo_boundaries import (
     load_admin3_centroids,
@@ -53,23 +79,25 @@ GEOJSON_SEARCH_KEYWORDS = [
 # ============================================================
 
 def run_overpass_query(query: str) -> list:
-    mirrors = [
-        "https://overpass-api.de/api/interpreter",
-        "https://overpass.kumi.systems/api/interpreter",
-        "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-    ]
-    for mirror in mirrors:
-        try:
-            r = requests.post(mirror, data={"data": query},
-                             headers={"User-Agent": "BI-Pipeline-Restaurant/1.0"},
-                             timeout=60)
-            if r.status_code == 200 and r.text.strip():
-                return r.json().get("elements", [])
-        except Exception as e:
-            print(f"    Mirror {mirror} failed: {e}")
-            continue
-    print("    All Overpass mirrors failed.")
-    return []
+    with overpass_lock:
+        time.sleep(2)  # รักษามารยาท ป้องกันการยิงรัวเกินไป
+        mirrors = [
+            "https://overpass-api.de/api/interpreter",
+            "https://overpass.kumi.systems/api/interpreter",
+            "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+        ]
+        for mirror in mirrors:
+            try:
+                r = requests.post(mirror, data={"data": query},
+                                 headers={"User-Agent": "BI-Pipeline-Restaurant/1.0"},
+                                 timeout=60)
+                if r.status_code == 200 and r.text.strip():
+                    return r.json().get("elements", [])
+            except Exception as e:
+                print(f"    Mirror {mirror} failed: {e}")
+                continue
+        print("    All Overpass mirrors failed.")
+        return []
 
 def get_coords(element: dict) -> tuple:
     if element.get("type") == "node":
@@ -97,7 +125,7 @@ def scrape_osm_restaurants(
       nwr["amenity"="cafe"](area.searchArea);
       nwr["amenity"="food_court"](area.searchArea);
     );
-    out center meta tags;
+    out center meta;
     """
     
     print(f"  -> Pulling from OSM...", end=" ")
@@ -233,7 +261,7 @@ def get_gmaps_latest_review_year(page) -> int | None:
 def scrape_gmaps_restaurants_by_geojson_areas(
     province_data: dict,
     existing_osm_pois: list,
-    page,
+    browser_instance,
     admin3_by_province: dict,
     province_boundaries: dict,
     spatial_tree,
@@ -253,8 +281,35 @@ def scrape_gmaps_restaurants_by_geojson_areas(
 
     print(f"  -> Loaded {len(search_areas)} GeoJSON admin3 search areas.")
     new_pois = []
+    
+    context = browser_instance.new_context(locale="th-TH", viewport={"width": 1280, "height": 800})
+    page = context.new_page()
 
     for i, area in enumerate(search_areas):
+        ram_percent = get_system_ram_load()
+        if ram_percent > 90:
+            print(f"\n    ⚠️  [RAM Warning] System RAM is critical ({ram_percent}%). Pausing to prevent data loss...")
+            try:
+                page.close()
+                context.close()
+            except Exception:
+                pass
+            while get_system_ram_load() > 85:
+                print(f"    ⏳ [Pause Mode] RAM at {get_system_ram_load()}%. Waiting 10 seconds... (Close other apps to speed this up)", flush=True)
+                time.sleep(10)
+            print("    ✅ [RAM Recovered] Resuming...")
+            context = browser_instance.new_context(locale="th-TH", viewport={"width": 1280, "height": 800})
+            page = context.new_page()
+        elif i > 0 and i % 15 == 0:
+            print(f"\n    [RAM Recovery] Recycling browser context...")
+            try:
+                page.close()
+                context.close()
+            except Exception:
+                pass
+            context = browser_instance.new_context(locale="th-TH", viewport={"width": 1280, "height": 800})
+            page = context.new_page()
+
         area_name = area.get("admin3") or area.get("admin3_th") or province_en
         area_lat = area.get("lat")
         area_lon = area.get("lon")
@@ -320,13 +375,31 @@ def scrape_gmaps_restaurants_by_geojson_areas(
                             outside_skipped += 1
                             continue
 
-                        is_duplicate = False
+                        duplicate_ref = None
                         for existing in existing_osm_pois + new_pois:
                             if calculate_distance(lat, lon, existing["lat"], existing["lon"]) < 0.04:
-                                is_duplicate = True
+                                duplicate_ref = existing
                                 break
 
-                        if is_duplicate:
+                        if duplicate_ref is not None:
+                            if duplicate_ref.get("source") == "OpenStreetMap / Overpass API" and duplicate_ref.get("gmaps_last_review_year_ce") is None:
+                                try:
+                                    item.click()
+                                    page.wait_for_timeout(1500)
+                                    page_content = page.content().lower()
+                                    if any(bw in page_content for bw in CLOSED_LABELS):
+                                        duplicate_ref["gmaps_status"] = "Permanently Closed"
+                                    else:
+                                        gmaps_last_review_year_ce = get_gmaps_latest_review_year(page)
+                                        if gmaps_last_review_year_ce:
+                                            duplicate_ref["gmaps_last_review_year_ce"] = gmaps_last_review_year_ce
+                                            duplicate_ref["gmaps_last_review_year_be"] = ce_to_be(gmaps_last_review_year_ce)
+                                            duplicate_ref["gmaps_source_matched"] = "Google Maps (Enriched)"
+                                    page.go_back()
+                                    page.wait_for_timeout(800)
+                                except Exception:
+                                    try: page.go_back()
+                                    except: pass
                             continue
 
                         # Feature 2: Scrape review date ถ้าเปิด filter
@@ -389,6 +462,12 @@ def scrape_gmaps_restaurants_by_geojson_areas(
         outside_msg = f", {outside_skipped} outside skipped" if outside_skipped else ""
         print(f"+{area_added} added{outside_msg}.")
 
+    try:
+        page.close()
+        context.close()
+    except Exception:
+        pass
+
     return new_pois
 
 
@@ -426,11 +505,8 @@ def scrape_province_task(
         # 2. Google Maps Phase
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True, args=["--lang=th-TH,th"])
-            context = browser.new_context(locale="th-TH", viewport={"width": 1280, "height": 800})
-            page = context.new_page()
-
             gmaps_pois = scrape_gmaps_restaurants_by_geojson_areas(
-                province, osm_pois, page,
+                province, osm_pois, browser,
                 admin3_by_province, province_boundaries,
                 spatial_tree, spatial_polygons, spatial_properties,
                 gmaps_review_filter=gmaps_review_filter, gmaps_review_min_ce=gmaps_review_min_ce,

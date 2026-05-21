@@ -16,7 +16,12 @@ from utils.property_trends_merger import merge_property_trends
 from utils.zone_analyzer import analyze_zones
 from utils.aws_uploader import upload_to_s3
 from utils.pipeline_quality import validate_pipeline_outputs
-from utils.geo_boundaries import prompt_admin_areas, prompt_parallel_workers, prompt_resume_or_fresh
+from utils.geo_boundaries import (
+    prompt_admin_areas,
+    prompt_landmark_source_mode,
+    prompt_parallel_workers,
+    prompt_resume_or_fresh,
+)
 
 
 # ============================================================
@@ -82,11 +87,20 @@ def prompt_custom_selection():
 # Phase Functions
 # ============================================================
 
-def run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=2, pw_gmaps=3):
-    print("\n[Landmarks] Scraping OSM Landmarks...")
-    scrape_landmarks(raw_landmarks_path, parallel_workers=pw_osm, extract_admin_areas=extract_admin_areas)
-    print("\n[Landmarks] Syncing Google Maps Data...")
-    scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, parallel_workers=pw_gmaps, extract_admin_areas=extract_admin_areas)
+def run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=2, pw_gmaps=3, source_mode="both"):
+    if source_mode not in ("both", "osm", "google"):
+        source_mode = "both"
+
+    if source_mode in ("both", "osm"):
+        print("\n[Landmarks] Scraping OSM Landmarks...")
+        scrape_landmarks(raw_landmarks_path, parallel_workers=pw_osm, extract_admin_areas=extract_admin_areas)
+
+    if source_mode in ("both", "google"):
+        if source_mode == "google" and not os.path.exists(raw_landmarks_path):
+            print(f"\n[Warning] Raw baseline not found: {raw_landmarks_path}")
+            print("[Warning] Google Maps Sync will run with an empty dedup baseline.")
+        print("\n[Landmarks] Syncing Google Maps Data...")
+        scrape_google_maps_sync(raw_landmarks_path, raw_landmarks_path, parallel_workers=pw_gmaps, extract_admin_areas=extract_admin_areas)
 
 def run_restaurants_pipeline(restaurants_raw_path, extract_admin_areas, pw_restaurants=4):
     print("\n[Restaurants] Scraping...")
@@ -148,6 +162,10 @@ def main():
     if mode == '4':
         custom_sel = prompt_custom_selection()
 
+    landmark_source_mode = "both"
+    if mode == '2':
+        landmark_source_mode = prompt_landmark_source_mode(default_mode="both")
+
     # ── Check Resume/Start Fresh upfront conditionally ──
     temp_landmarks_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_landmarks"))
     temp_gmaps_sync_dir = os.path.abspath(os.path.join(script_dir, "data/raw/temp_gmaps_sync"))
@@ -158,8 +176,10 @@ def main():
         prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
         prompt_resume_or_fresh("Restaurants", temp_restaurants_dir)
     elif mode == '2':
-        prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
-        prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
+        if landmark_source_mode in ("both", "osm"):
+            prompt_resume_or_fresh("OSM Landmarks", temp_landmarks_dir)
+        if landmark_source_mode in ("both", "google"):
+            prompt_resume_or_fresh("Google Maps Sync", temp_gmaps_sync_dir)
     elif mode == '3':
         prompt_resume_or_fresh("Restaurants", temp_restaurants_dir)
     elif mode == '4' and custom_sel:
@@ -183,8 +203,10 @@ def main():
         pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
         pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
     elif mode == '2':
-        pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
-        pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
+        if landmark_source_mode in ("both", "osm"):
+            pw_osm = prompt_parallel_workers("OSM Landmarks", default_workers=2)
+        if landmark_source_mode in ("both", "google"):
+            pw_gmaps = prompt_parallel_workers("Google Maps Sync", default_workers=3)
     elif mode == '3':
         pw_restaurants = prompt_parallel_workers("Restaurants", default_workers=4)
     elif mode == '4' and custom_sel:
@@ -213,7 +235,13 @@ def main():
     elif mode == '2':
         # Landmarks only
         print("\n🏛️  ดึงเฉพาะ Landmarks")
-        run_landmarks_pipeline(raw_landmarks_path, extract_admin_areas, pw_osm=pw_osm, pw_gmaps=pw_gmaps)
+        run_landmarks_pipeline(
+            raw_landmarks_path,
+            extract_admin_areas,
+            pw_osm=pw_osm,
+            pw_gmaps=pw_gmaps,
+            source_mode=landmark_source_mode,
+        )
         if os.path.exists(raw_landmarks_path):
             clean_landmarks(raw_landmarks_path, processed_landmarks_path)
 

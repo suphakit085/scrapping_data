@@ -204,6 +204,57 @@ def prompt_admin_areas(scraper_name):
         print("❌ เลือกไม่ถูกต้อง กรุณาพิมพ์ y, n หรือ q")
 
 
+def prompt_landmark_source_mode(default_mode: str = "both") -> str:
+    """Ask which Landmark sources to run.
+
+    Returns one of: "both", "osm", "google".
+    Supports LANDMARK_SOURCE_MODE=both|osm|google for non-interactive runs.
+    """
+    valid_modes = {"both", "osm", "google"}
+    default_mode = default_mode if default_mode in valid_modes else "both"
+
+    env_mode = os.environ.get("LANDMARK_SOURCE_MODE")
+    if env_mode is not None:
+        mode = env_mode.strip().lower()
+        aliases = {
+            "all": "both",
+            "both": "both",
+            "osm": "osm",
+            "osm-only": "osm",
+            "google": "google",
+            "gmaps": "google",
+            "google-only": "google",
+        }
+        selected = aliases.get(mode)
+        if selected:
+            print(f"[CI/Non-Interactive] Landmark Source Mode: {selected} (via Env)")
+            return selected
+        print(f"[CI/Non-Interactive] Invalid LANDMARK_SOURCE_MODE='{env_mode}', defaulting to {default_mode}")
+        return default_mode
+
+    print("\n[Terminal UI - Landmark Source Mode]")
+    print("Choose which Landmark sources to run:")
+    print("   [b] Both OSM + Google Maps Sync (default)")
+    print("   [o] OSM-only")
+    print("   [g] Google Maps-only")
+    print("   [q] Quit")
+
+    while True:
+        choice = input(f"Select source mode (b/o/g/q, Default={default_mode}): ").strip().lower()
+        if not choice:
+            return default_mode
+        if choice in ("q", "quit", "exit"):
+            print("\nExiting program.")
+            raise SystemExit(0)
+        if choice in ("b", "both", "all"):
+            return "both"
+        if choice in ("o", "osm", "osm-only"):
+            return "osm"
+        if choice in ("g", "google", "gmaps", "google-only"):
+            return "google"
+        print("Invalid choice. Please type b, o, g, or q.")
+
+
 # ============================================================
 # Freshness Filter — Date Utilities
 # ============================================================
@@ -555,6 +606,5 @@ def prompt_resume_or_fresh(label: str, temp_dir: str) -> bool:
                         return True
                 
                 print(f"❌ เลือกไม่ถูกต้อง กรุณาเลือกหมายเลขระหว่าง 1 ถึง {len(file_options)}")
-
 
 
