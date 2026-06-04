@@ -62,3 +62,22 @@
 > [!TIP]
 > **วิธีวิเคราะห์ปีที่ร้านอาหารเปิด/อัปเดต:**
 > หากต้องการหาร้านใหม่ๆ แนะนำให้ดูที่ความสดใหม่ของรีวิว (`gmaps_last_review_year_be`) เป็นหลักควบคู่ไปกับ `osm_last_edit_year_be` ครับ
+
+---
+
+## Amenities output
+
+`data/processed/amenities_clean.csv` uses the same POI column contract as
+`landmarks_clean.csv` and `restaurants.csv`. It is produced by
+`python run_amenities_only.py` from `data/raw/amenities_raw.json`.
+
+All amenities records are Layer 3 with `layer_name = "สิ่งอำนวยความสะดวก"`.
+The current categories are:
+
+- `ร้านซักผ้า`
+- `ร้านซ่อมรถ`
+- `ฟิตเนส`
+- `ร้านตัดผม`
+
+The amenities dataset is intentionally separate from `landmarks_clean.csv` and
+is not used by `zone_profiles.csv` scoring in the first implementation.

@@ -40,6 +40,7 @@ data/raw/geocode_cache.json
 
 # Scraped raw JSON datasets (dynamic outputs)
 data/raw/restaurants_raw.json
+data/raw/amenities_raw.json
 data/raw/landmarks_raw.json
 data/raw/bank_loans_raw.json
 data/raw/dotproperty_trends_raw.json
