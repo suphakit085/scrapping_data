@@ -34,9 +34,17 @@ build/
 data/processed/**/*.csv
 
 # Temporary and Cache files
+tmp/
+output/
+*.tmp
 data/raw/temp_*/
 data/processed/backup/
 data/raw/geocode_cache.json
+data/raw/google_road_name_cache.json
+data/raw/roads_raw.json
+data/raw/roads_raw_quality_report.json
+data/processed/*.geojson
+data/processed/*duplicate*.txt
 
 # Scraped raw JSON datasets (dynamic outputs)
 data/raw/restaurants_raw.json

@@ -33,6 +33,26 @@ PROVINCE_ALIASES = {
     "buri ram": "Buri Ram",
     "prachuapkhirikhan": "Prachuap Khiri Khan",
     "prachuap khiri khan": "Prachuap Khiri Khan",
+    "ขอนแก่น": "Khon Kaen",
+    "จังหวัดขอนแก่น": "Khon Kaen",
+    "อุบลราชธานี": "Ubon Ratchathani",
+    "จังหวัดอุบลราชธานี": "Ubon Ratchathani",
+    "ประจวบคีรีขันธ์": "Prachuap Khiri Khan",
+    "จังหวัดประจวบคีรีขันธ์": "Prachuap Khiri Khan",
+    "อุดรธานี": "Udon Thani",
+    "จังหวัดอุดรธานี": "Udon Thani",
+    "ระยอง": "Rayong",
+    "จังหวัดระยอง": "Rayong",
+    "ชลบุรี": "Chon Buri",
+    "จังหวัดชลบุรี": "Chon Buri",
+    "สุรินทร์": "Surin",
+    "จังหวัดสุรินทร์": "Surin",
+    "บุรีรัมย์": "Buri Ram",
+    "จังหวัดบุรีรัมย์": "Buri Ram",
+    "พิษณุโลก": "Phitsanulok",
+    "จังหวัดพิษณุโลก": "Phitsanulok",
+    "เชียงราย": "Chiang Rai",
+    "จังหวัดเชียงราย": "Chiang Rai",
 }
 
 
@@ -46,6 +66,13 @@ def normalize_province_name(name):
         return ""
 
     cleaned = str(name).strip()
+    if cleaned in PROVINCE_ALIASES:
+        return PROVINCE_ALIASES[cleaned]
+
+    cleaned_lower = cleaned.lower()
+    if cleaned_lower in PROVINCE_ALIASES:
+        return PROVINCE_ALIASES[cleaned_lower]
+
     key = re.sub(r"[^a-z0-9]+", " ", cleaned.lower()).strip()
     compact_key = key.replace(" ", "")
 

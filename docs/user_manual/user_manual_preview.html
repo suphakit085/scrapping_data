@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>คู่มือผู้ใช้ ai_web_scrpping</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e7e9ed;
+      color: #171717;
+      font-family: Tahoma, "Leelawadee UI", Arial, sans-serif;
+      line-height: 1.42;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 12mm auto;
+      padding: 17mm 18mm 15mm;
+      background: white;
+      position: relative;
+      break-after: page;
+      page-break-after: always;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+
+    .kicker {
+      color: #516071;
+      font-size: 10.5pt;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 5mm;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 7mm;
+      color: #0f2d3f;
+      font-size: 22pt;
+      line-height: 1.18;
+    }
+
+    h1 .project-name {
+      display: inline-block;
+      margin-left: 2mm;
+      color: #0f2d3f;
+      font-size: 15.5pt;
+      font-weight: 800;
+      line-height: 1;
+      vertical-align: baseline;
+    }
+
+    h2 {
+      margin: 6mm 0 2.5mm;
+      color: #12384d;
+      font-size: 13.2pt;
+      line-height: 1.25;
+      border-bottom: 0.3mm solid #dce3ea;
+      padding-bottom: 1.5mm;
+    }
+
+    p, li {
+      font-size: 10.2pt;
+    }
+
+    p {
+      margin: 0 0 3.1mm;
+    }
+
+    ul, ol {
+      margin: 1mm 0 3.5mm 6mm;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 1.4mm;
+      padding-left: 1mm;
+    }
+
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      color: #12384d;
+      font-size: 9.2pt;
+    }
+
+    pre {
+      margin: 2mm 0 4mm;
+      padding: 3mm 3.5mm;
+      background: #f5f7f9;
+      border: 0.3mm solid #dce3ea;
+      border-radius: 2mm;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 9pt;
+      line-height: 1.35;
+    }
+
+    .note {
+      margin: 3mm 0 4mm;
+      padding: 3mm 3.5mm;
+      background: #f7fbf8;
+      border-left: 1.2mm solid #2f8f57;
+      font-size: 10pt;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4mm;
+      margin: 3mm 0 4mm;
+    }
+
+    .box {
+      border: 0.3mm solid #dce3ea;
+      border-radius: 2mm;
+      padding: 3mm;
+      background: #fbfcfd;
+    }
+
+    .box strong {
+      display: block;
+      margin-bottom: 1.5mm;
+      color: #12384d;
+      font-size: 10.3pt;
+    }
+
+    .footer {
+      position: absolute;
+      left: 18mm;
+      right: 18mm;
+      bottom: 8mm;
+      display: flex;
+      justify-content: space-between;
+      color: #7b8794;
+      font-size: 8.5pt;
+      border-top: 0.25mm solid #e5e9ef;
+      padding-top: 2mm;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+
+      .page:last-of-type {
+        break-after: auto;
+        page-break-after: auto;
+      }
+
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+        height: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <div class="kicker">User Manual - Page 1</div>
+    <h1>คู่มือผู้ใช้โปรเจกต์ <code class="project-name">ai_web_scrpping</code></h1>
+
+    <h2>1. โปรเจกต์นี้ใช้ทำอะไร</h2>
+    <p><code>ai_web_scrpping</code> เป็น data pipeline สำหรับรวบรวมข้อมูลเชิงพื้นที่ของ 10 จังหวัดในไทย โดยเน้น landmark, POI, amenity และถนน แล้วแปลงเป็นไฟล์ CSV/JSON ที่นำไปใช้ต่อในงานวิเคราะห์, dashboard, BI หรือรายงานพื้นที่ได้ทันที</p>
+
+    <div class="grid">
+      <div class="box"><strong>จุดสำคัญและสิ่งอำนวยความสะดวก</strong>landmark, restaurant, amenity และ POI จาก OpenStreetMap/Google Maps</div>
+      <div class="box"><strong>ถนนและโครงข่ายถนน</strong>OSM roads, road intelligence และ Google road-name enrichment</div>
+      <div class="box"><strong>บริบทพื้นที่</strong>ประชากร อากาศ น้ำท่วม และ zone profile</div>
+      <div class="box"><strong>ไฟล์ถนนปลายทาง</strong><code>roads_final.csv</code> สำหรับใช้ร่วมกับ landmark และรายงานพื้นที่</div>
+    </div>
+
+    <h2>2. สิ่งที่ต้องเตรียมก่อนรัน</h2>
+    <p>ให้รันทุกคำสั่งจาก root ของโปรเจกต์:</p>
+    <pre><code>cd C:\ai_web_scrpping
+.\venv\Scripts\Activate.ps1</code></pre>
+
+    <p>ตรวจไฟล์ <code>.env</code> ว่ามี key ที่จำเป็น:</p>
+    <pre><code>BOT_API_KEY=...
+GOOGLE_MAPS_API_KEY=...</code></pre>
+
+    <ul>
+      <li><code>BOT_API_KEY</code> ใช้กับข้อมูลสินเชื่อจาก Bank of Thailand</li>
+      <li><code>GOOGLE_MAPS_API_KEY</code> ใช้กับ Google road-name enrichment</li>
+      <li>ห้าม commit <code>.env</code> เพราะมี secret</li>
+    </ul>
+
+    <h2>3. โครงสร้างไฟล์ที่ควรรู้</h2>
+    <pre><code>data/raw/        ข้อมูลดิบและ cache จาก scraper
+data/processed/  ไฟล์ CSV ที่พร้อมนำไปใช้ต่อ
+scrapers/        ตัวดึงข้อมูลจากแหล่งต่าง ๆ
+utils/           ตัว clean, merge, analyze, validate</code></pre>
+
+    <div class="note">กฎสำคัญ: อย่ารันไฟล์ใน <code>scrapers/</code> ตรง ๆ ให้ใช้ entrypoint ที่ root เช่น <code>python main.py</code> หรือ <code>python run_roads_only.py</code></div>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>1/6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">User Manual - Page 2</div>
+    <h1>คำสั่งรัน Pipeline หลัก</h1>
+
+    <h2>1. Full Pipeline</h2>
+    <pre><code>python main.py</code></pre>
+    <p>เมื่อรันแล้วจะเจอเมนูหลัก:</p>
+    <pre><code>[1] รันทุกอย่าง (Full Pipeline)
+[2] ดึงเฉพาะ Landmarks (OSM + Google Maps Sync)
+[3] ดึงเฉพาะ Restaurants
+[4] เลือกเองทีละรายการ (Custom)
+[q] ออกจากโปรแกรม</code></pre>
+    <p>กด <code>1</code> เพื่อรันครบชุด, กด <code>2</code> เพื่ออัปเดตเฉพาะ landmark/POI, กด <code>3</code> เพื่อดึงร้านอาหาร, กด <code>4</code> เพื่อเลือก module เอง และกด <code>q</code> เพื่อออก</p>
+    <p>ลำดับโดยรวม: ดึงข้อมูลสินเชื่อ, landmarks และ POI, sync Google Maps, clean/merge, ตรวจ quality gate และ upload ไป S3</p>
+    <div class="note">ข้อควรระวัง: ใน <code>main.py</code> ยังมี bucket placeholder <code>your-target-bucket-name</code> ถ้ายังไม่ได้ตั้ง S3 จริง อย่าใช้ flow upload เป็น production</div>
+
+    <h2>2. โค้ดและฟังก์ชันสำคัญที่ควรรู้</h2>
+    <ul>
+      <li><code>main.py::main()</code>: จุดเริ่มต้นของเมนูหลักและตัวเลือก pipeline ทั้งหมด</li>
+      <li><code>main.py::run_landmarks_pipeline()</code>: รัน landmark จาก OSM แล้ว sync รายละเอียดจาก Google Maps</li>
+      <li><code>scrapers/landmarks.py::scrape_landmarks()</code>: ดึง landmark/POI ตาม layer และจังหวัดเป้าหมาย</li>
+      <li><code>scrapers/google_maps_sync.py::scrape_google_maps_sync()</code>: เติมข้อมูล Google Maps กลับเข้า <code>landmarks_raw.json</code></li>
+      <li><code>scrapers/road_analysis.py::fetch_province_roads()</code>: ดึงข้อมูลถนนจาก OSM/Overpass แล้วสร้าง <code>roads_raw.json</code> และ <code>roads.csv</code></li>
+      <li><code>utils/google_road_enrichment.py::build_google_road_enrichment_outputs()</code>: เติมชื่อถนนจาก Google และสร้าง <code>roads_enriched.csv</code>/<code>roads_final.csv</code></li>
+      <li><code>utils/road_intelligence.py::build_road_intelligence_outputs()</code>: สร้าง feature, summary และ intersection ของถนน</li>
+      <li><code>utils/pipeline_quality.py::validate_pipeline_outputs()</code>: ตรวจคุณภาพ output ก่อนถือว่า pipeline สำเร็จ</li>
+    </ul>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>2/6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">User Manual - Page 3</div>
+    <h1>Road Dataset และ Google Enrichment</h1>
+
+    <h2>1. Road Dataset</h2>
+    <pre><code>python run_roads_only.py</code></pre>
+    <p>ผลลัพธ์หลัก:</p>
+    <pre><code>data/raw/roads_raw.json
+data/raw/roads_raw_quality_report.json
+data/processed/roads.csv</code></pre>
+
+    <p>สร้าง road intelligence แยกได้ด้วยคำสั่งนี้:</p>
+    <pre><code>python run_road_intelligence.py</code></pre>
+    <p>ได้ <code>roads_features.csv</code>, <code>roads_summary_by_province.csv</code>, <code>road_density_by_zone.csv</code>, <code>road_intersections.csv</code></p>
+
+    <h2>2. Google Road Name Enrichment</h2>
+    <pre><code>python run_google_road_enrichment.py --sleep-seconds 0.1 --cache-flush-interval 25</code></pre>
+    <p>ทดสอบโดยไม่ยิง API:</p>
+    <pre><code>python run_google_road_enrichment.py --dry-run --limit 20</code></pre>
+    <p>สร้าง output จาก cache เดิมโดยไม่ยิง API เพิ่ม:</p>
+    <pre><code>python run_google_road_enrichment.py --limit 0 --sleep-seconds 0</code></pre>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>3/6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">User Manual - Page 4</div>
+    <h1>ไฟล์ Output สำคัญ</h1>
+
+    <h2>1. Landmark และ Amenity</h2>
+    <pre><code>data/processed/landmarks_clean.csv
+data/processed/amenities_clean.csv</code></pre>
+    <p>ใช้วิเคราะห์จุดสำคัญในพื้นที่ เช่น โรงพยาบาล ห้าง ตลาด สถานที่ราชการ ร้านบริการ และสิ่งอำนวยความสะดวกอื่น ๆ</p>
+    <ul>
+      <li><code>province</code>, <code>district</code>, <code>sub_district</code>: พื้นที่ตั้ง</li>
+      <li><code>name</code>, <code>name_en</code>: ชื่อสถานที่</li>
+      <li><code>category</code>: ประเภทสถานที่</li>
+      <li><code>layer</code>: ระดับความสำคัญของ POI</li>
+      <li><code>lat</code>, <code>lon</code>: พิกัด</li>
+    </ul>
+
+    <h2>2. Road Output</h2>
+    <pre><code>data/processed/roads.csv
+data/processed/roads_enriched.csv
+data/processed/roads_final.csv</code></pre>
+    <ul>
+      <li><code>roads.csv</code>: ข้อมูลถนนดิบจาก OSM แบบ flatten เป็น CSV</li>
+      <li><code>roads_enriched.csv</code>: เพิ่มรายละเอียดจาก Google reverse geocode เพื่อ audit</li>
+      <li><code>roads_final.csv</code>: ไฟล์ถนนปลายทางที่ตัด Google detail ออกแล้ว ใช้ต่อได้ง่าย</li>
+    </ul>
+
+    <h2>3. คอลัมน์ที่ควรใช้ใน <code>roads_final.csv</code></h2>
+    <ul>
+      <li><code>road_name</code>: ชื่อจาก OSM หรือ <code>unnamed:&lt;osm_id&gt;</code></li>
+      <li><code>road_ref</code>: เลขทางหลวง/เลขถนน ถ้ามี</li>
+      <li><code>road_display_name</code>: ชื่อสำหรับแสดงผลจริง</li>
+      <li><code>google_match_status</code>: สถานะ enrichment เช่น <code>matched</code>, <code>no_route</code>, <code>skipped_has_ref</code></li>
+      <li><code>length_km</code>: ความยาวของ OSM way โดยรวมระยะตาม geometry ของถนน</li>
+    </ul>
+
+    <h2>4. Cache ที่ไม่ควรลบทิ้งง่าย ๆ</h2>
+    <pre><code>data/raw/google_road_name_cache.json
+data/raw/temp_roads_topology/
+data/raw/geocode_cache.json</code></pre>
+    <p>ไฟล์เหล่านี้ช่วยลดเวลารันซ้ำและลด API quota โดยเฉพาะ Google road enrichment</p>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>4/6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">User Manual - Page 5</div>
+    <h1>Troubleshooting หลัก</h1>
+
+    <h2>1. Google API ขึ้น <code>REQUEST_DENIED</code></h2>
+    <ul>
+      <li>เปิด Billing ใน Google Cloud Project แล้วหรือยัง</li>
+      <li>เปิด <code>Geocoding API</code> แล้วหรือยัง</li>
+      <li>API key restriction ตรงกับการใช้งานหรือไม่</li>
+    </ul>
+    <p>สำหรับ script Python ควรใช้ Application restriction เป็น <code>IP addresses</code> ถ้าเครื่องมี public IP คงที่ และจำกัด API restriction เฉพาะ <code>Geocoding API</code></p>
+
+    <h2>2. Playwright เปิด browser ไม่ได้</h2>
+    <pre><code>python -m playwright install chromium</code></pre>
+    <p>ใช้เมื่อตัว scraper ที่ต้องเปิด browser หา Chromium ไม่เจอ</p>
+
+    <h2>3. Pipeline หยุดเพราะ Quality Gate</h2>
+    <p>ถ้า quality gate fail ให้ดู error แล้วตรวจไฟล์เหล่านี้ก่อน:</p>
+    <pre><code>data/processed/landmarks_clean.csv
+data/processed/zone_profiles.csv</code></pre>
+
+    <h2>4. เมื่อ output หายหรือแถวไม่ครบ</h2>
+    <p>ให้ตรวจจำนวนแถวจากไฟล์ต้นทางและไฟล์ปลายทางก่อนเสมอ:</p>
+    <pre><code>(Import-Csv data\processed\roads.csv | Measure-Object).Count
+(Import-Csv data\processed\roads_final.csv | Measure-Object).Count</code></pre>
+    <p>ถ้า <code>roads_enriched.csv</code> ถูกเขียนไม่ครบ ให้ regenerate จาก cache โดยไม่ยิง API เพิ่ม:</p>
+    <pre><code>python run_google_road_enrichment.py --limit 0 --sleep-seconds 0</code></pre>
+    <p>จากนั้นค่อย export <code>roads_final.csv</code> ใหม่</p>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>5/6</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">User Manual - Page 6</div>
+    <h1>การตรวจผลข้อมูลถนน</h1>
+
+    <h2>1. ข้อมูลถนนไม่มีชื่อ</h2>
+    <p>ถนนที่ไม่มีชื่อจาก OSM จะอยู่ในรูป <code>unnamed:&lt;osm_id&gt;</code> อย่าทับ <code>road_name</code> โดยตรง เพราะใช้ trace กลับ OSM ได้ ให้ใช้ <code>road_display_name</code> สำหรับ dashboard/report แทน</p>
+
+    <h2>2. สถานะที่พบบ่อย</h2>
+    <ul>
+      <li><code>matched</code>: เติมชื่อจาก Google ได้</li>
+      <li><code>no_route</code>: Google ไม่คืนชื่อถนนที่ใช้ได้</li>
+      <li><code>skipped_has_ref</code>: ไม่มีชื่อ แต่มี <code>road_ref</code> จึง fallback เป็น <code>Road &lt;ref&gt;</code></li>
+      <li><code>skipped_named</code>: มีชื่อจาก OSM อยู่แล้ว</li>
+    </ul>
+
+    <h2>3. วิธีเช็กผลเร็ว ๆ</h2>
+    <p>ดูจำนวนแถวแยกตามสถานะ:</p>
+    <pre><code>Import-Csv data\processed\roads_final.csv |
+  Group-Object google_match_status |
+  Select-Object Name,Count</code></pre>
+
+    <p>ดูตัวอย่างชื่อถนน:</p>
+    <pre><code>Import-Csv data\processed\roads_final.csv |
+  Select-Object -First 20 province,road_name,road_display_name</code></pre>
+
+    <p>ดูเฉพาะแถวที่ยังไม่มีชื่อถนนที่ใช้ได้:</p>
+    <pre><code>Import-Csv data\processed\roads_final.csv |
+  Where-Object { $_.google_match_status -eq "no_route" } |
+  Select-Object province,osm_id,highway_type,road_display_name</code></pre>
+
+    <h2>4. ไฟล์ที่ควรใช้ต่อ</h2>
+    <pre><code>data/processed/roads_final.csv</code></pre>
+    <p>ถ้าต้อง audit ว่า Google คืนอะไรมา ให้เปิด <code>data/processed/roads_enriched.csv</code></p>
+
+    <div class="footer"><span>ai_web_scrpping user manual</span><span>6/6</span></div>
+  </section>
+</body>
+</html>
