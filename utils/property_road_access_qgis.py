@@ -11,6 +11,7 @@ DEFAULT_ISSUE_STATUSES = {
 
 POINT_PROPERTY_FIELDS = [
     "property_id",
+    "source_id",
     "chanod_no",
     "province",
     "snap_distance_m",

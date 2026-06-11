@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument(
         "--properties-path",
         default="data/raw/property_locations.csv",
-        help="Input CSV with property_id, chanod_no, province, lat, lon.",
+        help="Input CSV with property_id/parcel_key, optional id, chanod_no, province, lat, lon.",
     )
     parser.add_argument(
         "--raw-roads-path",

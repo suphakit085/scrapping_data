@@ -153,12 +153,13 @@ class PropertyRoadAccessTests(unittest.TestCase):
             with open(properties_path, "w", encoding="utf-8-sig", newline="") as f:
                 writer = csv.DictWriter(
                     f,
-                    fieldnames=["property_id", "chanod_no", "province", "lat", "lon"],
+                    fieldnames=["property_id", "id", "chanod_no", "province", "lat", "lon"],
                 )
                 writer.writeheader()
                 writer.writerow(
                     {
                         "property_id": "p1",
+                        "id": "SRC1",
                         "chanod_no": "c1",
                         "province": "Rayong",
                         "lat": "14.0001",
@@ -191,6 +192,8 @@ class PropertyRoadAccessTests(unittest.TestCase):
                 rows = list(csv.DictReader(f))
 
         self.assertEqual(result["rows"], 1)
+        self.assertEqual(rows[0]["property_id"], "p1")
+        self.assertEqual(rows[0]["source_id"], "SRC1")
         self.assertEqual(rows[0]["routing_status"], "routed")
         self.assertEqual(rows[0]["major_road_display_name"], "ถนนใหญ่")
 

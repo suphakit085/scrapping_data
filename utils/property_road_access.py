@@ -16,8 +16,10 @@ from utils.geo_boundaries import normalize_province_name
 
 
 PROPERTY_REQUIRED_FIELDNAMES = ["property_id", "chanod_no", "province", "lat", "lon"]
+PROPERTY_OPTIONAL_FIELDNAMES = ["source_id"]
 PROPERTY_FIELD_ALIASES = {
     "property_id": ["property_id", "parcel_key", "id", "objectid"],
+    "source_id": ["source_id", "id"],
     "chanod_no": ["chanod_no", "เลขโฉนด", "เลขที่ค้นหา", "deed_no"],
     "province": ["province", "province_en", "จังหวัด"],
     "lat": ["lat", "latitude", "shape_y"],
@@ -33,6 +35,7 @@ DEFAULT_DIRECT_MAJOR_DISTANCE_M = 30.0
 
 PROPERTY_ROAD_ACCESS_FIELDNAMES = [
     "property_id",
+    "source_id",
     "chanod_no",
     "province",
     "home_lat",
@@ -458,6 +461,7 @@ def build_road_access_graph(raw_records, province="", road_display_lookup=None):
 def _base_output_row(property_row):
     return {
         "property_id": property_row.get("property_id", ""),
+        "source_id": property_row.get("source_id", ""),
         "chanod_no": property_row.get("chanod_no", ""),
         "province": normalize_province_name(property_row.get("province")),
         "home_lat": str(property_row.get("lat") or "").strip(),
@@ -649,6 +653,11 @@ def _first_value(row, aliases):
 def normalize_property_row(row):
     normalized = dict(row or {})
     for canonical_field in PROPERTY_REQUIRED_FIELDNAMES:
+        normalized[canonical_field] = _first_value(
+            normalized,
+            PROPERTY_FIELD_ALIASES[canonical_field],
+        )
+    for canonical_field in PROPERTY_OPTIONAL_FIELDNAMES:
         normalized[canonical_field] = _first_value(
             normalized,
             PROPERTY_FIELD_ALIASES[canonical_field],
